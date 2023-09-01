@@ -23,7 +23,7 @@ export const Project = defineDocumentType(() => ({
 
 	fields: {
 		published: {
-			type: "boolean",
+			type: "string",
 		},
 		title: {
 			type: "string",
@@ -36,12 +36,15 @@ export const Project = defineDocumentType(() => ({
 		date: {
 			type: "date",
 		},
-		url: {
-			type: "string",
-		},
 		repository: {
 			type: "string",
 		},
+		youtube: {
+			type: "string",
+		},
+		intro: {
+			type: "string",
+		}
 	},
 	computedFields,
 }));

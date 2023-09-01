@@ -3,18 +3,6 @@
   "middleware": {},
   "functions": {
     "/api/incr": {
-      "env": [
-        "NEXT_PRIVATE_DEBUG_CACHE",
-        "__NEXT_TEST_MAX_ISR_CACHE",
-        "SUSPENSE_CACHE_URL",
-        "SUSPENSE_CACHE_BASEPATH",
-        "SUSPENSE_CACHE_AUTH_TOKEN",
-        "UPSTASH_DISABLE_TELEMETRY",
-        "VERCEL",
-        "AWS_REGION",
-        "UPSTASH_REDIS_REST_URL",
-        "UPSTASH_REDIS_REST_TOKEN"
-      ],
       "files": [
         "server/edge-runtime-webpack.js",
         "server/pages/api/incr.js"

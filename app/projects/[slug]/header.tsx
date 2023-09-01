@@ -5,10 +5,11 @@ import React, { useEffect, useRef, useState } from "react";
 
 type Props = {
 	project: {
-		url?: string;
+		
 		title: string;
 		description: string;
 		repository?: string;
+		
 	};
 
 	views: number;
@@ -20,16 +21,11 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 	const links: { label: string; href: string }[] = [];
 	if (project.repository) {
 		links.push({
-			label: "GitHub",
+			label: "GitHub Repo",
 			href: `https://github.com/${project.repository}`,
 		});
 	}
-	if (project.url) {
-		links.push({
-			label: "Website",
-			href: project.url,
-		});
-	}
+
 	useEffect(() => {
 		if (!ref.current) return;
 		const observer = new IntersectionObserver(([entry]) =>

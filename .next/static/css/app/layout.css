@@ -1,9 +1,9 @@
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/.pnpm/next@13.4.3_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[5].use[1]!./node_modules/.pnpm/next@13.4.3_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[2].oneOf[5].use[2]!./node_modules/.pnpm/@next+font@13.4.3/node_modules/@next/font/google/target.css?{"path":"app\\layout.tsx","import":"Inter","arguments":[{"subsets":["latin"],"variable":"--font-inter"}],"variableName":"inter"} ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[7].oneOf[4].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[7].oneOf[4].use[2]!./node_modules/@next/font/google/target.css?{"path":"app\\layout.tsx","import":"Inter","arguments":[{"subsets":["latin"],"variable":"--font-inter"}],"variableName":"inter"} ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /* cyrillic-ext */
 @font-face {
-  font-family: '__Inter_0ec1f4';
+  font-family: '__Inter_20951f';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -12,7 +12,7 @@
 }
 /* cyrillic */
 @font-face {
-  font-family: '__Inter_0ec1f4';
+  font-family: '__Inter_20951f';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -21,7 +21,7 @@
 }
 /* greek-ext */
 @font-face {
-  font-family: '__Inter_0ec1f4';
+  font-family: '__Inter_20951f';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -30,7 +30,7 @@
 }
 /* greek */
 @font-face {
-  font-family: '__Inter_0ec1f4';
+  font-family: '__Inter_20951f';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -39,7 +39,7 @@
 }
 /* vietnamese */
 @font-face {
-  font-family: '__Inter_0ec1f4';
+  font-family: '__Inter_20951f';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -48,7 +48,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: '__Inter_0ec1f4';
+  font-family: '__Inter_20951f';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -57,34 +57,34 @@
 }
 /* latin */
 @font-face {
-  font-family: '__Inter_0ec1f4';
+  font-family: '__Inter_20951f';
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
   src: url(/_next/static/media/2aaf0723e720e8b9-s.p.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {font-family: '__Inter_Fallback_0ec1f4';src: local("Arial");ascent-override: 90.20%;descent-override: 22.48%;line-gap-override: 0.00%;size-adjust: 107.40%
-}.__className_0ec1f4 {font-family: '__Inter_0ec1f4', '__Inter_Fallback_0ec1f4';font-style: normal
-}.__variable_0ec1f4 {--font-inter: '__Inter_0ec1f4', '__Inter_Fallback_0ec1f4'
+}@font-face {font-family: '__Inter_Fallback_20951f';src: local("Arial");ascent-override: 90.20%;descent-override: 22.48%;line-gap-override: 0.00%;size-adjust: 107.40%
+}.__className_20951f {font-family: '__Inter_20951f', '__Inter_Fallback_20951f';font-style: normal
+}.__variable_20951f {--font-inter: '__Inter_20951f', '__Inter_Fallback_20951f'
 }
 
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/.pnpm/next@13.4.3_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[6].use[1]!./node_modules/.pnpm/next@13.4.3_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[2].oneOf[6].use[2]!./node_modules/.pnpm/@next+font@13.4.3/node_modules/@next/font/local/target.css?{"path":"app\\layout.tsx","import":"","arguments":[{"src":"../public/fonts/CalSans-SemiBold.ttf","variable":"--font-calsans"}],"variableName":"calSans"} ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[7].oneOf[5].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[7].oneOf[5].use[2]!./node_modules/@next/font/local/target.css?{"path":"app\\layout.tsx","import":"","arguments":[{"src":"../public/fonts/CalSans-SemiBold.ttf","variable":"--font-calsans"}],"variableName":"calSans"} ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
-font-family: '__calSans_95396e';
+font-family: '__calSans_829c8b';
 src: url(/_next/static/media/162bf645eb375add-s.p.ttf) format('truetype');
 font-display: swap;
-}@font-face {font-family: '__calSans_Fallback_95396e';src: local("Arial");ascent-override: 98.60%;descent-override: 19.72%;line-gap-override: 0.00%;size-adjust: 101.42%
-}.__className_95396e {font-family: '__calSans_95396e', '__calSans_Fallback_95396e'
-}.__variable_95396e {--font-calsans: '__calSans_95396e', '__calSans_Fallback_95396e'
+}@font-face {font-family: '__calSans_Fallback_829c8b';src: local("Arial");ascent-override: 98.60%;descent-override: 19.72%;line-gap-override: 0.00%;size-adjust: 101.42%
+}.__className_829c8b {font-family: '__calSans_829c8b', '__calSans_Fallback_829c8b'
+}.__variable_829c8b {--font-calsans: '__calSans_829c8b', '__calSans_Fallback_829c8b'
 }
 
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/.pnpm/next@13.4.3_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[13].use[2]!./node_modules/.pnpm/next@13.4.3_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[13].use[3]!./global.css ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[7].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[7].oneOf[12].use[3]!./global.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************/
 /*
-! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 *//*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -252,6 +252,8 @@ optgroup,
 select,
 textarea {
   font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
   font-size: 100%; /* 1 */
   font-weight: inherit; /* 1 */
   line-height: inherit; /* 1 */
@@ -386,6 +388,13 @@ ul,
 menu {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+dialog {
   padding: 0;
 }
 
@@ -1189,6 +1198,18 @@ video {
 .max-w-7xl {
   max-width: 80rem;
 }
+.max-w-screen-2xl {
+  max-width: 1536px;
+}
+.max-w-screen-xl {
+  max-width: 1280px;
+}
+.max-w-screen-lg {
+  max-width: 1024px;
+}
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .cursor-default {
   cursor: default;
 }
@@ -1428,6 +1449,10 @@ video {
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
 }
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1442,6 +1467,9 @@ video {
 }
 .pt-8 {
   padding-top: 2rem;
+}
+.pb-8 {
+  padding-bottom: 2rem;
 }
 .text-left {
   text-align: left;

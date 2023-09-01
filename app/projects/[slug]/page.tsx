@@ -40,9 +40,14 @@ export default async function PostPage({ params }: Props) {
 			<Header project={project} views={views} />
 			<ReportView slug={project.slug} />
 
-			<article className="px-4 py-12 mx-auto prose prose-zinc prose-quoteless">
+			<article className="px-4 py-8 mx-auto prose prose-zinc prose-quoteless max-w-screen-lg">
 				<Mdx code={project.body.code} />
 			</article>
+			
+			<h1 className="text-center pb-8 font-semibold text-xl">{project.intro}</h1>
+			<div className="items-center justify-center flex pb-8">
+			<iframe width="1024" height="576" src={project.youtube} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen ></iframe>
+			</div>
 		</div>
 	);
 }

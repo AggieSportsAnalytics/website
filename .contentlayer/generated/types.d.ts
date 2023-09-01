@@ -26,12 +26,13 @@ export type Project = {
   _id: string
   _raw: Local.RawDocumentData
   type: 'Project'
-  published?: boolean | undefined
+  published?: string | undefined
   title: string
   description: string
   date?: IsoDateTimeString | undefined
-  url?: string | undefined
   repository?: string | undefined
+  youtube?: string | undefined
+  intro?: string | undefined
   /** MDX file body */
   body: MDX
   path: string
