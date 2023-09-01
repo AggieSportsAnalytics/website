@@ -30,12 +30,12 @@ export default function Home() {
 				className="absolute inset-0 -z-10"
 				
 			/>
-			<h1 className="drop-shadow-glow z-10 text-3xl text-transparent duration-1000 bg-white cursor-default text-edge-outline  font-display sm:text-5xl md:text-8xl whitespace-nowrap bg-clip-text ">
+			<h1 className="drop-shadow-glow z-10 text-3xl text-transparent duration-1000 bg-white cursor-default text-edge-outline  font-display sm:text-5xl md:text-8xl whitespace-nowrap bg-clip-text animate-title">
 				Aggie Sports Analytics
 				
 			</h1>
 			<Image
-				className="pt-8"
+				className="pt-8 animate-fade-in"
 				src="/borderLogo.png"
 				alt="Logo"
 				width={250}

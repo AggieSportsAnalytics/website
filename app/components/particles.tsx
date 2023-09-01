@@ -15,7 +15,7 @@ export default function Particles({
 	className = "drop-shadow-glow",
 	quantity = 100,
 	staticity = 0,
-	ease = 10000,
+	ease = 50,
 	refresh = false,
 	
 }: ParticlesProps) {
