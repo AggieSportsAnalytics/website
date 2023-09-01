@@ -26,7 +26,7 @@ export type Project = {
   _id: string
   _raw: Local.RawDocumentData
   type: 'Project'
-  published?: string | undefined
+  published?: boolean | undefined
   title: string
   description: string
   date?: IsoDateTimeString | undefined
