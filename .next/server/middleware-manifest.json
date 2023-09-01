@@ -1,6 +1,35 @@
 {
   "sortedMiddleware": [],
   "middleware": {},
-  "functions": {},
+  "functions": {
+    "/api/incr": {
+      "env": [
+        "NEXT_PRIVATE_DEBUG_CACHE",
+        "__NEXT_TEST_MAX_ISR_CACHE",
+        "UPSTASH_DISABLE_TELEMETRY",
+        "VERCEL",
+        "AWS_REGION",
+        "UPSTASH_REDIS_REST_URL",
+        "UPSTASH_REDIS_REST_TOKEN",
+        "SUSPENSE_CACHE_URL",
+        "SUSPENSE_CACHE_BASEPATH",
+        "SUSPENSE_CACHE_AUTH_TOKEN"
+      ],
+      "files": [
+        "server/edge-runtime-webpack.js",
+        "server/pages/api/incr.js"
+      ],
+      "name": "pages/api/incr",
+      "page": "/api/incr",
+      "matchers": [
+        {
+          "regexp": "^/api/incr$",
+          "originalSource": "/api/incr"
+        }
+      ],
+      "wasm": [],
+      "assets": []
+    }
+  },
   "version": 2
 }

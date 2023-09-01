@@ -1,4 +1,4 @@
-// File: C:\Users\yashd\Desktop\asa\chronark.com\app\projects\layout.tsx
+// File: C:\Users\yashd\Desktop\ASAwebsite\app\projects\layout.tsx
 import * as entry from '../../../../app/projects/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
