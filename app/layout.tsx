@@ -9,16 +9,16 @@ export const metadata: Metadata = {
 		default: "Aggie Sports Analytics",
 		template: "%s | Aggie Sports Analytics",
 	},
-	description: "Software engineer at upstash.com and founder of planetfall.io",
+	description: "Revolutioning sports success through data science and machine learning.",
 	openGraph: {
-		title: "chronark.com",
+		title: "Aggie Sports Analytics",
 		description:
-			"Software engineer at upstash.com and founder of planetfall.io",
-		url: "https://chronark.com",
-		siteName: "chronark.com",
+			"Revolutioning sports success through data science and machine learning.",
+		url: "aggiesportsanalytics.com",
+		siteName: "aggiesportsanalytics.com",
 		images: [
 			{
-				url: "https://chronark.com/og.png",
+				url: "/logo.png",
 				width: 1920,
 				height: 1080,
 			},
@@ -38,11 +38,11 @@ export const metadata: Metadata = {
 		},
 	},
 	twitter: {
-		title: "Chronark",
+		title: "AggieSportsAnalytics",
 		card: "summary_large_image",
 	},
 	icons: {
-		shortcut: "/favicon.png",
+		shortcut: "/logo.png",
 	},
 };
 const inter = Inter({
