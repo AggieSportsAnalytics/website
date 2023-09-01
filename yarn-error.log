@@ -1,0 +1,80 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\yashd\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files\Microsoft\jdk-11.0.18.10-hotspot\bin;C:\Python34\Lib\site-packages\PyQt4;C:\Program Files\Common Files\Oracle\Java\javapath;C:\MinGW\bin;c:\devkitPro\msys2\usr\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\MinGW\bin\gcc.exe;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X64\;C:\Program Files (x86)\Pulse Secure\VC142.CRT\X86\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files (x86)\Common Files\Pulse Secure\TNC Client Plugin\;C:\Program Files\Mullvad VPN\resources;C:\Users\yashd\AppData\Local\Programs\Python\Python34;C:\Users\yashd\AppData\Local\Programs\Python\Python34\Scripts;C:\Users\yashd\AppData\Local\Programs\Python\Python311\Scripts\pip.exe;C:\Program Files\nodejs\;C:\Users\yashd\AppData\Local\pnpm;C:\Users\yashd\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\yashd\AppData\Local\Programs\Python\Python311\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\yashd\AppData\Local\Microsoft\WindowsApps;C:\Users\yashd\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\yashd\.dotnet\tools;C:\Users\yashd\AppData\Local\GitHubDesktop\bin;C:\Users\yashd\Downloads\mongosh-1.9.0-win32-x64\mongosh-1.9.0-win32-x64\bin;C:\Users\yashd\Documents\flutter\bin;C:\Users\yashd\AppData\Local\Programs\Python\Python34;C:\Users\yashd\AppData\Local\Programs\Python\Python34\Scripts;C:\Users\yashd\AppData\Local\Programs\Python\Python311\Scripts\pip.exe;C:\Users\yashd\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\yashd\AppData\Local\Yarn\Cache\v6\npm-glob-parent-6.0.2-6d237d99083950c79290f24c7642a3de9a28f9e3-integrity\node_modules\glob-parent\index.js' -> 'C:\Users\yashd\Desktop\ASAwebsite\node_modules\tailwindcss\node_modules\glob-parent\index.js'
+
+npm manifest: 
+  {
+    "name": "aggiesportsanalytics.com",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "fmt": "pnpm rome check . --apply-suggested && pnpm rome format . --write"
+    },
+    "dependencies": {
+      "@next/font": "^13.4.3",
+      "@next/mdx": "^13.4.3",
+      "@types/node": "20.2.1",
+      "@types/react": "18.2.6",
+      "@types/react-dom": "18.2.4",
+      "@upstash/redis": "^1.20.6",
+      "contentlayer": "^0.3.0",
+      "framer-motion": "^10.12.12",
+      "lucide-react": "^0.220.0",
+      "markdown-wasm": "^1.2.0",
+      "next": "13.4.3",
+      "next-contentlayer": "^0.3.0",
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
+      "react-wrap-balancer": "^0.5.0",
+      "rehype-autolink-headings": "^6.1.1",
+      "rehype-pretty-code": "^0.9.4",
+      "rehype-slug": "^5.1.0",
+      "remark-gfm": "^3.0.1",
+      "typescript": "5.0.4"
+    },
+    "devDependencies": {
+      "@opentelemetry/api": "^1.4.1",
+      "@tailwindcss/line-clamp": "^0.4.2",
+      "@tailwindcss/typography": "^0.5.9",
+      "autoprefixer": "^10.4.13",
+      "postcss": "^8.4.21",
+      "postcss-nesting": "^11.2.2",
+      "rome": "^11.0.0",
+      "tailwindcss": "^3.2.7",
+      "tailwindcss-debug-screens": "^2.2.1"
+    },
+    "pnpm": {
+      "overrides": {
+        "@opentelemetry/api": "1.4.1",
+        "@opentelemetry/core": "1.13.0",
+        "@opentelemetry/exporter-trace-otlp-grpc": "0.39.1",
+        "@opentelemetry/resources": "1.13.0",
+        "@opentelemetry/sdk-trace-base": "1.13.0",
+        "@opentelemetry/sdk-trace-node": "1.13.0",
+        "@opentelemetry/semantic-conventions": "1.13.0"
+      }
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
