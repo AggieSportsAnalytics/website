@@ -36,17 +36,20 @@ export default async function PostPage({ params }: Props) {
 		(await redis.get<number>(["pageviews", "projects", slug].join(":"))) ?? 0;
 
 	return (
-		<div className="bg-zinc-50 min-h-screen">
+		<div className="bg-zinc-50 min-h-screen ">
 			<Header project={project} views={views} />
 			<ReportView slug={project.slug} />
 
-			<article className="px-4 pt-8 pb-4 mx-auto prose prose-zinc prose-quoteless max-w-screen-lg">
+			<article className=" px-4 pt-8 pb-4  mx-auto prose prose-zinc prose-quoteless max-w-screen-lg">
 				<Mdx code={project.body.code} />
 			</article>
 			
-			<div className="items-center justify-center flex pb-8">
-			<iframe width="1024" height="576" src={project.youtube} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen ></iframe>
-			</div>
+			{project.youtube != null &&
+				<div className="items-center justify-center flex pb-8">
+					<iframe width="1024" height="576" src={project.youtube} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen ></iframe>
+				</div>
+			}
+
 		</div>
 	);
 }

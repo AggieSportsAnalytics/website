@@ -2,6 +2,8 @@ import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
 import Image from 'next/image'
+import ProjectsLayout from "./projects/layout";
+import { LogoNav } from "./components/logonav";
 
 const navigation = [
 	{ name: "Projects", href: "/projects" },
@@ -11,8 +13,23 @@ const navigation = [
 
 export default function Home() {
 	return (
-		<div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-br from-[#7477B2]/20 via-[#494A9F]/20 to-[#332E8A]/20">
-			<nav className="my-16 ">
+
+		<div className="flex flex-col items-center w-screen h-screen overflow-hidden bg-zinc-950 ">
+			
+
+			<div className="navbar-center hidden lg:flex text-slate-300 mt-8 drop-shadow-glow z-10">
+				<ul className="menu menu-horizontal px-1 text-lg font-extrabold z-10">
+				<li><Link href="/projects">Projects</Link></li>
+				<li><a>Events</a></li>
+
+
+				<li><a>Community</a></li>
+				<li><a>About Us</a></li>
+				</ul>
+				
+
+				</div>
+			{/* <nav className="my-12 ">
 				<ul className="flex items-center justify-center gap-4">
 					{navigation.map((item) => (
 						<Link
@@ -24,32 +41,39 @@ export default function Home() {
 						</Link>
 					))}
 				</ul>
-			</nav>
+			</nav> */}
 			
 			<Particles
-				className="absolute inset-0 -z-10"
+				className="absolute inset-0   "
 				
 			/>
-			<h1 className="drop-shadow-glow z-10 text-3xl text-transparent duration-1000 bg-white cursor-default text-edge-outline  font-display sm:text-5xl md:text-8xl whitespace-nowrap bg-clip-text animate-title">
+			<h1 className="mt-44 drop-shadow-glow z-10 text-3xl text-transparent duration-1000 bg-gradient-to-r from-[#bb9cff] to-[#ffa3ba] cursor-default  font-display sm:text-5xl md:text-8xl whitespace-nowrap bg-clip-text ">
 				Aggie Sports Analytics
 				
 			</h1>
-			<Image
-				className="pt-8 animate-fade-in"
-				src="/borderLogo.png"
+
+			{/* <div className="flex pt-2 ">
+				<button className="mt-8 mx-1 btn bg-[#ffffff] hover:bg-[#7477b2] text-black">Join Now</button>
+				<button className="mt-8 mx-1 btn btn-outline  hover:bg-neutral-950  text-slate-300">Contact Us</button>
+			</div> */}
+						<Image
+				className="pt-6 m-6 z-10"
+				src="/bLogo.png"
 				alt="Logo"
 				width={250}
 				height={200}
 			/>
 
-			<div className="my-16 text-center ">
-				<h2 className="text-sm text-slate-300">
-					Revolutioning sports success through data science and machine learning.
+			<div className="my-2 px-8 text-center  ">
+				<h2 className="text-2xl text-zinc-300 pt-2 drop-shadow-glow">
+					Redefining sports success through data science and machine learning.
 
 
 
 				</h2>
 			</div>
+
 		</div>
+		
 	);
 }

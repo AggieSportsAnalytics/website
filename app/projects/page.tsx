@@ -49,7 +49,7 @@ export default async function ProjectsPage() {
 						These are the projects we have completed as a club. Each page will show an in-depth summary, code snippets and repository, and an interactive video!
 					</p>
 				</div>
-				<div className="w-full h-px bg-zinc-800" />
+				<div className="w-full h-px bg-zinc-600" />
 
 				<div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
 					<Card>
@@ -101,7 +101,7 @@ export default async function ProjectsPage() {
 						))}
 					</div>
 				</div>
-				<div className="hidden w-full h-px md:block bg-zinc-800" />
+				<div className="hidden w-full h-px md:block bg-zinc-600" />
 
 				<div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
 					<div className="grid grid-cols-1 gap-4">

@@ -30,21 +30,27 @@ export const Navigation: React.FC = () => {
 					<div className="flex justify-between gap-8">
 						<Link
 							href="/projects"
-							className="duration-200 text-slate-300 hover:text-slate-100"
+							className="duration-200 text-zinc-300 hover:text-zinc-100 font-bold"
 						>
 							Projects
 						</Link>
 						<Link
 							href="/events"
-							className="duration-200 text-slate-300 hover:text-slate-100"
+							className="duration-200 text-zinc-300 hover:text-zinc-100 font-bold"
 						>
 							Events
 						</Link>
 						<Link
 							href="/about"
-							className="duration-200 text-slate-300 hover:text-slate-100"
+							className="duration-200 text-zinc-300 hover:text-zinc-100 font-bold"
 						>
-							About
+							Community
+						</Link>
+						<Link
+							href="/about"
+							className="duration-200 text-zinc-300 hover:text-zinc-100 font-bold"
+						>
+							About Us
 						</Link>
 					</div>
 
