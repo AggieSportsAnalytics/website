@@ -43,7 +43,7 @@ export default function Home() {
     <button className="btn mr-8 bg-indigo-800  text-zinc-100 ">Join Now</button>
   </div>
 </div>
-<div className="w-full h-px bg-zinc-900" />
+<div className="w-full h-px bg-zinc-800" />
 			{/* <nav className="my-12 ">
 				<ul className="flex items-center justify-center gap-4">
 					{navigation.map((item) => (
