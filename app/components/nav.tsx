@@ -20,10 +20,10 @@ export const Navigation: React.FC = () => {
 	return (
 		<header ref={ref}>
 			<div
-				className={`fixed inset-x-0 top-0 z-50  duration-200 border-b backdrop-blur ${
+				className={`fixed inset-x-0 top-0 z-50  duration-200 backdrop-blur  border-zinc-600 ${
 					isIntersecting
-						? " border-zinc-600"
-						:  "border-zinc-600 "
+						? " border-none"
+						:  " border-b "
 				}`}
 			>
 				<div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">

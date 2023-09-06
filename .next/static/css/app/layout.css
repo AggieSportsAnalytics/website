@@ -2610,6 +2610,9 @@ html {
 .border-t {
   border-top-width: 1px;
 }
+.border-none {
+  border-style: none;
+}
 .border-gray-900\/10 {
   border-color: rgb(17 24 39 / 0.1);
 }
@@ -2803,6 +2806,9 @@ html {
 }
 .pt-4 {
   padding-top: 1rem;
+}
+.pt-12 {
+  padding-top: 3rem;
 }
 .text-left {
   text-align: left;
