@@ -9,12 +9,17 @@ import { LogoNav } from "./components/logonav";
 const navigation = [
 	{ name: "Projects", href: "/projects" },
 	{ name: "Events", href: "/events" },
+	{ name: "Community", href: "/community" },
 	{ name: "About", href: "/about" },
 ];
 
 export default function Home() {
 	return (
-		<div className=" w-screen min-h-screen  overflow-hidden bg-zinc-950 ">
+		<div className=" w-screen min-h-screen  overflow-hidden bg-zinc-950 text-xs ">
+			<div className="alert bg-amber-300 text-zinc-950">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-current shrink-0 w-4 h-4"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+  <span>Site under construction - some links may be broken :D</span>
+</div>
 		<div className="navbar bg-zinc-950 m-1">
   <div className="navbar-start ">
     <div className="dropdown">
