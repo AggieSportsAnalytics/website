@@ -23,7 +23,7 @@ export const Project = defineDocumentType(() => ({
 
 	fields: {
 		published: {
-			type: "boolean",
+			type: "string",
 		},
 		title: {
 			type: "string",

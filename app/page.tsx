@@ -5,6 +5,7 @@ import Image from 'next/image'
 import ProjectsLayout from "./projects/layout";
 import { LogoNav } from "./components/logonav";
 
+
 const navigation = [
 	{ name: "Projects", href: "/projects" },
 	{ name: "Events", href: "/events" },
@@ -13,22 +14,36 @@ const navigation = [
 
 export default function Home() {
 	return (
-
-		<div className="flex flex-col items-center w-screen h-screen overflow-hidden bg-zinc-950 ">
-			
-
-			<div className="navbar-center hidden lg:flex text-slate-300 mt-8 drop-shadow-glow z-10">
-				<ul className="menu menu-horizontal px-1 text-lg font-extrabold z-10">
-				<li><Link href="/projects">Projects</Link></li>
-				<li><a>Events</a></li>
-
-
-				<li><a>Community</a></li>
-				<li><a>About Us</a></li>
-				</ul>
-				
-
-				</div>
+		<div className=" w-screen min-h-screen  overflow-hidden bg-zinc-950 ">
+		<div className="navbar bg-zinc-950 m-1">
+  <div className="navbar-start ">
+    <div className="dropdown">
+      <label tabIndex={0} className="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </label>
+      <ul tabIndex={0} className="z-30 menu menu-md dropdown-content mt-3 p-2 shadow bg-zinc-950  rounded-box w-52">
+        <li><a href="/projects">Projects</a></li>
+		<li><a href="/events">Events</a></li>
+        <li><a href="/community">Community</a></li>
+		<li><a href="/about">About</a></li>
+      </ul>
+    </div>
+    <a href="/" className="btn btn-ghost ml-4 normal-case text-xl"><img src="/bLogo.png" width={100}></img></a>
+  </div>
+  <div className="navbar-center hidden lg:flex">
+    <ul className="menu menu-horizontal px-1 text-zinc-200 text-lg">
+	<li><a href="/projects">Projects</a></li>
+		<li><a href="/events">Events</a></li>
+        <li><a href="/community">Community</a></li>
+		<li><a href="/about">About</a></li>
+		
+    </ul>
+  </div>
+  <div className="navbar-end">
+    <button className="btn mr-8 bg-indigo-800  text-zinc-100 ">Join Now</button>
+  </div>
+</div>
+<div className="w-full h-px bg-zinc-900" />
 			{/* <nav className="my-12 ">
 				<ul className="flex items-center justify-center gap-4">
 					{navigation.map((item) => (
@@ -43,11 +58,8 @@ export default function Home() {
 				</ul>
 			</nav> */}
 			
-			<Particles
-				className="absolute inset-0   "
-				
-			/>
-			<h1 className="mt-44 drop-shadow-glow z-10 text-3xl text-transparent duration-1000 bg-gradient-to-r from-[#bb9cff] to-[#ffa3ba] cursor-default  font-display sm:text-5xl md:text-8xl whitespace-nowrap bg-clip-text ">
+			<div className="flex flex-col justify-center items-center">
+			<h1 className=" mt-20 mb-4 drop-shadow-glow px-4 bottom-2 z-20 text-4xl  duration-1000 bg-gradient-to-r from-20% bg-clip-text text-transparent from-purple-400 to-blue-400 cursor-default  font-display sm:text-5xl md:text-8xl whitespace-nowrap  ">
 				Aggie Sports Analytics
 				
 			</h1>
@@ -56,22 +68,25 @@ export default function Home() {
 				<button className="mt-8 mx-1 btn bg-[#ffffff] hover:bg-[#7477b2] text-black">Join Now</button>
 				<button className="mt-8 mx-1 btn btn-outline  hover:bg-neutral-950  text-slate-300">Contact Us</button>
 			</div> */}
-						<Image
-				className="pt-6 m-6 z-10"
-				src="/bLogo.png"
-				alt="Logo"
-				width={250}
-				height={200}
-			/>
 
-			<div className="my-2 px-8 text-center  ">
-				<h2 className="text-2xl text-zinc-300 pt-2 drop-shadow-glow">
+
+			<div className="my-4 px-8 text-center  ">
+				<h2 className="text-md text-zinc-300 pt-2 font-semibold sm:text-xl md:text-2xl">
 					Redefining sports success through data science and machine learning.
 
 
 
 				</h2>
 			</div>
+			<Image
+				className="px-4"
+				src="/hero.png"
+				width={550}
+				height={550}
+				alt="Hero Image"
+				/>
+			</div>
+
 
 		</div>
 		

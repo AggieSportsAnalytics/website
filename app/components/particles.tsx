@@ -12,9 +12,9 @@ interface ParticlesProps {
 }
 
 export default function Particles({
-	className = "drop-shadow-glow",
+	className = "",
 	quantity = 100,
-	staticity = 0,
+	staticity = 50,
 	ease = 50,
 	refresh = false,
 	
