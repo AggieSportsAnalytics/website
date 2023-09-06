@@ -1,6 +1,6 @@
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[7].oneOf[4].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[7].oneOf[4].use[2]!./node_modules/@next/font/google/target.css?{"path":"app\\layout.tsx","import":"Inter","arguments":[{"subsets":["latin"],"variable":"--font-inter"}],"variableName":"inter"} ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@13.4.20-canary.15_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[7].oneOf[4].use[1]!./node_modules/.pnpm/next@13.4.20-canary.15_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[7].oneOf[4].use[2]!./node_modules/.pnpm/@next+font@13.4.3/node_modules/@next/font/google/target.css?{"path":"app\\layout.tsx","import":"Inter","arguments":[{"subsets":["latin"],"variable":"--font-inter"}],"variableName":"inter"} ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /* cyrillic-ext */
 @font-face {
   font-family: '__Inter_20951f';
@@ -68,9 +68,9 @@
 }.__variable_20951f {--font-inter: '__Inter_20951f', '__Inter_Fallback_20951f'
 }
 
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[7].oneOf[5].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[7].oneOf[5].use[2]!./node_modules/@next/font/local/target.css?{"path":"app\\layout.tsx","import":"","arguments":[{"src":"../public/fonts/CalSans-SemiBold.ttf","variable":"--font-calsans"}],"variableName":"calSans"} ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@13.4.20-canary.15_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[7].oneOf[5].use[1]!./node_modules/.pnpm/next@13.4.20-canary.15_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[7].oneOf[5].use[2]!./node_modules/.pnpm/@next+font@13.4.3/node_modules/@next/font/local/target.css?{"path":"app\\layout.tsx","import":"","arguments":[{"src":"../public/fonts/CalSans-SemiBold.ttf","variable":"--font-calsans"}],"variableName":"calSans"} ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
 font-family: '__calSans_829c8b';
 src: url(/_next/static/media/162bf645eb375add-s.p.ttf) format('truetype');
@@ -80,11 +80,11 @@ font-display: swap;
 }.__variable_829c8b {--font-calsans: '__calSans_829c8b', '__calSans_Fallback_829c8b'
 }
 
-/*!******************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[7].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[7].oneOf[12].use[3]!./global.css ***!
-  \******************************************************************************************************************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@13.4.20-canary.15_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[7].oneOf[12].use[2]!./node_modules/.pnpm/next@13.4.20-canary.15_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[7].oneOf[12].use[3]!./global.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 *//*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -252,8 +252,6 @@ optgroup,
 select,
 textarea {
   font-family: inherit; /* 1 */
-  font-feature-settings: inherit; /* 1 */
-  font-variation-settings: inherit; /* 1 */
   font-size: 100%; /* 1 */
   font-weight: inherit; /* 1 */
   line-height: inherit; /* 1 */
@@ -388,13 +386,6 @@ ul,
 menu {
   list-style: none;
   margin: 0;
-  padding: 0;
-}
-
-/*
-Reset default styling for dialogs.
-*/
-dialog {
   padding: 0;
 }
 
@@ -2487,6 +2478,9 @@ html {
 .h-px {
   height: 1px;
 }
+.h-7 {
+  height: 1.75rem;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -2507,6 +2501,9 @@ html {
 }
 .w-screen {
   width: 100vw;
+}
+.w-7 {
+  width: 1.75rem;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -2702,47 +2699,13 @@ html {
 .from-20\% {
   --tw-gradient-from-position: 20%;
 }
-.from-30\% {
-  --tw-gradient-from-position: 30%;
-}
 .via-\[\#160F33\] {
   --tw-gradient-to: rgb(22 15 51 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #160F33 var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
-.via-\[\#242e60\] {
-  --tw-gradient-to: rgb(36 46 96 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #242e60 var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-.via-\[\#332e8a\] {
-  --tw-gradient-to: rgb(51 46 138 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #332e8a var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-.via-\[\#332e8a\]\/80 {
-  --tw-gradient-to: rgb(51 46 138 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), rgb(51 46 138 / 0.8) var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-.via-purple-400 {
-  --tw-gradient-to: rgb(192 132 252 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #c084fc var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-.via-purple-800 {
-  --tw-gradient-to: rgb(107 33 168 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #6b21a8 var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-.via-purple-950 {
-  --tw-gradient-to: rgb(59 7 100 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #3b0764 var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-.via-blue-950 {
-  --tw-gradient-to: rgb(23 37 84 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #172554 var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
 .via-indigo-950 {
   --tw-gradient-to: rgb(30 27 75 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #1e1b4b var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-.via-40\% {
-  --tw-gradient-via-position: 40%;
 }
 .via-30\% {
   --tw-gradient-via-position: 30%;
@@ -2753,18 +2716,18 @@ html {
 .to-zinc-950 {
   --tw-gradient-to: #09090b var(--tw-gradient-to-position);
 }
-.to-30\% {
-  --tw-gradient-to-position: 30%;
-}
-.to-40\% {
-  --tw-gradient-to-position: 40%;
-}
 .to-50\% {
   --tw-gradient-to-position: 50%;
 }
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+.stroke-zinc-300 {
+  stroke: #d4d4d8;
+}
+.stroke-zinc-200 {
+  stroke: #e4e4e7;
 }
 .p-0 {
   padding: 0px;
@@ -2837,6 +2800,9 @@ html {
 }
 .pt-8 {
   padding-top: 2rem;
+}
+.pt-4 {
+  padding-top: 1rem;
 }
 .text-left {
   text-align: left;
