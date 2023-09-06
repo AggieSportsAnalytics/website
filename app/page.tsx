@@ -28,7 +28,7 @@ export default function Home() {
 		<li><a href="/about">About</a></li>
       </ul>
     </div>
-    <a href="/" className="btn btn-ghost ml-4 normal-case text-xl"><img src="/bLogo.png" alt="Aggie Sports Analytics Logo" width={100}></img></a>
+    <a href="/" className="btn btn-ghost ml-4 "><img src="/bLogo.png" alt="Aggie Sports Analytics Logo" width={100}></img></a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 text-zinc-200 text-lg">
