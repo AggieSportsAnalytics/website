@@ -3571,6 +3571,10 @@ html {
   .\32xl\:gap-8 {
     gap: 2rem;
   }
+
+  .\32xl\:leading-\[6\.5rem\] {
+    line-height: 6.5rem;
+  }
 }
 .\[\&\:not\(\:first-child\)\]\:mt-6:not(:first-child) {
   margin-top: 1.5rem;
