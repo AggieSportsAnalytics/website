@@ -29,7 +29,7 @@ export default async function EventsPage() {
 							<h2 className="card-title text-zinc-100">First Meeting</h2>
 							<p>New member or old, come attend to see what we were up to this summer and what we have planned this year!</p>
 							<div className="card-actions justify-end">
-							<button className="btn mt-2 bg-violet-950 hover:bg-violet-950 text-zinc-100">Oct 18, 2023</button>
+							<button className="btn mt-2 bg-indigo-950 hover:bg-indigo-950 text-zinc-100">Oct 18, 2023</button>
 							</div>
 						</div>
 					</div>
@@ -38,7 +38,7 @@ export default async function EventsPage() {
 							<h2 className="card-title text-zinc-100">General Recruitment</h2>
 							<p>This date marks the week of recruitment! We will be recruiting project, business, and media team members.</p>
 							<div className="card-actions justify-end">
-							<button className="btn dro mt-2 bg-violet-950 hover:bg-violet-950 text-zinc-100">Oct 24, 2023</button>
+							<button className="btn dro mt-2 bg-indigo-950 hover:bg-indigo-950 text-zinc-100">Oct 24, 2023</button>
 							</div>
 						</div>
 					</div>
@@ -47,7 +47,7 @@ export default async function EventsPage() {
 							<h2 className="card-title text-zinc-100">Sports Analytics Symposium</h2>
 							<p>Join us at the ARC Ballroom as we host a panel of sports analysts from the 49ers, Kings, and more!</p>
 							<div className="card-actions justify-end">
-							<button className="btn mt-2 bg-violet-950 hover:bg-violet-950 text-zinc-100">Nov 4, 2023</button>
+							<button className="btn mt-2 bg-indigo-950 hover:bg-indigo-950 text-zinc-100">Nov 4, 2023</button>
 							</div>
 						</div>
 					</div>
