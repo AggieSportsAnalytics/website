@@ -123,7 +123,7 @@ export default async function MembersPage() {
 					</div>
 				</div>
 				<div className="card w-64  g-transparent border text-slate-200 ">
-				<figure><img src="/abhimanyu.jpg"  alt="Abhi Sharma" /></figure>
+				<figure><img src="/abhi.jpg"  alt="Abhi Sharma" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Abhi Sharma</h2>
 						<p className="text-md">Director of Media</p>
