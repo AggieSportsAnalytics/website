@@ -88,7 +88,7 @@ export default async function MembersPage() {
 				<figure><img src="/andrew.jpg"  alt="Andrew Hale" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Andrew Hale</h2>
-						<p className="text-md">Director of Projets</p>
+						<p className="text-md">Director of Projects</p>
 						<p className="text-sm text-slate-300">Favorite Athlete: Alex Morgan</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/andrew-hale6/">
