@@ -19,11 +19,6 @@ export default function Home() {
 
 		<div className="navbar bg-zinc-950 m-1">
   <div className="navbar-start ">
-  <a href="/" className="btn btn-ghost ml-4 "><img src="/bLogo.png" alt="Aggie Sports Analytics Logo" width={100}></img></a>
-
-
-  </div>
-  <div className="navbar-center ">
   <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 stroke-zinc-300" fill="none" viewBox="0 0 24 24" ><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -35,6 +30,11 @@ export default function Home() {
 		<li><a className="text-lg" href="/about">About</a></li>
       </ul>
     </div>
+  <a href="/" className="btn btn-ghost "><img src="/bLogo.png" alt="Aggie Sports Analytics Logo" width={100}></img></a>
+
+
+  </div>
+  <div className="navbar-center ">
 	<div className="hidden lg:flex">
     <ul className="menu menu-horizontal px-1 text-zinc-200 text-xl">
 	<li><a className=""href="/projects">Projects</a></li>
@@ -47,7 +47,7 @@ export default function Home() {
   </div>
   <div className="navbar-end">
 	<a href="https://docs.google.com/forms/d/e/1FAIpQLSc9rnE6-33n5g3TqmqBJr1I--7rb218SNlw5kq92Oxq7114SA/viewform?usp=sf_link" target="_blank">
-		<button className="btn mr-8 bg-indigo-800  hover:bg-indigo-900 text-zinc-100 ">Join Now</button>
+		<button className="btn mr-4 bg-indigo-800  hover:bg-indigo-900 text-zinc-100 ">Join Now</button>
 	</a>
 
   </div>
