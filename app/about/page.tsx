@@ -31,9 +31,9 @@ export default async function AboutPage() {
 					Throwback to the "Sports Analytics Club at UC Davis" trying to recruit early members :D
 				</p>
 				<div className="flex  items-center justify-center mx-4 gap-4 max-[1250px]:flex-col">
-					<img className="" src="/pic1.JPG" width="400" alt="Chris Lo, Yash Deshmukh, and Vikram Choudhry"></img>
-					<img className="" src="/pic2.JPG" width="400" alt="Vikram Choudhry"></img>
-					<img className="" src="/pic3.JPG" width="400" alt="Yash Deshmukh, Chris Lo, and Amar Singh"></img>
+					<img className="border border-zinc-300" src="/pic1.JPG" width="400" alt="Chris Lo, Yash Deshmukh, and Vikram Choudhry"></img>
+					<img className="border border-zinc-300" src="/pic2.JPG" width="400" alt="Vikram Choudhry"></img>
+					<img className="border border-zinc-300" src="/pic3.JPG" width="400" alt="Yash Deshmukh, Chris Lo, and Amar Singh"></img>
 				</div>
 		</div>
 	);
