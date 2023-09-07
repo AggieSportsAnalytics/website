@@ -7,10 +7,10 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
 	title: {
-		default: "Aggie Sports Analytics",
+		default: "Home | Aggie Sports Analytics at UC Davis",
 		template: "%s | Aggie Sports Analytics",
 	},
-	description: "Revolutioning sports success through data science and machine learning.",
+	description: "Revolutioning sports success through data science and machine learning at UC Davis.",
 	openGraph: {
 		title: "Aggie Sports Analytics",
 		description:
@@ -63,7 +63,9 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
+
 			<head>
+				
 				<Analytics />
 			</head>
 			<body

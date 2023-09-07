@@ -41,7 +41,7 @@ export const Navigation: React.FC = () => {
 							Events
 						</Link>
 						<Link
-							href="/about"
+							href="/community"
 							className="duration-200 text-zinc-200 hover:text-zinc-100 "
 						>
 							Community

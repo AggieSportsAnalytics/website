@@ -4,7 +4,7 @@ import Particles from "./components/particles";
 import Image from 'next/image'
 import ProjectsLayout from "./projects/layout";
 import { LogoNav } from "./components/logonav";
-
+import Head from 'next/head';
 
 const navigation = [
 	{ name: "Projects", href: "/projects" },
