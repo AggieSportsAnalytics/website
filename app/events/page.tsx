@@ -27,8 +27,8 @@ export default async function EventsPage() {
 				<h2 className="text-2xl font-bold tracking-tight text-zinc-100 sm:text-3xl">
 						Fall Quarter 2023
 				</h2>
-				<div className="flex gap-6 text-slate-200">
-					<div className="card w-96 outline  bg-zinc-950 ">
+				<div className="  text-slate-200">
+					<div className="card  outline mb-6 bg-zinc-950 ">
 						<div className="card-body">
 							<h2 className="card-title text-zinc-100">First Meeting</h2>
 							<p>New member or old, come attend to see what we were up to this summer and what we have planned this year!</p>
@@ -37,7 +37,7 @@ export default async function EventsPage() {
 							</div>
 						</div>
 					</div>
-					<div className="card w-96 outline  bg-zinc-950 ">
+					<div className="card  outline mb-6 bg-zinc-950 ">
 						<div className="card-body">
 							<h2 className="card-title text-zinc-100">General Recruitment</h2>
 							<p>This date marks the week of recruitment! We will be recruiting project, business, and media team members.</p>
@@ -46,7 +46,7 @@ export default async function EventsPage() {
 							</div>
 						</div>
 					</div>
-					<div className="card w-96 outline bg-zinc-950   ">
+					<div className="card  outline  bg-zinc-950   ">
 						<div className="card-body">
 							<h2 className="card-title text-zinc-100">Sports Analytics Symposium</h2>
 							<p>Join us at the ARC Ballroom as we host a panel of sports analysts from the 49ers, Kings, and more!</p>
@@ -55,6 +55,7 @@ export default async function EventsPage() {
 							</div>
 						</div>
 					</div>
+					<div className="p-6"></div>
 				</div>
 			</div>
 		</div>

@@ -2500,6 +2500,9 @@ html {
 .m-1 {
   margin: 0.25rem;
 }
+.m-4 {
+  margin: 1rem;
+}
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -2552,6 +2555,12 @@ html {
 }
 .mt-8 {
   margin-top: 2rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 .flex {
   display: flex;
@@ -2615,6 +2624,9 @@ html {
 }
 .w-96 {
   width: 24rem;
+}
+.w-48 {
+  width: 12rem;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -2689,6 +2701,9 @@ html {
 .gap-y-6 {
   row-gap: 1.5rem;
 }
+.gap-y-4 {
+  row-gap: 1rem;
+}
 .space-y-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
@@ -2720,6 +2735,10 @@ html {
 }
 .border {
   border-width: 1px;
+}
+.border-y-4 {
+  border-top-width: 4px;
+  border-bottom-width: 4px;
 }
 .border-b {
   border-bottom-width: 1px;
@@ -3025,6 +3044,9 @@ html {
 }
 .pt-12 {
   padding-top: 3rem;
+}
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 .text-left {
   text-align: left;
