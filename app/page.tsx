@@ -61,7 +61,7 @@ export default function Home() {
 			</nav> */}
 			
 			<div className="flex flex-col justify-center items-center">
-			<h1 className=" mt-20 mb-4 drop-shadow-glow px-4 bottom-2 z-20 text-4xl  duration-1000 bg-gradient-to-r from-20% bg-clip-text text-transparent from-purple-400 to-blue-400 cursor-default  font-display sm:text-5xl md:text-8xl whitespace-nowrap  ">
+			<h1 className="h-[8rem] sm:h-[4rem] mt-20 mb-4 drop-shadow-glow px-4 bottom-2 z-20 text-4xl  duration-1000 bg-gradient-to-r from-20% bg-clip-text text-transparent from-purple-400 to-blue-400 cursor-default  font-display sm:text-5xl md:text-8xl whitespace-nowrap  ">
 				Aggie Sports Analytics
 				
 			</h1>
