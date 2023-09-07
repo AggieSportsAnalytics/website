@@ -41,10 +41,10 @@ export const Navigation: React.FC = () => {
 							Events
 						</Link>
 						<Link
-							href="/community"
+							href="/members"
 							className="duration-200 text-zinc-200 hover:text-zinc-100 "
 						>
-							Community
+							Members
 						</Link>
 						<Link
 							href="/about"

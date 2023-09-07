@@ -1,14 +1,27 @@
 ---
 title: Shot Tracker
-description: Determine offsides from any angle using the help of computer vision.
-repository: AggieSportsAnalytics/SoccerOffsideTracker
+description: Determine whether or not a player makes or misses a basketball shot with computer vision.
+repository: AggieSportsAnalytics/ShotTracker
 
-date: 2023-08-28
+date: 2023-07-21
 published: true
 ---
 
+### 🏁 Determine whether or not a player makes or misses a basketball shot with Computer Vision.
 
-Like so many others, I just wanted a place to collect some projects I worked on. Maybe I'll add a blog, maybe I won't. I'm not sure yet.
+The Shot Tracker project is an advanced computer vision application that aims to accurately determine whether a person makes or misses a basketball shot. It is designed to help hoopers track their own makes and misses when shooting arouund. The project leverages YOLO v8, python,
+an real time vide analyis to automate the tracking for makes and misses.
 
-If you like the design, check out the Repository on GitHub.
+## 🔑 Key Features
+- Ball Tracking: The project employs object detection by training our own dataset to identify and track the positions of the basketball.
+- Rim Tracking: Like the ball Tracking, with personalized pre-trained modeling, we are able to identify where the rim is at all times.
+- Real-Time Video Analysis: The system can process live video feeds from soccer matches, enabling real-time offside detection during gameplay. It can also be applied to pre-recorded matches for analysis and review.
+
+## 🚀 Further Uses
+- Shot Percentage by Area: Although not complete, if enough training data were to be aquired, a map of the basketball court with different zones can be used to determine a player's shooting percentage from differnt zones.
+
+## 💻  Technology
+- OpenCV
+- NumPy
+- YoloV8
 

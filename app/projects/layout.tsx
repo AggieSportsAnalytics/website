@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-
+import type { Project } from "@/.contentlayer/generated";
 
 
 export const metadata: Metadata = {
@@ -51,7 +51,7 @@ export default function ProjectsLayout({
 }: { children: React.ReactNode }) {
 	return (
 
-		<div className="relative min-h-screen bg-gradient-to-br  from-zinc-950 from-20% via-indigo-950 via-30% to-zinc-950 to-50%">
+		<div className="relative min-h-screen bg-gradient-to-br  from-zinc-950 from-20% via-blue-950 via-30% to-zinc-950 to-50%">
 
 			{children}
 		</div>

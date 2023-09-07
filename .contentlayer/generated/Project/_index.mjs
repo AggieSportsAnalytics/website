@@ -5,5 +5,6 @@ import projects__penaltyEncroachmentTrackerMdx from './projects__penalty-encroac
 import projects__shotFormCorrectorMdx from './projects__shot-form-corrector.mdx.json' assert { type: 'json' }
 import projects__shotTrackerMdx from './projects__shot-tracker.mdx.json' assert { type: 'json' }
 import projects__soccerOffsideTrackerMdx from './projects__soccer-offside-tracker.mdx.json' assert { type: 'json' }
+import projects__stretchlabsMdx from './projects__stretchlabs.mdx.json' assert { type: 'json' }
 
-export const allProjects = [projects__automataticGameFilmMarkerMdx, projects__penaltyEncroachmentTrackerMdx, projects__shotFormCorrectorMdx, projects__shotTrackerMdx, projects__soccerOffsideTrackerMdx]
+export const allProjects = [projects__automataticGameFilmMarkerMdx, projects__penaltyEncroachmentTrackerMdx, projects__shotFormCorrectorMdx, projects__shotTrackerMdx, projects__soccerOffsideTrackerMdx, projects__stretchlabsMdx]

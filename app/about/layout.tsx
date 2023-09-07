@@ -46,7 +46,7 @@ export default function AboutLayout({
 	children,
 }: { children: React.ReactNode }) {
 	return (
-		<div className="relative min-h-screen bg-gradient-to-tr  from-zinc-950 from-20% via-fuchsia-950 via-30% to-zinc-950 to-50%">
+		<div className="relative min-h-screen bg-gradient-to-tr  from-zinc-950 from-20% via-purple-950 via-30% to-zinc-950 to-50%">
 			{children}
 		</div>
 	);

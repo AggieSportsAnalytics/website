@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useMDXComponent } from "next-contentlayer/hooks";
 
+
 function clsx(...args: any) {
 	return args.filter(Boolean).join(" ");
 }
@@ -88,6 +89,7 @@ const components = {
 	li: ({ className, ...props }) => (
 		<li className={clsx(" text-zinc-700 mt-2", className)} {...props} />
 	),
+
 	blockquote: ({ className, ...props }) => (
 		<blockquote
 			className={clsx(
@@ -174,6 +176,7 @@ export function Mdx({ code }: MdxProps) {
 
 	return (
 		<div className="mdx">
+
 			<Component components={components} />
 		</div>
 	);
