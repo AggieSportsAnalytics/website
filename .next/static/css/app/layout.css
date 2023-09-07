@@ -3569,6 +3569,10 @@ html {
   .xl\:leading-\[5\.5rem\] {
     line-height: 5.5rem;
   }
+
+  .xl\:leading-\[6\.5rem\] {
+    line-height: 6.5rem;
+  }
 }
 @media (min-width: 1536px) {
 
