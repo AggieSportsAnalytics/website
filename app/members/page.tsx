@@ -16,8 +16,8 @@ export default async function MembersPage() {
 						Members
 					</h2>
 					<p className="mt-8 text-zinc-300">
-						This page will show our current board, members, and club alumni. More faces will be added after complete our fall quarter recruitment and take 
-						official headshots!
+						This page will show our current board, members, and club alumni. More faces will be added after complete our fall quarter recruitment and we've taken 
+						official board and member headshots!
 					</p>
 					
 				</div>
@@ -35,7 +35,8 @@ export default async function MembersPage() {
 						<p className="text-sm text-slate-300">Favorite Athlete: Dikembe Mutumbo</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/christopherlo34/">
-							<button className="btn bg-blue-700  hover:bg-blue-800">
+						<button className="btn bg-blue-800  hover:bg-blue-900">
+
 							<Linkedin
 										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
 									/>
@@ -54,7 +55,8 @@ export default async function MembersPage() {
 						<p className="text-sm text-slate-300">Favorite Athlete: Patrick Willis</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/vikram-choudhry-05a8a0250/">
-							<button className="btn bg-blue-700  hover:bg-blue-800">
+						<button className="btn bg-blue-800  hover:bg-blue-900">
+
 							<Linkedin
 										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
 									/>
@@ -73,7 +75,7 @@ export default async function MembersPage() {
 						<p className="text-sm text-slate-300">Favorite Athlete: Rodney Stuckey</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/yashdesh6/">
-							<button className="btn bg-blue-700  hover:bg-blue-800">
+						<button className="btn bg-blue-800  hover:bg-blue-900">
 							<Linkedin
 										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
 									/>
@@ -92,7 +94,7 @@ export default async function MembersPage() {
 						<p className="text-sm text-slate-300">Favorite Athlete: Alex Morgan</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/andrew-hale6/">
-							<button className="btn bg-blue-700  hover:bg-blue-800">
+							<button className="btn bg-blue-800  hover:bg-blue-900">
 							<Linkedin
 										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
 									/>
@@ -111,7 +113,8 @@ export default async function MembersPage() {
 						<p className="text-sm text-slate-300">Favorite Athlete: Jude Bellingham</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/soumil-gad/">
-							<button className="btn bg-blue-700  hover:bg-blue-800">
+						<button className="btn bg-blue-800  hover:bg-blue-900">
+
 							<Linkedin
 										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
 									/>
@@ -130,7 +133,8 @@ export default async function MembersPage() {
 						<p className="text-sm text-slate-300">Favorite Athlete: Deandre Liggins</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/company/aggiesportsanalytics">
-							<button className="btn bg-blue-700  hover:bg-blue-800 ">
+						<button className="btn bg-blue-800  hover:bg-blue-900">
+
 							<Linkedin
 										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
 									/>
@@ -149,7 +153,8 @@ export default async function MembersPage() {
 						<p className="text-sm text-slate-300">Favorite Athlete: Venus Williams</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/honore-alexander/">
-							<button className="btn bg-blue-700  hover:bg-blue-800">
+						<button className="btn bg-blue-800  hover:bg-blue-900">
+
 							<Linkedin
 										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
 									/>
@@ -168,7 +173,8 @@ export default async function MembersPage() {
 						<p className="text-sm text-slate-300">Favorite Athlete: Draymond Green</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/victoria-kerslake-861a12243/">
-							<button className="btn bg-blue-700  hover:bg-blue-800">
+						<button className="btn bg-blue-800  hover:bg-blue-900">
+
 							<Linkedin
 										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
 									/>
@@ -187,7 +193,8 @@ export default async function MembersPage() {
 						<p className="text-sm text-slate-300">Favorite Athlete: Daniel Sorenson</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/salvator%C3%A9-martinez-77a82719b/">
-							<button className="btn bg-blue-700  hover:bg-blue-800">
+						<button className="btn bg-blue-800  hover:bg-blue-900">
+
 							<Linkedin
 										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
 									/>
@@ -206,7 +213,8 @@ export default async function MembersPage() {
 						<p className="text-sm text-slate-300">Favorite Athlete: Magnus Carslen</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/amar-singh-1b87a11b0/">
-							<button className="btn bg-blue-700  hover:bg-blue-800">
+						<button className="btn bg-blue-800  hover:bg-blue-900">
+
 							<Linkedin
 										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
 									/>
@@ -225,7 +233,8 @@ export default async function MembersPage() {
 						<p className="text-sm text-slate-300">Favorite Athlete: DeAndre Jordan</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/varun-wadhwa-a17845162/">
-							<button className="btn bg-blue-700  hover:bg-blue-800">
+						<button className="btn bg-blue-800  hover:bg-blue-900">
+
 							<Linkedin
 										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
 									/>
@@ -244,7 +253,8 @@ export default async function MembersPage() {
 						<p className="text-sm text-slate-300">Favorite Athlete: Floyd Mayweather</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/sujash-barman/">
-							<button className="btn bg-blue-700  hover:bg-blue-800">
+						<button className="btn bg-blue-800  hover:bg-blue-900">
+
 							<Linkedin
 										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
 									/>
@@ -263,7 +273,8 @@ export default async function MembersPage() {
 						<p className="text-sm text-slate-300">Favorite Athlete: Diana Taurasi</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/dhyunkim/">
-							<button className="btn bg-blue-700  hover:bg-blue-800">
+						<button className="btn bg-blue-800  hover:bg-blue-900">
+
 							<Linkedin
 										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
 									/>
@@ -282,7 +293,8 @@ export default async function MembersPage() {
 						<p className="text-sm text-slate-300">Favorite Athlete: Patrick Mahomes</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/shenoyvishal/">
-							<button className="btn bg-blue-700  hover:bg-blue-800">
+						<button className="btn bg-blue-800  hover:bg-blue-900 ">
+
 							<Linkedin
 										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
 									/>
