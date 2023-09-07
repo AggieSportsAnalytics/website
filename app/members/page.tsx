@@ -130,7 +130,7 @@ export default async function MembersPage() {
 						<p className="text-sm text-slate-300">Favorite Athlete: Deandre Liggins</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/company/aggiesportsanalytics">
-							<button className="btn bg-blue-700  hover:bg-blue-800">
+							<button className="btn bg-blue-700  hover:bg-blue-800 ">
 							<Linkedin
 										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
 									/>
