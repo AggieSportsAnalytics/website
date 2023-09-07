@@ -19,31 +19,35 @@ export default function Home() {
 
 		<div className="navbar bg-zinc-950 m-1">
   <div className="navbar-start ">
-    <div className="dropdown">
+  <a href="/" className="btn btn-ghost ml-4 "><img src="/bLogo.png" alt="Aggie Sports Analytics Logo" width={100}></img></a>
+
+
+  </div>
+  <div className="navbar-center ">
+  <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 stroke-zinc-300" fill="none" viewBox="0 0 24 24" ><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
-      <ul tabIndex={0} className="z-30 menu menu-md dropdown-content mt-3 p-2 shadow bg-zinc-950  rounded-box w-52 text-zinc-400 ">
-        <li><a href="/projects">Projects</a></li>
-		<li><a href="/events">Events</a></li>
-        <li><a href="/members">Members</a></li>
-		<li><a href="/about">About</a></li>
+      <ul tabIndex={0} className="z-30 menu menu-md dropdown-content mt-3 p-2 shadow bg-zinc-950  rounded-box w-52 text-zinc-300 ">
+        <li><a className="text-lg" href="/projects">Projects</a></li>
+		<li><a  className="text-lg" href="/events">Events</a></li>
+        <li><a className="text-lg" href="/members">Members</a></li>
+		<li><a className="text-lg" href="/about">About</a></li>
       </ul>
     </div>
-    <a href="/" className="btn btn-ghost ml-4 "><img src="/bLogo.png" alt="Aggie Sports Analytics Logo" width={100}></img></a>
-  </div>
-  <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1 text-zinc-200 text-lg">
-	<li><a href="/projects">Projects</a></li>
+	<div className="hidden lg:flex">
+    <ul className="menu menu-horizontal px-1 text-zinc-200 text-xl">
+	<li><a className=""href="/projects">Projects</a></li>
 		<li><a href="/events">Events</a></li>
         <li><a href="/members">Members</a></li>
 		<li><a href="/about">About</a></li>
 		
     </ul>
+	</div>
   </div>
   <div className="navbar-end">
 	<a href="https://docs.google.com/forms/d/e/1FAIpQLSc9rnE6-33n5g3TqmqBJr1I--7rb218SNlw5kq92Oxq7114SA/viewform?usp=sf_link" target="_blank">
-		<button className="btn mr-8 bg-indigo-800  text-zinc-100 ">Join Now</button>
+		<button className="btn mr-8 bg-indigo-800  hover:bg-indigo-900 text-zinc-100 ">Join Now</button>
 	</a>
 
   </div>

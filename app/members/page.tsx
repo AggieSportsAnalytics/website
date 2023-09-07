@@ -146,6 +146,26 @@ export default async function MembersPage() {
 					</div>
 				</div>
 				<div className="card w-64  g-transparent border text-slate-200 ">
+				<figure><img src="/victoria.jpg"  alt="Victoria Kerslake" /></figure>
+					<div className="card-body">
+						<h2 className="card-title">Victoria Kerslake</h2>
+						<p className="text-md">Design Chair</p>
+						<p className="text-sm text-slate-300">Favorite Athlete: Draymond Green</p>
+						<div className="card-actions justify-end">
+						<Link target="_blank" href="https://www.linkedin.com/in/victoria-kerslake-861a12243/">
+						<button className="btn bg-blue-800  hover:bg-blue-900">
+
+							<Linkedin
+										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+									/>
+							</button>
+						</Link>
+
+
+						</div>
+					</div>
+				</div>
+				<div className="card w-64  g-transparent border text-slate-200 ">
 				<figure><img src="/honor.jpg"  alt="Honoré Alexander" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Honoré Alexander</h2>
@@ -166,13 +186,13 @@ export default async function MembersPage() {
 					</div>
 				</div>
 				<div className="card w-64  g-transparent border text-slate-200 ">
-				<figure><img src="/victoria.jpg"  alt="Victoria Kerslake" /></figure>
+				<figure><img src="/aaron.jpg"  alt="Aaron Luong" /></figure>
 					<div className="card-body">
-						<h2 className="card-title">Victoria Kerslake</h2>
-						<p className="text-md">Design Chair</p>
-						<p className="text-sm text-slate-300">Favorite Athlete: Draymond Green</p>
+						<h2 className="card-title">Aaron Luong</h2>
+						<p className="text-md">Internal Affairs Chair</p>
+						<p className="text-sm text-slate-300">Favorite Athlete: Novak Djokovic</p>
 						<div className="card-actions justify-end">
-						<Link target="_blank" href="https://www.linkedin.com/in/victoria-kerslake-861a12243/">
+						<Link target="_blank" href="https://www.linkedin.com/in/aaronkluong/">
 						<button className="btn bg-blue-800  hover:bg-blue-900">
 
 							<Linkedin
@@ -185,6 +205,7 @@ export default async function MembersPage() {
 						</div>
 					</div>
 				</div>
+
 				<div className="card w-64  g-transparent border text-slate-200 ">
 				<figure><img src="/sal.jpg"  alt="Salvatoré Martinez" /></figure>
 					<div className="card-body">
