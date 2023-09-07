@@ -76,7 +76,7 @@ export default function Home() {
 
 
 			<div className="my-4 px-8 text-center  ">
-				<h2 className="text-md text-zinc-300 pt-2 font-semibold sm:text-xl md:text-2xl">
+				<h2 className="text-lg text-zinc-300 pt-2 font-semibold sm:text-xl md:text-2xl">
 					Redefining sports success through data science and machine learning.
 
 
