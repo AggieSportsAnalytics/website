@@ -7,7 +7,7 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
 	title: {
-		default: "Home | Aggie Sports Analytics at UC Davis",
+		default: "Aggie Sports Analytics at UC Davis",
 		template: "%s | Aggie Sports Analytics",
 	},
 	description: "Revolutioning sports success through data science and machine learning at UC Davis.",
