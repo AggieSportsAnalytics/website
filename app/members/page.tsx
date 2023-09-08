@@ -32,7 +32,7 @@ export default async function MembersPage() {
 					<div className="card-body">
 						<h2 className="card-title">Chris Lo</h2>
 						<p className="text-md">Co-President</p>
-						<p className="text-sm text-slate-300">Favorite Athlete: George Kittle</p>
+						<p className="text-sm text-slate-300">Favorite Athlete: Michael Porter Jr.</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/christopherlo34/">
 						<button className="btn bg-blue-800  hover:bg-blue-900">
@@ -91,7 +91,7 @@ export default async function MembersPage() {
 					<div className="card-body">
 						<h2 className="card-title">Andrew Hale</h2>
 						<p className="text-md">Director of Projects</p>
-						<p className="text-sm text-slate-300">Favorite Athlete: Alex Morgan</p>
+						<p className="text-sm text-slate-300">Favorite Athlete: Devin Booker</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/andrew-hale6/">
 							<button className="btn bg-blue-800  hover:bg-blue-900">
@@ -150,7 +150,7 @@ export default async function MembersPage() {
 					<div className="card-body">
 						<h2 className="card-title">Victoria Kerslake</h2>
 						<p className="text-md">Design Chair</p>
-						<p className="text-sm text-slate-300">Favorite Athlete: Draymond Green</p>
+						<p className="text-sm text-slate-300">Favorite Athlete: Serena Williams</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/victoria-kerslake-861a12243/">
 						<button className="btn bg-blue-800  hover:bg-blue-900">
@@ -170,7 +170,7 @@ export default async function MembersPage() {
 					<div className="card-body">
 						<h2 className="card-title">Honoré Alexander</h2>
 						<p className="text-md">External Affairs Chair</p>
-						<p className="text-sm text-slate-300">Favorite Athlete: Venus Williams</p>
+						<p className="text-sm text-slate-300">Favorite Athlete: Draymond Green</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/honore-alexander/">
 						<button className="btn bg-blue-800  hover:bg-blue-900">
@@ -211,7 +211,7 @@ export default async function MembersPage() {
 					<div className="card-body">
 						<h2 className="card-title">Salvatoré Martinez</h2>
 						<p className="text-md">Content Producer</p>
-						<p className="text-sm text-slate-300 pb-5">Favorite Athlete: Nick Chubb</p>
+						<p className="text-sm text-slate-300 pb-5">Favorite Athlete: Dante Hall</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/salvator%C3%A9-martinez-77a82719b/">
 						<button className="btn bg-blue-800  hover:bg-blue-900">
