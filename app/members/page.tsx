@@ -170,7 +170,7 @@ export default async function MembersPage() {
 					<div className="card-body">
 						<h2 className="card-title">Honoré Alexander</h2>
 						<p className="text-md">External Affairs Chair</p>
-						<p className="text-sm text-slate-300">Favorite Athlete: Draymond Green</p>
+						<p className="text-sm text-slate-300">Favorite Athlete: Gary Payton II</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/honore-alexander/">
 						<button className="btn bg-blue-800  hover:bg-blue-900">
