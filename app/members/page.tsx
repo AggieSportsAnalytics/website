@@ -291,7 +291,7 @@ export default async function MembersPage() {
 					<div className="card-body">
 						<h2 className="card-title">Daniel Kim</h2>
 						<p className="text-md">Project Manager</p>
-						<p className="text-sm text-slate-300">Favorite Athlete: Diana Taurasi</p>
+						<p className="text-sm text-slate-300">Favorite Athlete: Wilt Chamberlain</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/dhyunkim/">
 						<button className="btn bg-blue-800  hover:bg-blue-900">
