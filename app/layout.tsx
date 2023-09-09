@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 		default: "Aggie Sports Analytics at UC Davis",
 		template: "%s | Aggie Sports Analytics",
 	},
-	description: "Revolutioning sports success through data science and machine learning at UC Davis.",
+	description: "Redefining sports success through data science and machine learning at UC Davis.",
 	openGraph: {
 		title: "Aggie Sports Analytics",
 		description:
-			"Revolutioning sports success through data science and machine learning.",
+			"Redefining sports success through data science and machine learning at UC Davis.",
 		url: "aggiesportsanalytics.com",
 		siteName: "aggiesportsanalytics.com",
 		images: [
