@@ -16,7 +16,7 @@ export default async function MembersPage() {
 						Members
 					</h2>
 					<p className="mt-8 text-zinc-300">
-						This page will show our current board, members, and club alumni. More faces will be added after complete our fall quarter recruitment and we've taken 
+						This page will show our current board, members, and club alumni. More faces will be added after we complete our fall quarter recruitment and we've taken 
 						official board and member headshots!
 					</p>
 					
