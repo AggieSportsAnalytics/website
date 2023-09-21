@@ -35,10 +35,10 @@ export default async function EventsPage() {
 					</div>
 					<div className="card  border mb-6 bg-zinc-950 bg-transparent">
 						<div className="card-body">
-							<h2 className="card-title text-3xl  font-extrabold mb-2 text-zinc-100">General Recruitment</h2>
-							<p>This date marks the week of recruitment! We will be recruiting project, business, and media team members.</p>
+							<h2 className="card-title text-3xl  font-extrabold mb-2 text-zinc-100">Involvement Fair</h2>
+							<p>Come meet us at the Involvement Fair! Learn about our club and the different paths to joining!</p>
 							<div className="card-actions justify-end">
-							<button className="btn dro mt-2 bg-indigo-950 hover:bg-indigo-950 text-zinc-100 border border-zinc-300">Oct 24, 2023</button>
+							<button className="btn dro mt-2 bg-indigo-950 hover:bg-indigo-950 text-zinc-100 border border-zinc-300">Oct 11, 2023</button>
 							</div>
 						</div>
 					</div>

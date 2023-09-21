@@ -186,6 +186,26 @@ export default async function MembersPage() {
 					</div>
 				</div>
 				<div className="card w-64  g-transparent border text-slate-200 ">
+				<figure><img src="/raq.jpg"  alt="Raquib Alam" /></figure>
+					<div className="card-body">
+						<h2 className="card-title">Raquib Alam</h2>
+						<p className="text-md">External Affairs Chair</p>
+						<p className="text-sm text-slate-300">Favorite Athlete: LeBron James</p>
+						<div className="card-actions justify-end">
+						<Link target="_blank" href="https://www.linkedin.com/in/raquib-alam-081143214/">
+						<button className="btn bg-blue-800  hover:bg-blue-900">
+
+							<Linkedin
+										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+									/>
+							</button>
+						</Link>
+
+
+						</div>
+					</div>
+				</div>
+				<div className="card w-64  g-transparent border text-slate-200 ">
 				<figure><img src="/aaron.jpg"  alt="Aaron Luong" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Aaron Luong</h2>
