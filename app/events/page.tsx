@@ -26,10 +26,10 @@ export default async function EventsPage() {
 				<div className="  text-zinc-200">
 					<div className="card  border mb-6 bg-transparent ">
 						<div className="card-body">
-							<h2 className="card-title text-3xl font-extrabold mb-2 text-zinc-100">First Meeting</h2>
-							<p>New member or old, come attend to see what we were up to this summer and what we have planned this year!</p>
+							<h2 className="card-title text-3xl font-extrabold mb-2 text-zinc-100">Workshop with Women in CS</h2>
+							<p>We are collaborating with Women in CS to put together a beginner workshop! Open to all!</p>
 							<div className="card-actions justify-end">
-							<button className="btn mt-2 bg-indigo-950 hover:bg-indigo-950 text-zinc-100 border border-zinc-300">Oct 18, 2023</button>
+							<button className="btn mt-2 bg-indigo-950 hover:bg-indigo-950 text-zinc-100 border border-zinc-300">Oct 9, 2023</button>
 							</div>
 						</div>
 					</div>

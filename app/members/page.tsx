@@ -326,6 +326,66 @@ export default async function MembersPage() {
 						</div>
 					</div>
 				</div>
+				<div className="card w-64  g-transparent border text-slate-200 ">
+				<figure><img src="/jason.jpg"  alt="Jason Yang" /></figure>
+					<div className="card-body">
+						<h2 className="card-title">Jason Yang</h2>
+						<p className="text-md">Project Manager</p>
+						<p className="text-sm text-slate-300">Favorite Athlete: Russell Westbrook</p>
+						<div className="card-actions justify-end">
+						<Link target="_blank" href="https://www.linkedin.com/in/jason-yang-269a3a244/">
+						<button className="btn bg-blue-800  hover:bg-blue-900 ">
+
+							<Linkedin
+										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+									/>
+							</button>
+						</Link>
+
+
+						</div>
+					</div>
+				</div>
+				<div className="card w-64  g-transparent border text-slate-200 ">
+				<figure><img src="/juan.jpg"  alt="Juan Diaz" /></figure>
+					<div className="card-body">
+						<h2 className="card-title">Juan Diaz</h2>
+						<p className="text-md">Project Manager</p>
+						<p className="text-sm text-slate-300">Favorite Athlete: Davion Mitchell</p>
+						<div className="card-actions justify-end">
+						<Link target="_blank" href="https://www.linkedin.com/company/aggiesportsanalytics">
+						<button className="btn bg-blue-800  hover:bg-blue-900 ">
+
+							<Linkedin
+										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+									/>
+							</button>
+						</Link>
+
+
+						</div>
+					</div>
+				</div>
+				<div className="card w-64  g-transparent border text-slate-200 ">
+				<figure><img src="/keshav.jpg"  alt="Keshav Lodha" /></figure>
+					<div className="card-body">
+						<h2 className="card-title">Keshav Lodha</h2>
+						<p className="text-md">Project Manager</p>
+						<p className="text-sm text-slate-300 pb-5">Favorite Athlete: Virat Kohli</p>
+						<div className="card-actions justify-end">
+						<Link target="_blank" href="https://www.linkedin.com/in/keshav-lodha-0497541b7/">
+						<button className="btn bg-blue-800  hover:bg-blue-900 ">
+
+							<Linkedin
+										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+									/>
+							</button>
+						</Link>
+
+
+						</div>
+					</div>
+				</div>
 
 
 
