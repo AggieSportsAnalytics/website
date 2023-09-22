@@ -38,11 +38,12 @@ ret, frame = cap.read()
 bboxes, classes, segmentations, scores = ys.detect(frame)
 ```
 
-We used `YOLOsegmentation` rather than the default **Object Detection** so we can access the precise values for where the player is. This is used to detect which direction the player is facing which is used in our calculation for the [Team Color Segmentation](#team-color-segmentation).
+We used `YOLOsegmentation` rather than the default **Object Detection** so we can access the precise values for where the player is. This is used to detect which direction the player is facing which is used in our calculation for the Team Color Segmentation.
 
-![Segmentation example](images/segmentation_example.png)
+![Segmentation example](https://raw.githubusercontent.com/AggieSportsAnalytics/website/main/content/projects/images/segmentation_example.png?token=GHSAT0AAAAAACG5MNFLX574NA23AS2DJKNGZINBI3A)
 
-\_Image from freecodecamp.org_
+\
+Image from freecodecamp.org
 
 Then using OpenCV (`cv2`), we then draw the segmentation around each player using `seg`, an array of polygonal points.
 
@@ -107,10 +108,12 @@ else:
     newX2 = int(newX2 + ((distLeft)/distRight)*1.5)
 ```
 
-Now we have:\
-Before &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After\
-![running example](images/run_example.png)
-![running example](images/run_example1.png)
+Now we have:
+
+Before
+![running example](https://raw.githubusercontent.com/AggieSportsAnalytics/website/main/content/projects/images/run_example.png?token=GHSAT0AAAAAACG5MNFKGAAYK4EJL77YQ2GOZINBH6A) 
+After
+![running example](https://raw.githubusercontent.com/AggieSportsAnalytics/website/main/content/projects/images/run_example1.png?token=GHSAT0AAAAAACG5MNFKA7S7LQTHIVYA7GRYZINBILA)
 
 Now, we get the average color inside the box. We can pass in the smaller box and average each pixel inside of it.
 
@@ -122,7 +125,7 @@ def get_average_color(a):
 
 To classify each team, we first calculate the euclidean distance from each average color to the team colors. This is essentially plotting the two bgr values as xyz points on a 3-dimentional graph. Then we calculate the distance between those two points.
 
-![euclidean_distance](images/euclidean_distance.png)
+![euclidean_distance](https://raw.githubusercontent.com/AggieSportsAnalytics/website/main/content/projects/images/euclidean_distance.png?token=GHSAT0AAAAAACG5MNFKN4F5J4UD3OS65VBIZINBGXA)
 
 We use that value to classify the colors into different teams. By doing this for each player, each player is now assigned a team.
 
@@ -186,7 +189,7 @@ max_point_X, max_point_Y = min(new_points, key=itemgetter(0))[0], min(new_points
 
 Draw a line at that point and we can see who the last player is.
 
-![offside_example](images/offside_example.png)
+![offside_example](https://raw.githubusercontent.com/AggieSportsAnalytics/website/main/content/projects/images/offside_example.png?token=GHSAT0AAAAAACG5MNFLWNKZMVBDFVHUAITAZINBHSA)
 
 # 🪴 Areas of Improvement
 
