@@ -189,7 +189,7 @@ export default async function MembersPage() {
 				<figure><img src="/raq.jpg"  alt="Raquib Alam" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Raquib Alam</h2>
-						<p className="text-md">External Affairs Chair</p>
+						<p className="text-md">Social Media Chair</p>
 						<p className="text-sm text-slate-300">Favorite Athlete: LeBron James</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/raquib-alam-081143214/">
