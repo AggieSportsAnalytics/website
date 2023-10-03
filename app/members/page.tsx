@@ -166,6 +166,26 @@ export default async function MembersPage() {
 					</div>
 				</div>
 				<div className="card w-64  g-transparent border text-slate-200 ">
+				<figure><img src="/aisha.jpg"  alt="Aisha Rahman" /></figure>
+					<div className="card-body">
+						<h2 className="card-title">Aisha Rahman</h2>
+						<p className="text-md">Content Strategist</p>
+						<p className="text-sm text-slate-300">Favorite Athlete: LeBron James</p>
+						<div className="card-actions justify-end">
+						<Link target="_blank" href="https://www.linkedin.com/in/aisha-rahman-8929461b2/">
+						<button className="btn bg-blue-800  hover:bg-blue-900">
+
+							<Linkedin
+										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+									/>
+							</button>
+						</Link>
+
+
+						</div>
+					</div>
+				</div>
+				<div className="card w-64  g-transparent border text-slate-200 ">
 				<figure><img src="/honor.jpg"  alt="Honoré Alexander" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Honoré Alexander</h2>
@@ -306,26 +326,7 @@ export default async function MembersPage() {
 						</div>
 					</div>
 				</div>
-				<div className="card w-64  g-transparent border text-slate-200 ">
-				<figure><img src="/daniel.jpg"  alt="Daniel Kim" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Daniel Kim</h2>
-						<p className="text-md">Project Manager</p>
-						<p className="text-sm text-slate-300">Favorite Athlete: Wilt Chamberlain</p>
-						<div className="card-actions justify-end">
-						<Link target="_blank" href="https://www.linkedin.com/in/dhyunkim/">
-						<button className="btn bg-blue-800  hover:bg-blue-900">
 
-							<Linkedin
-										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-									/>
-							</button>
-						</Link>
-
-
-						</div>
-					</div>
-				</div>
 				<div className="card w-64  g-transparent border text-slate-200 ">
 				<figure><img src="/vishal.jpg"  alt="Vishal Shenoy" /></figure>
 					<div className="card-body">
