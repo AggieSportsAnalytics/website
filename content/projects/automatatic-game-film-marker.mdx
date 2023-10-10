@@ -1,15 +1,18 @@
 ---
-title: Automatic Game Film Marker
-description: Determine player, ball and line location while watching soccer games.
+title: Soccer GameFilm Tracker
+description: Follows soccer games and tracks the movement of players and the ball.
 repository: AggieSportsAnalytics/GameFilmMarking
-
-date: 2023-07-04
+date: 2023-09-02
 published: true
 ---
+
+# Soccer Player Tracker ⚽️
 
 ### 🏁 Determine player, ball and line location while watching soccer games
 
 This soccer project tracks players and the ball in soccer game film. It is able to differentiate between two teams and a referee. It allows teams to follow the play as the game is built up with clear confidence of where their team members are. 
+
+![image](https://github.com/AggieSportsAnalytics/GameFilmMarking/assets/68085422/7492a86d-66c0-41b1-abfa-be1919c35dcf)
 
 ## 🔑 Key Features
 - Player Tracking: The project employs object detection and tracking algorithms to identify and track the positions of players on the field throughout the game. This information is crucial for making offside determinations.
@@ -17,9 +20,79 @@ This soccer project tracks players and the ball in soccer game film. It is able 
 - Goalkeeper and Referee Exclusion: Goalkeepers and referees are easily recognized by their distinct attire. The system filters them out from the player detection results, ensuring that their positions do not interfere with the offside calculations.
 - Real-Time Video Analysis: The system can process live video feeds from soccer matches, enabling real-time offside detection during gameplay. It can also be applied to pre-recorded matches for analysis and review.
 
+## Player Movement Tracking
+
+Our system utilizes state-of-the-art computer vision algorithms to track the positions of players on the field throughout a soccer game. This includes real-time tracking of player positions, velocities, and accelerations.
+
+### 💻 Code
+
+```python
+from player_tracking import PlayerTracker
+
+tracker = PlayerTracker()
+frame = capture_video_frame()  # Replace with actual frame capture code
+player_positions = tracker.track_players(frame)
+```
+
+## Ball Movement Tracking
+
+In addition to player tracking, the system accurately follows the movement of the soccer ball. This information can be used to analyze ball possession, passing accuracy, and shot trajectories.
+
+### 💻 Code
+
+```python
+from ball_tracking import BallTracker
+
+tracker = BallTracker()
+frame = capture_video_frame()  
+ball_position = tracker.track_ball(frame)
+```
+
+## Team Color Segmentation
+
+The program is able to separate the two teams based on the colors of their jerseys. It is also able to remove the referee and goalkeeper from the equations. 
+
+![image](https://github.com/AggieSportsAnalytics/GameFilmMarking/assets/68085422/e46a42f5-adbb-43c1-aac3-3c5f97a79a2d)
+
+The segmentation lines around the players are used as coordinate points and fed to a function that devises the average color of the area to determine one team or another. 
+
+### 💻 Code
+
+```python
+def get_average_color(a):
+    avg_color = np.mean(a, axis=(0,1))
+    return avg_color
+```
+
+# 🚀 Getting Started
+
+To get started with this project, follow these steps:
+
+1. Clone this repository to your local machine.
+2. Set up your environment and install dependencies.
+3. Capture or provide soccer game footage.
+4. Run the tracking scripts on the footage.
+5. Explore the tracked data and analyze the results.
 
 ## 💻  Technology
 - OpenCV
 - NumPy
 - YoloV8
 
+# 💡 Future Improvements
+
+- **Real-Time Analysis**: Implement real-time tracking and analysis capabilities to provide immediate feedback during soccer games.
+
+- **Integration with Tactical Analysis**: Integrate the tracked data with tactical analysis tools to assist coaches in making strategic decisions.
+
+- **User-Friendly Interface**: Develop a user-friendly graphical interface for easier setup and interaction with the system.
+
+- **Improvements on ball tracking**: Improve the algorithms ability to track the ball.
+
+# 📚 Resources
+
+- [OpenCV Documentation](https://docs.opencv.org/)
+- [Python's pandas Library](https://pandas.pydata.org/)
+- [Matplotlib Documentation](https://matplotlib.org/)
+
+Feel free to customize this template to match the specifics of your project. This README.md file provides a structured and informative introduction to a soccer player and ball movement tracking project, highlighting its key features, usage instructions, and potential future improvements.
