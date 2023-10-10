@@ -412,7 +412,7 @@ export default async function MembersPage() {
 					<div className="card-body">
 						<h2 className="card-title">Tyler Beer</h2>
 						<p className="text-md">Project Manager</p>
-						<p className="text-sm text-slate-300 pb-5">Favorite Athlete: Travis Kelce</p>
+						<p className="text-sm text-slate-300">Favorite Athlete: Travis Kelce</p>
 						<div className="card-actions justify-end">
 						<Link target="_blank" href="https://www.linkedin.com/in/tyler-beer/">
 						<button className="btn bg-blue-800  hover:bg-blue-900 ">
