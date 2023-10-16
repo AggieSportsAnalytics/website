@@ -50,7 +50,7 @@ module.exports = require("path");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next@13.5.3-canary.1_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0","vendor-chunks/@swc+helpers@0.5.2"], () => (__webpack_exec__("./node_modules/.pnpm/next@13.5.3-canary.1_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/pages/_document.js")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next@13.5.2_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0","vendor-chunks/@swc+helpers@0.5.2"], () => (__webpack_exec__("./node_modules/.pnpm/next@13.5.2_@opentelemetry+api@1.4.1_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/pages/_document.js")));
 module.exports = __webpack_exports__;
 
 })();
