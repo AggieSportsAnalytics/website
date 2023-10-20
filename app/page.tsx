@@ -46,9 +46,9 @@ export default function Home() {
 	</div>
   </div>
   <div className="navbar-end">
-	<a href="https://docs.google.com/forms/d/e/1FAIpQLSc9rnE6-33n5g3TqmqBJr1I--7rb218SNlw5kq92Oxq7114SA/viewform?usp=sf_link" target="_blank">
-		<button className="btn mr-4 bg-indigo-800  hover:bg-indigo-900 text-zinc-100 ">Join Now</button>
-	</a>
+
+	<button className="btn mr-4 bg-indigo-800  hover:bg-indigo-900 text-zinc-100 ">	<a href="/apply">Apply</a></button>
+	
 
   </div>
 </div>
