@@ -8,7 +8,7 @@ import Head from 'next/head';
 
 const navigation = [
 	{ name: "Projects", href: "/projects" },
-	{ name: "Events", href: "/events" },
+	{ name: "Articles", href: "/articles" },
 	{ name: "Members", href: "/members" },
 	{ name: "About", href: "/about" },
 ];
@@ -25,7 +25,7 @@ export default function Home() {
       </label>
       <ul tabIndex={0} className="z-30 menu menu-md dropdown-content mt-3 p-2 shadow bg-zinc-950  rounded-box w-52 text-zinc-300 ">
         <li><a className="text-lg" href="/projects">Projects</a></li>
-		<li><a  className="text-lg" href="/events">Events</a></li>
+		<li><a  className="text-lg" href="/articles">Articles</a></li>
         <li><a className="text-lg" href="/members">Members</a></li>
 		<li><a className="text-lg" href="/about">About</a></li>
       </ul>
@@ -38,7 +38,7 @@ export default function Home() {
 	<div className="hidden lg:flex">
     <ul className="menu menu-horizontal px-1 text-zinc-200 text-xl">
 	<li><a className=""href="/projects">Projects</a></li>
-		<li><a href="/events">Events</a></li>
+		<li><a href="/articles">Articles</a></li>
         <li><a href="/members">Members</a></li>
 		<li><a href="/about">About</a></li>
 		

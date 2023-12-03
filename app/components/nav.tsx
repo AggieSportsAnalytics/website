@@ -35,10 +35,10 @@ export const Navigation: React.FC = () => {
 							Projects
 						</Link>
 						<Link
-							href="/events"
+							href="/articles"
 							className="duration-200 text-zinc-200 hover:text-zinc-100 "
 						>
-							Events
+							Articles
 						</Link>
 						<Link
 							href="/members"
@@ -52,12 +52,7 @@ export const Navigation: React.FC = () => {
 						>
 							About
 						</Link>
-						<Link
-							href="/apply"
-							className="duration-200 text-zinc-200 hover:text-zinc-100 "
-						>
-							Apply
-						</Link>
+
 					</div>
 
 					<Link

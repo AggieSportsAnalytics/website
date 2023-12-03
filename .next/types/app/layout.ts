@@ -1,4 +1,4 @@
-// File: C:\Users\yashd\Desktop\ASAwebsite\app\layout.tsx
+// File: /Users/yash/Documents/GitHub/website/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
