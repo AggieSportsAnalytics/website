@@ -8,7 +8,7 @@ type Props = {
 	views: number;
 };
 
-export const Article: React.FC<Props> = ({ article, views }) => {
+export const ArticleView: React.FC<Props> = ({ article, views }) => {
 	return (
 
 		<Link href={`/articles/${article.slug}`}>
