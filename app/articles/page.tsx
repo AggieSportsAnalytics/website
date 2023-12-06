@@ -21,9 +21,9 @@ export default async function ArticlesPage() {
 		return acc;
 	}, {} as Record<string, number>);
 
-	const featured = allArticles.find((article) => article.slug === "1")!;
-	const top2 = allArticles.find((article) => article.slug === "2")!;
-	const top3 = allArticles.find((article) => article.slug === "3")!;
+	const featured = allArticles.find((article) => article.slug === "nba-in-season-tournament")!;
+	const top2 = allArticles.find((article) => article.slug === "league-of-legends-semifinals-2023-t1-takes-revenge-on-jdg")!;
+	const top3 = allArticles.find((article) => article.slug === "maggie-haney-is-5-years-not-enough")!;
 	const sorted = allArticles
 		.filter(
 			(article) =>
