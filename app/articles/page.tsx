@@ -22,8 +22,8 @@ export default async function ArticlesPage() {
 	}, {} as Record<string, number>);
 
 	const featured = allArticles.find((article) => article.slug === "the-41-finalists-fighting-for-the-coveted-12-spots-to-represent-team-usa-at-the-2024-paris-olympic-games")!;
-	const top2 = allArticles.find((article) => article.slug === "league-of-legends-semifinals-2023-t1-takes-revenge-on-jdg")!;
-	const top3 = allArticles.find((article) => article.slug === "maggie-haney-is-5-years-not-enough")!;
+	const top2 = allArticles.find((article) => article.slug === "nba-in-season-tournament")!;
+	const top3 = allArticles.find((article) => article.slug === "league-of-legends-semifinals-2023-t1-takes-revenge-on-jdg")!;
 	const sorted = allArticles
 		.filter(
 			(article) =>
