@@ -21,7 +21,7 @@ export default async function ArticlesPage() {
 		return acc;
 	}, {} as Record<string, number>);
 
-	const featured = allArticles.find((article) => article.slug === "nba-in-season-tournament")!;
+	const featured = allArticles.find((article) => article.slug === "the-41-finalists-fighting-for-the-coveted-12-spots-to-represent-team-usa-at-the-2024-paris-olympic-games")!;
 	const top2 = allArticles.find((article) => article.slug === "league-of-legends-semifinals-2023-t1-takes-revenge-on-jdg")!;
 	const top3 = allArticles.find((article) => article.slug === "maggie-haney-is-5-years-not-enough")!;
 	const sorted = allArticles
