@@ -45,10 +45,9 @@ export default async function AboutPage() {
                 </p>
                 <div className="card-actions justify-end">
                   <button
-                    disabled={true}
                     className="btn bg-indigo-800 hover:bg-indigo-700 text-white">
                     <a
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSfRDCpuKAImIYC9Rr4sjZkXLEx_G2U5wbuec39e-GQxvsuXiQ/viewform?usp=sf_link"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSe_PxeckOceYy-j-IbaEyQD0U52VzcUOrCSuLmlwKkBAyINpg/viewform?usp=sf_link"
                       target="_blank">
                       Apply
                     </a>
@@ -65,10 +64,9 @@ export default async function AboutPage() {
                 </p>
                 <div className="card-actions justify-end">
                   <button
-                    disabled={true}
                     className="btn bg-indigo-800 hover:bg-indigo-700 text-white">
                     <a
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSdu8rzw_sSowPDxgSqcl4yL91tUdcHo_VLWKyrd-DMtsbfd5g/viewform?usp=sf_link"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSdm6lR8vRs9USef2OTvFrPfn41MVra_91m4DzdRJHGJEH-CpA/viewform?usp=sf_link"
                       target="_blank">
                       Apply
                     </a>
@@ -79,8 +77,7 @@ export default async function AboutPage() {
           </div>
           <div className="mt-3 flex gap-1 text-gray-300">
             <p>
-              Applications open soon. For now, follow us on Instagram for
-              updates at
+              Project applications will be open for those who attend our speed dating event. For more information, follow us on Instagram at
             </p>
             <Link
               className="underline text-blue-200"
