@@ -24,15 +24,18 @@ export default async function AboutPage() {
                 <h2 className="card-title">Projects Application</h2>
                 <p>Be part of a team and work on a technical project!</p>
                 <div className="card-actions justify-end">
-                  <button
-                    disabled={true}
-                    className="btn bg-indigo-800 hover:bg-indigo-700 text-white">
-                    <a
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSdkkzSw4q0UQiFZN87F13rZeedBtFU49XHYs-HWv4sPzCQgPg/viewform?usp=sf_link"
-                      target="_blank">
-                      Apply
-                    </a>
-                  </button>
+                <div className="flex justify-between gap-2">
+                  <p className="text-gray-300 text-xs">Note: Project applications will be open for those who attend our speed dating event March 8th 6-8pm in Walker 1320.</p>
+                    <button
+                      disabled={true}
+                      className="btn bg-indigo-800 hover:bg-indigo-700 text-white">
+                      <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdkkzSw4q0UQiFZN87F13rZeedBtFU49XHYs-HWv4sPzCQgPg/viewform?usp=sf_link"
+                        target="_blank">
+                        Apply
+                      </a>
+                    </button>
+                </div>
                 </div>
               </div>
             </div>
@@ -77,7 +80,7 @@ export default async function AboutPage() {
           </div>
           <div className="mt-3 flex gap-1 text-gray-300">
             <p>
-              Project applications will be open for those who attend our speed dating event. For more information, follow us on Instagram at
+              For more information, follow us on Instagram at
             </p>
             <Link
               className="underline text-blue-200"
