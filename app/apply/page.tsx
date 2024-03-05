@@ -25,7 +25,7 @@ export default async function AboutPage() {
                 <p>Be part of a team and work on a technical project!</p>
                 <div className="card-actions justify-end">
                 <div className="flex justify-between gap-2">
-                  <p className="text-gray-300 text-xs">Note: Project applications will be open for those who attend our speed dating event March 8th 6-8pm in Walker 1320.</p>
+                  <p className="text-gray-300 text-xs">*Project applications will be open for those who attend our speed dating event March 8th 6-8pm in Walker 1320.</p>
                     <button
                       disabled={true}
                       className="btn bg-indigo-800 hover:bg-indigo-700 text-white">
