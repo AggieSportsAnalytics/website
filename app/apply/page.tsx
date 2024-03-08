@@ -25,12 +25,11 @@ export default async function AboutPage() {
                 <p>Be part of a team and work on a technical project!</p>
                 <div className="card-actions justify-end">
                 <div className="flex justify-between gap-2">
-                  <p className="text-gray-300 text-xs">*Project applications will be open for those who attend our speed dating event March 8th 6-8pm in Walker 1320.</p>
+                <p className="text-gray-300 text-xs">*Project applications are open for those who attended our speed dating event and signed up for an interview time.</p>
                     <button
-                      disabled={true}
                       className="btn bg-indigo-800 hover:bg-indigo-700 text-white">
                       <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSdkkzSw4q0UQiFZN87F13rZeedBtFU49XHYs-HWv4sPzCQgPg/viewform?usp=sf_link"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfL9wTzmGi5nxb75ebXM57K-jiI7dkuZ2Td62qDAp-FTGWWgg/viewform?usp=sf_link"
                         target="_blank">
                         Apply
                       </a>
