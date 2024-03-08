@@ -14,8 +14,8 @@ export default async function AboutPage() {
           </h2>
 
           <h4 className="pt-4 pb-12 text-zinc-300">
-            Join our fast-growing team! We are currently recruiting for Fall
-            2023. Feel free to apply to multiple teams!
+            Join our fast-growing team! We are currently recruiting for
+            2024. Feel free to apply to multiple teams!
           </h4>
           <div className="w-full h-px bg-zinc-600" />
           <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 pt-12 justify-center">
