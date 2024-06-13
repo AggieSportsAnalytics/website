@@ -26,7 +26,7 @@ export default async function AboutPage() {
                     <br />
 					<br></br>
                     <center>
-                        <img className="border border-black" src="/cc.jpg" width="600" alt="ASA Case Competition" />
+                    <figure><img className="border border-black" src="/cc.jpg" width="600" alt="ASA Case Competition" /></figure>
                     </center>
 					<br></br>
                     <h1 className="text-4xl font-bold tracking-tight pt-10 text-zinc-100 sm:text-4xl">
@@ -60,13 +60,13 @@ export default async function AboutPage() {
             </div>
             <p className="px-6 py-10 mx-auto max-w-7xl lg:px-8 text-center text-zinc-300"></p>
             <div className="flex items-center justify-center mx-4 gap-4 pb-10 flex-wrap">
-                <img className="border border-black" src="/banquet.jpg" width="400" alt="ASA Spring 2024 Banquet" />
-                <img className="border border-black" src="/workshop.jpg" width="400" alt="ASA Github Workshop" />
-                <img className="border border-black" src="/ski.jpg" width="400" alt="ASA Ski Trip" />
-				<img className="border border-black" src="/cooking.jpg" width="400" alt="ASA Cooking Competition" />
-                <img className="border border-black" src="/recruitment.jpg" width="400" alt="ASA Spring Recruitment" />
-                <img className="border border-black" src="/field.jpg" width="400" alt="ASA Field Day" />
-			</div>
+                <figure><img className="border border-black" src="/banquet.jpg" width="400" alt="ASA Spring 2024 Banquet" /></figure>
+                <figure><img className="border border-black" src="/workshop.jpg" width="400" alt="ASA Github Workshop" /></figure>
+                <figure><img className="border border-black" src="/ski.jpg" width="400" alt="ASA Ski Trip" /></figure>
+                <figure><img className="border border-black" src="/cooking.jpg" width="400" alt="ASA Cooking Competition" /></figure>
+                <figure><img className="border border-black" src="/recruitment.jpg" width="400" alt="ASA Spring Recruitment" /></figure>
+                <figure><img className="border border-black" src="/field.jpg" width="400" alt="ASA Field Day" /></figure>
+            </div>
             <br></br>
 			<Footer />
         </div>
