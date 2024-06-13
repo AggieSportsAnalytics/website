@@ -1,40 +1,74 @@
-
 import React from "react";
 import { Navigation } from "../components/nav";
-
+import { Footer } from "../components/footer";
 
 export default async function AboutPage() {
-	
+    return (
+        <div className="">
+            <Navigation />
 
-	return (
-		<div className="">
-			<Navigation />
-
-			<div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
-				<div className="mx-auto lg:mx-0">
-					<h2 className="text-3xl font-bold tracking-tight pt-4 text-zinc-100 sm:text-4xl">
-						About Us
-					</h2>
-					<p className="mt-8 text-zinc-300">
-						Aggie Sports Analytics was founded in summer 2022 by a group of friends trying to forge an intersection between sports
-						and computer science at UC Davis. While we may have started out as 4 people and 1 project team, we've completed close to 20
-						projects and had over 100 members in our short lifetime. We value our sense of community and want to grow sustainably in an 
-						inviting and accepting manner. Most importantly, we want to use the common passion for sports to make people enthusiastic about
-						computer science, business, and design.
-					</p>
-
-				</div>
-				<div className="w-full h-px bg-zinc-600" />
-
+            <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
+                <div className="mx-auto lg:mx-0">
+                    <h1 className="text-4xl font-bold tracking-tight pt-4 text-zinc-100 sm:text-4xl">
+                        About Us
+                    </h1>
+                    <p className="mt-8 text-zinc-300">
+					<b>Aggie Sports Analytics (ASA)</b> is forging the intersection between sports and technology at UC Davis. 
+					We have three branches — <b>Projects</b>, <b>Business</b>, and <b>Media</b> — which work together seamlessly to develop 
+					projects, craft media, and organize events. So far, we have completed over 25 projects and 
+					have hosted dozens of workshops, guest speaker events, and socials. Currently, we have over 100 members. 
+					<br></br><br></br>
+					Our primary goal is to build a <b>tight-knit community</b> where members can 
+					collaborate, learn, and grow together. ASA is dedicated to creating meaningful projects that not only advance our 
+					understanding of sports analytics but also have a real-world impact. Together, we are redefining the future 
+					of sports analytics.
+                    </p>
+                    <br />
+					<br></br>
+                    <center>
+                        <img className="border border-black" src="/cc.jpg" width="600" alt="ASA Case Competition" />
+                    </center>
+					<br></br>
+                    <h1 className="text-4xl font-bold tracking-tight pt-10 text-zinc-100 sm:text-4xl">
+                        Our Branches
+                    </h1>
+                    <div className="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-1 md:grid-cols-3">
+                        <div className="text-zinc-100">
+                            <h2 className="text-2xl font-bold">Projects</h2>
+							<br></br>
+                            <p>ASA's Projects teams work on sports-related endeavors in the domains of web development, data science, machine learning, and hardware. Project managers work with intimate teams of three to four members to revolutionize the way we examine sports through technology.</p>
+                        </div>
+                        <div className="text-zinc-100">
+                            <h2 className="text-2xl font-bold">Business</h2>
+							<br></br>
+                            <p>ASA's Business branch covers External Affairs, Internal Affairs, and Finance. Business heads and associates work together to organize club events (both professional development and social networking), handle finances, and coordinate outreach efforts.</p>
+                        </div>
+                        <div className="text-zinc-100">
+                            <h2 className="text-2xl font-bold">Media</h2>
+							<br></br>
+                            <p>ASA's Media branch is responsible for creating content for our newsletter, articles, and social media presences. Media heads and associates collaborate to plan, develop, and execute strategies to boost our presense and reach.</p>
+                        </div>
+                    </div>
+                </div>
+				<br></br>
+					<center>
+					<p><i>We will be opening applications for new members in Fall 2024!</i></p>
+					</center>
+				<h1 className="text-4xl font-bold tracking-tight pt-5 text-zinc-100 sm:text-4xl">
+                       23-24 Highlights
+                    </h1>
+            </div>
+            <p className="px-6 py-10 mx-auto max-w-7xl lg:px-8 text-center text-zinc-300"></p>
+            <div className="flex items-center justify-center mx-4 gap-4 pb-10 flex-wrap">
+                <img className="border border-black" src="/banquet.JPG" width="400" alt="Chris Lo, Yash Deshmukh, and Vikram Choudhry" />
+                <img className="border border-black" src="/workshop.JPG" width="400" alt="Vikram Choudhry" />
+                <img className="border border-black" src="/ski.JPG" width="400" alt="Yash Deshmukh, Chris Lo, and Amar Singh" />
+				<img className="border border-black" src="/cooking.JPG" width="400" alt="Chris Lo, Yash Deshmukh, and Vikram Choudhry" />
+                <img className="border border-black" src="/recruitment.JPG" width="400" alt="Vikram Choudhry" />
+                <img className="border border-black" src="/field.jpg" width="400" alt="Yash Deshmukh, Chris Lo, and Amar Singh" />
 			</div>
-			<p className="px-6 py-10 mx-auto max-w-7xl lg:px-8 text-center text-zinc-300">
-					Throwback to the "Sports Analytics Club at UC Davis" trying to recruit early members :D
-				</p>
-				<div className="flex  items-center justify-center mx-4 gap-4 max-[1250px]:flex-col">
-					<img className="border border-zinc-300" src="/pic1.JPG" width="400" alt="Chris Lo, Yash Deshmukh, and Vikram Choudhry"></img>
-					<img className="border border-zinc-300" src="/pic2.JPG" width="400" alt="Vikram Choudhry"></img>
-					<img className="border border-zinc-300" src="/pic3.JPG" width="400" alt="Yash Deshmukh, Chris Lo, and Amar Singh"></img>
-				</div>
-		</div>
-	);
+            <br></br>
+			<Footer />
+        </div>
+    );
 }

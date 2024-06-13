@@ -10,11 +10,12 @@ published: true
 
 ### 🏁 Determine player, ball and line location while watching soccer games
 
-This soccer project tracks players and the ball in soccer game film. It is able to differentiate between two teams and a referee. It allows teams to follow the play as the game is built up with clear confidence of where their team members are. 
+This soccer project tracks players and the ball in soccer game film. It is able to differentiate between two teams and a referee. It allows teams to follow the play as the game is built up with clear confidence of where their team members are.
 
 ![image](https://github.com/AggieSportsAnalytics/GameFilmMarking/assets/68085422/7492a86d-66c0-41b1-abfa-be1919c35dcf)
 
 ## 🔑 Key Features
+
 - Player Tracking: The project employs object detection and tracking algorithms to identify and track the positions of players on the field throughout the game. This information is crucial for making offside determinations.
 - Team Color Segmentation: The system also analyzes the colors of the player jerseys to distinguish between teams. By detecting the dominant colors on the players' uniforms, the algorithm can categorize them into teams.
 - Goalkeeper and Referee Exclusion: Goalkeepers and referees are easily recognized by their distinct attire. The system filters them out from the player detection results, ensuring that their positions do not interfere with the offside calculations.
@@ -44,17 +45,17 @@ In addition to player tracking, the system accurately follows the movement of th
 from ball_tracking import BallTracker
 
 tracker = BallTracker()
-frame = capture_video_frame()  
+frame = capture_video_frame()
 ball_position = tracker.track_ball(frame)
 ```
 
 ## Team Color Segmentation
 
-The program is able to separate the two teams based on the colors of their jerseys. It is also able to remove the referee and goalkeeper from the equations. 
+The program is able to separate the two teams based on the colors of their jerseys. It is also able to remove the referee and goalkeeper from the equations.
 
 ![image](https://github.com/AggieSportsAnalytics/GameFilmMarking/assets/68085422/e46a42f5-adbb-43c1-aac3-3c5f97a79a2d)
 
-The segmentation lines around the players are used as coordinate points and fed to a function that devises the average color of the area to determine one team or another. 
+The segmentation lines around the players are used as coordinate points and fed to a function that devises the average color of the area to determine one team or another.
 
 ### 💻 Code
 
@@ -75,6 +76,7 @@ To get started with this project, follow these steps:
 5. Explore the tracked data and analyze the results.
 
 ## 💻  Technology
+
 - OpenCV
 - NumPy
 - YoloV8

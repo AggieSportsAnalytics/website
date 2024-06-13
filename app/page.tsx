@@ -5,6 +5,7 @@ import Image from 'next/image'
 import ProjectsLayout from "./projects/layout";
 import { LogoNav } from "./components/logonav";
 import Head from 'next/head';
+import { Footer } from "./components/footer";
 
 const navigation = [
 	{ name: "Projects", href: "/projects" },
@@ -24,10 +25,10 @@ export default function Home() {
         <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 stroke-zinc-300" fill="none" viewBox="0 0 24 24" ><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
       <ul tabIndex={0} className="z-30 menu menu-md dropdown-content mt-3 p-2 shadow bg-zinc-950  rounded-box w-52 text-zinc-300 ">
-        <li><a className="text-lg" href="/projects">Projects</a></li>
+	  <li><a className="text-lg" href="/about">About</a></li>
+		<li><a className="text-lg" href="/projects">Projects</a></li>
 		<li><a  className="text-lg" href="/articles">Articles</a></li>
-        <li><a className="text-lg" href="/members">Members</a></li>
-		<li><a className="text-lg" href="/about">About</a></li>
+        <li><a className="text-lg" href="/members">Team</a></li>
       </ul>
     </div>
   <a href="/" className="btn btn-ghost "><img src="/bLogo.png" alt="Aggie Sports Analytics Logo" width={100}></img></a>
@@ -37,19 +38,18 @@ export default function Home() {
   <div className="navbar-center ">
 	<div className="hidden lg:flex">
     <ul className="menu menu-horizontal px-1 text-zinc-200 text-xl">
+	<li><a href="/about">About</a></li>
 	<li><a className=""href="/projects">Projects</a></li>
 		<li><a href="/articles">Articles</a></li>
-        <li><a href="/members">Members</a></li>
-		<li><a href="/about">About</a></li>
+        <li><a href="/members">Team</a></li>
 		
     </ul>
 	</div>
   </div>
   <div className="navbar-end">
 
-	<button className="btn mr-4 bg-indigo-800  hover:bg-indigo-900 text-zinc-100 ">	<a href="/apply">Apply</a></button>
+	<button className="btn mr-4 bg-indigo-800  hover:bg-indigo-900 text-zinc-100 ">	<a href="/apply">Join</a></button>
 	
-
   </div>
 </div>
 <div className="w-full h-px bg-zinc-800" />
@@ -87,15 +87,18 @@ export default function Home() {
 
 				</h2>
 			</div>
+			<br></br>
+			<br></br>
+			<br></br>
 			<Image
-				className="px-4"
+				className="px-4 mb-20"
 				src="/hero.png"
 				width={550}
 				height={550}
 				alt="Aggie Sports Analytics Hero Image"
 				/>
 			</div>
-
+			<Footer></Footer>
 
 		</div>
 		

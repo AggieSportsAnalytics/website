@@ -7,6 +7,7 @@ import { ArticleView } from "./articleView";
 import { Redis } from "@upstash/redis";
 import { Eye } from "lucide-react";
 import Head from 'next/head';
+import { Footer } from "../components/footer";
 
 const redis = Redis.fromEnv();
 
@@ -21,8 +22,8 @@ export default async function ArticlesPage() {
 		return acc;
 	}, {} as Record<string, number>);
 
-	const featured = allArticles.find((article) => article.slug === "the-41-finalists-fighting-for-the-coveted-12-spots-to-represent-team-usa-at-the-2024-paris-olympic-games")!;
-	const top2 = allArticles.find((article) => article.slug === "nba-in-season-tournament")!;
+	const featured = allArticles.find((article) => article.slug === "garde")!;
+	const top2 = allArticles.find((article) => article.slug === "sliderstats")!;
 	const top3 = allArticles.find((article) => article.slug === "hike-fantasy-sports-assistant")!;
 	const sorted = allArticles
 		.filter(
@@ -38,7 +39,7 @@ export default async function ArticlesPage() {
 		);
 
 	return (
-		<div className="relative pb-16">
+		<div className="relative">
 			<Head>
 				<title>Articles | Aggie Sports Analytics at UC Davis</title>
 			</Head>
@@ -50,7 +51,7 @@ export default async function ArticlesPage() {
 					Articles
 					</h2>
 					<p className="mt-8 text-zinc-300">
-						These are articles we write. We cover data journalism, current sports events, and more!
+					Our Journalism team writes short articles that dive into the development processes of our technical projects. Other articles provide thorough commentary on contemporary sports topics, such as the NBA and NFL.
 					</p>
 				</div>
 				<div className="w-full h-px bg-zinc-600" />
@@ -137,6 +138,9 @@ export default async function ArticlesPage() {
 					</div>
 				</div>
 			</div>
+			<div className="pt-10"></div>
+			<br></br>
+			<Footer></Footer>
 		</div>
 	);
 }
