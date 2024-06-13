@@ -60,12 +60,12 @@ export default async function AboutPage() {
             </div>
             <p className="px-6 py-10 mx-auto max-w-7xl lg:px-8 text-center text-zinc-300"></p>
             <div className="flex items-center justify-center mx-4 gap-4 pb-10 flex-wrap">
-                <img className="border border-black" src="/banquet.JPG" width="400" alt="Chris Lo, Yash Deshmukh, and Vikram Choudhry" />
-                <img className="border border-black" src="/workshop.JPG" width="400" alt="Vikram Choudhry" />
-                <img className="border border-black" src="/ski.JPG" width="400" alt="Yash Deshmukh, Chris Lo, and Amar Singh" />
-				<img className="border border-black" src="/cooking.JPG" width="400" alt="Chris Lo, Yash Deshmukh, and Vikram Choudhry" />
-                <img className="border border-black" src="/recruitment.JPG" width="400" alt="Vikram Choudhry" />
-                <img className="border border-black" src="/field.jpg" width="400" alt="Yash Deshmukh, Chris Lo, and Amar Singh" />
+                <img className="border border-black" src="/banquet.jpg" width="400" alt="ASA Spring 2024 Banquet" />
+                <img className="border border-black" src="/workshop.jpg" width="400" alt="ASA Github Workshop" />
+                <img className="border border-black" src="/ski.jpg" width="400" alt="ASA Ski Trip" />
+				<img className="border border-black" src="/cooking.jpg" width="400" alt="ASA Cooking Competition" />
+                <img className="border border-black" src="/recruitment.jpg" width="400" alt="ASA Spring Recruitment" />
+                <img className="border border-black" src="/field.jpg" width="400" alt="ASA Field Day" />
 			</div>
             <br></br>
 			<Footer />
