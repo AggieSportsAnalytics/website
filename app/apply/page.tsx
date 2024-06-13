@@ -1,6 +1,7 @@
 import React from "react";
 import { Navigation } from "../components/nav";
 import Link from "next/link";
+import { Footer } from "../components/footer";
 
 export default async function AboutPage() {
   return (
@@ -10,13 +11,14 @@ export default async function AboutPage() {
       <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
         <div className="mx-auto lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight pt-4 text-zinc-100 sm:text-4xl">
-            Apply
+            Join Us
           </h2>
-
+          <br></br>
           <h4 className="pt-4 pb-12 text-zinc-300">
-            Join our fast-growing team! We are currently recruiting for
-            2024. Feel free to apply to multiple teams!
+          We will be opening applications for Project, Business, and Media members in Fall 2024!
           </h4>
+          {/*
+
           <div className="w-full h-px bg-zinc-600" />
           <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 pt-12 justify-center">
             <div className="card w-80 md:w-[22rem] lg:w-96 outline outline-1 outline-zinc-500 text-primary-content">
@@ -77,18 +79,29 @@ export default async function AboutPage() {
               </div>
             </div>
           </div>
-          <div className="mt-3 flex gap-1 text-gray-300">
+  */}
+          <div className="mt-1s flex gap-1 text-gray-300">
             <p>
-              For more information, follow us on Instagram at
-            </p>
+            In the meantime, follow us on Instagram {" "}(
             <Link
               className="underline text-blue-200"
               href="https://www.instagram.com/aggiesportsanalytics/">
               @aggiesportsanalytics
             </Link>
+              ){" "} to stay updated on our recruitment timeline and latest news.
+            </p>
           </div>
         </div>
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+        <Footer></Footer>
     </div>
   );
 }

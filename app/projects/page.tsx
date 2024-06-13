@@ -7,6 +7,7 @@ import { Article } from "./article";
 import { Redis } from "@upstash/redis";
 import { Eye } from "lucide-react";
 import Head from 'next/head';
+import { Footer } from "../components/footer";
 
 const redis = Redis.fromEnv();
 
@@ -21,9 +22,9 @@ export default async function ProjectsPage() {
 		return acc;
 	}, {} as Record<string, number>);
 
-	const featured = allProjects.find((project) => project.slug === "soccer-offside-tracker")!;
-	const top2 = allProjects.find((project) => project.slug === "shot-form-corrector")!;
-	const top3 = allProjects.find((project) => project.slug === "penalty-encroachment-tracker")!;
+	const featured = allProjects.find((project) => project.slug === "scoreboard")!;
+	const top2 = allProjects.find((project) => project.slug === "nba-salary")!;
+	const top3 = allProjects.find((project) => project.slug === "soccer-offside-tracker")!;
 	const sorted = allProjects
 		.filter((p) => p.published)
 		.filter(
@@ -39,7 +40,7 @@ export default async function ProjectsPage() {
 		);
 
 	return (
-		<div className="relative pb-16">
+		<div className="relative">
 			<Head>
 				<title>Projects | Aggie Sports Analytics at UC Davis</title>
 			</Head>
@@ -51,7 +52,7 @@ export default async function ProjectsPage() {
 						Projects
 					</h2>
 					<p className="mt-8 text-zinc-300">
-						These are the projects we have completed as a club. Each page will show an in-depth summary, code snippets and repository, and an interactive video!
+					Our Projects teams build innovative projects in the domains of machine learning, web development, and other technical disciplines. These projects are completed over an academic quarter and presented at our Case Competitions.
 					</p>
 				</div>
 				<div className="w-full h-px bg-zinc-600" />
@@ -138,6 +139,9 @@ export default async function ProjectsPage() {
 					</div>
 				</div>
 			</div>
+			<div className="pt-10"></div>
+			<br></br>
+			<Footer></Footer>
 		</div>
 	);
 }
