@@ -41,12 +41,12 @@ export default async function AboutPage() {
                         <div className="text-zinc-100">
                             <h2 className="text-2xl font-bold">Business</h2>
 							<br></br>
-                            <p>ASA's Business branch comprises of the External Affairs, Internal Affairs, and Finance teams. Business heads and associates work together to organize professional development events, plan workshops, handle finances, and coordinate outreach efforts.</p>
+                            <p>ASA's Business branch comprises of the External Affairs, Internal Affairs, and Finance teams. Business heads and associates work together to organize professional development workshops, plan social networking events, handle finances, and coordinate outreach efforts.</p>
                         </div>
                         <div className="text-zinc-100">
                             <h2 className="text-2xl font-bold">Media</h2>
 							<br></br>
-                            <p>ASA's Media branch is responsible for creating the content on our newsletter, articles, and social media platforms. Media heads and associates collaborate to develop and execute strategies that define our public image and strengthen our reach.</p>
+                            <p>ASA's Media branch is responsible for creating content for our newsletter, articles, and social media platforms. Media heads and associates collaborate to develop and execute strategies that define our public image and strengthen our reach.</p>
                         </div>
                     </div>
                 </div>
