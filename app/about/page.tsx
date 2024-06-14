@@ -14,14 +14,14 @@ export default async function AboutPage() {
                     </h1>
                     <p className="mt-8 text-zinc-300">
 					<b>Aggie Sports Analytics (ASA)</b> is forging the intersection between sports and technology at UC Davis. 
-					We have three branches — <b>Projects</b>, <b>Business</b>, and <b>Media</b> — which work together seamlessly to develop 
-					projects, craft media, and organize events. So far, we have completed over 25 projects and 
-					have hosted dozens of workshops, guest speaker events, and socials. Currently, we have over 100 members. 
+					We have three branches — <b>Projects</b>, <b>Business</b>, and <b>Media</b> — which work together seamlessly to build 
+					projects, organize events, and curate media. So far, we have completed over 25 projects and 
+					hosted dozens of workshops, guest speaker events, and socials. Currently, we have over 100 members. 
 					<br></br><br></br>
 					Our primary goal is to build a <b>tight-knit community</b> where members can 
 					collaborate, learn, and grow together. ASA is dedicated to creating meaningful projects that not only advance our 
 					understanding of sports analytics but also have a real-world impact. Together, we are redefining the future 
-					of sports analytics.
+					of technology in sports.
                     </p>
                     <br />
 					<br></br>
@@ -41,12 +41,12 @@ export default async function AboutPage() {
                         <div className="text-zinc-100">
                             <h2 className="text-2xl font-bold">Business</h2>
 							<br></br>
-                            <p>ASA's Business branch covers External Affairs, Internal Affairs, and Finance. Business heads and associates work together to organize club events (both professional development and social networking), handle finances, and coordinate outreach efforts.</p>
+                            <p>ASA's Business branch comprises of the External Affairs, Internal Affairs, and Finance teams. Business heads and associates work together to organize professional development events, plan workshops, handle finances, and coordinate outreach efforts.</p>
                         </div>
                         <div className="text-zinc-100">
                             <h2 className="text-2xl font-bold">Media</h2>
 							<br></br>
-                            <p>ASA's Media branch is responsible for creating content for our newsletter, articles, and social media presences. Media heads and associates collaborate to plan, develop, and execute strategies to boost our presense and reach.</p>
+                            <p>ASA's Media branch is responsible for creating the content on our newsletter, articles, and social media platforms. Media heads and associates collaborate to develop and execute strategies that define our public image and strengthen our reach.</p>
                         </div>
                     </div>
                 </div>

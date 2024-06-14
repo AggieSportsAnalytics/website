@@ -52,7 +52,7 @@ export default async function ProjectsPage() {
 						Projects
 					</h2>
 					<p className="mt-8 text-zinc-300">
-					Our Projects teams build innovative projects in the domains of machine learning, web development, and other technical disciplines. These projects are completed over an academic quarter and presented at our Case Competitions.
+					Our Projects teams build innovative projects in the domains of web development, data science, machine learning, and hardware. These projects are completed over an academic quarter and presented at our Case Competitions.
 					</p>
 				</div>
 				<div className="w-full h-px bg-zinc-600" />
