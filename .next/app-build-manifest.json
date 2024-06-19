@@ -1,10 +1,5 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -21,25 +16,25 @@
       "static/chunks/main-app.js",
       "static/chunks/app/about/page.js"
     ],
-    "/projects/page": [
+    "/apply/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/projects/page.js"
+      "static/chunks/app/apply/layout.js"
+    ],
+    "/apply/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/apply/page.js"
     ],
     "/projects/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/projects/layout.js"
     ],
-    "/articles/page": [
+    "/projects/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/articles/page.js"
-    ],
-    "/articles/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/articles/layout.js"
+      "static/chunks/app/projects/page.js"
     ],
     "/members/page": [
       "static/chunks/webpack.js",
@@ -51,15 +46,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/members/layout.js"
     ],
-    "/apply/page": [
+    "/articles/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/apply/page.js"
+      "static/chunks/app/articles/page.js"
     ],
-    "/apply/layout": [
+    "/articles/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/apply/layout.js"
+      "static/chunks/app/articles/layout.js"
     ],
     "/not-found": [
       "static/chunks/webpack.js",
