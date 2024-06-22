@@ -24,7 +24,7 @@ export default async function AboutPage() {
               <div className="card-body">
                 <h2 className="card-title">Business Head Application</h2>
                 <p>
-                  Lead our Internal Affairs, External Affairs, or Finance branch!
+                Join our Board and lead our Internal Affairs, External Affairs, or Finance branch!
                 </p>
                 <div className="card-actions justify-end">
                   <button
@@ -42,7 +42,7 @@ export default async function AboutPage() {
               <div className="card-body">
                 <h2 className="card-title">Media Head Application</h2>
                 <p>
-                  Lead our Design, Photo/Video,
+                  Join our Board and lead our Design, Photo/Video,
                   Journalism, or Social Media branch!
                 </p>
                 <div className="card-actions justify-end">
@@ -71,11 +71,11 @@ export default async function AboutPage() {
             </p>
           </div>
             */}
+                  <br></br>
+      <br></br>
+      <br></br>
         </div>
       </div>
-      <br></br>
-      <br></br>
-      <br></br>
       <br></br>
       <br></br>
       <br></br>
