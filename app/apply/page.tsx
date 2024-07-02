@@ -14,11 +14,11 @@ export default async function AboutPage() {
             Join Us
           </h2>
           <br></br>
-          {/*
-          <h4 className="pt-4 pb-12 text-zinc-300">
+          <br></br>
+          <h4 className="pt-4 text-zinc-300">
           We will be opening applications for Project, Business, and Media members in Fall 2024!
           </h4>
-  */}
+  {/*
           <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 pt-12 justify-center">
             <div className="card w-80 md:w-[22rem] lg:w-96 outline outline-1 outline-zinc-500 text-primary-content">
               <div className="card-body">
@@ -58,7 +58,10 @@ export default async function AboutPage() {
               </div>
             </div>
           </div>
-            {/*
+*/}
+       <br></br>
+      <br></br>
+      <br></br>
           <div className="mt-1s flex gap-1 text-gray-300">
             <p>
             In the meantime, follow us on Instagram {" "}(
@@ -70,13 +73,9 @@ export default async function AboutPage() {
               ){" "} to stay updated on our recruitment timeline and latest news.
             </p>
           </div>
-            */}
-                  <br></br>
-      <br></br>
-      <br></br>
+          
         </div>
       </div>
-      <br></br>
       <br></br>
       <br></br>
       <br></br>
