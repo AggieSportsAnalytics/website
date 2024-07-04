@@ -2922,6 +2922,9 @@ html {
 .pointer-events-none {
   pointer-events: none;
 }
+.visible {
+  visibility: visible;
+}
 .fixed {
   position: fixed;
 }
@@ -3446,9 +3449,6 @@ html {
 }
 .pb-10 {
   padding-bottom: 2.5rem;
-}
-.pb-12 {
-  padding-bottom: 3rem;
 }
 .pb-4 {
   padding-bottom: 1rem;
