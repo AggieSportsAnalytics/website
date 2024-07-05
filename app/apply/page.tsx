@@ -70,7 +70,7 @@ export default async function AboutPage() {
               href="https://www.instagram.com/aggiesportsanalytics">
               @aggiesportsanalytics
             </Link>
-              ){" "} to stay updated on our recruitment timeline and latest news.
+              ){" "} to stay updated on our recruitment timeline and latest club news.
             </p>
           </div>
           
