@@ -76,11 +76,6 @@ export default async function AboutPage() {
           
         </div>
       </div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-        <Footer></Footer>
     </div>
   );
 }
