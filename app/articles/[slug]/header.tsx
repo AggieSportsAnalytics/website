@@ -60,10 +60,10 @@ export const Header: React.FC<Props> = ({ article, views }) => {
 									: "text-zinc-600 hover:text-zinc-900"
 							} `}
 						>
-							<Eye className="w-6 h-6" />{" "}
+							{/*<Eye className="w-6 h-6" />{" "}
 							{Intl.NumberFormat("en-US", { notation: "compact" }).format(
 								views,
-							)}
+							)}*/}
 						</span>
 						<Link target="_blank" href="https://instagram.com/aggiesportsanalytics">
 							<Instagram
