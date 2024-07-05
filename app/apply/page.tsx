@@ -67,7 +67,7 @@ export default async function AboutPage() {
             In the meantime, follow us on Instagram {" "}(
             <Link
               className="underline text-blue-200"
-              href="https://www.instagram.com/aggiesportsanalytics/">
+              href="https://www.instagram.com/aggiesportsanalytics">
               @aggiesportsanalytics
             </Link>
               ){" "} to stay updated on our recruitment timeline and latest news.
