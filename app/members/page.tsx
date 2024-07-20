@@ -139,6 +139,159 @@ export default async function MembersPage() {
 				</div>
 
 				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
+				<figure><img src="/alice.png"  alt="Alice Nguyen" /></figure>
+					<div className="card-body">
+						<h2 className="card-title">Alice Nguyen</h2>
+						<p className="text-md">Project Manager</p>
+						<div className="card-actions justify-end">
+							<Link target="_blank" href="https://www.linkedin.com/in/alice-t-nguyen/">
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
+							</Link>	
+						</div>
+					</div>
+				</div>
+
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
+				<figure><img src="/arnav.png"  alt="Arnav Akula" /></figure>
+					<div className="card-body">
+						<h2 className="card-title">Arnav Akula</h2>
+						<p className="text-md">Project Manager</p>
+						<div className="card-actions justify-end">
+							<Link target="_blank" href="https://www.linkedin.com/in/arnavakula/">
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
+							</Link>	
+						</div>
+					</div>
+				</div>
+
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
+				<figure><img src="/darshan.png"  alt="Darshan Shivakumar" /></figure>
+					<div className="card-body">
+					<h2 className="card-title" style={{ fontSize: '19px' }}>Darshan Shivakumar</h2>
+						<p className="text-md">Project Manager</p>
+						<div className="card-actions justify-end">
+							<Link target="_blank" href="https://www.linkedin.com/in/darshan-shivakumar/">
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
+							</Link>	
+						</div>
+					</div>
+				</div>
+
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
+				<figure><img src="/devon.png"  alt="Devon Streelman" /></figure>
+					<div className="card-body">
+						<h2 className="card-title">Devon Streelman</h2>
+						<p className="text-md">Project Manager</p>
+						<div className="card-actions justify-end">
+							<Link target="_blank" href="https://www.linkedin.com/in/devon-streelman/">
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
+							</Link>	
+						</div>
+					</div>
+				</div>
+
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
+				<figure><img src="/keshav.png"  alt="Keshav Lodha" /></figure>
+					<div className="card-body">
+						<h2 className="card-title">Keshav Lodha</h2>
+						<p className="text-md">Project Manager</p>
+						<div className="card-actions justify-end">
+							<Link target="_blank" href="https://www.linkedin.com/in/keshav-lodha-0497541b7/">
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
+							</Link>	
+						</div>
+					</div>
+				</div>
+
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
+				<figure><img src="/krishna.png"  alt="Krishna Gupta" /></figure>
+					<div className="card-body">
+						<h2 className="card-title">Krishna Gupta</h2>
+						<p className="text-md">Project Manager</p>
+						<div className="card-actions justify-end">
+							<Link target="_blank" href="https://www.linkedin.com/in/krishna-gupta-a19b67233/">
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
+							</Link>	
+						</div>
+					</div>
+				</div>
+
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
+				<figure><img src="/nate.png"  alt="Nathaniel Maffly" /></figure>
+					<div className="card-body">
+						<h2 className="card-title">Nathaniel Maffly</h2>
+						<p className="text-md">Project Manager</p>
+						<div className="card-actions justify-end">
+							<Link target="_blank" href="https://www.linkedin.com/in/nathaniel-maffly-390235268/">
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
+							</Link>	
+						</div>
+					</div>
+				</div>
+
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
+				<figure><img src="/rishit.png"  alt="Rishit Das" /></figure>
+					<div className="card-body">
+						<h2 className="card-title">Rishit Das</h2>
+						<p className="text-md">Project Manager</p>
+						<div className="card-actions justify-end">
+							<Link target="_blank" href="https://www.linkedin.com/in/rishitdas/">
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
+							</Link>	
+						</div>
+					</div>
+				</div>
+
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
+				<figure><img src="/tej.png"  alt="Tej Gaonkar" /></figure>
+					<div className="card-body">
+						<h2 className="card-title">Tej Gaonkar</h2>
+						<p className="text-md">Project Manager</p>
+						<div className="card-actions justify-end">
+							<Link target="_blank" href="www.linkedin.com/in/tej-gaonkar-89a51a203">
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
+							</Link>	
+						</div>
+					</div>
+				</div>
+
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
 				<figure><img src="/israel.png"  alt="Israel Shokrian" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Israel Shokrian</h2>
