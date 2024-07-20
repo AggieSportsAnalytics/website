@@ -23,7 +23,7 @@ export default async function MembersPage() {
 	</h2>*/}
 				<div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  items-center justify-center gap-y-8 pb-6 content-center  ">
 
-				<div className="card w-64  g-transparent border text-slate-200 ">
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
 				<figure><img src="/andrew.png"  alt="Andrew Hale" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Andrew Hale</h2>
@@ -31,227 +31,227 @@ export default async function MembersPage() {
 						{/*<p className="text-sm text-slate-300">Favorite Athlete: Devin Booker</p>	*/}
 						<div className="card-actions justify-end">
 							<Link target="_blank" href="https://www.linkedin.com/in/andrew-hale6/">
-								<button className="btn bg-blue-800  hover:bg-blue-900">
-									<Linkedin
-										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-									/>
-								</button>
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
 							</Link>
 						</div>
 					</div>
 				</div>
-				<div className="card w-64  g-transparent border text-slate-200 ">
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
 				<figure><img src="/jason.png"  alt="Jason Yang" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Jason Yang</h2>
 						<p className="text-md">Vice President</p>
 						<div className="card-actions justify-end">
 							<Link target="_blank" href="https://www.linkedin.com/in/jason-yang-269a3a244/">
-								<button className="btn bg-blue-800  hover:bg-blue-900 ">
-									<Linkedin
-										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-									/>
-								</button>
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
 							</Link>
 						</div>
 					</div>
 				</div>
-				<div className="card w-64  g-transparent border text-slate-200 ">
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
 				<figure><img src="/vishalpic.png"  alt="Vishal Shenoy" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Vishal Shenoy</h2>
 						<p className="text-md">Director of Projects</p>
 						<div className="card-actions justify-end">
 							<Link target="_blank" href="https://www.linkedin.com/in/shenoyvishal/">
-								<button className="btn bg-blue-800  hover:bg-blue-900 ">
-									<Linkedin
-										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-										/>
-								</button>
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
 							</Link>
 						</div>
 					</div>
 				</div>
-				<div className="card w-64  g-transparent border text-slate-200 ">
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
 				<figure><img src="/aashritha.png"  alt="Aashritha Javvaji" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Aashritha Javvaji</h2>
 						<p className="text-md">Director of Business</p>
 						<div className="card-actions justify-end">
 							<Link target="_blank" href="https://www.linkedin.com/in/aashritha-javvaji/">
-								<button className="btn bg-blue-800  hover:bg-blue-900 ">
-										<Linkedin
-											className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-										/>
-									</button>
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
 							</Link>
 						</div>
 					</div>
 				</div>
-				<div className="card w-64  g-transparent border text-slate-200 ">
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
 				<figure><img src="/benjamin.png"  alt="Ben Busche" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Ben Busche</h2>
 						<p className="text-md">Director of Media</p>
 						<div className="card-actions justify-end">
 							<Link target="_blank" href="https://www.linkedin.com/in/ben-busche/">
-								<button className="btn bg-blue-800  hover:bg-blue-900 ">
-									<Linkedin
-										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-									/>
-								</button>
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
 							</Link>
 						</div>
 					</div>
 				</div>
 
-				<div className="card w-64  g-transparent border text-slate-200 ">
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
 				<figure><img src="/chris.png"  alt="Christopher Lo" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Chris Lo</h2>
 						<p className="text-md">Advisor</p>
 						<div className="card-actions justify-end">
 							<Link target="_blank" href="https://www.linkedin.com/in/christopherlo34/">
-								<button className="btn bg-blue-800  hover:bg-blue-900">
-									<Linkedin
-										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-									/>
-								</button>
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
 							</Link>
 						</div>
 					</div>
 				</div>
-				<div className="card w-64  g-transparent border text-slate-200 ">
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
 				<figure><img src="/vikram.png"  alt="Vikram Choudhry" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Vikram Choudhry</h2>
 						<p className="text-md">Advisor/Project Manager</p>
 						<div className="card-actions justify-end">
 							<Link target="_blank" href="https://www.linkedin.com/in/vikramchoudhry24/">
-								<button className="btn bg-blue-800  hover:bg-blue-900 ">
-									<Linkedin
-										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-										/>
-								</button>
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
 							</Link>	
 						</div>
 					</div>
 				</div>
 
-				<div className="card w-64  g-transparent border text-slate-200 ">
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
 				<figure><img src="/israel.png"  alt="Israel Shokrian" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Israel Shokrian</h2>
 						<p className="text-md">Head of External Affairs</p>
 						<div className="card-actions justify-end">
 							<Link target="_blank" href="https://www.linkedin.com/in/israel-shokrian-5940b1281/">
-								<button className="btn bg-blue-800  hover:bg-blue-900">
-									<Linkedin
-										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-									/>
-								</button>
+								<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
 							</Link>
 						</div>
 					</div>
 				</div>
 			
-				<div className="card w-64  g-transparent border text-slate-200 ">
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
 				<figure><img src="/tisha.png"  alt="Tisha Kathrani" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Tisha Kathrani</h2>
 						<p className="text-md">Head of Internal Affairs</p>
 						<div className="card-actions justify-end">
 							<Link target="_blank" href="https://www.linkedin.com/in/tishakathrani/">
-								<button className="btn bg-blue-800  hover:bg-blue-900 ">
-									<Linkedin
-										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-										/>
-								</button>
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
 							</Link>	
 						</div>
 					</div>
 				</div>
 
-				<div className="card w-64  g-transparent border text-slate-200 ">
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
 				<figure><img src="/manish.png"  alt="Manish Rathor" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Manish Rathor</h2>
 						<p className="text-md">Head of Finance</p>
 						<div className="card-actions justify-end">
 							<Link target="_blank" href="https://www.linkedin.com/in/manishrathor03/">
-								<button className="btn bg-blue-800  hover:bg-blue-900 ">
-									<Linkedin
-										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-										/>
-								</button>
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
 							</Link>	
 						</div>
 					</div>
 				</div>
 
-				<div className="card w-64  g-transparent border text-slate-200 ">
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
 				<figure><img src="/jim.png"  alt="Jim Qu" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Jim Qu</h2>
 						<p className="text-md">Head of Design</p>
 						<div className="card-actions justify-end">
 							<Link target="_blank" href="linkedin.com/in/jimm-qu">
-								<button className="btn bg-blue-800  hover:bg-blue-900 ">
-									<Linkedin
-										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-										/>
-								</button>
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
 							</Link>	
 						</div>
 					</div>
 				</div>
 
-				<div className="card w-64  g-transparent border text-slate-200 ">
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
 				<figure><img src="/jack.png"  alt="Jack Orman" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Jack Orman</h2>
 						<p className="text-md">Head of Social Media</p>
 						<div className="card-actions justify-end">
 							<Link target="_blank" href="https://linkedin.com/in/jackorman/">
-								<button className="btn bg-blue-800  hover:bg-blue-900 ">
-									<Linkedin
-										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-										/>
-								</button>
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
 							</Link>	
 						</div>
 					</div>
 				</div>
 
-				<div className="card w-64  g-transparent border text-slate-200 ">
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
 				<figure><img src="/miwa.png"  alt="Miwa Hirai" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Miwa Hirai</h2>
 						<p className="text-md">Head of Journalism</p>
 						<div className="card-actions justify-end">
 							<Link target="_blank" href="https://www.linkedin.com/in/miwahirai/">
-								<button className="btn bg-blue-800  hover:bg-blue-900 ">
-									<Linkedin
-										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-										/>
-								</button>
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
 							</Link>	
 						</div>
 					</div>
 				</div>
 
-				<div className="card w-64  g-transparent border text-slate-200 ">
+				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
 				<figure><img src="/salvatore.png"  alt="Salvatoré Martinez" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Salvatoré Martinez</h2>
 						<p className="text-md">Head of Production</p>
 						<div className="card-actions justify-end">
 							<Link target="_blank" href="www.linkedin.com/in/salvatore-martinez">
-								<button className="btn bg-blue-800  hover:bg-blue-900 ">
-									<Linkedin
-										className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-										/>
-								</button>
+							<button className="btn bg-opacity-30 hover:bg-blue-900">
+								<Linkedin
+									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
+								/>
+							</button>
 							</Link>	
 						</div>
 					</div>
