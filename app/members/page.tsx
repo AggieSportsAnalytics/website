@@ -280,7 +280,7 @@ export default async function MembersPage() {
 						<h2 className="card-title">Tej Gaonkar</h2>
 						<p className="text-md">Project Manager</p>
 						<div className="card-actions justify-end">
-							<Link target="_blank" href="www.linkedin.com/in/tej-gaonkar-89a51a203">
+							<Link target="_blank" href="https://www.linkedin.com/in/tej-gaonkar-89a51a203/">
 							<button className="btn bg-opacity-30 hover:bg-blue-900">
 								<Linkedin
 									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
@@ -348,7 +348,7 @@ export default async function MembersPage() {
 						<h2 className="card-title">Jim Qu</h2>
 						<p className="text-md">Head of Design</p>
 						<div className="card-actions justify-end">
-							<Link target="_blank" href="linkedin.com/in/jimm-qu">
+							<Link target="_blank" href="https://linkedin.com/in/jimm-qu">
 							<button className="btn bg-opacity-30 hover:bg-blue-900">
 								<Linkedin
 									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
@@ -399,7 +399,7 @@ export default async function MembersPage() {
 						<h2 className="card-title">Salvatoré Martinez</h2>
 						<p className="text-md">Head of Production</p>
 						<div className="card-actions justify-end">
-							<Link target="_blank" href="www.linkedin.com/in/salvatore-martinez">
+							<Link target="_blank" href="https://www.linkedin.com/in/salvatore-martinez">
 							<button className="btn bg-opacity-30 hover:bg-blue-900">
 								<Linkedin
 									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
