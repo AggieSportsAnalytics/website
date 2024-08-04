@@ -16,7 +16,7 @@ export default async function AboutPage() {
           <br></br>
           <br></br>
           <h4 className="pt-4 text-zinc-300">
-          We will be opening applications for Project, Business, and Media members in Fall 2024!
+          We will be opening applications for Project, Business, and Media members in Fall 2024.
           </h4>
   {/*
           <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 pt-12 justify-center">
@@ -59,7 +59,6 @@ export default async function AboutPage() {
             </div>
           </div>
 */}
-       <br></br>
       <br></br>
       <br></br>
           <div className="mt-1s flex gap-1 text-gray-300">
@@ -72,8 +71,10 @@ export default async function AboutPage() {
             </Link>
               ){" "} to stay updated on our recruitment timeline and latest club news.
             </p>
+            <br></br>
+            <br></br>
+            <br></br>
           </div>
-          
         </div>
       </div>
     </div>
