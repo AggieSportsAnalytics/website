@@ -14,7 +14,7 @@ export default async function MembersPage() {
 			<div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
 				<div className="mx-auto lg:mx-0">
 					<h2 className="text-3xl font-bold tracking-tight pt-4 text-zinc-100 sm:text-4xl">
-						Meet Our Team
+						Our Team
 					</h2>
 				</div>
 				{/*}
