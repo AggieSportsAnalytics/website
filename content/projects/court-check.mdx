@@ -11,8 +11,6 @@ published: true
 
 CourtCheck leverages advanced computer vision techniques to accurately track tennis ball movements and court boundaries in tennis matches. This project aims to provide real-time insights and automated decision-making in tennis, reducing human error and enhancing the accuracy of in/out calls. CourtCheck integrates Python, machine learning, and computer vision to create a seamless and efficient system for tennis match analysis.
 
-![courtcheck-demo](https://github.com/AggieSportsAnalytics/CourtCheck/blob/main/images/game2_processed_10s.png)
-
 # 🔑 Process & Key Features
 
 ## 🔎 Court Detection
@@ -22,8 +20,6 @@ CourtCheck employs keypoint detection algorithms to identify and track the tenni
 ### 📑 Annotation
 
 We began by annotating images using OpenCV in the COCO format, generating JSON files for each annotated image. The [OpenCV Annotation Tool](https://app.cvat.ai/) provides an excellent interface for image annotation and export in various formats. It also features an interpolation tool that allows the use of a skeleton to label key frames, which can be interpolated over consecutive frames in the video.
-
-![annotation-demo](https://github.com/AggieSportsAnalytics/CourtCheck/blob/cory/images/opencv_annotation.gif)
 
 You can find the annotations [here](https://drive.google.com/drive/folders/16HugQeDoXUX420yKjg7pGVu3NG6linMV?usp=drive_link).
 
@@ -46,7 +42,7 @@ Below is an overview of the Detectron2 architecture:
 
 <div align="center">
   <img
-    src="https://github.com/AggieSportsAnalytics/CourtCheck/blob/cory/images/detectron2_architecture.png"
+    src="https://raw.githubusercontent.com/AggieSportsAnalytics/CourtCheck/cory/images/detectron2_architecture.png"
     alt="Detectron2 Architecture"
     width="700"
   ></img>
@@ -194,9 +190,9 @@ To visualize the tennis court and transform it into a 2D plane, the following st
    - The detected court is then converted into a black-and-white image to simplify the structure.
    - This black-and-white image is transposed into a 2D plane, providing a clear and concise representation of the tennis court, as depicted in the second image.
 
-|                                                  Court Detection in Main Frame                                                  |                                                           Transposed 2D Plane                                                            |
-| :-----------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------: |
-| ![Court Detection in Main Frame](https://github.com/AggieSportsAnalytics/CourtCheck/blob/main/images/game1_court_processed.gif) | <img src="https://github.com/AggieSportsAnalytics/CourtCheck/blob/main/images/game2_2Dskeleton_10s.gif" alt="Transposed 2D Plane"></img> |
+|                                                                Transposed 2D Plane                                                                 |
+| :------------------------------------------------------------------------------------------------------------------------------------------------: |
+| <img src="https://raw.githubusercontent.com/AggieSportsAnalytics/CourtCheck/main/images/game2_2Dskeleton_10s.gif" alt="Transposed 2D Plane"></img> |
 
 Transforming Key Points
 
@@ -310,7 +306,7 @@ Here are a couple key steps of the function
 
    The ball's position is transformed into the 2D plane of the court skeleton and visualized.
 
-   ![ball-demo](https://github.com/AggieSportsAnalytics/CourtCheck/blob/cory/images/game2_2Dskeleton_court_ball.gif)
+   ![ball-demo](https://raw.githubusercontent.com/AggieSportsAnalytics/CourtCheck/cory/images/game2_2Dskeleton_court_ball.gif)
 
 6. **Combining and Storing the Processed Frame**:
    ```python
@@ -320,8 +316,6 @@ Here are a couple key steps of the function
    The court skeleton is overlaid onto the processed frame, and the frame is added to the list of combined frames.
 
 The `combine_results` function effectively integrates court detection and ball tracking to produce a comprehensive visualization of the tennis game, showing both the court and the ball's movement in each frame.
-
-![demo](https://github.com/AggieSportsAnalytics/CourtCheck/blob/main/images/game9_processed_10s.gif)
 
 #### Crediting TrackNet
 
@@ -361,7 +355,7 @@ pip install -r requirements.txt
 
 After installing the requirements, navigate to the `scripts/process_video.py` directory. At the bottom of the script, update the video paths to your desired input and output locations:
 
-```
+```bash
 video_path = "..."  # Input Video Path (mp4 format)
 output_path = "..."  # Output Video Path (mp4 format)
 ```
