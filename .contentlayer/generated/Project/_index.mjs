@@ -13,5 +13,6 @@ import projects__sliderStatsMdx from './projects__slider-stats.mdx.json' assert 
 import projects__soccerOffsideTrackerMdx from './projects__soccer-offside-tracker.mdx.json' assert { type: 'json' }
 import projects__stretchlabsMdx from './projects__stretchlabs.mdx.json' assert { type: 'json' }
 import projects__volleyvizMdx from './projects__volleyviz.mdx.json' assert { type: 'json' }
+import projects__courtCheckMdx from './projects__court-check.mdx.json' assert { type: 'json' }
 
-export const allProjects = [projects__automataticGameFilmMarkerMdx, projects__fantasyChatbotMdx, projects__gardeMdx, projects__nbaSalaryMdx, projects__nbadraftMdx, projects__penaltyEncroachmentTrackerMdx, projects__scoreboardMdx, projects__shotFormCorrectorMdx, projects__shotTrackerMdx, projects__sliderStatsMdx, projects__soccerOffsideTrackerMdx, projects__stretchlabsMdx, projects__volleyvizMdx]
+export const allProjects = [projects__automataticGameFilmMarkerMdx, projects__fantasyChatbotMdx, projects__gardeMdx, projects__nbaSalaryMdx, projects__nbadraftMdx, projects__penaltyEncroachmentTrackerMdx, projects__scoreboardMdx, projects__shotFormCorrectorMdx, projects__shotTrackerMdx, projects__sliderStatsMdx, projects__soccerOffsideTrackerMdx, projects__stretchlabsMdx, projects__volleyvizMdx, projects__courtCheckMdx]
