@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
                 Projects
               </Link>
               <Link href="/articles" className="duration-200 hover:text-gray-100">
-                Articles
+                Journalism
               </Link>
               <Link href="/members" className="duration-200 hover:text-gray-100">
                 Team
@@ -51,7 +51,7 @@ export const Footer: React.FC = () => {
             </div>
           </div>
           <div>
-            <h2 className="text-lg font-bold mb-4">Social Media</h2>
+            <h2 className="text-lg font-bold mb-4">Media</h2>
             <div className="flex flex-col gap-2">
               <a href="https://instagram.com/aggiesportsanalytics" target="_blank" rel="noreferrer" className="flex items-center justify-center md:justify-start hover:text-gray-100">
                 <Instagram className="w-5 h-5" />
