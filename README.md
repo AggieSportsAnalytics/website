@@ -10,3 +10,5 @@ The website includes:
 - Details about our members and their individual contact information
 - Information on how to get involved with our club
 - Contact information for our club
+
+The original website was built by Yash Deshmukh. Maintainers/contributors include Andrew Hale, Soumil Gad, and Vishal Shenoy.
