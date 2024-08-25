@@ -82,7 +82,7 @@ export default function Home() {
 			<div className="my-4 px-8 text-center  ">
 				<h2 className="text-lg text-zinc-300 font-semibold sm:text-xl md:text-2xl">
 					{/* Redefining sports success through data science and machine learning. */}
-					Redefining the intersection between sports success and technology.
+					Redefining the future of sports technology at UC Davis
 
 
 
