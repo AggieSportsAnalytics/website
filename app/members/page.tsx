@@ -57,7 +57,7 @@ export default async function MembersPage() {
 					</div>
 				</div>
 				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/vishalpic.png"  alt="Vishal Shenoy" /></figure>
+				<figure><img src="/vishal.png"  alt="Vishal Shenoy" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Vishal Shenoy</h2>
 						<p className="text-md">Director of Projects</p>
@@ -247,23 +247,6 @@ export default async function MembersPage() {
 						<p className="text-md">Project Manager</p>
 						<div className="card-actions justify-end">
 							<Link target="_blank" href="https://www.linkedin.com/in/nathaniel-maffly-390235268/">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>	
-						</div>
-					</div>
-				</div>
-
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/rishit.png"  alt="Rishit Das" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Rishit Das</h2>
-						<p className="text-md">Project Manager</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://www.linkedin.com/in/rishitdas/">
 							<button className="btn bg-opacity-30 hover:bg-blue-900">
 								<Linkedin
 									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
