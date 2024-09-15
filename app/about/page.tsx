@@ -13,16 +13,14 @@ export default async function AboutPage() {
                         About Us
                     </h1>
                     <p className="mt-8 text-zinc-300">
-					<b>Aggie Sports Analytics (ASA)</b> is forging the intersection between sports and technology at UC Davis. 
-					We have three branches — <b>Projects</b>, <b>Business</b>, and <b>Media</b> — which work together seamlessly to build 
-					projects, organize events, and curate media. So far, we have completed over 25 projects and 
-					hosted dozens of workshops, guest speaker events, and socials. 
+					<b>Aggie Sports Analytics (ASA)</b> is redefining the future of sports technology. 
+					Our organization is structured into three branches — <b>Projects</b>, <b>Business</b>, and <b>Media</b> — which collaborate to build 
+					cutting-edge projects, organize dynamic events, and curate engaging media. To date, we have successfully completed over 25 projects and 
+					hosted countless workshops, guest speaker sessions, and social gatherings. 
 					<br></br><br></br>
-					Our primary goal is to build a <b>tight-knit community</b> where members can 
-					collaborate, learn, and grow together. ASA is dedicated to creating meaningful projects that not only advance our 
-					understanding of sports analytics but also have a real-world impact. Together, we are redefining the future 
-					of technology in sports.
+                    We are a <b>tight-knit community</b> where members build meaningful relationships and grow together. ASA offers countless opportunities for professional development, leadership, and mentorship for members at all experience levels. Above all, we are committed to building an inclusive environment focused on meaningful projects with large impact.
                     </p>
+
                     <br />
 					<br></br>
                     <center>
