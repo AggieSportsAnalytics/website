@@ -41,7 +41,8 @@ export const Navigation: React.FC = () => {
 							Projects
 						</Link>
 						<Link
-							href="/articles"
+							href="https://medium.com/@aggiesportsanalytics"
+							target="_blank"
 							className="duration-200 text-zinc-300 hover:text-zinc-100 "
 						>
 							Journalism

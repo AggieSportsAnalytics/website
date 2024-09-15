@@ -3674,10 +3674,6 @@ html {
 .outline-zinc-500 {
   outline-color: #71717a;
 }
-.drop-shadow-glow {
-  --tw-drop-shadow: drop-shadow(0 0px 20px rgba(255,255, 255, 0.15)) drop-shadow(0 0px 65px rgba(255, 255,255, 0.1));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
 .grayscale {
   --tw-grayscale: grayscale(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);

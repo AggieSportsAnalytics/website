@@ -39,7 +39,8 @@ export const Footer: React.FC = () => {
               <Link href="/projects" className="duration-200 hover:text-gray-100">
                 Projects
               </Link>
-              <Link href="/articles" className="duration-200 hover:text-gray-100">
+              <Link href="https://medium.com/@aggiesportsanalytics"
+							target="_blank" className="duration-200 hover:text-gray-100">
                 Journalism
               </Link>
               <Link href="/members" className="duration-200 hover:text-gray-100">
@@ -51,7 +52,7 @@ export const Footer: React.FC = () => {
             </div>
           </div>
           <div>
-            <h2 className="text-lg font-bold mb-4">Media</h2>
+            <h2 className="text-lg font-bold mb-4">Connect</h2>
             <div className="flex flex-col gap-2">
               <a href="https://instagram.com/aggiesportsanalytics" target="_blank" rel="noreferrer" className="flex items-center justify-center md:justify-start hover:text-gray-100">
                 <Instagram className="w-5 h-5" />
@@ -61,14 +62,18 @@ export const Footer: React.FC = () => {
                 <Linkedin className="w-5 h-5" />
                 <span className="pl-2">LinkedIn</span>
               </a>
+              {/*
               <a href="https://medium.com/@aggiesportsanalytics" target="_blank" rel="noreferrer" className="flex items-center justify-center md:justify-start hover:text-gray-100">
                 <span style={{ fontSize: '15px', fontWeight: 'bold', marginRight: '4px', marginLeft: '2px'  }}>M</span>
                 <span className="pl-2">Medium</span>
               </a>
+              */}
+              {/*
               <a href="https://twitter.com/AggieSportStats" target="_blank" rel="noreferrer" className="flex items-center justify-center md:justify-start hover:text-gray-100">
                 <Twitter className="w-5 h-5" />
                 <span className="pl-2">Twitter</span>
               </a>
+              */}
               <a href="https://github.com/AggieSportsAnalytics" target="_blank" rel="noreferrer" className="flex items-center justify-center md:justify-start hover:text-gray-100">
                 <Github className="w-5 h-5" />
                 <span className="pl-2">GitHub</span>
@@ -79,7 +84,7 @@ export const Footer: React.FC = () => {
             <h2 className="text-lg font-bold mb-4">Contact</h2>
             <div className="flex items-center justify-center md:justify-start hover:text-gray-100">
               <Mail className="w-5 h-5" />
-              <a href="mailto:sportsanalyticsucd@gmail.com" target="_blank" rel="noreferrer" className="pl-2">
+              <a href="mailto:team@aggiesportsanalytics.com" target="_blank" rel="noreferrer" className="pl-2">
                 Email
               </a>
             </div>
