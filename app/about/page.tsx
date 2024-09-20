@@ -1,19 +1,59 @@
 import React from "react";
-import { Navigation } from "../components/nav";
 import { Footer } from "../components/footer";
+import Head from 'next/head';
 
 export default async function AboutPage() {
     return (
-        <div className="">
-            <Navigation />
+        <div className="relative">
+            <Head>
+                <title>About | Aggie Sports Analytics at UC Davis</title>
+            </Head>
+            
+            <div className="w-screen bg-zinc-950 text-xs">
+                <div className="navbar bg-zinc-950 m-1">
+                    <div className="navbar-start">
+                        <div className="dropdown">
+                            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 stroke-zinc-300" fill="none" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </label>
+                            <ul tabIndex={0} className="z-30 menu menu-md dropdown-content mt-3 p-2 shadow bg-zinc-950 rounded-box w-52 text-zinc-300">
+                                <li><a className="text-lg" href="/about"><b>About</b></a></li>
+                                <li><a className="text-lg" href="/projects">Projects</a></li>
+                                <li><a className="text-lg" href="/articles">Articles</a></li>
+                                <li><a className="text-lg" href="/members">Team</a></li>
+                            </ul>
+                        </div>
+                        <a href="/" className="btn btn-ghost"><img src="/bLogo.png" alt="Aggie Sports Analytics Logo" width={100}></img></a>
+                    </div>
+                    <div className="navbar-center">
+                        <div className="hidden lg:flex">
+                            <ul className="menu menu-horizontal px-1 text-zinc-200 text-xl">
+                                <li><a href="/about"><b>About</b></a></li>
+                                <li><a href="/projects">Projects</a></li>
+                                <li><a href="/journalism">Journalism</a></li>
+                                <li><a href="/members">Team</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="navbar-end">
+                    <button className="btn mr-4 bg-[#5A5CA0] hover:bg-[#26013F] text-zinc-100">
+                        <a href="/apply">Join</a>
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <div className="w-full h-px bg-zinc-800" />
 
-            <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
+            {/* Existing content */}
+            <div className="px-6 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-8 lg:pt-12">
                 <div className="mx-auto lg:mx-0">
-                    <h1 className="text-4xl font-bold tracking-tight pt-4 text-zinc-100 sm:text-4xl">
-                        About Us
+                    <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
+                        Who We Are
                     </h1>
                     <p className="mt-8 text-zinc-300">
-					<b>Aggie Sports Analytics (ASA)</b> is redefining the future of sports technology. 
+				    Aggie Sports Analytics is redefining the future of sports technology. 
 					Our organization is structured into three branches — <b>Projects</b>, <b>Business</b>, and <b>Media</b> — which collaborate to build 
 					cutting-edge projects, organize dynamic events, and curate engaging media. To date, we have successfully completed over 25 projects and 
 					hosted countless workshops, guest speaker sessions, and social gatherings. 
@@ -27,6 +67,9 @@ export default async function AboutPage() {
                     <figure><img src="/casecomp.jpg" width="600" alt="ASA Case Competition" /></figure>
                     </center>
 					<br></br>
+                    <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
+                        What We Do
+                    </h1>
                     <h1 className="text-4xl font-bold tracking-tight pt-10 text-zinc-100 sm:text-4xl">
                         Our Branches
                     </h1>

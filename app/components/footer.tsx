@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer ref={ref} className="bg-black bg-opacity-30 text-gray-300">
+    <footer ref={ref} className="bg-black bg-opacity-50 text-gray-300">
       <div className="container mx-auto p-6 grid grid-cols-1 md:grid-cols-2">
         {/* Right side with links */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 order-2 md:order-1 text-center md:text-left">
@@ -98,23 +98,6 @@ export const Footer: React.FC = () => {
             <br />
             <br />
   */}
-            <form onSubmit={handleSubscribe} className="flex flex-col items-center">
-              <label htmlFor="newsletter-email" className="text-lg font-bold mb-2">Join our Mailing List!</label>
-              <div className="flex items-center">
-                <input
-                  type="email"
-                  id="newsletter-email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Your email address"
-                  className="p-2 text-white rounded-md mr-2"
-                  required
-                />
-                <button type="submit" className="bg-indigo-800 text-white p-2 rounded-md hover:bg-indigo-900 duration-200">
-                  Sign Up
-                </button>
-              </div>
-            </form>
           </div>
         </div>
       </div>
