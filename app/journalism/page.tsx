@@ -42,7 +42,7 @@ export default async function MembersPage() {
 						</div>
 					</div>
 					<div className="navbar-end">
-					<button className="btn mr-4 bg-[#5A5CA0] hover:bg-[#26013F] text-zinc-100">
+					<button className="btn mr-4 bg-[#5A5CA0] hover:bg-[#393B7F] text-zinc-100">
 						<a href="/apply">Join</a>
 					</button>
 					</div>

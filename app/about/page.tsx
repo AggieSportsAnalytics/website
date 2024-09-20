@@ -38,7 +38,7 @@ export default async function AboutPage() {
                         </div>
                     </div>
                     <div className="navbar-end">
-                    <button className="btn mr-4 bg-[#5A5CA0] hover:bg-[#26013F] text-zinc-100">
+                    <button className="btn mr-4 bg-[#5A5CA0] hover:bg-[#393B7F] text-zinc-100">
                         <a href="/apply">Join</a>
                     </button>
                     </div>
@@ -53,12 +53,7 @@ export default async function AboutPage() {
                         Who We Are
                     </h1>
                     <p className="mt-8 text-zinc-300">
-				    Aggie Sports Analytics is redefining the future of sports technology. 
-					Our organization is structured into three branches — <b>Projects</b>, <b>Business</b>, and <b>Media</b> — which collaborate to build 
-					cutting-edge projects, organize dynamic events, and curate engaging media. To date, we have successfully completed over 25 projects and 
-					hosted countless workshops, guest speaker sessions, and social gatherings. 
-					<br></br><br></br>
-                    We are a <b>tight-knit community</b> where members build meaningful relationships and grow together. ASA offers countless opportunities for professional development, leadership, and mentorship for members at all experience levels. Above all, we are committed to building an inclusive environment focused on meaningful projects with large impact.
+				    Aggie Sports Analytics is a student-led club at UC Davis redefining the future of sports technology. 
                     </p>
 
                     <br />
@@ -69,9 +64,6 @@ export default async function AboutPage() {
 					<br></br>
                     <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
                         What We Do
-                    </h1>
-                    <h1 className="text-4xl font-bold tracking-tight pt-10 text-zinc-100 sm:text-4xl">
-                        Our Branches
                     </h1>
                     <div className="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-1 md:grid-cols-3">
                         <div className="text-zinc-100">

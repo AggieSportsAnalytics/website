@@ -42,7 +42,7 @@ export default async function MembersPage() {
 						</div>
 					</div>
 					<div className="navbar-end">
-					<button className="btn mr-4 bg-[#5A5CA0] hover:bg-[#26013F] text-zinc-100">
+					<button className="btn mr-4 bg-[#5A5CA0] hover:bg-[#393B7F] text-zinc-100">
 						<a href="/apply">Join</a>
 					</button>
 					</div>
@@ -53,7 +53,7 @@ export default async function MembersPage() {
 			<div className="px-6 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-8 lg:pt-12">
 				<div className="mx-auto lg:mx-0">
 					<h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-						Meet our Team
+						Our Team
 					</h2>
 				</div>
 				{/*}
@@ -62,7 +62,7 @@ export default async function MembersPage() {
 	</h2>*/}
 				<div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  items-center justify-center gap-y-8 pb-6 content-center  ">
 
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
+				<div className="card w-64 bg-transparent  border-gray-700 text-slate-200">
 				<figure><img src="/andrew.png"  alt="Andrew Hale" /></figure>
 					<div className="card-body">
 						<h2 className="card-title">Andrew Hale</h2>

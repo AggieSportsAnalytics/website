@@ -27,12 +27,25 @@ export const Footer: React.FC = () => {
 
   return (
     <footer ref={ref} className="bg-black bg-opacity-50 text-gray-300">
-      <div className="container mx-auto p-6 grid grid-cols-1 md:grid-cols-2">
+      <div className="container mx-auto p-6 flex flex-col md:flex-row justify-between items-center">
+        {/* Left side with branding and newsletter */}
+        <div className="mb-6 md:mb-0 text-center md:text-left md:w-1/2">
+          <a href="/" className="inline-block mb-4">
+            <img src="/bLogo.png" alt="Aggie Sports Analytics Logo" width={80} />
+          </a>
+          <h2 className="text-xl font-bold mb-2">Aggie Sports Analytics</h2>
+          <p className="mb-4">Redefining the future of sports technology at UC Davis.</p>
+          <p>Join Our Mailing List</p>
+          <button className="btn mr-4 bg-[#5A5CA0] hover:bg-[#393B7F] text-zinc-100">
+                        <a href="/apply">Join</a>
+                    </button>
+        </div>
+
         {/* Right side with links */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 order-2 md:order-1 text-center md:text-left">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:w-2/3 md:justify-end">
           <div>
             <h2 className="text-lg font-bold mb-4">Navigate</h2>
-            <div className="flex flex-col gap-2">
+            <nav className="flex flex-col gap-2">
               <Link href="/about" className="duration-200 hover:text-gray-100">
                 About
               </Link>
@@ -49,11 +62,11 @@ export const Footer: React.FC = () => {
               <Link href="/apply" className="duration-200 hover:text-gray-100">
                 Join
               </Link>
-            </div>
+            </nav>
           </div>
           <div>
             <h2 className="text-lg font-bold mb-4">Connect</h2>
-            <div className="flex flex-col gap-2">
+            <nav className="flex flex-col gap-2">
               <a href="https://instagram.com/aggiesportsanalytics" target="_blank" rel="noreferrer" className="flex items-center justify-center md:justify-start hover:text-gray-100">
                 <Instagram className="w-5 h-5" />
                 <span className="pl-2">Instagram</span>
@@ -78,26 +91,14 @@ export const Footer: React.FC = () => {
                 <Github className="w-5 h-5" />
                 <span className="pl-2">GitHub</span>
               </a>
-            </div>
+            </nav>
           </div>
           <div>
             <h2 className="text-lg font-bold mb-4">Contact</h2>
-            <div className="flex items-center justify-center md:justify-start hover:text-gray-100">
-              <Mail className="w-5 h-5" />
-              <a href="mailto:team@aggiesportsanalytics.com" target="_blank" rel="noreferrer" className="pl-2">
-                Email
-              </a>
-            </div>
-          </div>
-        </div>
-        {/* Left side with message centered */}
-        <div className="flex flex-col justify-center items-center md:items-center md:pl-6 mb-6 md:mb-10 order-1 md:order-2 text-center md:text-center">
-          <div>
-            {/*}
-            Made with 💜 by Aggie Sports Analytics
-            <br />
-            <br />
-  */}
+            <a href="mailto:team@aggiesportsanalytics.com" className="flex items-center hover:text-gray-100 transition duration-300">
+              <Mail className="w-5 h-5 mr-2" />
+              <span>Email Us</span>
+            </a>
           </div>
         </div>
       </div>
