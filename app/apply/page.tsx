@@ -55,12 +55,14 @@ export default function MembersPage() {
             {/* Main Content */}
             <div className="bg-[#111111] px-6 mx-auto max-w-7xl lg:px-8 py-12">
                 <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-12">
-                    Recruitment Timeline
+                   Join us for Fall 2024 Recruitment Timeline
                 </h2>
+                <p>How we work, available roles, recruitment events, FAQs, and more!</p>
 
 </div>
 
             {/* Footer */}
+            <div className="w-full h-px bg-zinc-800" />
             <Footer />
         </div>
     );

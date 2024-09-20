@@ -263,6 +263,7 @@ export default function MembersPage() {
   
 			  {/* Removed extra <br> tags for cleaner spacing */}
 			</div>
+			<div className="w-full h-px bg-zinc-800" />
 			<Footer />
 		  </div>
 		</motion.div>

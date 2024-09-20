@@ -96,7 +96,7 @@ export default function AboutPage() {
                                 ref={projectRef}
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: projectInView ? 1 : 0, y: projectInView ? 0 : 20 }}
-                                transition={{ duration: 1.0 }}
+                                transition={{ duration: 0.5 }}
                                 className="flex flex-col md:flex-row justify-between items-start"
                             >
                                 {/* Removed Icon */}
@@ -111,7 +111,7 @@ export default function AboutPage() {
                                 ref={businessRef}
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: businessInView ? 1 : 0, y: businessInView ? 0 : 20 }}
-                                transition={{ duration: 1.0 }}
+                                transition={{ duration: 0.5 }}
                                 className="flex flex-col md:flex-row justify-between items-start"
                             >
                                 {/* Removed Icon */}
@@ -126,7 +126,7 @@ export default function AboutPage() {
                                 ref={mediaRef}
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: mediaInView ? 1 : 0, y: mediaInView ? 0 : 20 }}
-                                transition={{ duration: 1.0 }}
+                                transition={{ duration: 0.5 }}
                                 className="flex flex-col md:flex-row justify-between items-start"
                             >
                                 {/* Removed Icon */}
@@ -137,6 +137,11 @@ export default function AboutPage() {
                             </motion.div>
                         </div>
                     </div>
+                    <div className="max-w-7xl mx-auto pt-5">
+                        <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-5">
+                            Where We Go
+                        </h1>
+                        </div>
 
                     <br />
 

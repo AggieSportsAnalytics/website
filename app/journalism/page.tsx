@@ -82,28 +82,43 @@ export default function JournalismPage() {
               </p>
             </div>
 
+            <center>Check us out on Medium!</center>
+
             {/* Embed Medium Page */}
-            <div className="mt-8">
-              <h3 className="text-2xl font-semibold text-zinc-200 mb-4">
-                Latest Articles
-              </h3>
-              {/* Medium Embed via iframe (Note: Medium may have restrictions on embedding. Alternatively, you can link to your Medium page or use RSS feeds to fetch articles.) */}
-              <iframe
-                src="https://medium.com/embed/aggiesportsanalytics"
-                title="Medium Articles"
-                className="w-full h-96 border-0"
-                allowFullScreen
-              ></iframe>
-              {/* 
-                Replace 'YOUR_MEDIUM_USERNAME' with your actual Medium username.
-                If Medium does not support direct embedding via iframe, consider alternative methods:
-                - Linking directly to your Medium publications.
-                - Fetching and displaying articles using Medium's API or RSS feeds.
-              */}
-            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-8"> {/* Increased gap from 4 to 6 */}
+                        <motion.figure
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.5 }}
+                            viewport={{ once: true }} // Ensures animation occurs only once
+                            className="overflow-hidden rounded-lg"
+                        >
+                            <img src="/banq.jpg" alt="ASA Spring 2024 Banquet" className="w-full h-auto object-cover" />
+                        </motion.figure>
+                        <motion.figure
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.5, delay: 0.1 }}
+                            viewport={{ once: true }} // Ensures animation occurs only once
+                            className="overflow-hidden rounded-lg"
+                        >
+                            <img src="/github.jpg" alt="ASA Github Workshop" className="w-full h-auto object-cover" />
+                        </motion.figure>
+                        <motion.figure
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.5, delay: 0.2 }}
+                            viewport={{ once: true }} // Ensures animation occurs only once
+                            className="overflow-hidden rounded-lg"
+                        >
+                            <img src="/ski.jpg" alt="ASA Ski Trip" className="w-full h-auto object-cover" />
+                        </motion.figure>
+                    </div>
+
 
             {/* Optional: Add more content or components here */}
           </div>
+          <div className="w-full h-px bg-zinc-800" />
           <Footer />
         </div>
       </motion.div>
