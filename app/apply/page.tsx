@@ -49,12 +49,26 @@ export default async function MembersPage() {
 				</div>
 			</div>
 			<div className="w-full h-px bg-zinc-800" />
-
+      <div className="bg-[#111111]">
 			<div className="px-6 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-8 lg:pt-12">
 				<div className="mx-auto lg:mx-0">
 					<h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
 						Apply
 					</h2>
+          <br></br>
+          <br></br>
+          <br></br>
+
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+
+          <br></br>
+          <br></br>
 				</div>
 				{/*}
 				<h2 className="text-2xl font-semibold space-y-0 tracking-tight text-zinc-100  ">
@@ -62,6 +76,7 @@ export default async function MembersPage() {
 	</h2>*/}
 			<Footer></Footer>
 		</div>
+    </div>
     </div>
 	);
 }

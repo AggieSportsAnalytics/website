@@ -55,8 +55,10 @@ export default async function MembersPage() {
 					<h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
 						Journalism
 					</h2>
+          <p className="mt-8 text-zinc-300">
+					Our Journalism team 
+					</p>
 				</div>
-        <p>We publish our articles on Medium</p>
         <br></br>
         <br></br>
         <br></br>
