@@ -3065,6 +3065,15 @@ html {
 .mb-8 {
   margin-bottom: 2rem;
 }
+.mt-5 {
+  margin-top: 1.25rem;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+.mb-12 {
+  margin-bottom: 3rem;
+}
 .block {
   display: block;
 }
@@ -3391,6 +3400,18 @@ html {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
+.bg-\[\#242424\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(36 36 36 / var(--tw-bg-opacity));
+}
+.bg-\[\#111111\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 17 17 / var(--tw-bg-opacity));
+}
+.bg-\[\#010101\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 1 1 / var(--tw-bg-opacity));
+}
 .bg-opacity-25 {
   --tw-bg-opacity: 0.25;
 }
@@ -3419,6 +3440,11 @@ html {
   --tw-gradient-to: rgb(9 9 11 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
+.from-purple-800 {
+  --tw-gradient-from: #6b21a8 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(107 33 168 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
 .from-20\% {
   --tw-gradient-from-position: 20%;
 }
@@ -3438,6 +3464,9 @@ html {
 }
 .to-zinc-950 {
   --tw-gradient-to: #09090b var(--tw-gradient-to-position);
+}
+.to-blue-800 {
+  --tw-gradient-to: #1e40af var(--tw-gradient-to-position);
 }
 .to-50\% {
   --tw-gradient-to-position: 50%;
@@ -3714,6 +3743,10 @@ html {
   --tw-text-opacity: 1;
   color: rgb(9 9 11 / var(--tw-text-opacity));
 }
+.text-green-200 {
+  --tw-text-opacity: 1;
+  color: rgb(187 247 208 / var(--tw-text-opacity));
+}
 .underline {
   text-decoration-line: underline;
 }
@@ -3835,6 +3868,14 @@ html {
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+.hover\:from-purple-400:hover {
+  --tw-gradient-from: #c084fc var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(192 132 252 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.hover\:to-blue-400:hover {
+  --tw-gradient-to: #60a5fa var(--tw-gradient-to-position);
 }
 .hover\:font-medium:hover {
   font-weight: 500;

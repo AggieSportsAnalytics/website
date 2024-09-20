@@ -16,8 +16,8 @@ const navigation = [
 
 export default function Home() {
 	return (
-		<div className=" w-screen min-h-screen  overflow-hidden bg-zinc-950 text-xs ">
-			<div className="navbar bg-zinc-950 m-1">
+		<div className=" w-screen min-h-screen  overflow-hidden bg-[#111111] text-xs ">
+			<div className="navbar bg-[#111111] m-1">
 				<div className="navbar-start ">
 					<div className="dropdown">
 						<label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -37,7 +37,7 @@ export default function Home() {
     						<ul className="menu menu-horizontal px-1 text-zinc-200 text-xl">
 								<li><a href="/about">About</a></li>
 								<li><a className=""href="/projects">Projects</a></li>
-								<li><a href="https://medium.com/@aggiesportsanalytics" target="_blank">Journalism</a></li>
+								<li><a href="/journalism">Journalism</a></li>
 								<li><a href="/members">Team</a></li>			
 							</ul>
 						</div>

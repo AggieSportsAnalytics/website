@@ -26,43 +26,28 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer ref={ref} className="bg-black bg-opacity-50 text-gray-300">
+    <footer ref={ref} className="bg-[#111111] bg-opacity-50 text-gray-300">
       <div className="container mx-auto p-6 flex flex-col md:flex-row justify-between items-center">
         {/* Left side with branding and newsletter */}
-        <div className="mb-6 md:mb-0 text-center md:text-left md:w-1/2">
+        <div className="mb-6 md:mb-0 text-center md:text-left md:w-1/3">
           <a href="/" className="inline-block mb-4">
             <img src="/bLogo.png" alt="Aggie Sports Analytics Logo" width={80} />
           </a>
           <h2 className="text-xl font-bold mb-2">Aggie Sports Analytics</h2>
           <p className="mb-4">Redefining the future of sports technology at UC Davis.</p>
-          <p>Join Our Mailing List</p>
-          <button className="btn mr-4 bg-[#5A5CA0] hover:bg-[#393B7F] text-zinc-100">
-                        <a href="/apply">Join</a>
-                    </button>
+        </div>
+        <div className="mb-6 md:mb-0 text-center md:text-left md:w-1/3">
+        <h2 className="text-lg font-bold mb-2">Join our Mailing List</h2>
         </div>
 
         {/* Right side with links */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:w-2/3 md:justify-end">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:w-1/3 md:justify-end">
           <div>
-            <h2 className="text-lg font-bold mb-4">Navigate</h2>
-            <nav className="flex flex-col gap-2">
-              <Link href="/about" className="duration-200 hover:text-gray-100">
-                About
-              </Link>
-              <Link href="/projects" className="duration-200 hover:text-gray-100">
-                Projects
-              </Link>
-              <Link href="https://medium.com/@aggiesportsanalytics"
-							target="_blank" className="duration-200 hover:text-gray-100">
-                Journalism
-              </Link>
-              <Link href="/members" className="duration-200 hover:text-gray-100">
-                Team
-              </Link>
-              <Link href="/apply" className="duration-200 hover:text-gray-100">
-                Join
-              </Link>
-            </nav>
+            <h2 className="text-lg font-bold mb-4">Contact</h2>
+            <a href="mailto:team@aggiesportsanalytics.com" className="flex items-center hover:text-gray-100 transition duration-300">
+              <Mail className="w-5 h-5 mr-2" />
+              <span>Email Us</span>
+            </a>
           </div>
           <div>
             <h2 className="text-lg font-bold mb-4">Connect</h2>
@@ -94,11 +79,25 @@ export const Footer: React.FC = () => {
             </nav>
           </div>
           <div>
-            <h2 className="text-lg font-bold mb-4">Contact</h2>
-            <a href="mailto:team@aggiesportsanalytics.com" className="flex items-center hover:text-gray-100 transition duration-300">
-              <Mail className="w-5 h-5 mr-2" />
-              <span>Email Us</span>
-            </a>
+            <h2 className="text-lg font-bold mb-4">Navigate</h2>
+            <nav className="flex flex-col gap-2">
+              <Link href="/about" className="duration-200 hover:text-gray-100">
+                About
+              </Link>
+              <Link href="/projects" className="duration-200 hover:text-gray-100">
+                Projects
+              </Link>
+              <Link href="https://medium.com/@aggiesportsanalytics"
+							target="_blank" className="duration-200 hover:text-gray-100">
+                Journalism
+              </Link>
+              <Link href="/members" className="duration-200 hover:text-gray-100">
+                Team
+              </Link>
+              <Link href="/apply" className="duration-200 hover:text-gray-100">
+                Join
+              </Link>
+            </nav>
           </div>
         </div>
       </div>

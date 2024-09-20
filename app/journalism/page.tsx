@@ -56,6 +56,7 @@ export default async function MembersPage() {
 						Journalism
 					</h2>
 				</div>
+        <p>We publish our articles on Medium</p>
 				{/*}
 				<h2 className="text-2xl font-semibold space-y-0 tracking-tight text-zinc-100  ">
 						Executive Board
