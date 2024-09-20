@@ -87,8 +87,7 @@ export const Footer: React.FC = () => {
               <Link href="/projects" className="duration-200 hover:text-gray-100">
                 Projects
               </Link>
-              <Link href="https://medium.com/@aggiesportsanalytics"
-							target="_blank" className="duration-200 hover:text-gray-100">
+              <Link href="/journalism" className="duration-200 hover:text-gray-100">
                 Journalism
               </Link>
               <Link href="/members" className="duration-200 hover:text-gray-100">

@@ -47,26 +47,29 @@ export default async function AboutPage() {
             <div className="w-full h-px bg-zinc-800" />
 
             {/* Existing content */}
-            <div className="bg-[#111111]">
-            <div className="px-6 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-8 lg:pt-12 z">
-                <div className="mx-auto lg:mx-0">
-                    <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-                        Who We Are
-                    </h1>
-                    <p className="mt-8 text-zinc-300">
-				    Aggie Sports Analytics is a student-led club at UC Davis redefining the future of sports technology. 
-                    </p>
+            <div className="bg-[#111111] pl-10 pr-10">
+    <div className="px-6 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-8 lg:pt-12">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start">
+            <div className="lg:w-1/2 lg:pr-6">
+                <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
+                    Who We Are
+                </h1>
+                <p className="mt-8 text-lg text-zinc-300">
+                    Aggie Sports Analytics is redefining the future of sports technology. We are a student-led club at UC Davis, pioneering technology and business.
+                </p>
+                <br></br>
+                <p className="mb-8 text-lg text-zinc-300">Since being established in 2022, we have brought together over one hundred students to build a ...</p>
+            </div>
+            <div className="lg:w-1/2 lg:pl-6">
+                <figure><img src="/casecomp.jpg" width="600" alt="ASA Case Competition" /></figure>
+            </div>
+        </div>
 
-                    <br />
-					<br></br>
-                    <center>
-                    <figure><img src="/casecomp.jpg" width="600" alt="ASA Case Competition" /></figure>
-                    </center>
-					<br></br>
-                    <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-                        What We Do
-                    </h1>
-                    <div className="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-1 md:grid-cols-3">
+        <div>
+            <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
+                What We Do
+            </h1>
+            <div className="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-1 md:grid-cols-3">
                         <div className="text-zinc-100">
                             <h2 className="text-2xl font-bold">Projects</h2>
 							<br></br>
@@ -86,20 +89,18 @@ export default async function AboutPage() {
                 </div>
 				<br></br>
 
-            </div>
-            <p className="px-6 py-10 mx-auto max-w-7xl lg:px-8 text-center text-zinc-300"></p>
-            <div className="flex items-center justify-center mx-4 gap-4 pb-10 flex-wrap">
-                {/*className="border border-black"*/}
-                <figure><img  src="/banq.jpg" width="400" alt="ASA Spring 2024 Banquet" /></figure>
-                <figure><img  src="/github.jpg" width="400" alt="ASA Github Workshop" /></figure>
-                <figure><img  src="/ski.jpg" width="400" alt="ASA Ski Trip" /></figure>
-                <figure><img  src="/cooking.jpg" width="400" alt="ASA Cooking Competition" /></figure>
-                <figure><img  src="/recruitment.jpg" width="400" alt="ASA Spring Recruitment" /></figure>
-                <figure><img  src="/field.jpg" width="400" alt="ASA Field Day" /></figure>
-            </div>
-            <br></br>
-			<Footer />
+        <div className="flex flex-wrap justify-center gap-2 pb-10">
+            <figure><img src="/banq.jpg" width="400" alt="ASA Spring 2024 Banquet" /></figure>
+            <figure><img src="/github.jpg" width="400" alt="ASA Github Workshop" /></figure>
+            <figure><img src="/ski.jpg" width="400" alt="ASA Ski Trip" /></figure>
+            <figure><img src="/cooking.jpg" width="400" alt="ASA Cooking Competition" /></figure>
+            <figure><img src="/recruitment.jpg" width="400" alt="ASA Spring Recruitment" /></figure>
+            <figure><img src="/field.jpg" width="400" alt="ASA Field Day" /></figure>
         </div>
+    </div>
+    <Footer />
+</div>
+
         </div>
     );
 }
