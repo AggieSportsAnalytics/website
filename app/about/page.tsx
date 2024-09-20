@@ -5,12 +5,19 @@ import { Footer } from "../components/footer";
 import Head from 'next/head';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import Image from 'next/image'; // Import Next.js Image component
 
 export default function AboutPage() {
     // Refs and inView states for scroll-triggered animations
     const { ref: projectRef, inView: projectInView } = useInView({ triggerOnce: true, threshold: 0.1 });
     const { ref: businessRef, inView: businessInView } = useInView({ triggerOnce: true, threshold: 0.1 });
     const { ref: mediaRef, inView: mediaInView } = useInView({ triggerOnce: true, threshold: 0.1 });
+    
+    // Ref and inView for the logos collage
+    const { ref: logosRef, inView: logosInView } = useInView({ triggerOnce: true, threshold: 0.1 });
+
+    // Array of logo image sources
+    const logos = Array.from({ length: 12 }, (_, i) => `/logos/logo${i + 1}.png`); // Ensure these images are optimized
 
     return (
         <div className="relative">
@@ -35,7 +42,7 @@ export default function AboutPage() {
                                 <li><a className="text-lg" href="/members">Team</a></li>
                             </ul>
                         </div>
-                        <a href="/" className="btn btn-ghost"><img src="/bLogo.png" alt="Aggie Sports Analytics Logo" width={100} /></a>
+                        <a href="/" className="btn btn-ghost"><Image src="/bLogo.png" alt="Aggie Sports Analytics Logo" width={100} height={100} /></a>
                     </div>
                     <div className="navbar-center">
                         <div className="hidden lg:flex">
@@ -80,7 +87,7 @@ export default function AboutPage() {
                             </p>
                         </div>
                         <div className="lg:w-1/2 lg:pl-6 flex justify-center lg:justify-end">
-                            <figure><img src="/casecomp.jpg" width="500" alt="ASA Case Competition" /></figure>
+                            <figure><Image src="/casecomp.jpg" width={500} height={300} alt="ASA Case Competition" /></figure>
                         </div>
                     </div>
 
@@ -90,7 +97,7 @@ export default function AboutPage() {
                             What We Do
                         </h1>
                         <br></br>
-                        <div className="mt-10 space-y-16"> {/* Increased spacing */}
+                        <div className="mt-10 px-10 mb-10 space-y-16"> {/* Increased spacing */}
                             {/* Projects */}
                             <motion.div
                                 ref={projectRef}
@@ -137,24 +144,62 @@ export default function AboutPage() {
                             </motion.div>
                         </div>
                     </div>
+
+                    {/* Where We Go Section */}
                     <div className="max-w-7xl mx-auto pt-5">
-                        <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-5">
+                        <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-8">
                             Where We Go
                         </h1>
-                        </div>
+                        <br></br>
+                        <motion.div
+                            ref={logosRef}
+                            initial="hidden"
+                            animate={logosInView ? "visible" : "hidden"}
+                            variants={{
+                                hidden: {},
+                                visible: {
+                                    transition: {
+                                        staggerChildren: 0.1,
+                                    },
+                                },
+                            }}
+                            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
+                        >
+                            {logos.map((logoSrc, index) => (
+                                <motion.div
+                                    key={index}
+                                    className="flex items-center justify-center p-4 rounded-lg shadow-lg"
+                                    variants={{
+                                        hidden: { opacity: 0, scale: 0.8 },
+                                        visible: { opacity: 1, scale: 1 },
+                                    }}
+                                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                                >
+                                    <Image
+                                        src={logoSrc}
+                                        alt={`Partner Logo ${index + 1}`}
+                                        width={100} // Adjust based on your design
+                                        height={100} // Adjust based on your design
+                                        className="max-h-16 object-contain"
+                                        priority={false} // Ensures lazy loading
+                                    />
+                                </motion.div>
+                            ))}
+                        </motion.div>
+                    </div>
 
                     <br />
 
                     {/* Photo Gallery Section */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"> {/* Increased gap from 4 to 6 */}
-                        <motion.figure
+                    <motion.figure
                             initial={{ opacity: 0, scale: 0.95 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5 }}
                             viewport={{ once: true }} // Ensures animation occurs only once
                             className="overflow-hidden rounded-lg"
                         >
-                            <img src="/banq.jpg" alt="ASA Spring 2024 Banquet" className="w-full h-auto object-cover" />
+                            <Image src="/banq.jpg" alt="ASA Spring 2024 Banquet" width={800} height={600} className="w-full h-auto object-cover" />
                         </motion.figure>
                         <motion.figure
                             initial={{ opacity: 0, scale: 0.95 }}
@@ -163,7 +208,7 @@ export default function AboutPage() {
                             viewport={{ once: true }} // Ensures animation occurs only once
                             className="overflow-hidden rounded-lg"
                         >
-                            <img src="/github.jpg" alt="ASA Github Workshop" className="w-full h-auto object-cover" />
+                            <Image src="/github.jpg" alt="ASA Github Workshop" width={800} height={600} className="w-full h-auto object-cover" />
                         </motion.figure>
                         <motion.figure
                             initial={{ opacity: 0, scale: 0.95 }}
@@ -172,7 +217,7 @@ export default function AboutPage() {
                             viewport={{ once: true }} // Ensures animation occurs only once
                             className="overflow-hidden rounded-lg"
                         >
-                            <img src="/ski.jpg" alt="ASA Ski Trip" className="w-full h-auto object-cover" />
+                            <Image src="/ski.jpg" alt="ASA Ski Trip" width={800} height={600} className="w-full h-auto object-cover" />
                         </motion.figure>
                         <motion.figure
                             initial={{ opacity: 0, scale: 0.95 }}
@@ -181,7 +226,7 @@ export default function AboutPage() {
                             viewport={{ once: true }} // Ensures animation occurs only once
                             className="overflow-hidden rounded-lg"
                         >
-                            <img src="/cooking.jpg" alt="ASA Cooking Competition" className="w-full h-auto object-cover" />
+                            <Image src="/cooking.jpg" alt="ASA Cooking Competition" width={800} height={600} className="w-full h-auto object-cover" />
                         </motion.figure>
                         <motion.figure
                             initial={{ opacity: 0, scale: 0.95 }}
@@ -190,7 +235,7 @@ export default function AboutPage() {
                             viewport={{ once: true }} // Ensures animation occurs only once
                             className="overflow-hidden rounded-lg"
                         >
-                            <img src="/recruitment.png" alt="ASA Spring Recruitment" className="w-full h-auto object-cover" />
+                            <Image src="/recruitment.png" alt="ASA Spring Recruitment" width={800} height={600} className="w-full h-auto object-cover" />
                         </motion.figure>
                         <motion.figure
                             initial={{ opacity: 0, scale: 0.95 }}
@@ -199,10 +244,14 @@ export default function AboutPage() {
                             viewport={{ once: true }} // Ensures animation occurs only once
                             className="overflow-hidden rounded-lg"
                         >
-                            <img src="/field.jpg" alt="ASA Field Day" className="w-full h-auto object-cover" />
+                            <Image src="/field.jpg" alt="ASA Field Day" width={800} height={600} className="w-full h-auto object-cover" />
                         </motion.figure>
                     </div>
 
+                    {/* Logos Collage Section */}
+                    <div className="max-w-7xl mx-auto pt-12">
+                        Join
+                    </div>
                 </div>
                 <br></br>
                 <br></br>

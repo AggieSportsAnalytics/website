@@ -78,14 +78,32 @@ export default function JournalismPage() {
                 Journalism
               </h2>
               <p className="mt-4 text-zinc-300">
-                Our Journalism team is dedicated to providing insightful analysis and engaging stories that highlight the intersection of sports and data analytics. We cover a wide range of topics, including game analysis, player statistics, and the latest trends in sports technology.
+                Our Journalism team crafts insightful analysis and engaging stories that highlight 
+                modern sports topics. We also cover walkthroughs of our own technical projects and 
+                provide in-depth breakdowns of the strategies behind our work. Our goal is to bridge 
+                the gap between sports analytics and storytelling.
               </p>
             </div>
+            <center>
+  <h2 className="text-xl py-5">
+    <a href="https://medium.com/@aggiesportsanalytics" target="_blank">
+      <button className="inline-flex items-center bg-[#F7F7F7] text-black font-bold py-2 px-4 rounded-md hover:scale-105 transform transition duration-300 ease-in-out">
+        <img 
+          src="/medium.png" 
+          alt="Medium Logo" 
+          className="w-5 h-5 mr-2"
+        />
+        Medium
+      </button>
+    </a>
+  </h2>
+</center>
 
-            <center>Check us out on Medium!</center>
+
+
 
             {/* Embed Medium Page */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-8"> {/* Increased gap from 4 to 6 */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-10"> {/* Increased gap from 4 to 6 */}
                         <motion.figure
                             initial={{ opacity: 0, scale: 0.95 }}
                             whileInView={{ opacity: 1, scale: 1 }}
@@ -93,7 +111,7 @@ export default function JournalismPage() {
                             viewport={{ once: true }} // Ensures animation occurs only once
                             className="overflow-hidden rounded-lg"
                         >
-                            <img src="/banq.jpg" alt="ASA Spring 2024 Banquet" className="w-full h-auto object-cover" />
+                            <img src="/j1.png" alt="ASA Spring 2024 Banquet" className="w-full h-auto object-cover" />
                         </motion.figure>
                         <motion.figure
                             initial={{ opacity: 0, scale: 0.95 }}
@@ -102,7 +120,7 @@ export default function JournalismPage() {
                             viewport={{ once: true }} // Ensures animation occurs only once
                             className="overflow-hidden rounded-lg"
                         >
-                            <img src="/github.jpg" alt="ASA Github Workshop" className="w-full h-auto object-cover" />
+                            <img src="j2.png" alt="ASA Github Workshop" className="w-full h-auto object-cover" />
                         </motion.figure>
                         <motion.figure
                             initial={{ opacity: 0, scale: 0.95 }}
@@ -111,13 +129,14 @@ export default function JournalismPage() {
                             viewport={{ once: true }} // Ensures animation occurs only once
                             className="overflow-hidden rounded-lg"
                         >
-                            <img src="/ski.jpg" alt="ASA Ski Trip" className="w-full h-auto object-cover" />
+                            <img src="j3.png" alt="ASA Ski Trip" className="w-full h-auto object-cover" />
                         </motion.figure>
                     </div>
 
 
             {/* Optional: Add more content or components here */}
           </div>
+          <br></br>
           <div className="w-full h-px bg-zinc-800" />
           <Footer />
         </div>
