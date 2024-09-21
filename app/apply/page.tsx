@@ -49,8 +49,8 @@ export default function MembersPage() {
                   </a>
                 </li>
                 <li>
-                  <a className="text-lg" href="/articles">
-                    Articles
+                  <a className="text-lg" href="/journalism">
+                    Journalism
                   </a>
                 </li>
                 <li>

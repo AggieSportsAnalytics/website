@@ -83,8 +83,8 @@ export default async function ProjectsPage() {
                   </a>
                 </li>
                 <li>
-                  <a className="text-lg" href="/articles">
-                    Articles
+                  <a className="text-lg" href="/journalism">
+                    Journalism
                   </a>
                 </li>
                 <li>

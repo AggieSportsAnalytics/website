@@ -39,7 +39,7 @@ export default function AboutPage() {
                             <ul tabIndex={0} className="z-30 menu menu-md dropdown-content mt-3 p-2 shadow bg-zinc-950 rounded-box w-52 text-zinc-300">
                                 <li><a className="text-lg" href="/about"><b>About</b></a></li>
                                 <li><a className="text-lg" href="/projects">Projects</a></li>
-                                <li><a className="text-lg" href="/articles">Articles</a></li>
+                                <li><a className="text-lg" href="/journalism">Journalism</a></li>
                                 <li><a className="text-lg" href="/members">Team</a></li>
                             </ul>
                         </div>
