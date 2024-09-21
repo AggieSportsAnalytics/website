@@ -128,7 +128,7 @@ export default function AboutPage() {
                                     Business &nbsp; <Briefcase className=""></Briefcase>
                                 </h2>
                                 <p className="text-zinc-300 md:w-2/3">
-                                    The business branch comprises the External Affairs, Internal Affairs, and Finance teams. Business heads and associates work together to organize professional development workshops, plan social networking events, handle finances, and coordinate outreach efforts.
+                                    The business branch comprises the external affairs, internal affairs, and finance teams. Business heads and associates work together to organize professional development workshops, plan social networking events, handle finances, and coordinate outreach efforts.
                                 </p>
                             </motion.div>
 
