@@ -34,15 +34,17 @@ export const Footer: React.FC = () => {
             <img src="/bLogo.png" alt="Aggie Sports Analytics Logo" width={80} />
           </a>
           <h2 className="text-xl font-bold mb-2">Aggie Sports Analytics</h2>
-          <p className="mb-4">Redefining the future of sports technology at UC Davis.</p>
+          <p className="mb-4">Redefining the future of sports technology at UC Davis</p>
         </div>
         <div className="mb-6 md:mb-0 text-center md:text-left md:w-1/5">
+        {/*
         <center>
         <h2 className="text-lg font-bold mb-2">Join our Mailing List</h2>
           <button className="btn bg-[#5A5CA0] hover:bg-[#393B7F] text-zinc-100">
 						<a href="/apply">Sign Up</a>
 					</button>
               </center>
+              */}
         </div>
 
         {/* Right side with links */}

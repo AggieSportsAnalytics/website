@@ -71,7 +71,7 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}      // Animate to opacity 1 and original position
         transition={{ duration: 1, ease: "easeOut" }} // Duration and easing of the animation
       >
-        <div className="mt-16 mb-4 px-4 bottom-2 z-20 text-4xl leading-[3rem] duration-1000 bg-gradient-to-r from-20% bg-clip-text text-transparent from-purple-400 to-blue-400 cursor-default font-display sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl xl:leading-[7.5rem] whitespace-nowrap">
+        <div className="mt-16 mb-4 px-4 bottom-2 z-20 text-4xl leading-[3rem] duration-1000 bg-gradient-to-r from-20% bg-clip-text text-transparent from-[#5A5C9F] to-[#E2BD6D] cursor-default font-display sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl xl:leading-[7.5rem] whitespace-nowrap">
           Aggie Sports Analytics
         </div>
 

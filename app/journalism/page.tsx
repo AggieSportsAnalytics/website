@@ -78,7 +78,7 @@ export default function JournalismPage() {
                 Journalism
               </h2>
               <p className="mt-4 text-zinc-300">
-                Our Journalism team crafts insightful analysis and engaging stories that highlight 
+                Our journalism team crafts insightful analysis and engaging stories that highlight 
                 modern sports topics. We also cover walkthroughs of our own technical projects and 
                 provide in-depth breakdowns of the strategies behind our work. Our goal is to bridge 
                 the gap between sports analytics and storytelling.
@@ -137,10 +137,10 @@ export default function JournalismPage() {
             {/* Optional: Add more content or components here */}
           </div>
           <br></br>
-          <div className="w-full h-px bg-zinc-800" />
-          <Footer />
         </div>
       </motion.div>
+      <div className="w-full h-px bg-zinc-800" />
+      <Footer />
     </div>
   );
 }

@@ -6,6 +6,7 @@ import Head from 'next/head';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image'; // Import Next.js Image component
+import { Laptop, Briefcase, Camera } from "lucide-react";
 
 export default function AboutPage() {
     // Refs and inView states for scroll-triggered animations
@@ -97,19 +98,21 @@ export default function AboutPage() {
                             What We Do
                         </h1>
                         <br></br>
-                        <div className="mt-10 px-10 mb-10 space-y-16"> {/* Increased spacing */}
+                        <div className=" p-10 mb-10 space-y-16"> {/* Increased spacing */}
                             {/* Projects */}
                             <motion.div
                                 ref={projectRef}
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: projectInView ? 1 : 0, y: projectInView ? 0 : 20 }}
                                 transition={{ duration: 0.5 }}
-                                className="flex flex-col md:flex-row justify-between items-start"
+                                className="flex flex-col md:flex-row justify-between items-start flex items-center h-full"
                             >
                                 {/* Removed Icon */}
-                                <h2 className="text-2xl font-bold text-zinc-100 mb-4 md:mb-0">Projects</h2>
+                                <h2 className="inline-flex items-center px-5 py-3 text-2xl font-bold text-zinc-100 bg-gradient-to-r  from-[#5A5C9F] to-[#E2BD6D] rounded-2xl mb-4 md:mb-0">
+                                    Projects &nbsp; <Laptop className=""></Laptop>
+                                </h2>
                                 <p className="text-zinc-300 md:w-2/3">
-                                    ASA's Projects teams work on sports-related endeavors in the domains of web development, data science, machine learning, and hardware. Project managers work with intimate teams of three to four members to revolutionize the way we examine sports through technology.
+                                    Projects teams work on endeavors in the domains of web development, data science, machine learning, and hardware. Project managers work with intimate teams of three to four members to revolutionize the way we examine sports through technology.
                                 </p>
                             </motion.div>
 
@@ -119,12 +122,14 @@ export default function AboutPage() {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: businessInView ? 1 : 0, y: businessInView ? 0 : 20 }}
                                 transition={{ duration: 0.5 }}
-                                className="flex flex-col md:flex-row justify-between items-start"
+                                className="flex flex-col md:flex-row justify-between items-start flex items-center h-full"
                             >
                                 {/* Removed Icon */}
-                                <h2 className="text-2xl font-bold text-zinc-100 mb-4 md:mb-0">Business</h2>
+                                <h2 className="inline-flex items-center px-5 py-3 text-2xl font-bold text-zinc-100 bg-gradient-to-r  from-[#5A5C9F] to-[#E2BD6D] rounded-2xl mb-4 md:mb-0">
+                                    Business &nbsp; <Briefcase className=""></Briefcase>
+                                </h2>
                                 <p className="text-zinc-300 md:w-2/3">
-                                    ASA's Business branch comprises the External Affairs, Internal Affairs, and Finance teams. Business heads and associates work together to organize professional development workshops, plan social networking events, handle finances, and coordinate outreach efforts.
+                                    The Business branch comprises the External Affairs, Internal Affairs, and Finance teams. Business heads and associates work together to organize professional development workshops, plan social networking events, handle finances, and coordinate outreach efforts.
                                 </p>
                             </motion.div>
 
@@ -134,15 +139,47 @@ export default function AboutPage() {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: mediaInView ? 1 : 0, y: mediaInView ? 0 : 20 }}
                                 transition={{ duration: 0.5 }}
-                                className="flex flex-col md:flex-row justify-between items-start"
+                                className="flex flex-col md:flex-row justify-between items-start flex items-center h-full"
                             >
                                 {/* Removed Icon */}
-                                <h2 className="text-2xl font-bold text-zinc-100 mb-4 md:mb-0">Media</h2>
+                                <h2 className="inline-flex items-center px-5 py-3 text-2xl font-bold text-zinc-100 bg-gradient-to-r  from-[#5A5C9F] to-[#E2BD6D] rounded-2xl mb-4 md:mb-0">
+                                    Media &nbsp; <Camera className=""></Camera>
+                                </h2>
                                 <p className="text-zinc-300 md:w-2/3">
-                                    ASA's Media branch is responsible for creating content for our newsletter, articles, and social media platforms. Media heads and associates collaborate to develop and execute strategies that define our public image and strengthen our reach.
+                                    The Media branch is responsible for creating content for our newsletter, articles, and social media platforms. Media heads and associates collaborate to develop and execute strategies that define our public image and strengthen our reach.
                                 </p>
                             </motion.div>
                         </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"> {/* Increased gap from 4 to 6 */}
+                        <motion.figure
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.5, delay: 0.3 }}
+                            viewport={{ once: true }} // Ensures animation occurs only once
+                            className="overflow-hidden rounded-lg"
+                        >
+                            <Image src="/cooking.jpg" alt="ASA Cooking Competition" width={800} height={600} className="w-full h-auto object-cover" />
+                        </motion.figure>
+                        <motion.figure
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.5, delay: 0.4 }}
+                            viewport={{ once: true }} // Ensures animation occurs only once
+                            className="overflow-hidden rounded-lg"
+                        >
+                            <Image src="/recruitment.png" alt="ASA Spring Recruitment" width={800} height={600} className="w-full h-auto object-cover" />
+                        </motion.figure>
+                        <motion.figure
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.5, delay: 0.5 }}
+                            viewport={{ once: true }} // Ensures animation occurs only once
+                            className="overflow-hidden rounded-lg"
+                        >
+                            <Image src="/field.jpg" alt="ASA Field Day" width={800} height={600} className="w-full h-auto object-cover" />
+                        </motion.figure>
                     </div>
 
                     {/* Where We Go Section */}
@@ -219,46 +256,16 @@ export default function AboutPage() {
                         >
                             <Image src="/ski.jpg" alt="ASA Ski Trip" width={800} height={600} className="w-full h-auto object-cover" />
                         </motion.figure>
-                        <motion.figure
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5, delay: 0.3 }}
-                            viewport={{ once: true }} // Ensures animation occurs only once
-                            className="overflow-hidden rounded-lg"
-                        >
-                            <Image src="/cooking.jpg" alt="ASA Cooking Competition" width={800} height={600} className="w-full h-auto object-cover" />
-                        </motion.figure>
-                        <motion.figure
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5, delay: 0.4 }}
-                            viewport={{ once: true }} // Ensures animation occurs only once
-                            className="overflow-hidden rounded-lg"
-                        >
-                            <Image src="/recruitment.png" alt="ASA Spring Recruitment" width={800} height={600} className="w-full h-auto object-cover" />
-                        </motion.figure>
-                        <motion.figure
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5, delay: 0.5 }}
-                            viewport={{ once: true }} // Ensures animation occurs only once
-                            className="overflow-hidden rounded-lg"
-                        >
-                            <Image src="/field.jpg" alt="ASA Field Day" width={800} height={600} className="w-full h-auto object-cover" />
-                        </motion.figure>
+
                     </div>
 
                     {/* Logos Collage Section */}
-                    <div className="max-w-7xl mx-auto pt-12">
-                        Join
-                    </div>
                 </div>
                 <br></br>
                 <br></br>
-                <br></br>
-                <div className="w-full h-px bg-zinc-800" />
-                <Footer />
             </motion.div>
+            <div className="w-full h-px bg-zinc-800" />
+            <Footer />
         </div>
     );
 }
