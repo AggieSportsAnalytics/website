@@ -238,10 +238,10 @@ export default async function ProjectsPage() {
           </div>
           <div className="pt-10"></div>
           <br />
-		  <div className="w-full h-px bg-zinc-800" />
-          <Footer />
         </div>
       </FadeInWrapper>
+	  <div className="w-full h-px bg-zinc-800" />
+      <Footer />
     </div>
   );
 }
