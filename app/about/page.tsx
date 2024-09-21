@@ -71,7 +71,7 @@ export default function AboutPage() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }} // Light fade-in over 1 second
             >
-                <div className="px-6 mx-auto space-y-16 max-w-7xl lg:px-8 md:space-y-24 md:pt-8 lg:pt-12">
+                <div className="px-6 mx-auto space-y-16 max-w-7xl lg:px-8 md:space-y-24 md:pt-6 lg:pt-10">
                     {/* Who We Are Section */}
                     <div className="flex flex-col lg:flex-row items-start lg:items-start">
                         <div className="lg:w-1/2 lg:pr-6 justify-center h-full">
@@ -84,9 +84,9 @@ export default function AboutPage() {
                             </p>
                             <br />
                             <p className="mb-8 text-lg text-zinc-300">
-                            As a tight-knit community, we are committed to fostering both professional development and personal growth, shaping the future of our field while cultivating meaningful connections among our members.</p>
+                            As a tight-knit community, we are committed to fostering both professional development and personal growth, shaping the future of our field while cultivating meaningful connections.</p>
                         </div>
-                        <div className="lg:w-1/2 lg:pl-6 flex justify-center lg:justify-end">
+                        <div className="lg:w-1/2 lg:pl-6 flex justify-center lg:justify-end pt-3">
                             <figure><Image src="/casecomp.jpg" width={500} height={300} alt="ASA Case Competition" /></figure>
                         </div>
                     </div>

@@ -3857,6 +3857,9 @@ details.collapse summary::-webkit-details-marker {
 .pt-8 {
   padding-top: 2rem;
 }
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
 .text-left {
   text-align: left;
 }
@@ -4322,6 +4325,10 @@ details.collapse summary::-webkit-details-marker {
     padding-top: 2rem;
   }
 
+  .md\:pt-6 {
+    padding-top: 1.5rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -4439,6 +4446,18 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:pt-6 {
     padding-top: 1.5rem;
+  }
+
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .lg\:pt-8 {
+    padding-top: 2rem;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
   }
 
   .lg\:text-left {

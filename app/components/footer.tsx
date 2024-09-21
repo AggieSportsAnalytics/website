@@ -29,7 +29,7 @@ export const Footer: React.FC = () => {
     <footer ref={ref} className="bg-[#070707] bg-opacity-50 text-gray-300">
       <div className="container mx-auto p-6 flex flex-col md:flex-row justify-between items-center">
         {/* Left side with branding and newsletter */}
-        <div className="mb-6 md:mb-0 text-center md:text-left md:w-1/4">
+        <div className="mb-6 md:mb-0 text-center md:text-left md:w-1/3">
           <a className="inline-block mb-4">
             <img src="/bLogo.png" alt="Aggie Sports Analytics Logo" width={80} />
           </a>
