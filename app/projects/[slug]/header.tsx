@@ -40,7 +40,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 		
 		<header
 			ref={ref}
-			className="relative isolate overflow-hidden bg-gradient-to-tl from-zinc-950 via-[#160F33] to-zinc-950"
+			className="relative isolate overflow-hidden bg-[#111111]"
 		>
 			<HeadSEO title="some title or a variable here will work"/>
 			<div

@@ -1,407 +1,272 @@
+"use client";
 
 import React from "react";
 import { Navigation } from "../components/nav";
 import { Footer } from "../components/footer";
 import { Linkedin } from "lucide-react";
 import Link from "next/link";
+import Head from 'next/head';
+import { motion } from 'framer-motion';
 
-export default async function MembersPage() {
-	
+// 1. Define the data array for team members
+const teamMembers = [
+  {
+    name: "Andrew Hale",
+    role: "President",
+    image: "/andrew.png",
+    linkedin: "https://www.linkedin.com/in/andrew-hale6/",
+  },
+  {
+    name: "Jason Yang",
+    role: "Vice President",
+    image: "/jason.png",
+    linkedin: "https://www.linkedin.com/in/jason-yang-269a3a244/",
+  },
+  {
+    name: "Vishal Shenoy",
+    role: "Director of Projects",
+    image: "/vishal.png",
+    linkedin: "https://www.linkedin.com/in/shenoyvishal/",
+  },
+  {
+    name: "Aashritha Javvaji",
+    role: "Director of Business",
+    image: "/aashritha.png",
+    linkedin: "https://www.linkedin.com/in/aashritha-javvaji/",
+  },
+  {
+    name: "Ben Busche",
+    role: "Director of Media",
+    image: "/benjamin.png",
+    linkedin: "https://www.linkedin.com/in/ben-busche/",
+  },
+  {
+    name: "Chris Lo",
+    role: "Advisor",
+    image: "/chris.png",
+    linkedin: "https://www.linkedin.com/in/christopherlo34/",
+  },
+  {
+    name: "Vikram Choudhry",
+    role: "Advisor & Project Manager",
+    image: "/vikram.png",
+    linkedin: "https://www.linkedin.com/in/vikramchoudhry24/",
+  },
+  {
+    name: "Alice Nguyen",
+    role: "Project Manager",
+    image: "/alice.png",
+    linkedin: "https://www.linkedin.com/in/alice-t-nguyen/",
+  },
+  {
+    name: "Arnav Akula",
+    role: "Project Manager",
+    image: "/arnav.png",
+    linkedin: "https://www.linkedin.com/in/arnavakula/",
+  },
+  {
+    name: "Darshan Shivakumar",
+    role: "Project Manager",
+    image: "/darshan.png",
+    linkedin: "https://www.linkedin.com/in/darshan-shivakumar/",
+  },
+  {
+    name: "Devon Streelman",
+    role: "Project Manager",
+    image: "/devon.png",
+    linkedin: "https://www.linkedin.com/in/devon-streelman/",
+  },
+  {
+    name: "Keshav Lodha",
+    role: "Project Manager",
+    image: "/keshav.png",
+    linkedin: "https://www.linkedin.com/in/keshav-lodha-0497541b7/",
+  },
+  {
+    name: "Krishna Gupta",
+    role: "Project Manager",
+    image: "/krishna.png",
+    linkedin: "https://www.linkedin.com/in/krishna-gupta-a19b67233/",
+  },
+  {
+    name: "Nathaniel Maffly",
+    role: "Project Manager",
+    image: "/nate.png",
+    linkedin: "https://www.linkedin.com/in/nathaniel-maffly-390235268/",
+  },
+  {
+    name: "Tej Gaonkar",
+    role: "Project Manager",
+    image: "/tej.png",
+    linkedin: "https://www.linkedin.com/in/tej-gaonkar-89a51a203/",
+  },
+  {
+    name: "Israel Shokrian",
+    role: "Head of External Affairs",
+    image: "/israel.png",
+    linkedin: "https://www.linkedin.com/in/israel-shokrian-5940b1281/",
+  },
+  {
+    name: "Tisha Kathrani",
+    role: "Head of Internal Affairs",
+    image: "/tisha.png",
+    linkedin: "https://www.linkedin.com/in/tishakathrani/",
+  },
+  {
+    name: "Manish Rathor",
+    role: "Head of Finance",
+    image: "/manish.png",
+    linkedin: "https://www.linkedin.com/in/manishrathor03/",
+  },
+  {
+    name: "Jim Qu",
+    role: "Head of Design",
+    image: "/jim.png",
+    linkedin: "https://linkedin.com/in/jimm-qu/",
+  },
+  {
+    name: "Jack Orman",
+    role: "Head of Social Media",
+    image: "/jack.png",
+    linkedin: "https://linkedin.com/in/jackorman/",
+  },
+  {
+    name: "Miwa Hirai",
+    role: "Head of Journalism",
+    image: "/miwa.png",
+    linkedin: "https://www.linkedin.com/in/miwahirai/",
+  },
+  {
+    name: "Salvatoré Martinez",
+    role: "Head of Production",
+    image: "/salvatore.png",
+    linkedin: "https://www.linkedin.com/in/salvatore-martinez/",
+  },
+];
 
+// 2. Define animation variants
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1, // Stagger by 0.1 seconds
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+};
+
+export default function MembersPage() {
 	return (
-		<div className="">
-			<Navigation />
-			<div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
-				<div className="mx-auto lg:mx-0">
-					<h2 className="text-3xl font-bold tracking-tight pt-4 text-zinc-100 sm:text-4xl">
-						Our Team
-					</h2>
-				</div>
-				{/*}
-				<h2 className="text-2xl font-semibold space-y-0 tracking-tight text-zinc-100  ">
-						Executive Board
-	</h2>*/}
-				<div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  items-center justify-center gap-y-8 pb-6 content-center  ">
-
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/andrew.png"  alt="Andrew Hale" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Andrew Hale</h2>
-						<p className="text-md">President</p>
-						{/*<p className="text-sm text-slate-300">Favorite Athlete: Devin Booker</p>	*/}
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://www.linkedin.com/in/andrew-hale6/">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>
-						</div>
-					</div>
-				</div>
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/jason.png"  alt="Jason Yang" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Jason Yang</h2>
-						<p className="text-md">Vice President</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://www.linkedin.com/in/jason-yang-269a3a244/">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>
-						</div>
-					</div>
-				</div>
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/vishal.png"  alt="Vishal Shenoy" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Vishal Shenoy</h2>
-						<p className="text-md">Director of Projects</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://www.linkedin.com/in/shenoyvishal/">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>
-						</div>
-					</div>
-				</div>
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/aashritha.png"  alt="Aashritha Javvaji" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Aashritha Javvaji</h2>
-						<p className="text-md">Director of Business</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://www.linkedin.com/in/aashritha-javvaji/">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>
-						</div>
-					</div>
-				</div>
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/benjamin.png"  alt="Ben Busche" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Ben Busche</h2>
-						<p className="text-md">Director of Media</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://www.linkedin.com/in/ben-busche/">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>
-						</div>
-					</div>
-				</div>
-
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/chris.png"  alt="Christopher Lo" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Chris Lo</h2>
-						<p className="text-md">Advisor</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://www.linkedin.com/in/christopherlo34/">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>
-						</div>
-					</div>
-				</div>
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/vikram.png"  alt="Vikram Choudhry" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Vikram Choudhry</h2>
-						<p className="text-md">Advisor/Project Manager</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://www.linkedin.com/in/vikramchoudhry24/">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>	
-						</div>
-					</div>
-				</div>
-
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/alice.png"  alt="Alice Nguyen" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Alice Nguyen</h2>
-						<p className="text-md">Project Manager</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://www.linkedin.com/in/alice-t-nguyen/">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>	
-						</div>
-					</div>
-				</div>
-
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/arnav.png"  alt="Arnav Akula" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Arnav Akula</h2>
-						<p className="text-md">Project Manager</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://www.linkedin.com/in/arnavakula/">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>	
-						</div>
-					</div>
-				</div>
-
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/darshan.png"  alt="Darshan Shivakumar" /></figure>
-					<div className="card-body">
-					<h2 className="card-title" style={{ fontSize: '19px' }}>Darshan Shivakumar</h2>
-						<p className="text-md">Project Manager</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://www.linkedin.com/in/darshan-shivakumar/">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>	
-						</div>
-					</div>
-				</div>
-
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/devon.png"  alt="Devon Streelman" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Devon Streelman</h2>
-						<p className="text-md">Project Manager</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://www.linkedin.com/in/devon-streelman/">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>	
-						</div>
-					</div>
-				</div>
-
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/keshav.png"  alt="Keshav Lodha" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Keshav Lodha</h2>
-						<p className="text-md">Project Manager</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://www.linkedin.com/in/keshav-lodha-0497541b7/">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>	
-						</div>
-					</div>
-				</div>
-
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/krishna.png"  alt="Krishna Gupta" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Krishna Gupta</h2>
-						<p className="text-md">Project Manager</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://www.linkedin.com/in/krishna-gupta-a19b67233/">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>	
-						</div>
-					</div>
-				</div>
-
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/nate.png"  alt="Nathaniel Maffly" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Nathaniel Maffly</h2>
-						<p className="text-md">Project Manager</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://www.linkedin.com/in/nathaniel-maffly-390235268/">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>	
-						</div>
-					</div>
-				</div>
-
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/tej.png"  alt="Tej Gaonkar" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Tej Gaonkar</h2>
-						<p className="text-md">Project Manager</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://www.linkedin.com/in/tej-gaonkar-89a51a203/">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>	
-						</div>
-					</div>
-				</div>
-
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/israel.png"  alt="Israel Shokrian" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Israel Shokrian</h2>
-						<p className="text-md">Head of External Affairs</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://www.linkedin.com/in/israel-shokrian-5940b1281/">
-								<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>
-						</div>
-					</div>
-				</div>
-			
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/tisha.png"  alt="Tisha Kathrani" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Tisha Kathrani</h2>
-						<p className="text-md">Head of Internal Affairs</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://www.linkedin.com/in/tishakathrani/">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>	
-						</div>
-					</div>
-				</div>
-
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/manish.png"  alt="Manish Rathor" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Manish Rathor</h2>
-						<p className="text-md">Head of Finance</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://www.linkedin.com/in/manishrathor03/">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>	
-						</div>
-					</div>
-				</div>
-
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/jim.png"  alt="Jim Qu" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Jim Qu</h2>
-						<p className="text-md">Head of Design</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://linkedin.com/in/jimm-qu">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>	
-						</div>
-					</div>
-				</div>
-
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/jack.png"  alt="Jack Orman" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Jack Orman</h2>
-						<p className="text-md">Head of Social Media</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://linkedin.com/in/jackorman/">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>	
-						</div>
-					</div>
-				</div>
-
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/miwa.png"  alt="Miwa Hirai" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Miwa Hirai</h2>
-						<p className="text-md">Head of Journalism</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://www.linkedin.com/in/miwahirai/">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>	
-						</div>
-					</div>
-				</div>
-
-				<div className="card w-64 bg-transparent border border-gray-700 text-slate-200">
-				<figure><img src="/salvatore.png"  alt="Salvatoré Martinez" /></figure>
-					<div className="card-body">
-						<h2 className="card-title">Salvatoré Martinez</h2>
-						<p className="text-md">Head of Production</p>
-						<div className="card-actions justify-end">
-							<Link target="_blank" href="https://www.linkedin.com/in/salvatore-martinez">
-							<button className="btn bg-opacity-30 hover:bg-blue-900">
-								<Linkedin
-									className="w-5 h-5 duration-200 hover:font-medium text-slate-100" 
-								/>
-							</button>
-							</Link>	
-						</div>
-					</div>
-				</div>
-
+	  <div className="relative">
+		<Head>
+		  <title>Team | Aggie Sports Analytics at UC Davis</title>
+		</Head>
+		
+		{/* Navigation Bar */}
+		<div className="w-screen bg-[#111111] text-xs">
+		  <div className="navbar bg-zinc-950 m-1">
+			<div className="navbar-start">
+			  <div className="dropdown">
+				<label tabIndex={0} className="btn btn-ghost lg:hidden">
+				  <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 stroke-zinc-300" fill="none" viewBox="0 0 24 24">
+					<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
+				  </svg>
+				</label>
+				<ul tabIndex={0} className="z-30 menu menu-md dropdown-content mt-3 p-2 shadow bg-zinc-950 rounded-box w-52 text-zinc-300">
+				  <li><a className="text-lg" href="/about">About</a></li>
+				  <li><a className="text-lg" href="/projects">Projects</a></li>
+				  <li><a className="text-lg" href="/articles">Articles</a></li>
+				  <li><a className="text-lg" href="/members">Team</a></li>
+				</ul>
+			  </div>
+			  <a href="/" className="btn btn-ghost">
+				<img src="/bLogo.png" alt="Aggie Sports Analytics Logo" width={100} />
+			  </a>
 			</div>
-
-				
-
-
-			<br></br>
-			<br></br>
+			<div className="navbar-center">
+			  <div className="hidden lg:flex">
+				<ul className="menu menu-horizontal px-1 text-zinc-200 text-xl">
+				  <li><a href="/about">About</a></li>
+				  <li><a href="/projects">Projects</a></li>
+				  <li><a href="/journalism">Journalism</a></li>
+				  <li><a href="/members"><b>Team</b></a></li>
+				</ul>
+			  </div>
 			</div>
-			<Footer></Footer>
+			<div className="navbar-end">
+			  <button className="btn mr-4 bg-[#5A5CA0] hover:bg-[#393B7F] text-zinc-100">
+				<a href="/apply">Join</a>
+			  </button>
+			</div>
+		  </div>
 		</div>
+		<div className="w-full h-px bg-zinc-800" />
+  
+		{/* 3. Animated Container */}
+		<motion.div
+		  className="bg-[#111111] pl-10 pr-10 pt-8" // Reduced pt-12 to pt-8
+		  initial="hidden"
+		  animate="visible"
+		  variants={containerVariants}
+		  transition={{ duration: 1 }} // Light fade-in over 1 second
+		>
+		  <div className="bg-[#111111]">
+			<div className="px-6 mx-auto space-y-4 max-w-7xl lg:px-8 md:space-y-8 md:pt-4 lg:pt-6"> {/* Reduced space-y-8 to space-y-4, space-y-16 to space-y-8, pt-8 to pt-4, pt-12 to pt-6 */}
+			  <div className="mx-auto lg:mx-0">
+				<h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-6">
+				  Our Team
+				</h2>
+			  </div>
+  
+			  {/* Team Members Grid */}
+			  <motion.div
+				className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center justify-center gap-y-8 pb-6 content-center"
+				variants={containerVariants}
+			  >
+				{teamMembers.map((member, index) => (
+				  <motion.div
+					key={index}
+					className="w-64 mb-10 bg-transparent border-gray-700 text-slate-200"
+					variants={cardVariants}
+				  >
+					<figure>
+					  <img src={member.image} alt={member.name} />
+					</figure>
+					<div className="flex mt-5 justify-between items-center">
+					  <div>
+						<h2 className="card-title">{member.name}</h2>
+						<p className="text-md">{member.role}</p>
+					  </div>
+					  <div className="card-actions">
+						<Link target="_blank" href={member.linkedin}>
+						  <button className="btn bg-opacity-30 hover:bg-blue-900">
+							<Linkedin className="w-5 h-5 duration-200 hover:font-medium text-slate-100" />
+						  </button>
+						</Link>
+					  </div>
+					</div>
+				  </motion.div>
+				))}
+			  </motion.div>
+  
+			  {/* Removed extra <br> tags for cleaner spacing */}
+			</div>
+		  </div>
+		</motion.div>
+		<div className="w-full h-px bg-zinc-800" />
+		<Footer />
+	  </div>
 	);
-}
+  }
