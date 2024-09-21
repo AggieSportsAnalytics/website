@@ -83,7 +83,7 @@ export default function MembersPage() {
                 </li>
                 <li>
                   <a href="/members">
-                    <b>Team</b>
+                    Team
                   </a>
                 </li>
               </ul>
