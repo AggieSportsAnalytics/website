@@ -136,11 +136,11 @@ export default async function ProjectsPage() {
         <div className="bg-[#111111]">
           <div className="px-6 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-8 lg:pt-12">
             <div className="mx-auto lg:mx-0">
-              <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl mt-4">
+              <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl mt-2">
                 Projects
               </h2>
               <p className="mt-8 text-zinc-300">
-                Our project teams strive to build innovative projects in the
+                Our project teams build innovative projects in the
                 domains of web development, data science, machine learning, and
                 hardware. To date, we have completed over 25 projects targeting
                 a wide range of sports, including but not limited to basketball,
@@ -148,7 +148,6 @@ export default async function ProjectsPage() {
               </p>
             </div>
 			
-            <div className="w-full h-px bg-zinc-600" />
 
             {/* Featured and Top Projects */}
             <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">

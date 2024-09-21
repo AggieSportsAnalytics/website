@@ -80,12 +80,11 @@ export default function AboutPage() {
                                 Who We Are
                             </h1>
                             <p className="mt-8 text-lg text-zinc-300">
-                                Aggie Sports Analytics is redefining the future of sports technology. We are a passionate and tight-knit community of students working on innovative ventures in business, technology, and media.
+                                Aggie Sports Analytics is a student-led organization redefining the future of sports technology. We unite driven students from diverse academic backgrounds to develop innovative solutions across business, technology, and media.
                             </p>
                             <br />
                             <p className="mb-8 text-lg text-zinc-300">
-                                Since being established in 2022, we have brought together ambitious students from all academic disciplines. We foster both professional and personal growth. To date, we have completed over 25 projects and hosted numerous events.
-                            </p>
+                            As a tight-knit community, we are committed to fostering both professional development and personal growth, shaping the future of our field while cultivating meaningful connections among our members.</p>
                         </div>
                         <div className="lg:w-1/2 lg:pl-6 flex justify-center lg:justify-end">
                             <figure><Image src="/casecomp.jpg" width={500} height={300} alt="ASA Case Competition" /></figure>
@@ -93,7 +92,7 @@ export default function AboutPage() {
                     </div>
 
                     {/* What We Do Section with Scroll-Triggered Animations */}
-                    <div className="max-w-7xl mx-auto pt-5">
+                    <div className="max-w-7xl mx-auto pt-3">
                         <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-5">
                             What We Do
                         </h1>
@@ -108,11 +107,11 @@ export default function AboutPage() {
                                 className="flex flex-col md:flex-row justify-between items-start flex items-center h-full"
                             >
                                 {/* Removed Icon */}
-                                <h2 className="inline-flex items-center px-5 py-3 text-2xl font-bold text-zinc-100 bg-gradient-to-r  from-[#5A5C9F] to-[#E2BD6D] rounded-2xl mb-4 md:mb-0">
+                                <h2 className="inline-flex items-center px-5 py-3 text-2xl font-bold text-zinc-100 bg-gradient-to-r  from-[#171A7E] to-[#CDA652] rounded-2xl mb-4 md:mb-0">
                                     Projects &nbsp; <Laptop className=""></Laptop>
                                 </h2>
                                 <p className="text-zinc-300 md:w-2/3">
-                                    Projects teams work on endeavors in the domains of web development, data science, machine learning, and hardware. Project managers work with intimate teams of three to four members to revolutionize the way we examine sports through technology.
+                                    The project teams work on endeavors in the domains of web development, data science, machine learning, and hardware. Project managers work with intimate teams of three to four members to revolutionize the way we examine sports through technology.
                                 </p>
                             </motion.div>
 
@@ -125,11 +124,11 @@ export default function AboutPage() {
                                 className="flex flex-col md:flex-row justify-between items-start flex items-center h-full"
                             >
                                 {/* Removed Icon */}
-                                <h2 className="inline-flex items-center px-5 py-3 text-2xl font-bold text-zinc-100 bg-gradient-to-r  from-[#5A5C9F] to-[#E2BD6D] rounded-2xl mb-4 md:mb-0">
+                                <h2 className="inline-flex items-center px-5 py-3 text-2xl font-bold text-zinc-100 bg-gradient-to-r  from-[#4A2564] to-[#A3957E] rounded-2xl mb-4 md:mb-0">
                                     Business &nbsp; <Briefcase className=""></Briefcase>
                                 </h2>
                                 <p className="text-zinc-300 md:w-2/3">
-                                    The Business branch comprises the External Affairs, Internal Affairs, and Finance teams. Business heads and associates work together to organize professional development workshops, plan social networking events, handle finances, and coordinate outreach efforts.
+                                    The business branch comprises the External Affairs, Internal Affairs, and Finance teams. Business heads and associates work together to organize professional development workshops, plan social networking events, handle finances, and coordinate outreach efforts.
                                 </p>
                             </motion.div>
 
@@ -142,11 +141,11 @@ export default function AboutPage() {
                                 className="flex flex-col md:flex-row justify-between items-start flex items-center h-full"
                             >
                                 {/* Removed Icon */}
-                                <h2 className="inline-flex items-center px-5 py-3 text-2xl font-bold text-zinc-100 bg-gradient-to-r  from-[#5A5C9F] to-[#E2BD6D] rounded-2xl mb-4 md:mb-0">
+                                <h2 className="inline-flex items-center px-5 py-3 text-2xl font-bold text-zinc-100 bg-gradient-to-r  from-[#0F0A53] to-[#89847B] rounded-2xl mb-4 md:mb-0">
                                     Media &nbsp; <Camera className=""></Camera>
                                 </h2>
                                 <p className="text-zinc-300 md:w-2/3">
-                                    The Media branch is responsible for creating content for our newsletter, articles, and social media platforms. Media heads and associates collaborate to develop and execute strategies that define our public image and strengthen our reach.
+                                    The media branch is responsible for creating content for our newsletter, articles, and social media platforms. Media heads and associates collaborate to develop and execute strategies that define our public image and strengthen our reach.
                                 </p>
                             </motion.div>
                         </div>
@@ -261,6 +260,7 @@ export default function AboutPage() {
 
                     {/* Logos Collage Section */}
                 </div>
+                <br></br>
                 <br></br>
                 <br></br>
             </motion.div>
