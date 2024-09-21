@@ -110,9 +110,9 @@ const faqs = [
 
 export default function MembersPage() {
   // Helper function to format date as MM/DD
-  const formatDate = (dateStr) => {
+  const formatDate = (dateStr: string) => {
     const date = new Date(dateStr);
-    if (isNaN(date)) return dateStr; // Fallback to original string if invalid
+    if (isNaN(date.getTime())) return dateStr; // Fallback to original string if invalid
     return date.toLocaleDateString("en-US", { month: "numeric", day: "numeric" });
   };
 
