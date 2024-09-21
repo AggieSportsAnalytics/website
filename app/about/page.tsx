@@ -27,7 +27,7 @@ export default function AboutPage() {
             </Head>
             
             {/* Navbar */}
-            <div className="w-screen bg-zinc-950 text-xs">
+            <div className="w-screen bg-red text-xs">
                 <div className="navbar bg-zinc-950 m-1">
                     <div className="navbar-start">
                         <div className="dropdown">

@@ -3729,6 +3729,9 @@ details.collapse summary::-webkit-details-marker {
 .stroke-zinc-300 {
   stroke: #d4d4d8;
 }
+.stroke-red-300 {
+  stroke: #fca5a5;
+}
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -3800,6 +3803,14 @@ details.collapse summary::-webkit-details-marker {
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
 }
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -3857,8 +3868,8 @@ details.collapse summary::-webkit-details-marker {
 .pt-8 {
   padding-top: 2rem;
 }
-.pb-2 {
-  padding-bottom: 0.5rem;
+.pr-5 {
+  padding-right: 1.25rem;
 }
 .text-left {
   text-align: left;
@@ -4321,12 +4332,12 @@ details.collapse summary::-webkit-details-marker {
     padding-top: 1rem;
   }
 
-  .md\:pt-8 {
-    padding-top: 2rem;
-  }
-
   .md\:pt-6 {
     padding-top: 1.5rem;
+  }
+
+  .md\:pt-8 {
+    padding-top: 2rem;
   }
 
   .md\:text-left {
@@ -4436,6 +4447,10 @@ details.collapse summary::-webkit-details-marker {
     padding-right: 1.5rem;
   }
 
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
   .lg\:pt-12 {
     padding-top: 3rem;
   }
@@ -4446,18 +4461,6 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:pt-6 {
     padding-top: 1.5rem;
-  }
-
-  .lg\:pt-10 {
-    padding-top: 2.5rem;
-  }
-
-  .lg\:pt-8 {
-    padding-top: 2rem;
-  }
-
-  .lg\:pt-0 {
-    padding-top: 0px;
   }
 
   .lg\:text-left {
