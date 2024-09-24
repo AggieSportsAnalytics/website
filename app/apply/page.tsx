@@ -7,6 +7,86 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function MembersPage() {
+  // Define recruitment events
+  const recruitmentEvents = [
+    {
+      date: "9/25",
+      title: "Interest Form Open",
+      location: "ASA Headquarters",
+      time: "1:00 PM",
+      description: "Final selection interviews for prospective members."
+    },
+    {
+      date: "10/1",
+      title: "Breaking into Tech with Sajjaad Khader",
+      location: "UC Davis Campus Center",
+      time: "10:00 AM",
+      description: "Join us for the official recruitment kickoff meeting to learn more about ASA."
+    },
+    {
+      date: "10/2",
+      title: "Tech Club Mixer (AISC x AggieWorks)",
+      location: "Room 101 | Engineering Building",
+      time: "2:00 PM",
+      description: "Participate in hands-on workshops to get a feel for our projects and methodologies."
+    },
+    {
+      date: "10/9",
+      title: "Involvement Fair",
+      location: "Local Sports Bar",
+      time: "6:00 PM",
+      description: "Connect with current members and alumni over drinks and appetizers."
+    },
+    {
+      date: "10/14",
+      title: "Applications Open",
+      location: "ASA Headquarters",
+      time: "1:00 PM",
+      description: "Final selection interviews for prospective members."
+    },
+    {
+      date: "10/15",
+      title: "Info Night",
+      location: "ASA Headquarters",
+      time: "1:00 PM",
+      description: "Final selection interviews for prospective members."
+    },
+    {
+      date: "10/16",
+      title: "Social Night",
+      location: "ASA Headquarters",
+      time: "1:00 PM",
+      description: "Final selection interviews for prospective members."
+    },
+    {
+      date: "10/17",
+      title: "Speed Dating",
+      location: "ASA Headquarters",
+      time: "1:00 PM",
+      description: "Final selection interviews for prospective members."
+    },
+    {
+      date: "10/18",
+      title: "Applications Close",
+      location: "ASA Headquarters",
+      time: "1:00 PM",
+      description: "Final selection interviews for prospective members."
+    },
+    {
+      date: "10/22 to 10/24",
+      title: "Interviews",
+      location: "ASA Headquarters",
+      time: "1:00 PM",
+      description: "Final selection interviews for prospective members."
+    },
+    {
+      date: "10/28",
+      title: "Decisions Released",
+      location: "ASA Headquarters",
+      time: "1:00 PM",
+      description: "Final selection interviews for prospective members."
+    },
+  ];
 
   return (
     <div className="relative bg-[#111111] min-h-screen flex flex-col">
@@ -99,7 +179,7 @@ export default function MembersPage() {
       <div className="w-full h-px bg-zinc-800" />
 
       {/* Main Content */}
-      <div className="flex-grow bg-[#111111]  px-12">
+      <div className="flex-grow bg-[#111111] px-12">
         <motion.div
           className="px-6 mx-auto max-w-7xl lg:px-8 pt-12"
           initial={{ opacity: 0 }}
@@ -124,7 +204,9 @@ export default function MembersPage() {
                 on Instagram to stay up-to-date with recruitment news!
               </p>
               <button className="mt-4 px-5 py-3 bg-gradient-to-r from-[#5A5CA0] to-[#393B7F] hover:from-[#393B7F] hover:to-[#5A5CA0] text-zinc-100 rounded-md transition duration-300">
-                <a href="https://www.instagram.com/aggiesportsanalytics" target="_blank">Stay Updated</a>
+                <a href="https://www.instagram.com/aggiesportsanalytics" target="_blank" rel="noopener noreferrer">
+                  Stay Updated
+                </a>
               </button>
             </div>
             <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-center">
@@ -137,8 +219,40 @@ export default function MembersPage() {
               />
             </div>
           </motion.section>
+
+          {/* Recruitment Timeline */}
+          <section className="py-12 bg-[#111111] px-6">
+            <h2 className="text-3xl font-extrabold text-white mb-8">Recruitment Timeline</h2>
+            <br></br>
+            <div className="max-w-4xl mx-auto space-y-8">
+              {recruitmentEvents.map((event, index) => (
+                <motion.div
+                  key={index}
+                  className="flex flex-col md:flex-row items-start"
+                  initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                >
+                  {/* Event Date */}
+                  <div className="md:w-1/4 md:text-right pr-4 mb-4 md:mb-0">
+                    <div className="text-lg font-semibold text-zinc-200">{event.date}</div>
+                  </div>
+                  {/* Event Content */}
+                  <div className="md:w-3/4 rounded-lg p-6 shadow-lg">
+                    <h3 className="text-2xl font-bold text-white">{event.title}</h3>
+                    <div className="text-zinc-400 mb-2">
+                      {event.location} | {event.time}
+                    </div>
+                    <p className="text-zinc-300">{event.description}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </section>
+
         </motion.div>
-        <br></br>
+        <br />
       </div>
 
       {/* Footer */}
