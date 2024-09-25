@@ -56,7 +56,7 @@ export default function JournalismPage() {
             </div>
           </div>
           <div className="navbar-end">
-            <button className="btn mr-4 bg-[#5A5CA0] hover:bg-[#393B7F] text-zinc-100">
+          <button className="btn mr-4 bg-gradient-to-r from-[#393B7F] to-[#8646B2] hover:from-[#6A1AA2] hover:to-[#3136D3] text-zinc-100 transition duration-300">
               <a href="/apply">Join</a>
             </button>
           </div>
