@@ -51,7 +51,7 @@ export default function MembersPage() {
     {
       title: "Project Member",
       description:
-        "Dive headfirst into a client-based software project with the focus of improving the future of sports tech in a specific vertical.",
+        "Dive headfirst into a client-based software project with real impact, using technology to improve current sports analytics methods.",
     },
     {
       title: "Business Member",
@@ -61,7 +61,7 @@ export default function MembersPage() {
     {
       title: "Media Member",
       description:
-        "Curate brand image and content as a Social Media or Design member, or explore investigative writing as a Journalism member.",
+        "Curate brand image and content as a Social Media, Design, or Production member, or explore investigative writing as a Journalism member.",
     },
   ];
 
@@ -216,7 +216,7 @@ export default function MembersPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1.0, delay: 0.1 }}
-              >            <p className="text-zinc-300 text-lg">We encourage you to come out to as many events as possible for the opportunity to learn about the club and interract with current members. In particular, our core recruitment events include the Info Night, Resume Workshop, and Speed Dating events. </p></motion.div>
+              >            <p className="text-zinc-300 text-lg">We invite you to attend as many events as possible to learn more about the club and engage with current members. Our key recruitment events include Info Night, Resume Workshop, and Speed Dating.</p></motion.div>
             <br></br>
             <br></br>
             <div className="max-w-4xl mx-auto space-y-8 md:pl-10">

@@ -183,9 +183,11 @@ export default function AboutPage() {
 
                     {/* Where We Go Section */}
                     <div className="max-w-7xl mx-auto pt-5">
-                        <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-8">
+                        <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-6">
                             Where We Go
                         </h1>
+                        <p className="text-lg text-zinc-300 mb-8">
+                        Our members pursue successful careers in a wide range of industries, including tech, consulting, finance, business strategy, and more. </p>
                         <br></br>
                         <motion.div
                             ref={logosRef}
