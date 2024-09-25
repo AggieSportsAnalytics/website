@@ -1,92 +1,76 @@
 "use client"; // Ensures the component is rendered on the client side
 
-import React from "react";
+import React, { useState } from "react";
 import { Footer } from "../components/footer";
 import Head from "next/head";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function MembersPage() {
-  // Define recruitment events
-  const recruitmentEvents = [
+  // Define FAQ items
+  const faqs = [
     {
-      date: "9/25",
-      title: "Interest Form Open",
-      location: "ASA Headquarters",
-      time: "1:00 PM",
-      description: "Final selection interviews for prospective members."
+      question: "How is ASA structured?",
+      answer:
+        "ASA operates in three branches - Projects, Business, and Media. These branches are highly interconnected and work in close collaboration throughout the school year.",
     },
     {
-      date: "10/1",
-      title: "Breaking into Tech with Sajjaad Khader",
-      location: "UC Davis Campus Center",
-      time: "10:00 AM",
-      description: "Join us for the official recruitment kickoff meeting to learn more about ASA."
+      question: "What are the prerequisites to join ASA?",
+      answer:
+        "There are no strict prerequisites - we welcome all students, regardless of their background. However, familiarity with basic skills for a specific position will boost your application.",
     },
     {
-      date: "10/2",
-      title: "Tech Club Mixer (AISC x AggieWorks)",
-      location: "Room 101 | Engineering Building",
-      time: "2:00 PM",
-      description: "Participate in hands-on workshops to get a feel for our projects and methodologies."
+      question: "What is the time commitment for ASA members?",
+      answer:
+        "Members are expected to commit approximately 5 to 10 hours per week, including meetings, branch-specific projects, and events.",
     },
     {
-      date: "10/9",
-      title: "Involvement Fair",
-      location: "Local Sports Bar",
-      time: "6:00 PM",
-      description: "Connect with current members and alumni over drinks and appetizers."
+      question: "When is the ASA general meeting?",
+      answer:
+        "Our GM is on Wednesdays from 7:30 pm to 8:30 pm. We expect ALL members to be able to attend GMs, no exceptions.",
     },
     {
-      date: "10/14",
-      title: "Applications Open",
-      location: "ASA Headquarters",
-      time: "1:00 PM",
-      description: "Final selection interviews for prospective members."
+      question: "What is the duration of a position in ASA?",
+      answer:
+        "Membership is a year-long commitment. If accepted, you will be expected to participate in the club throughout the entire 2024-2025 school year. Please note that we only hold one recruitment cycle for the entire academic year.",
     },
     {
-      date: "10/15",
-      title: "Info Night",
-      location: "ASA Headquarters",
-      time: "1:00 PM",
-      description: "Final selection interviews for prospective members."
+      question: "How can ASA support me academically and professionally?",
+      answer:
+        "Of course! An overwhelming majority of our members use skills learned in ASA to accel in courses and land internship/full-time opportunities.",
     },
     {
-      date: "10/16",
-      title: "Social Night",
-      location: "ASA Headquarters",
-      time: "1:00 PM",
-      description: "Final selection interviews for prospective members."
-    },
-    {
-      date: "10/17",
-      title: "Speed Dating",
-      location: "ASA Headquarters",
-      time: "1:00 PM",
-      description: "Final selection interviews for prospective members."
-    },
-    {
-      date: "10/18",
-      title: "Applications Close",
-      location: "ASA Headquarters",
-      time: "1:00 PM",
-      description: "Final selection interviews for prospective members."
-    },
-    {
-      date: "10/22 to 10/24",
-      title: "Interviews",
-      location: "ASA Headquarters",
-      time: "1:00 PM",
-      description: "Final selection interviews for prospective members."
-    },
-    {
-      date: "10/28",
-      title: "Decisions Released",
-      location: "ASA Headquarters",
-      time: "1:00 PM",
-      description: "Final selection interviews for prospective members."
+      question: "Does ASA Have membership dues?",
+      answer:
+        "Membership dues are $15 per quarter. This money is used to fund projects and cover the cost of events.",
     },
   ];
+
+  // Define available roles
+  const availableRoles = [
+    {
+      title: "Project Member",
+      description:
+        "Dive headfirst into a client-based software project with the focus of improving the future of sports tech in a specific vertical.",
+    },
+    {
+      title: "Business Member",
+      description:
+        "Coordinate outreach and client relations as an External Affairs member, or organize logistics and events as an Internal Affairs member.",
+    },
+    {
+      title: "Media Member",
+      description:
+        "Curate brand image and content as a Social Media or Design member, or explore investigative writing as a Journalism member.",
+    },
+  ];
+
+  // State for FAQ accordion
+  const [openIndex, setOpenIndex] = useState<number | null>(null); // Update type here
+
+  const toggleFAQ = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
   return (
     <div className="relative bg-[#111111] min-h-screen flex flex-col">
@@ -162,15 +146,13 @@ export default function MembersPage() {
                   <a href="/journalism">Journalism</a>
                 </li>
                 <li>
-                  <a href="/members">
-                    Team
-                  </a>
+                  <a href="/members">Team</a>
                 </li>
               </ul>
             </div>
           </div>
           <div className="navbar-end">
-            <button className="btn mr-4 bg-gradient-to-r from-[#5A5CA0] to-[#393B7F] hover:from-[#393B7F] hover:to-[#5A5CA0] text-zinc-100 transition duration-300">
+          <button className="btn mr-4 bg-gradient-to-r from-[#393B7F] to-[#8646B2] hover:from-[#6A1AA2] hover:to-[#3136D3] text-zinc-100 transition duration-300">
               <a href="/apply">Join</a>
             </button>
           </div>
@@ -194,18 +176,23 @@ export default function MembersPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="lg:w-1/2 text-center lg:text-left">
+            <div className="lg:w-1/2 text-center lg:text-left pr-5">
               <h2 className="text-xl font-extrabold tracking-tight text-white sm:text-4xl mb-6">
                 Join Our Community
               </h2>
+              <p className="text-zinc-300 text-xl mb-6"><b>Fall 2024 Recruitment</b></p>
               <p className="text-zinc-300 text-lg mb-6">
                 Become a part of the next chapter in Aggie Sports Analytics history.
-                Applications for <b>Fall 2024</b> are opening soon. In the meantime, follow us
-                on Instagram to stay up-to-date with recruitment news!
+                Follow us on <a href="https://www.instagram.com/aggiesportsanalytics" target="_blank" className="underline">Instagram</a> to stay up-to-date with recruitment news, and 
+                check out our recruitment timeline, available roles, and FAQ below!
               </p>
-              <button className="mt-4 px-5 py-3 bg-gradient-to-r from-[#5A5CA0] to-[#393B7F] hover:from-[#393B7F] hover:to-[#5A5CA0] text-zinc-100 rounded-md transition duration-300">
-                <a href="https://www.instagram.com/aggiesportsanalytics" target="_blank" rel="noopener noreferrer">
-                  Stay Updated
+              <button className="mt-4 px-5 py-3 bg-gradient-to-r from-[#393B7F] to-[#8646B2] hover:from-[#6A1AA2] hover:to-[#3136D3] text-zinc-100 rounded-md transition duration-300">
+                <a
+                  href="https://forms.gle/aC9on2bo6p3qCg7Z7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <b>Interest Form</b>
                 </a>
               </button>
             </div>
@@ -221,36 +208,288 @@ export default function MembersPage() {
           </motion.section>
 
           {/* Recruitment Timeline */}
-          <section className="py-12 bg-[#111111] px-6">
+          <section className="py-12 bg-[#111111]">
             <h2 className="text-3xl font-extrabold text-white mb-8">Recruitment Timeline</h2>
+            <motion.div
+                className="flex flex-col md:flex-row items-start"
+                initial={{ opacity: 0, x: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.0, delay: 0.1 }}
+              >            <p className="text-zinc-300 text-lg">We encourage you to come out to as many events as possible for the opportunity to learn about the club and interract with current members. In particular, our core recruitment events include the Info Night, Resume Workshop, and Speed Dating events. </p></motion.div>
             <br></br>
-            <div className="max-w-4xl mx-auto space-y-8">
-              {recruitmentEvents.map((event, index) => (
+            <br></br>
+            <div className="max-w-4xl mx-auto space-y-8 md:pl-10">
+              {/* Event 1 */}
+              <motion.div
+                className="flex flex-col md:flex-row items-start"
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+              >
+                {/* Event Date */}
+                <div className="md:w-1/4 md:text-left pr-6 md:pl-12 mb-4 md:mb-0">
+                <br></br>
+                  <div className="text-4xl font-bold text-zinc-200">10/1</div>
+                </div>
+                {/* Event Content */}
+                <div className="md:w-3/4 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-2xl font-bold text-white">
+                    Breaking into Tech: Sajjaad Khader
+                  </h3>
+                  <div className="text-zinc-400 mb-2">
+                    TLC 1010 | 7:30 PM to 9:00 PM
+                  </div>
+                  <p className="text-zinc-300">
+                    ASA x Muslim Tech Collaborative. Learn how to make the most of your degree and break
+                    into the tech industry!
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* Event 2 */}
+              <motion.div
+                className="flex flex-col md:flex-row items-start"
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                {/* Event Date */}
+                <div className="md:w-1/4 md:text-left pr-6 md:pl-12 mb-4 md:mb-0">
+                <br></br>
+                  <div className="text-4xl font-bold text-zinc-200">10/2</div>
+                </div>
+                {/* Event Content */}
+                <div className="md:w-3/4 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-2xl font-bold text-white">Tech Club Mixer</h3>
+                  <div className="text-zinc-400 mb-2">
+                    California Hall | 7:30 PM to 9:30 PM
+                  </div>
+                  <p className="text-zinc-300">
+                    Interact with ASA at one of the largest tech club events on campus! Hosted by AI
+                    Student Collective and AggieWorks.
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* Event 3 */}
+              <motion.div
+                className="flex flex-col md:flex-row items-start"
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
+                {/* Event Date */}
+                <div className="md:w-1/4 md:text-left pr-6 md:pl-12 mb-4 md:mb-0">
+                <br></br>
+                <div className="text-4xl font-bold text-zinc-200">
+                  10/9  
+                </div>
+              </div>
+                {/* Event Content */}
+                <div className="md:w-3/4 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-2xl font-bold text-white">Involvement Fair</h3>
+                  <div className="text-zinc-400 mb-2">
+                    MU Quad | 12:00 PM to 4:00 PM
+                  </div>
+                  <p className="text-zinc-300">
+                    Stop by to meet some of our board members and learn more about the club.
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* Event 4 */}
+              <motion.div
+                className="flex flex-col md:flex-row items-start"
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+              >
+                {/* Event Date */}
+                <div className="md:w-1/4 md:text-left pr-6 md:pl-12 mb-4 md:mb-0">
+                <br></br>
+                <div className="text-4xl font-bold bg-gradient-to-r from-[#8646B2] to-[#3136D3] bg-clip-text text-transparent">10/9</div>
+                </div>
+                {/* Event Content */}
+                <div className="md:w-3/4 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-2xl font-bold text-white mb-3">Applications Open</h3>
+                  <p className="text-zinc-300">
+                    Projects, Business, and Media member applications open.
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* Event 5 */}
+              <motion.div
+                className="flex flex-col md:flex-row items-start"
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+              >
+                {/* Event Date */}
+                <div className="md:w-1/4 md:text-left pr-6 md:pl-12 mb-4 md:mb-0">
+                <br></br>
+                  <div className="text-4xl font-bold text-zinc-200">10/15</div>
+                </div>
+                {/* Event Content */}
+                <div className="md:w-3/4 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-2xl font-bold text-white">Info Night</h3>
+                  <div className="text-zinc-400 mb-2">
+                    Walker 1310 | 7:30 PM to 8:30 PM
+                  </div>
+                  <p className="text-zinc-300">
+                    Learn about what we do, our purpose, and our community. Plus, network with
+                    board members.
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* Event 6 */}
+              <motion.div
+                className="flex flex-col md:flex-row items-start"
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+              >
+                {/* Event Date */}
+                <div className="md:w-1/4 md:text-left pr-6 md:pl-12 mb-4 md:mb-0">
+                <br></br>
+                  <div className="text-4xl font-bold text-zinc-200">10/16</div>
+                </div>
+                {/* Event Content */}
+                <div className="md:w-3/4 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-2xl font-bold text-white">Resume Workshop</h3>
+                  <div className="text-zinc-400 mb-2">
+                    TLC 1215 | 7:30 PM to 8:30 PM
+                  </div>
+                  <p className="text-zinc-300">
+                    Boost your resume for applying to jobs and clubs this year! Stick around for some
+                    fun activities after the workshop.
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* Event 7 */}
+              <motion.div
+                className="flex flex-col md:flex-row items-start"
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.7 }}
+              >
+                {/* Event Date */}
+                <div className="md:w-1/4 md:text-left pr-6 md:pl-12 mb-4 md:mb-0">
+                <br></br>
+                  <div className="text-4xl font-bold text-zinc-200">10/17</div>
+                </div>
+                {/* Event Content */}
+                <div className="md:w-3/4 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-2xl font-bold text-white">Speed Dating</h3>
+                  <div className="text-zinc-400 mb-2">
+                    Walker 1330 | 8:00 PM to 10:00 PM
+                  </div>
+                  <p className="text-zinc-300">
+                    Learn about our projects starting this year. <b>Mandatory</b> for all project applicants.
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* Event 8 */}
+              <br></br>
+              <motion.div
+                className="flex flex-col md:flex-row items-start"
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.8 }}
+              >
+                {/* Event Date */}
+                <div className="md:w-1/4 md:text-left pr-6 md:pl-12 mb-4 md:mb-0">
+                <br></br>
+                <div className="text-4xl font-bold bg-gradient-to-r from-[#8646B2] to-[#3136D3] bg-clip-text text-transparent">10/18</div>
+                </div>
+                {/* Event Content */}
+                <div className="md:w-3/4 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-2xl font-bold text-white mb-3">Applications Close</h3>
+                  <p className="text-zinc-300">
+                    All applications for Projects, Business, and Media branches close at midnight.
+                  </p>
+                </div>
+              </motion.div>
+            </div>
+          </section>
+
+          {/* Available Roles Section */}
+          <section className="py-12 bg-[#111111]">
+            <h2 className="text-3xl font-extrabold text-white mb-8">Available Roles</h2>
+            <br></br>
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {availableRoles.map((role, index) => (
                 <motion.div
                   key={index}
-                  className="flex flex-col md:flex-row items-start"
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  className="rounded-lg p-6 shadow-lg"
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
-                  {/* Event Date */}
-                  <div className="md:w-1/4 md:text-right pr-4 mb-4 md:mb-0">
-                    <div className="text-lg font-semibold text-zinc-200">{event.date}</div>
-                  </div>
-                  {/* Event Content */}
-                  <div className="md:w-3/4 rounded-lg p-6 shadow-lg">
-                    <h3 className="text-2xl font-bold text-white">{event.title}</h3>
-                    <div className="text-zinc-400 mb-2">
-                      {event.location} | {event.time}
-                    </div>
-                    <p className="text-zinc-300">{event.description}</p>
-                  </div>
+                  <h3 className="text-2xl font-semibold text-white mb-4 text-center">{role.title}</h3>
+                  <p className="text-zinc-300 text-center">{role.description}</p>
                 </motion.div>
               ))}
             </div>
           </section>
 
+          {/* FAQ Section */}
+          <section className="py-12 bg-[#111111]">
+            <h2 className="text-3xl font-extrabold text-white mb-10">Frequently Asked Questions</h2>
+            <br></br>
+            <div className="max-w-4xl mx-auto space-y-4">
+              {faqs.map((faq, index) => (
+                <div key={index} className="rounded-lg shadow-lg">
+                  <button
+                    className="w-full text-left px-6 py-4 flex justify-between items-center focus:outline-none"
+                    onClick={() => toggleFAQ(index)}
+                  >
+                    <span className="text-lg font-semibold text-white">{faq.question}</span>
+                    <svg
+                      className={`w-6 h-6 text-zinc-300 transition-transform duration-100 ${
+                        openIndex === index ? "transform rotate-180" : ""
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </button>
+                  {openIndex === index && (
+                    <motion.div
+                      className="px-6 py-4 border-t border-zinc-800"
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <p className="text-zinc-300">{faq.answer}</p>
+                    </motion.div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </section>
         </motion.div>
         <br />
       </div>
