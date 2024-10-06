@@ -111,7 +111,7 @@ export default function AboutPage() {
                                     Projects &nbsp; <Laptop className=""></Laptop>
                                 </h2>
                                 <p className="text-zinc-300 md:w-2/3">
-                                    The project teams work on endeavors in the domains of web development, data science, machine learning, and hardware. Project managers work with intimate teams of three to four members to revolutionize the way we examine sports through technology.
+                                    The project teams work on endeavors in the domains of web development, data science, machine learning, and hardware. Project managers work with intimate teams of three to four developers to revolutionize the way we examine sports through technology.
                                 </p>
                             </motion.div>
 

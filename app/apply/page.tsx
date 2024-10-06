@@ -49,17 +49,17 @@ export default function MembersPage() {
   // Define available roles
   const availableRoles = [
     {
-      title: "Project Member",
+      title: "Project Developer",
       description:
         "Dive headfirst into a client-based software project with real impact, using technology to improve current sports analytics methods.",
     },
     {
-      title: "Business Member",
+      title: "Business Associate",
       description:
         "Coordinate outreach and client relations as an External Affairs member, or organize logistics and events as an Internal Affairs member.",
     },
     {
-      title: "Media Member",
+      title: "Media Associate",
       description:
         "Curate brand image and content as a Social Media, Design, or Production member, or explore investigative writing as a Journalism member.",
     },
