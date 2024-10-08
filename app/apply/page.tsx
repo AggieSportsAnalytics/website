@@ -195,6 +195,15 @@ export default function MembersPage() {
                   <b>Interest Form</b>
                 </a>
               </button>
+              <button className="ml-4 mt-4 px-5 py-3 bg-gradient-to-r from-[#393B7F] to-[#8646B2] hover:from-[#6A1AA2] hover:to-[#3136D3] text-zinc-100 rounded-md transition duration-300">
+                <a
+                  href="https://forms.gle/aC9on2bo6p3qCg7Z7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <b>Apply Now</b>
+                </a>
+              </button>
             </div>
             <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-center">
               <Image
@@ -220,87 +229,7 @@ export default function MembersPage() {
             <br></br>
             <br></br>
             <div className="max-w-4xl mx-auto space-y-8 md:pl-10">
-              {/* Event 1 */}
-              <motion.div
-                className="flex flex-col md:flex-row items-start"
-                initial={{ opacity: 0, x: -100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-              >
-                {/* Event Date */}
-                <div className="md:w-1/4 md:text-left pr-6 md:pl-12 mb-4 md:mb-0">
-                <br></br>
-                  <div className="text-4xl font-bold text-zinc-200">10/1</div>
-                </div>
-                {/* Event Content */}
-                <div className="md:w-3/4 rounded-lg p-6 shadow-lg">
-                  <h3 className="text-2xl font-bold text-white">
-                    Breaking into Tech: Sajjaad Khader
-                  </h3>
-                  <div className="text-zinc-400 mb-2">
-                    TLC 1010 | 7:30 PM to 9:00 PM
-                  </div>
-                  <p className="text-zinc-300">
-                    ASA x Muslim Tech Collaborative. Learn how to make the most of your degree and break
-                    into the tech industry!
-                  </p>
-                </div>
-              </motion.div>
-
-              {/* Event 2 */}
-              <motion.div
-                className="flex flex-col md:flex-row items-start"
-                initial={{ opacity: 0, x: 100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-              >
-                {/* Event Date */}
-                <div className="md:w-1/4 md:text-left pr-6 md:pl-12 mb-4 md:mb-0">
-                <br></br>
-                  <div className="text-4xl font-bold text-zinc-200">10/2</div>
-                </div>
-                {/* Event Content */}
-                <div className="md:w-3/4 rounded-lg p-6 shadow-lg">
-                  <h3 className="text-2xl font-bold text-white">Tech Club Mixer</h3>
-                  <div className="text-zinc-400 mb-2">
-                    California Hall | 7:30 PM to 9:30 PM
-                  </div>
-                  <p className="text-zinc-300">
-                    Interact with ASA at one of the largest tech club events on campus! Hosted by AI
-                    Student Collective and AggieWorks.
-                  </p>
-                </div>
-              </motion.div>
-
-              {/* Event 3 */}
-              <motion.div
-                className="flex flex-col md:flex-row items-start"
-                initial={{ opacity: 0, x: -100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-              >
-                {/* Event Date */}
-                <div className="md:w-1/4 md:text-left pr-6 md:pl-12 mb-4 md:mb-0">
-                <br></br>
-                <div className="text-4xl font-bold text-zinc-200">
-                  10/9  
-                </div>
-              </div>
-                {/* Event Content */}
-                <div className="md:w-3/4 rounded-lg p-6 shadow-lg">
-                  <h3 className="text-2xl font-bold text-white">Involvement Fair</h3>
-                  <div className="text-zinc-400 mb-2">
-                    MU Quad | 12:00 PM to 4:00 PM
-                  </div>
-                  <p className="text-zinc-300">
-                    Stop by to meet some of our board members and learn more about the club.
-                  </p>
-                </div>
-              </motion.div>
-
+              
               {/* Event 4 */}
               <motion.div
                 className="flex flex-col md:flex-row items-start"
