@@ -15,32 +15,32 @@ export default function MembersPage() {
         "ASA operates in three branches - Projects, Business, and Media. These branches are highly interconnected and work in close collaboration throughout the school year.",
     },
     {
-      question: "What are the prerequisites to join ASA?",
+      question: "Are there prerequisites to join ASA?",
       answer:
-        "There are no strict prerequisites - we welcome all students, regardless of their background. However, familiarity with basic skills for a specific position will boost your application.",
+        "There are no strict prerequisites - we welcome all students, regardless of their background. However, familiarity with the basic skills for a specific position will boost your application.",
     },
     {
       question: "What is the time commitment for ASA members?",
       answer:
-        "Members are expected to commit approximately 5 to 10 hours per week, including meetings, branch-specific projects, and events.",
+        "Members are expected to commit approximately 5 to 10 hours per week. This includes club general meetings, branch-specific project meetings, professional events, social gatherings, and asynchronous work.",
     },
     {
-      question: "When is the ASA general meeting?",
+      question: "When are ASA general meetings?",
       answer:
-        "Our GM is on Wednesdays from 7:30 pm to 8:30 pm. We expect ALL members to be able to attend GMs, no exceptions.",
+        "Our general meeting is on Wednesdays from 7:30 pm to 9:00 pm. We expect ALL members to be able to attend GMs, with no exceptions.",
     },
     {
       question: "What is the duration of a position in ASA?",
       answer:
-        "Membership is a year-long commitment. If accepted, you will be expected to participate in the club throughout the entire 2024-2025 school year. Please note that we only hold one recruitment cycle for the entire academic year.",
+        "Membership is a year-long commitment! However, we will work with members to ensure a good experience in urgent circumstances. Please note that we only hold one recruitment cycle for the entire academic year.",
     },
     {
-      question: "How can ASA support me academically and professionally?",
+      question: "Can ASA support me academically and professionally?",
       answer:
-        "Of course! An overwhelming majority of our members use skills learned in ASA to accel in courses and land internship/full-time opportunities.",
+        "An overwhelming majority of our members use skills learned in ASA to accel in courses, along with landing internship and full-time opportunities.",
     },
     {
-      question: "Does ASA Have membership dues?",
+      question: "Does ASA have membership dues?",
       answer:
         "Membership dues are $15 per quarter. This money is used to fund projects and cover the cost of events.",
     },
@@ -51,17 +51,17 @@ export default function MembersPage() {
     {
       title: "Project Developer",
       description:
-        "Dive headfirst into a client-based software project with real impact, using technology to improve current sports analytics methods.",
+        "Dive headfirst into a client software project, using technology to improve current sports analytics methods.",
     },
     {
       title: "Business Associate",
       description:
-        "Coordinate outreach and client relations as an External Affairs member, or organize logistics and events as an Internal Affairs member.",
+        "Coordinate outreach and client relations with External Affairs, or organize logistics and events with Internal Affairs.",
     },
     {
       title: "Media Associate",
       description:
-        "Curate brand image and content as a Social Media, Design, or Production member, or explore investigative writing as a Journalism member.",
+        "Curate our brand and content with Social Media, Design, or Production, or explore investigative writing with Journalism.",
     },
   ];
 
@@ -187,15 +187,6 @@ export default function MembersPage() {
                 check out our recruitment timeline, available roles, and FAQ below!
               </p>
               <button className="mt-4 px-5 py-3 bg-gradient-to-r from-[#393B7F] to-[#8646B2] hover:from-[#6A1AA2] hover:to-[#3136D3] text-zinc-100 rounded-md transition duration-300">
-                <a
-                  href="https://forms.gle/aC9on2bo6p3qCg7Z7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <b>Interest Form</b>
-                </a>
-              </button>
-              <button className="ml-4 mt-4 px-5 py-3 bg-gradient-to-r from-[#393B7F] to-[#8646B2] hover:from-[#6A1AA2] hover:to-[#3136D3] text-zinc-100 rounded-md transition duration-300">
                 <a
                   href="https://forms.gle/aC9on2bo6p3qCg7Z7"
                   target="_blank"
