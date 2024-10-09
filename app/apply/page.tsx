@@ -207,7 +207,7 @@ export default function MembersPage() {
         <br></br>
         <button className="align-center mt-4 px-5 py-3 bg-[#202020] hover:bg-[#2F2F2F] text-zinc-100 rounded-md transition duration-300">
           <a
-            href="https://forms.gle/aC9on2bo6p3qCg7Z7"
+            href="https://forms.gle/hq6AZ3symcX1P5r1A"
             target="_blank"
             rel="noopener noreferrer"
             className=""
@@ -233,7 +233,7 @@ export default function MembersPage() {
         <br></br>
         <button className="align-center mt-4 px-5 py-3 bg-[#202020] hover:bg-[#2F2F2F] text-zinc-100 rounded-md transition duration-300">
           <a
-            href="https://forms.gle/aC9on2bo6p3qCg7Z7"
+            href="https://forms.gle/7nPYC5bed7azTSgNA"
             target="_blank"
             rel="noopener noreferrer"
             className=""
@@ -260,7 +260,7 @@ export default function MembersPage() {
         <button className="align-center mt-4 px-5 py-3 bg-[#202020] hover:bg-[#2F2F2F] text-zinc-100 rounded-md transition duration-300">
 
           <a
-            href="https://forms.gle/aC9on2bo6p3qCg7Z7"
+            href="https://forms.gle/RTKQHSfk9AeYharx6"
             target="_blank"
             rel="noopener noreferrer"
             className=""
