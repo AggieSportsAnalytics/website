@@ -107,7 +107,7 @@ export default function AboutPage() {
                                 className="flex flex-col md:flex-row justify-between items-start flex items-center h-full"
                             >
                                 {/* Removed Icon */}
-                                <h2 className="inline-flex items-center px-5 py-3 text-2xl font-bold text-zinc-100 bg-gradient-to-r  from-[#171A7E] to-[#CDA652] rounded-2xl mb-4 md:mb-0">
+                                <h2 className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-gradient-to-r  from-[#393B7F] to-[#8646B2] rounded-2xl mb-4 md:mb-0">
                                     Projects &nbsp; <Laptop className=""></Laptop>
                                 </h2>
                                 <p className="text-zinc-300 md:w-2/3">
@@ -124,11 +124,11 @@ export default function AboutPage() {
                                 className="flex flex-col md:flex-row justify-between items-start flex items-center h-full"
                             >
                                 {/* Removed Icon */}
-                                <h2 className="inline-flex items-center px-5 py-3 text-2xl font-bold text-zinc-100 bg-gradient-to-r  from-[#4A2564] to-[#A3957E] rounded-2xl mb-4 md:mb-0">
+                                <h2 className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-gradient-to-r  from-[#393B7F] to-[#8646B2] rounded-2xl mb-4 md:mb-0">
                                     Business &nbsp; <Briefcase className=""></Briefcase>
                                 </h2>
                                 <p className="text-zinc-300 md:w-2/3">
-                                    The business branch comprises the external affairs, internal affairs, and finance teams. Business heads and associates work together to organize professional development workshops, plan social networking events, handle finances, and coordinate outreach efforts.
+                                    The business branch comprises of the external affairs, internal affairs, and finance teams. Business heads and associates work together to organize professional development workshops, plan social networking events, handle finances, and coordinate outreach efforts.
                                 </p>
                             </motion.div>
 
@@ -141,7 +141,7 @@ export default function AboutPage() {
                                 className="flex flex-col md:flex-row justify-between items-start flex items-center h-full"
                             >
                                 {/* Removed Icon */}
-                                <h2 className="inline-flex items-center px-5 py-3 text-2xl font-bold text-zinc-100 bg-gradient-to-r  from-[#0F0A53] to-[#89847B] rounded-2xl mb-4 md:mb-0">
+                                <h2 className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-gradient-to-r from-[#393B7F] to-[#8646B2] rounded-2xl mb-4 md:mb-0">
                                     Media &nbsp; <Camera className=""></Camera>
                                 </h2>
                                 <p className="text-zinc-300 md:w-2/3">
