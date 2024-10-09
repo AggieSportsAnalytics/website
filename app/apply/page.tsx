@@ -15,53 +15,34 @@ export default function MembersPage() {
         "ASA operates in three branches - Projects, Business, and Media. These branches are highly interconnected and work in close collaboration throughout the school year.",
     },
     {
-      question: "What are the prerequisites to join ASA?",
+      question: "Are there prerequisites to join ASA?",
       answer:
-        "There are no strict prerequisites - we welcome all students, regardless of their background. However, familiarity with basic skills for a specific position will boost your application.",
+        "There are no strict prerequisites - we welcome all students, regardless of their background. However, familiarity with the basic skills for a specific position will boost your application.",
     },
     {
       question: "What is the time commitment for ASA members?",
       answer:
-        "Members are expected to commit approximately 5 to 10 hours per week, including meetings, branch-specific projects, and events.",
+        "Members are expected to commit approximately 5 to 10 hours per week. This includes club general meetings, branch-specific project meetings, professional events, social gatherings, and asynchronous work.",
     },
     {
-      question: "When is the ASA general meeting?",
+      question: "When are ASA general meetings?",
       answer:
-        "Our GM is on Wednesdays from 7:30 pm to 8:30 pm. We expect ALL members to be able to attend GMs, no exceptions.",
+        "Our general meeting is on Wednesdays from 7:30 pm to 9:00 pm. We expect ALL members to be able to attend GMs, with no exceptions.",
     },
     {
       question: "What is the duration of a position in ASA?",
       answer:
-        "Membership is a year-long commitment. If accepted, you will be expected to participate in the club throughout the entire 2024-2025 school year. Please note that we only hold one recruitment cycle for the entire academic year.",
+        "Membership is a year-long commitment! However, we will work with members to ensure a good experience in urgent circumstances. Please note that we only hold one recruitment cycle for the entire academic year.",
     },
     {
-      question: "How can ASA support me academically and professionally?",
+      question: "Can ASA support me academically and professionally?",
       answer:
-        "Of course! An overwhelming majority of our members use skills learned in ASA to accel in courses and land internship/full-time opportunities.",
+        "An overwhelming majority of our members use skills learned in ASA to accel in courses, along with landing internship and full-time opportunities.",
     },
     {
-      question: "Does ASA Have membership dues?",
+      question: "Does ASA ve membership dues?",
       answer:
         "Membership dues are $15 per quarter. This money is used to fund projects and cover the cost of events.",
-    },
-  ];
-
-  // Define available roles
-  const availableRoles = [
-    {
-      title: "Project Developer",
-      description:
-        "Dive headfirst into a client-based software project with real impact, using technology to improve current sports analytics methods.",
-    },
-    {
-      title: "Business Associate",
-      description:
-        "Coordinate outreach and client relations as an External Affairs member, or organize logistics and events as an Internal Affairs member.",
-    },
-    {
-      title: "Media Associate",
-      description:
-        "Curate brand image and content as a Social Media, Design, or Production member, or explore investigative writing as a Journalism member.",
     },
   ];
 
@@ -184,7 +165,7 @@ export default function MembersPage() {
               <p className="text-zinc-300 text-lg mb-6">
                 Become a part of the next chapter in Aggie Sports Analytics history.
                 Follow us on <a href="https://www.instagram.com/aggiesportsanalytics" target="_blank" className="underline">Instagram</a> to stay up-to-date with recruitment news, and 
-                check out our recruitment timeline, available roles, and FAQ below!
+                check out our open roles, recruitment timeline, and FAQ below!
               </p>
               <button className="mt-4 px-5 py-3 bg-gradient-to-r from-[#393B7F] to-[#8646B2] hover:from-[#6A1AA2] hover:to-[#3136D3] text-zinc-100 rounded-md transition duration-300">
                 <a
@@ -207,6 +188,92 @@ export default function MembersPage() {
             </div>
           </motion.section>
 
+          <section className="py-12 bg-[#111111]">
+  <h2 className="text-3xl font-extrabold text-white mb-8">Available Roles</h2>
+  <br></br>
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <motion.div
+      className="rounded-lg p-6 shadow-lg"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: 1 * 0.1 }}
+    >
+      <h3 className="text-2xl font-semibold text-white mb-4 text-center">Project Developer</h3>
+      <p className="text-zinc-300 text-center">
+        Dive headfirst into a client software project, using technology to improve current sports analytics methods.
+      </p>
+      <center>
+        <br></br>
+        <button className="align-center mt-4 px-5 py-3 bg-[#202020] hover:bg-[#2F2F2F] text-zinc-100 rounded-md transition duration-300">
+          <a
+            href="https://forms.gle/hq6AZ3symcX1P5r1A"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=""
+          >
+            <b>Apply Now</b>
+          </a>
+        </button>
+      </center>
+    </motion.div>
+
+    <motion.div
+      className="rounded-lg p-6 shadow-lg"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: 2 * 0.1 }}
+    >
+      <h3 className="text-2xl font-semibold text-white mb-4 text-center">Business Associate</h3>
+      <p className="text-zinc-300 text-center">
+        Coordinate outreach and client relations with External Affairs, or organize logistics and events with Internal Affairs.
+      </p>
+      <center>
+        <br></br>
+        <button className="align-center mt-4 px-5 py-3 bg-[#202020] hover:bg-[#2F2F2F] text-zinc-100 rounded-md transition duration-300">
+          <a
+            href="https://forms.gle/7nPYC5bed7azTSgNA"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=""
+          >
+            <b>Apply Now</b>
+          </a>
+        </button>
+      </center>
+    </motion.div>
+
+    <motion.div
+      className="rounded-lg p-6 shadow-lg"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: 3 * 0.1 }}
+    >
+      <h3 className="text-2xl font-semibold text-white mb-4 text-center">Media Associate</h3>
+      <p className="text-zinc-300 text-center">
+        Curate our brand and content with Social Media, Design, or Production, or explore investigative writing with Journalism.
+      </p>
+      <center>
+        <br></br>
+        <button className="align-center mt-4 px-5 py-3 bg-[#202020] hover:bg-[#2F2F2F] text-zinc-100 rounded-md transition duration-300">
+
+          <a
+            href="https://forms.gle/RTKQHSfk9AeYharx6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=""
+          >
+            <b>Apply Now</b>
+          </a>
+        </button>
+      </center>
+    </motion.div>
+  </div>
+</section>
+
+
           {/* Recruitment Timeline */}
           <section className="py-12 bg-[#111111]">
             <h2 className="text-3xl font-extrabold text-white mb-8">Recruitment Timeline</h2>
@@ -220,87 +287,7 @@ export default function MembersPage() {
             <br></br>
             <br></br>
             <div className="max-w-4xl mx-auto space-y-8 md:pl-10">
-              {/* Event 1 */}
-              <motion.div
-                className="flex flex-col md:flex-row items-start"
-                initial={{ opacity: 0, x: -100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-              >
-                {/* Event Date */}
-                <div className="md:w-1/4 md:text-left pr-6 md:pl-12 mb-4 md:mb-0">
-                <br></br>
-                  <div className="text-4xl font-bold text-zinc-200">10/1</div>
-                </div>
-                {/* Event Content */}
-                <div className="md:w-3/4 rounded-lg p-6 shadow-lg">
-                  <h3 className="text-2xl font-bold text-white">
-                    Breaking into Tech: Sajjaad Khader
-                  </h3>
-                  <div className="text-zinc-400 mb-2">
-                    TLC 1010 | 7:30 PM to 9:00 PM
-                  </div>
-                  <p className="text-zinc-300">
-                    ASA x Muslim Tech Collaborative. Learn how to make the most of your degree and break
-                    into the tech industry!
-                  </p>
-                </div>
-              </motion.div>
-
-              {/* Event 2 */}
-              <motion.div
-                className="flex flex-col md:flex-row items-start"
-                initial={{ opacity: 0, x: 100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-              >
-                {/* Event Date */}
-                <div className="md:w-1/4 md:text-left pr-6 md:pl-12 mb-4 md:mb-0">
-                <br></br>
-                  <div className="text-4xl font-bold text-zinc-200">10/2</div>
-                </div>
-                {/* Event Content */}
-                <div className="md:w-3/4 rounded-lg p-6 shadow-lg">
-                  <h3 className="text-2xl font-bold text-white">Tech Club Mixer</h3>
-                  <div className="text-zinc-400 mb-2">
-                    California Hall | 7:30 PM to 9:30 PM
-                  </div>
-                  <p className="text-zinc-300">
-                    Interact with ASA at one of the largest tech club events on campus! Hosted by AI
-                    Student Collective and AggieWorks.
-                  </p>
-                </div>
-              </motion.div>
-
-              {/* Event 3 */}
-              <motion.div
-                className="flex flex-col md:flex-row items-start"
-                initial={{ opacity: 0, x: -100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-              >
-                {/* Event Date */}
-                <div className="md:w-1/4 md:text-left pr-6 md:pl-12 mb-4 md:mb-0">
-                <br></br>
-                <div className="text-4xl font-bold text-zinc-200">
-                  10/9  
-                </div>
-              </div>
-                {/* Event Content */}
-                <div className="md:w-3/4 rounded-lg p-6 shadow-lg">
-                  <h3 className="text-2xl font-bold text-white">Involvement Fair</h3>
-                  <div className="text-zinc-400 mb-2">
-                    MU Quad | 12:00 PM to 4:00 PM
-                  </div>
-                  <p className="text-zinc-300">
-                    Stop by to meet some of our board members and learn more about the club.
-                  </p>
-                </div>
-              </motion.div>
-
+              
               {/* Event 4 */}
               <motion.div
                 className="flex flex-col md:flex-row items-start"
@@ -422,27 +409,6 @@ export default function MembersPage() {
                   </p>
                 </div>
               </motion.div>
-            </div>
-          </section>
-
-          {/* Available Roles Section */}
-          <section className="py-12 bg-[#111111]">
-            <h2 className="text-3xl font-extrabold text-white mb-8">Available Roles</h2>
-            <br></br>
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {availableRoles.map((role, index) => (
-                <motion.div
-                  key={index}
-                  className="rounded-lg p-6 shadow-lg"
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                >
-                  <h3 className="text-2xl font-semibold text-white mb-4 text-center">{role.title}</h3>
-                  <p className="text-zinc-300 text-center">{role.description}</p>
-                </motion.div>
-              ))}
             </div>
           </section>
 
