@@ -40,28 +40,9 @@ export default function MembersPage() {
         "An overwhelming majority of our members use skills learned in ASA to accel in courses, along with landing internship and full-time opportunities.",
     },
     {
-      question: "Does ASA have membership dues?",
+      question: "Does ASA ve membership dues?",
       answer:
         "Membership dues are $15 per quarter. This money is used to fund projects and cover the cost of events.",
-    },
-  ];
-
-  // Define available roles
-  const availableRoles = [
-    {
-      title: "Project Developer",
-      description:
-        "Dive headfirst into a client software project, using technology to improve current sports analytics methods.",
-    },
-    {
-      title: "Business Associate",
-      description:
-        "Coordinate outreach and client relations with External Affairs, or organize logistics and events with Internal Affairs.",
-    },
-    {
-      title: "Media Associate",
-      description:
-        "Curate our brand and content with Social Media, Design, or Production, or explore investigative writing with Journalism.",
     },
   ];
 
@@ -192,7 +173,7 @@ export default function MembersPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <b>Apply Now</b>
+                  <b>Interest Form</b>
                 </a>
               </button>
             </div>
@@ -206,6 +187,92 @@ export default function MembersPage() {
               />
             </div>
           </motion.section>
+
+          <section className="py-12 bg-[#111111]">
+  <h2 className="text-3xl font-extrabold text-white mb-8">Available Roles</h2>
+  <br></br>
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <motion.div
+      className="rounded-lg p-6 shadow-lg"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: 1 * 0.1 }}
+    >
+      <h3 className="text-2xl font-semibold text-white mb-4 text-center">Project Developer</h3>
+      <p className="text-zinc-300 text-center">
+        Dive headfirst into a client software project, using technology to improve current sports analytics methods.
+      </p>
+      <center>
+        <br></br>
+        <button className="align-center mt-4 px-5 py-3 bg-[#202020] hover:bg-[#2F2F2F] text-zinc-100 rounded-md transition duration-300">
+          <a
+            href="https://forms.gle/aC9on2bo6p3qCg7Z7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=""
+          >
+            <b>Apply Now</b>
+          </a>
+        </button>
+      </center>
+    </motion.div>
+
+    <motion.div
+      className="rounded-lg p-6 shadow-lg"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: 2 * 0.1 }}
+    >
+      <h3 className="text-2xl font-semibold text-white mb-4 text-center">Business Associate</h3>
+      <p className="text-zinc-300 text-center">
+        Coordinate outreach and client relations with External Affairs, or organize logistics and events with Internal Affairs.
+      </p>
+      <center>
+        <br></br>
+        <button className="align-center mt-4 px-5 py-3 bg-[#202020] hover:bg-[#2F2F2F] text-zinc-100 rounded-md transition duration-300">
+          <a
+            href="https://forms.gle/aC9on2bo6p3qCg7Z7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=""
+          >
+            <b>Apply Now</b>
+          </a>
+        </button>
+      </center>
+    </motion.div>
+
+    <motion.div
+      className="rounded-lg p-6 shadow-lg"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: 3 * 0.1 }}
+    >
+      <h3 className="text-2xl font-semibold text-white mb-4 text-center">Media Associate</h3>
+      <p className="text-zinc-300 text-center">
+        Curate our brand and content with Social Media, Design, or Production, or explore investigative writing with Journalism.
+      </p>
+      <center>
+        <br></br>
+        <button className="align-center mt-4 px-5 py-3 bg-[#202020] hover:bg-[#2F2F2F] text-zinc-100 rounded-md transition duration-300">
+
+          <a
+            href="https://forms.gle/aC9on2bo6p3qCg7Z7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=""
+          >
+            <b>Apply Now</b>
+          </a>
+        </button>
+      </center>
+    </motion.div>
+  </div>
+</section>
+
 
           {/* Recruitment Timeline */}
           <section className="py-12 bg-[#111111]">
@@ -342,27 +409,6 @@ export default function MembersPage() {
                   </p>
                 </div>
               </motion.div>
-            </div>
-          </section>
-
-          {/* Available Roles Section */}
-          <section className="py-12 bg-[#111111]">
-            <h2 className="text-3xl font-extrabold text-white mb-8">Available Roles</h2>
-            <br></br>
-            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {availableRoles.map((role, index) => (
-                <motion.div
-                  key={index}
-                  className="rounded-lg p-6 shadow-lg"
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                >
-                  <h3 className="text-2xl font-semibold text-white mb-4 text-center">{role.title}</h3>
-                  <p className="text-zinc-300 text-center">{role.description}</p>
-                </motion.div>
-              ))}
             </div>
           </section>
 
