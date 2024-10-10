@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 		siteName: "aggiesportsanalytics.com",
 		images: [
 			{
-				url: "/whiteLogo.jpg",
+				url: "/newlogowb.png",
 				width: 1920,
 				height: 1080,
 			},
