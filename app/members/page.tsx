@@ -65,6 +65,12 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/arnavakula/",
   },
   {
+    name: "Cory Pham",
+    role: "Project Manager",
+    image: "/cory.png",
+    linkedin: "https://www.linkedin.com/in/cory-pham/",
+  },
+  {
     name: "Darshan Shivakumar",
     role: "Project Manager",
     image: "/darshan.png",
