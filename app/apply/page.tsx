@@ -40,7 +40,7 @@ export default function MembersPage() {
         "An overwhelming majority of our members use skills learned in ASA to accel in courses, along with landing internship and full-time opportunities.",
     },
     {
-      question: "Does ASA ve membership dues?",
+      question: "Does ASA have membership dues?",
       answer:
         "Membership dues are $15 per quarter. This money is used to fund projects and cover the cost of events.",
     },
