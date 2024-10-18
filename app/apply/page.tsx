@@ -167,15 +167,6 @@ export default function MembersPage() {
                 Follow us on <a href="https://www.instagram.com/aggiesportsanalytics" target="_blank" className="underline">Instagram</a> to stay up-to-date with recruitment news, and 
                 check out our open roles, recruitment timeline, and FAQ below!
               </p>
-              <button className="mt-4 px-5 py-3 bg-gradient-to-r from-[#393B7F] to-[#8646B2] hover:from-[#6A1AA2] hover:to-[#3136D3] text-zinc-100 rounded-md transition duration-300">
-                <a
-                  href="https://forms.gle/aC9on2bo6p3qCg7Z7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <b>Interest Form</b>
-                </a>
-              </button>
             </div>
             <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-center">
               <Image
