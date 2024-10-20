@@ -163,9 +163,7 @@ export default function MembersPage() {
               </h2>
               <p className="text-zinc-300 text-xl mb-6"><b>Fall 2024 Recruitment</b></p>
               <p className="text-zinc-300 text-lg mb-6">
-                Become a part of the next chapter in Aggie Sports Analytics history.
-                Follow us on <a href="https://www.instagram.com/aggiesportsanalytics" target="_blank" className="underline">Instagram</a> to stay up-to-date with recruitment news, and 
-                check out our open roles, recruitment timeline, and FAQ below!
+                Become a part of the next chapter in Aggie Sports Analytics history. Applications for Fall Recruitment have now closed.
               </p>
             </div>
             <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-center">
@@ -179,90 +177,6 @@ export default function MembersPage() {
             </div>
           </motion.section>
 
-          <section className="py-12 bg-[#111111]">
-  <h2 className="text-3xl font-extrabold text-white mb-8">Available Roles</h2>
-  <br></br>
-  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    <motion.div
-      className="rounded-lg p-6 shadow-lg"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: 1 * 0.1 }}
-    >
-      <h3 className="text-2xl font-semibold text-white mb-4 text-center">Project Developer</h3>
-      <p className="text-zinc-300 text-center">
-        Dive headfirst into a client software project, using technology to improve current sports analytics methods.
-      </p>
-      <center>
-        <br></br>
-        <button className="align-center mt-4 px-5 py-3 bg-[#202020] hover:bg-[#2F2F2F] text-zinc-100 rounded-md transition duration-300">
-          <a
-            href="https://forms.gle/hq6AZ3symcX1P5r1A"
-            target="_blank"
-            rel="noopener noreferrer"
-            className=""
-          >
-            <b>Apply Now</b>
-          </a>
-        </button>
-      </center>
-    </motion.div>
-
-    <motion.div
-      className="rounded-lg p-6 shadow-lg"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: 2 * 0.1 }}
-    >
-      <h3 className="text-2xl font-semibold text-white mb-4 text-center">Business Associate</h3>
-      <p className="text-zinc-300 text-center">
-        Coordinate outreach and client relations with External Affairs, or organize logistics and events with Internal Affairs.
-      </p>
-      <center>
-        <br></br>
-        <button className="align-center mt-4 px-5 py-3 bg-[#202020] hover:bg-[#2F2F2F] text-zinc-100 rounded-md transition duration-300">
-          <a
-            href="https://forms.gle/7nPYC5bed7azTSgNA"
-            target="_blank"
-            rel="noopener noreferrer"
-            className=""
-          >
-            <b>Apply Now</b>
-          </a>
-        </button>
-      </center>
-    </motion.div>
-
-    <motion.div
-      className="rounded-lg p-6 shadow-lg"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: 3 * 0.1 }}
-    >
-      <h3 className="text-2xl font-semibold text-white mb-4 text-center">Media Associate</h3>
-      <p className="text-zinc-300 text-center">
-        Curate our brand and content with Social Media, Design, or Production, or explore investigative writing with Journalism.
-      </p>
-      <center>
-        <br></br>
-        <button className="align-center mt-4 px-5 py-3 bg-[#202020] hover:bg-[#2F2F2F] text-zinc-100 rounded-md transition duration-300">
-
-          <a
-            href="https://forms.gle/RTKQHSfk9AeYharx6"
-            target="_blank"
-            rel="noopener noreferrer"
-            className=""
-          >
-            <b>Apply Now</b>
-          </a>
-        </button>
-      </center>
-    </motion.div>
-  </div>
-</section>
 
 
           {/* Recruitment Timeline */}
