@@ -1,0 +1,138 @@
+
+          {/* Recruitment Timeline */}
+          <section className="py-12 bg-[#111111]">
+            <h2 className="text-3xl font-extrabold text-white mb-8">Recruitment Timeline</h2>
+            <motion.div
+                className="flex flex-col md:flex-row items-start"
+                initial={{ opacity: 0, x: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.0, delay: 0.1 }}
+              >            <p className="text-zinc-300 text-lg">We invite you to attend as many events as possible to learn more about the club and engage with current members. Our key recruitment events include Info Night, Resume Workshop, and Speed Dating.</p></motion.div>
+            <br></br>
+            <br></br>
+            <div className="max-w-4xl mx-auto space-y-8 md:pl-10">
+              
+              {/* Event 4 */}
+              <motion.div
+                className="flex flex-col md:flex-row items-start"
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+              >
+                {/* Event Date */}
+                <div className="md:w-1/4 md:text-left pr-6 md:pl-12 mb-4 md:mb-0">
+                <br></br>
+                <div className="text-4xl font-bold bg-gradient-to-r from-[#8646B2] to-[#3136D3] bg-clip-text text-transparent">10/9</div>
+                </div>
+                {/* Event Content */}
+                <div className="md:w-3/4 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-2xl font-bold text-white mb-3">Applications Open</h3>
+                  <p className="text-zinc-300">
+                    Projects, Business, and Media member applications open.
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* Event 5 */}
+              <motion.div
+                className="flex flex-col md:flex-row items-start"
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+              >
+                {/* Event Date */}
+                <div className="md:w-1/4 md:text-left pr-6 md:pl-12 mb-4 md:mb-0">
+                <br></br>
+                  <div className="text-4xl font-bold text-zinc-200">10/15</div>
+                </div>
+                {/* Event Content */}
+                <div className="md:w-3/4 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-2xl font-bold text-white">Info Night</h3>
+                  <div className="text-zinc-400 mb-2">
+                    Walker 1310 | 7:30 PM to 8:30 PM
+                  </div>
+                  <p className="text-zinc-300">
+                    Learn about what we do, our purpose, and our community. Plus, network with
+                    board members.
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* Event 6 */}
+              <motion.div
+                className="flex flex-col md:flex-row items-start"
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+              >
+                {/* Event Date */}
+                <div className="md:w-1/4 md:text-left pr-6 md:pl-12 mb-4 md:mb-0">
+                <br></br>
+                  <div className="text-4xl font-bold text-zinc-200">10/16</div>
+                </div>
+                {/* Event Content */}
+                <div className="md:w-3/4 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-2xl font-bold text-white">Resume Workshop</h3>
+                  <div className="text-zinc-400 mb-2">
+                    TLC 1215 | 7:30 PM to 8:30 PM
+                  </div>
+                  <p className="text-zinc-300">
+                    Boost your resume for applying to jobs and clubs this year! Stick around for some
+                    fun activities after the workshop.
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* Event 7 */}
+              <motion.div
+                className="flex flex-col md:flex-row items-start"
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.7 }}
+              >
+                {/* Event Date */}
+                <div className="md:w-1/4 md:text-left pr-6 md:pl-12 mb-4 md:mb-0">
+                <br></br>
+                  <div className="text-4xl font-bold text-zinc-200">10/17</div>
+                </div>
+                {/* Event Content */}
+                <div className="md:w-3/4 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-2xl font-bold text-white">Speed Dating</h3>
+                  <div className="text-zinc-400 mb-2">
+                    Walker 1330 | 8:00 PM to 10:00 PM
+                  </div>
+                  <p className="text-zinc-300">
+                    Learn about our projects starting this year. <b>Mandatory</b> for all project applicants.
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* Event 8 */}
+              <br></br>
+              <motion.div
+                className="flex flex-col md:flex-row items-start"
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.8 }}
+              >
+                {/* Event Date */}
+                <div className="md:w-1/4 md:text-left pr-6 md:pl-12 mb-4 md:mb-0">
+                <br></br>
+                <div className="text-4xl font-bold bg-gradient-to-r from-[#8646B2] to-[#3136D3] bg-clip-text text-transparent">10/18</div>
+                </div>
+                {/* Event Content */}
+                <div className="md:w-3/4 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-2xl font-bold text-white mb-3">Applications Close</h3>
+                  <p className="text-zinc-300">
+                    All applications for Projects, Business, and Media branches close at midnight.
+                  </p>
+                </div>
+              </motion.div>
+            </div>
+          </section>
