@@ -25,16 +25,6 @@ export default function MembersPage() {
         "Members are expected to commit approximately 5 to 10 hours per week. This includes club general meetings, branch-specific project meetings, professional events, social gatherings, and asynchronous work.",
     },
     {
-      question: "When are ASA general meetings?",
-      answer:
-        "Our general meeting is on Wednesdays from 7:30 pm to 9:00 pm. We expect ALL members to be able to attend GMs, with no exceptions.",
-    },
-    {
-      question: "What is the duration of a position in ASA?",
-      answer:
-        "Membership is a year-long commitment! However, we will work with members to ensure a good experience in urgent circumstances. Please note that we only hold one recruitment cycle for the entire academic year.",
-    },
-    {
       question: "Can ASA support me academically and professionally?",
       answer:
         "An overwhelming majority of our members use skills learned in ASA to accel in courses, along with landing internship and full-time opportunities.",
@@ -161,9 +151,8 @@ export default function MembersPage() {
               <h2 className="text-xl font-extrabold tracking-tight text-white sm:text-4xl mb-6">
                 Join Our Community
               </h2>
-              <p className="text-zinc-300 text-xl mb-6"><b>Fall 2024 Recruitment</b></p>
               <p className="text-zinc-300 text-lg mb-6">
-                Become a part of the next chapter in Aggie Sports Analytics history. Applications for Fall Recruitment are now <b>closed</b>.
+                Applications for Fall Recruitment are now <b>closed</b>. Follow us on <b><a href="https://www.instagram.com/aggiesportsanalytics" target="_blank">Instagram</a></b> to stay updated with latest club news and events.
               </p>
             </div>
             <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-center">
