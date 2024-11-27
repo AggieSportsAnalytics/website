@@ -155,7 +155,7 @@ const additionalMembers = [
   {
     name: "Abhi Barathi",
     role: "External Affairs",
-    image: "/israel.png",
+    image: "/abhi.png",
     linkedin: "https://linkedin.com/",
   },
   {
@@ -479,7 +479,7 @@ const additionalMembers = [
   {
     name: "Yash Deshmukh",
     role: "Projects",
-    image: "/israel.png",
+    image: "/yash.png",
     linkedin: "https://linkedin.com/",
   },
   {
