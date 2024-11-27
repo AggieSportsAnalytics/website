@@ -26,7 +26,7 @@ export default function JournalismPage() {
       
       {/* Navigation Bar */}
       <div className="w-screen bg-zinc-950 text-xs">
-        <div className="navbar bg-zinc-950 m-1">
+        <div className="navbar bg-zinc-950">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -62,16 +62,15 @@ export default function JournalismPage() {
           </div>
         </div>
       </div>
-      <div className="w-full h-px bg-zinc-800" />
 
       {/* Animated Container */}
       <motion.div
-        className="bg-[#111111] pl-10 pr-10 pt-8" // Reduced padding-top for consistency
+        className="bg-[#070707] pl-10 pr-10 pt-8" // Reduced padding-top for consistency
         initial="hidden"
         animate="visible"
         variants={containerVariants}
       >
-        <div className="bg-[#111111]">
+        <div className="bg-[#070707]">
           <div className="px-6 mx-auto space-y-4 max-w-7xl lg:px-8 md:space-y-8 md:pt-4 lg:pt-6">
             <div className="mx-auto lg:mx-0">
               <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-5">

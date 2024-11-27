@@ -21,14 +21,14 @@ export default function AboutPage() {
     const logos = Array.from({ length: 12 }, (_, i) => `/logos/logo${i + 1}.png`); // Ensure these images are optimized
 
     return (
-        <div className="relative">
+        <div className="relative bg-black">
             <Head>
                 <title>About | Aggie Sports Analytics at UC Davis</title>
             </Head>
             
             {/* Navbar */}
             <div className="w-screen bg-red text-xs">
-                <div className="navbar bg-zinc-950 m-1">
+                <div className="navbar bg-zinc-950 p-2">
                     <div className="navbar-start">
                         <div className="dropdown">
                             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -62,11 +62,10 @@ export default function AboutPage() {
                     </div>
                 </div>
             </div>
-            <div className="w-full h-px bg-zinc-800" />
 
             {/* Main Content with Fade-In (excluding Navbar) */}
             <motion.div
-                className="bg-[#111111] pl-10 pr-10 pt-12"
+                className="bg-[#070707] pl-10 pr-10 pt-12"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }} // Light fade-in over 1 second
@@ -106,10 +105,13 @@ export default function AboutPage() {
                                 transition={{ duration: 0.5 }}
                                 className="flex flex-col md:flex-row justify-between items-start flex items-center h-full"
                             >
-                                {/* Removed Icon */}
-                                <h2 className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-gradient-to-r  from-[#393B7F] to-[#8646B2] rounded-2xl mb-4 md:mb-0">
-                                    Projects &nbsp; <Laptop className=""></Laptop>
-                                </h2>
+                                <motion.h2 
+                                    whileHover={{ scale: 1.1 }}
+                                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                                    className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-gradient-to-r from-[#393B7F] to-[#8646B2] hover:from-[#6A1AA2] hover:to-[#3136D3] rounded-2xl mb-4 md:mb-0 cursor-pointer"
+                                >
+                                    Projects &nbsp; <Laptop />
+                                </motion.h2>
                                 <p className="text-zinc-300 md:w-2/3">
                                     The project teams work on endeavors in the domains of web development, data science, machine learning, and hardware. Project managers work with intimate teams of three to four developers to revolutionize the way we examine sports through technology.
                                 </p>
@@ -123,10 +125,13 @@ export default function AboutPage() {
                                 transition={{ duration: 0.5 }}
                                 className="flex flex-col md:flex-row justify-between items-start flex items-center h-full"
                             >
-                                {/* Removed Icon */}
-                                <h2 className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-gradient-to-r  from-[#393B7F] to-[#8646B2] rounded-2xl mb-4 md:mb-0">
-                                    Business &nbsp; <Briefcase className=""></Briefcase>
-                                </h2>
+                                <motion.h2 
+                                    whileHover={{ scale: 1.1 }}
+                                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                                    className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-gradient-to-r from-[#393B7F] to-[#8646B2] hover:from-[#6A1AA2] hover:to-[#3136D3] rounded-2xl mb-4 md:mb-0 cursor-pointer"
+                                >
+                                    Business &nbsp; <Briefcase />
+                                </motion.h2>
                                 <p className="text-zinc-300 md:w-2/3">
                                     The business branch comprises of the external affairs, internal affairs, and finance teams. Business heads and associates work together to organize professional development workshops, plan social networking events, handle finances, and coordinate outreach efforts.
                                 </p>
@@ -140,10 +145,13 @@ export default function AboutPage() {
                                 transition={{ duration: 0.5 }}
                                 className="flex flex-col md:flex-row justify-between items-start flex items-center h-full"
                             >
-                                {/* Removed Icon */}
-                                <h2 className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-gradient-to-r from-[#393B7F] to-[#8646B2] rounded-2xl mb-4 md:mb-0">
-                                    Media &nbsp; <Camera className=""></Camera>
-                                </h2>
+                                <motion.h2 
+                                    whileHover={{ scale: 1.1 }}
+                                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                                    className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-gradient-to-r from-[#393B7F] to-[#8646B2] hover:from-[#6A1AA2] hover:to-[#3136D3] rounded-2xl mb-4 md:mb-0 cursor-pointer"
+                                >
+                                    Media &nbsp; <Camera />
+                                </motion.h2>
                                 <p className="text-zinc-300 md:w-2/3">
                                     The media branch is responsible for creating content for our newsletter, articles, and social media platforms. Media heads and associates collaborate to develop and execute strategies that define our public image and strengthen our reach.
                                 </p>

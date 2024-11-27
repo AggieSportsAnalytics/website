@@ -50,7 +50,7 @@ export default async function ProjectsPage() {
 
       {/* Navigation Bar */}
       <div className="w-screen bg-zinc-950 text-xs">
-        <div className="navbar bg-zinc-950 m-1">
+        <div className="navbar bg-zinc-950">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -129,11 +129,10 @@ export default async function ProjectsPage() {
           </div>
         </div>
       </div>
-      <div className="w-full h-px bg-zinc-800" />
 
       {/* Animated Content */}
       <FadeInWrapper>
-        <div className="bg-[#111111] px-12">
+        <div className="bg-[#070707] px-12">
           <div className="px-6 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-8 lg:pt-12">
             <div className="mx-auto lg:mx-0">
               <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl mt-2">
