@@ -152,7 +152,7 @@ export default function MembersPage() {
                 Join Our Community
               </h2>
               <p className="text-zinc-300 text-lg mb-6">
-                Applications for Fall Recruitment are now <b>closed</b>. Follow us on <b><a href="https://www.instagram.com/aggiesportsanalytics" target="_blank">Instagram</a></b> to stay updated with latest club news and events.
+                Applications for this recruitment cycle are <b>closed</b>. Follow us on <b><a href="https://www.instagram.com/aggiesportsanalytics" target="_blank">Instagram</a></b> to stay updated with latest club news and events.
               </p>
             </div>
             <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-center">
