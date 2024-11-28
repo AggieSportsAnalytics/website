@@ -251,7 +251,7 @@ const additionalMembers = [
   {
     name: "Archita Mandal",
     role: "Social Media",
-    image: "/borderlogo.png",
+    image: "/default.png",
     linkedin: "https://www.linkedin.com/in/architamandal/",
   },
   {
@@ -275,7 +275,7 @@ const additionalMembers = [
   {
     name: "Aadi Gupta",
     role: "Projects",
-    image: "/borderlogo.png",
+    image: "/default.png",
     linkedin: "https://www.linkedin.com/in/gupta-aadi/",
   },
   {
