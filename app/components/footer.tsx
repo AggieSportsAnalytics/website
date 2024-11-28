@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer ref={ref} className="bg-[#070707] bg-opacity-50 text-gray-300">
+    <footer ref={ref} className="bg-[#000000] text-gray-300">
       <div className="container mx-auto p-6 flex flex-col md:flex-row justify-between items-center">
         {/* Left side with branding and newsletter */}
         <div className="mb-6 md:mb-0 text-center md:text-left md:w-1/3">

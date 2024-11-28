@@ -51,7 +51,7 @@ export default function MembersPage() {
 
       {/* Navbar */}
       <div className="w-screen bg-zinc-950 text-xs">
-        <div className="navbar bg-zinc-950 m-1">
+        <div className="navbar bg-zinc-950">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -129,10 +129,10 @@ export default function MembersPage() {
           </div>
         </div>
       </div>
-      <div className="w-full h-px bg-zinc-800" />
+
 
       {/* Main Content */}
-      <div className="flex-grow bg-[#111111] px-12">
+      <div className="flex-grow bg-[#070707] px-12">
         <motion.div
           className="px-6 mx-auto max-w-7xl lg:px-8 pt-12"
           initial={{ opacity: 0 }}
@@ -152,7 +152,7 @@ export default function MembersPage() {
                 Join Our Community
               </h2>
               <p className="text-zinc-300 text-lg mb-6">
-                Applications for Fall Recruitment are now <b>closed</b>. Follow us on <b><a href="https://www.instagram.com/aggiesportsanalytics" target="_blank">Instagram</a></b> to stay updated with latest club news and events.
+                Applications for this recruitment cycle are <b>closed</b>. Follow us on <b><a href="https://www.instagram.com/aggiesportsanalytics" target="_blank">Instagram</a></b> to stay updated with latest club news and events.
               </p>
             </div>
             <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-center">
@@ -166,50 +166,6 @@ export default function MembersPage() {
             </div>
           </motion.section>
 
-          {/* FAQ Section */}
-          <section className="py-12 bg-[#111111]">
-            <h2 className="text-3xl font-extrabold text-white mb-10">Frequently Asked Questions</h2>
-            <br></br>
-            <div className="max-w-4xl mx-auto space-y-4">
-              {faqs.map((faq, index) => (
-                <div key={index} className="rounded-lg shadow-lg">
-                  <button
-                    className="w-full text-left px-6 py-4 flex justify-between items-center focus:outline-none"
-                    onClick={() => toggleFAQ(index)}
-                  >
-                    <span className="text-lg font-semibold text-white">{faq.question}</span>
-                    <svg
-                      className={`w-6 h-6 text-zinc-300 transition-transform duration-100 ${
-                        openIndex === index ? "transform rotate-180" : ""
-                      }`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M19 9l-7 7-7-7"
-                      ></path>
-                    </svg>
-                  </button>
-                  {openIndex === index && (
-                    <motion.div
-                      className="px-6 py-4 border-t border-zinc-800"
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      <p className="text-zinc-300">{faq.answer}</p>
-                    </motion.div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </section>
         </motion.div>
         <br />
       </div>

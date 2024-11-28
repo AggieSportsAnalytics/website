@@ -48,7 +48,7 @@ const teamMembers = [
   },
   {
     name: "Vikram Choudhry",
-    role: "Advisor & Project Manager",
+    role: "Advisor, Project Manager",
     image: "/vikram.png",
     linkedin: "https://www.linkedin.com/in/vikramchoudhry24/",
   },
@@ -150,6 +150,358 @@ const teamMembers = [
   },
 ];
 
+// Add new array for additional members (add this near the top with other data)
+const additionalMembers = [
+  {
+    name: "Abhi Barathi",
+    role: "External Affairs",
+    image: "/abhi.png",
+    linkedin: "https://www.linkedin.com/in/abhinav-barathi/",
+  },
+  {
+    name: "Adeeba Mohamed-Ali",
+    role: "External Affairs",
+    image: "adeeba.png",
+    linkedin: "https://www.linkedin.com/in/adeeba-m/",
+  },
+  {
+    name: "Krishna Hajari",
+    role: "External Affairs",
+    image: "/krishnah.png",
+    linkedin: "https://www.linkedin.com/in/krishna-uday-hajari-a323a9303/",
+  },
+  {
+    name: "Luke Harrell",
+    role: "External Affairs",
+    image: "/luke.png",
+    linkedin: "https://www.linkedin.com/in/luke-harrell/",
+  },
+  {
+    name: "Yash Choudhary",
+    role: "External Affairs",
+    image: "/yashc.png",
+    linkedin: "https://www.linkedin.com/in/yash2403/",
+  },
+  {
+    name: "Bridget Huang",
+    role: "Internal Affairs",
+    image: "/bridget.png",
+    linkedin: "https://www.linkedin.com/in/bridget-huangg/",
+  },
+  {
+    name: "Ivan Yu",
+    role: "Internal Affairs",
+    image: "/ivan.png",
+    linkedin: "https://www.linkedin.com/in/ikyu/",
+  },
+  {
+    name: "Uzair Dabhoiwala",
+    role: "Internal Affairs",
+    image: "/uzair.png",
+    linkedin: "https://www.linkedin.com/in/mohammed-uzair-dabhoiwala-5973a4260/",
+  },
+  {
+    name: "Jordan Valladolid",
+    role: "Production",
+    image: "/jv.png",
+    linkedin: "https://www.linkedin.com/in/jordan-valladolid-699b671b0/",
+  },
+  {
+    name: "Jyo Makala",
+    role: "Production",
+    image: "/jyo.png",
+    linkedin: "https://www.linkedin.com/in/jyothiswaroop-makala-076b3726a/",
+  },
+  {
+    name: "Kyla Nguyen",
+    role: "Production",
+    image: "/kyla.png",
+    linkedin: "https://linkedin.com/",
+  },
+  {
+    name: "Luis Cortez",
+    role: "Production",
+    image: "/luis.png",
+    linkedin: "https://www.linkedin.com/in/luis-cortez-a44b991a2/",
+  },
+  {
+    name: "Michelle Phan",
+    role: "Production",
+    image: "/michelle.png",
+    linkedin: "https://www.linkedin.com/in/michellemtphan/",
+  },
+  {
+    name: "Anya Kumar",
+    role: "Design",
+    image: "/anya.png",
+    linkedin: "https://www.linkedin.com/in/sharanya-kumar-44273320b/",
+  },
+  {
+    name: "Hannah Roxas",
+    role: "Design",
+    image: "/hannah.png",
+    linkedin: "https://www.linkedin.com/in/hannah-roxas-1440ba299/",
+  },
+  {
+    name: "Oneeka Prabhakar",
+    role: "Design",
+    image: "/oneeka.png",
+    linkedin: "https://www.linkedin.com/in/oneeka-prabhakar-90b638257/",
+  },
+  {
+    name: "Archita Mandal",
+    role: "Social Media",
+    image: "/default.png",
+    linkedin: "https://www.linkedin.com/in/architamandal/",
+  },
+  {
+    name: "Jocelyn Chern",
+    role: "Social Media",
+    image: "/jocelyn.png",
+    linkedin: "https://www.linkedin.com/in/jocelynchern/",
+  },
+  {
+    name: "David Sun",
+    role: "Journalism",
+    image: "/david.png",
+    linkedin: "https://www.linkedin.com/in/dawei-sun-169718263/",
+  },
+  {
+    name: "Siraj Rayamajhi",
+    role: "Journalism",
+    image: "/siraj.png",
+    linkedin: "https://www.linkedin.com/in/siraj-rayamajhi-0042b5211/",
+  },
+  {
+    name: "Aadi Gupta",
+    role: "Projects",
+    image: "/default.png",
+    linkedin: "https://www.linkedin.com/in/gupta-aadi/",
+  },
+  {
+    name: "Aarav Urgaonkar",
+    role: "Projects",
+    image: "/aarav.png",
+    linkedin: "https://www.linkedin.com/in/aaravurg/",
+  },
+  {
+    name: "Aariz Iqbal",
+    role: "Projects",
+    image: "/aariz.png",
+    linkedin: "https://www.linkedin.com/in/aariz-iqbal/",
+  },
+  {
+    name: "Adam Ye",
+    role: "Projects",
+    image: "/adam.png",
+    linkedin: "https://www.linkedin.com/in/zhizhou-adam-ye-771837333/",
+  },
+  {
+    name: "Adwith Pillai",
+    role: "Projects",
+    image: "/adwith.png",
+    linkedin: "https://www.linkedin.com/in/adwithpillai/",
+  },
+  {
+    name: "Aimee Tsai",
+    role: "Projects",
+    image: "/aimee.png",
+    linkedin: "https://www.linkedin.com/in/aimee-tsai/",
+  },
+  {
+    name: "Alex Do",
+    role: "Projects",
+    image: "/alex.png",
+    linkedin: "https://www.linkedin.com/in/alex-do-33851b294/",
+  },
+  {
+    name: "Archita Sarin",
+    role: "Projects",
+    image: "/architas.png",
+    linkedin: "https://www.linkedin.com/in/archita-sarin/",
+  },
+  {
+    name: "Atin Kumar Singh",
+    role: "Projects",
+    image: "/atin.png",
+    linkedin: "https://www.linkedin.com/in/atin-kumar-singh-125831216/",
+  },
+  {
+    name: "Ayush Lenka",
+    role: "Projects",
+    image: "/ayush.png",
+    linkedin: "https://www.linkedin.com/in/ayushlenka/",
+  },
+  {
+    name: "Brian Choi",
+    role: "Projects",
+    image: "/brianc.png",
+    linkedin: "https://www.linkedin.com/in/bumsoo-choi-766717232/",
+  },
+  {
+    name: "Brian Le",
+    role: "Projects",
+    image: "/brianl.png",
+    linkedin: "https://www.linkedin.com/in/le-brian/",
+  },
+  {
+    name: "Emma Lam",
+    role: "Projects",
+    image: "/emma.png",
+    linkedin: "https://www.linkedin.com/in/emmaklam/",
+  },
+  {
+    name: "Etienne Rousseau",
+    role: "Projects",
+    image: "/etn.png",
+    linkedin: "https://www.linkedin.com/in/etiennerousseau1/",
+  },
+  {
+    name: "Harsh Karia",
+    role: "Projects",
+    image: "/harsh.png",
+    linkedin: "https://www.linkedin.com/in/harshkaria108/",
+  },
+  {
+    name: "Iain Hennington",
+    role: "Projects",
+    image: "/iain.png",
+    linkedin: "https://www.linkedin.com/in/iain-hennington-94143b303/",
+  },
+  {
+    name: "Kaushal Marimuthu",
+    role: "Projects",
+    image: "/kaushalm.png",
+    linkedin: "https://www.linkedin.com/in/kaushal-marimuthu/",
+  },
+  {
+    name: "Kaushal Ramalingam",
+    role: "Projects",
+    image: "/kaushalr.png",
+    linkedin: "https://www.linkedin.com/in/kaushal-ramalingam/",
+  },
+  {
+    name: "Kavya Sasikumar",
+    role: "Projects",
+    image: "/kavya.png",
+    linkedin: "https://www.linkedin.com/in/kavyasasikumar1/",
+  },
+  {
+    name: "Kyoungdeok Han",
+    role: "Projects",
+    image: "/kd.png",
+    linkedin: "https://www.linkedin.com/in/kyoungdeok-han-1937a9280/",
+  },
+  {
+    name: "Logan Tadano",
+    role: "Projects",
+    image: "/logan.png",
+    linkedin: "https://www.linkedin.com/in/logantadano/",
+  },
+  {
+    name: "Matthias Gabel",
+    role: "Projects",
+    image: "/matthias.png",
+    linkedin: "https://www.linkedin.com/in/matthias-gabel/",
+  },
+  {
+    name: "Nikhil Karthikeyan",
+    role: "Projects",
+    image: "/jj.png",
+    linkedin: "https://www.linkedin.com/in/nikhil-karthikeyan/",
+  },
+  {
+    name: "Raquib Alam",
+    role: "Projects",
+    image: "/raquib.png",
+    linkedin: "https://www.linkedin.com/in/raquib-alam/",
+  },
+  {
+    name: "Rohan Kaushal",
+    role: "Projects",
+    image: "/rohan.png",
+    linkedin: "https://www.linkedin.com/in/rohankaushal1/",
+  },
+  {
+    name: "Ruhi Aggarwal",
+    role: "Projects",
+    image: "/ruhi.png",
+    linkedin: "https://www.linkedin.com/in/ruhi-aggarwal/",
+  },
+  {
+    name: "Ryan Uyeki",
+    role: "Projects",
+    image: "/ryan.png",
+    linkedin: "https://www.linkedin.com/in/ruyeki/",
+  },
+  {
+    name: "Sachin Venkat",
+    role: "Projects",
+    image: "/sachin.png",
+    linkedin: "https://www.linkedin.com/in/sachinvenkat/",
+  },
+  {
+    name: "Samaya Sankuratri",
+    role: "Projects",
+    image: "/samaya.png",
+    linkedin: "https://www.linkedin.com/in/samaya-sankuratri-1a1083331/",
+  },
+  {
+    name: "Shanyu Dabbiru",
+    role: "Projects",
+    image: "/shanyu.png",
+    linkedin: "https://www.linkedin.com/in/shanyu-dabbiru/",
+  },
+  {
+    name: "Siya Jain",
+    role: "Projects",
+    image: "/siya.png",
+    linkedin: "https://www.linkedin.com/in/siyjain/",
+  },
+  {
+    name: "Stefan Shakeri",
+    role: "Projects",
+    image: "/stefan.png",
+    linkedin: "https://www.linkedin.com/in/stefan-shakeri/",
+  },
+  {
+    name: "Tarini Maram",
+    role: "Projects",
+    image: "/tarini.png",
+    linkedin: "https://www.linkedin.com/in/tarini-maram-834412291/",
+  },
+  {
+    name: "Vikram Penumarti",
+    role: "Projects",
+    image: "/vikramp.png",
+    linkedin: "https://www.linkedin.com/in/vikram-penumarti/",
+  },
+  {
+    name: "Yash Deshmukh",
+    role: "Projects",
+    image: "/yash.png",
+    linkedin: "https://www.linkedin.com/in/yashdesh6/",
+  },
+  {
+    name: "Zina Zhang",
+    role: "Projects",
+    image: "/zina.png",
+    linkedin: "https://www.linkedin.com/in/zina-zhang-42775822a/",
+  },
+  {
+    name: "Aaron Luong",
+    role: "Research",
+    image: "/aaron.png",
+    linkedin: "https://www.linkedin.com/in/aaronkluong/",
+  },
+  {
+    name: "Amar Singh",
+    role: "Research",
+    image: "/bigguy.png",
+    linkedin: "https://www.linkedin.com/in/amar-singh-1b87a11b0/",
+  },
+];
+
 // 2. Define animation variants
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -181,8 +533,8 @@ export default function MembersPage() {
 		</Head>
 		
 		{/* Navigation Bar */}
-		<div className="w-screen bg-[#111111] text-xs">
-		  <div className="navbar bg-zinc-950 m-1">
+		<div className="w-screen bg-[#070707] text-xs">
+		  <div className="navbar bg-zinc-950">
 			<div className="navbar-start">
 			  <div className="dropdown">
 				<label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -194,7 +546,7 @@ export default function MembersPage() {
 				  <li><a className="text-lg" href="/about">About</a></li>
 				  <li><a className="text-lg" href="/projects">Projects</a></li>
 				  <li><a className="text-lg" href="/journalism">Journalism</a></li>
-				  <li><a className="text-lg" href="/members">Team</a></li>
+				  <li><a className ="text-lg" href="/members">Team</a></li>
 				</ul>
 			  </div>
 			  <a href="/" className="btn btn-ghost">
@@ -218,47 +570,83 @@ export default function MembersPage() {
 			</div>
 		  </div>
 		</div>
-		<div className="w-full h-px bg-zinc-800" />
   
 		{/* 3. Animated Container */}
 		<motion.div
-		  className="bg-[#111111] pl-10 pr-10 pt-8" // Reduced pt-12 to pt-8
+		  className="bg-[#070707] pl-10 pr-10 pt-8" // Reduced pt-12 to pt-8
 		  initial="hidden"
 		  animate="visible"
 		  variants={containerVariants}
 		  transition={{ duration: 1 }} // Light fade-in over 1 second
 		>
-		  <div className="bg-[#111111]">
+		  <div className="bg-[#070707]">
 			<div className="px-6 mx-auto space-y-4 max-w-7xl lg:px-8 md:space-y-8 md:pt-4 lg:pt-6"> {/* Reduced space-y-8 to space-y-4, space-y-16 to space-y-8, pt-8 to pt-4, pt-12 to pt-6 */}
 			  <div className="mx-auto lg:mx-0">
 				<h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-6">
-				  Our Team
+				  Leadership
 				</h2>
 			  </div>
   
 			  {/* Team Members Grid */}
-			  <motion.div
-				className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center justify-center gap-y-8 pb-6 content-center"
+        <motion.div
+				className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 items-center justify-center gap-6 pb-6 content-center"
 				variants={containerVariants}
 			  >
 				{teamMembers.map((member, index) => (
 				  <motion.div
 					key={index}
-					className="w-64 mb-10 bg-transparent border-gray-700 text-slate-200"
+					className="w-48 mb-6 bg-transparent border-gray-700 text-slate-200"
 					variants={cardVariants}
 				  >
 					<figure>
-					  <img src={member.image} alt={member.name} />
+					  <img src={member.image} alt={member.name} className="w-full h-48 object-cover" />
 					</figure>
-					<div className="flex mt-5 justify-between items-center">
+					<div className="flex mt-3 justify-between items-center">
 					  <div>
-						<h2 className="card-title">{member.name}</h2>
-						<p className="text-md">{member.role}</p>
+						<h2 className="text-sm font-semibold">{member.name}</h2>
+						<p className="text-xs">{member.role}</p>
 					  </div>
-					  <div className="card-actions">
+					  <div>
 						<Link target="_blank" href={member.linkedin}>
-						  <button className="btn bg-opacity-30 hover:bg-blue-900">
-							<Linkedin className="w-5 h-5 duration-200 hover:font-medium text-slate-100" />
+						  <button className="btn btn-sm bg-opacity-0 hover:bg-blue-900 border-0">
+							<Linkedin className="w-4 h-4 duration-200 hover:font-medium text-slate-100" />
+						  </button>
+						</Link>
+					  </div>
+					</div>
+				  </motion.div>
+				))}
+			  </motion.div>
+  
+			  {/* New Section for Additional Members */}
+			  <div className="mx-auto lg:mx-0 pt-2">
+				<h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-6">
+				  Members
+				</h2>
+			  </div>
+  
+			  <motion.div
+				className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 items-center justify-center gap-6 pb-6 content-center"
+				variants={containerVariants}
+			  >
+				{additionalMembers.map((member, index) => (
+				  <motion.div
+					key={index}
+					className="w-48 mb-6 bg-transparent border-gray-700 text-slate-200"
+					variants={cardVariants}
+				  >
+					<figure>
+					  <img src={member.image} alt={member.name} className="w-full h-48 object-cover" />
+					</figure>
+					<div className="flex mt-3 justify-between items-center">
+					  <div>
+						<h2 className="text-sm font-semibold">{member.name}</h2>
+						<p className="text-xs">{member.role}</p>
+					  </div>
+					  <div>
+						<Link target="_blank" href={member.linkedin}>
+						  <button className="btn btn-sm bg-opacity-0 hover:bg-blue-900 border-0">
+							<Linkedin className="w-4 h-4 duration-200 hover:font-medium text-slate-100" />
 						  </button>
 						</Link>
 					  </div>

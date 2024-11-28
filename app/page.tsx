@@ -25,7 +25,7 @@ export default function Home() {
     <div className="w-screen min-h-screen overflow-hidden bg-[#070707] text-xs">
       
       {/* Navbar Section (Exempt from Animation) */}
-      <div className="navbar bg-[#070707] m-1">
+      <div className="navbar bg-[#070707]">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -62,8 +62,7 @@ export default function Home() {
       </div>
 
       {/* Divider */}
-      <div className="w-full h-px bg-zinc-700" />
-      <div className="bg-[#111111]">
+      <div className="bg-[#070707]">
       {/* Main Content with Fade-In Animation */}
       <motion.div
         className="flex flex-col justify-center items-center"
