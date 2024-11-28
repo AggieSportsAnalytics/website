@@ -488,6 +488,18 @@ const additionalMembers = [
     image: "/zina.png",
     linkedin: "https://www.linkedin.com/in/zina-zhang-42775822a/",
   },
+  {
+    name: "Aaron Luong",
+    role: "Research",
+    image: "/aaron.png",
+    linkedin: "https://www.linkedin.com/in/aaronkluong/",
+  },
+  {
+    name: "Amar Singh",
+    role: "Research",
+    image: "/bigguy.png",
+    linkedin: "https://www.linkedin.com/in/amar-singh-1b87a11b0/",
+  },
 ];
 
 // 2. Define animation variants
