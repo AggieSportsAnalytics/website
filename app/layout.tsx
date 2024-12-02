@@ -8,7 +8,7 @@ import { Analytics } from "./components/analytics";
 export const metadata: Metadata = {
 	title: {
 		default: "Aggie Sports Analytics at UC Davis",
-		template: "%s | Aggie Sports Analytics",
+		template: "%s",
 	},
 	description: "Redefining sports success through data science and machine learning at UC Davis.",
 	openGraph: {

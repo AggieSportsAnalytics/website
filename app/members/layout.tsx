@@ -2,8 +2,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
 	title: {
-		default: "Members | Aggie Sports Analytics at UC Davis",
-		template: "%s | Aggie Sports Analytics",
+		default: "Team | Aggie Sports Analytics",
+		template: "%s",
 	},
 	description: "Revolutioning sports success through data science and machine learning at UC Davis.",
 	openGraph: {

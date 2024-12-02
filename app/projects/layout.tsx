@@ -4,8 +4,8 @@ import type { Project } from "@/.contentlayer/generated";
 
 export const metadata: Metadata = {
 	title: {
-		default: "Projects | Aggie Sports Analytics at UC Davis",
-		template: "%s | Aggie Sports Analytics",
+		default: "Projects | Aggie Sports Analytics",
+		template: "%s",
 	},
 	description: "Revolutioning sports success through data science and machine learning at UC Davis.",
 	openGraph: {
