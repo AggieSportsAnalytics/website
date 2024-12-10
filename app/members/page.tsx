@@ -459,6 +459,12 @@ const additionalMembers = [
     linkedin: "https://www.linkedin.com/in/siyjain/",
   },
   {
+    name: "Soumil Gad",
+    role: "Projects",
+    image: "/soumil.png",
+    linkedin: "https://www.linkedin.com/in/soumil-gad/",
+  },
+  {
     name: "Stefan Shakeri",
     role: "Projects",
     image: "/stefan.png",
