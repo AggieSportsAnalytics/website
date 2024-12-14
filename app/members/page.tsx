@@ -527,9 +527,9 @@ export default function MembersPage() {
 		</Head>
 		
 		{/* Navigation Bar */}
-		<div className="w-screen bg-[#070707] text-xs">
-		  <div className="navbar bg-zinc-950">
-			<div className="navbar-start">
+		<div className="w-screen bg-[#000000] text-xs">
+		  <div className="navbar bg-[#000000]">
+			<div className="navbar navbar-start">
 			  <div className="dropdown">
 				<label tabIndex={0} className="btn btn-ghost lg:hidden">
 				  <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 stroke-zinc-300" fill="none" viewBox="0 0 24 24">

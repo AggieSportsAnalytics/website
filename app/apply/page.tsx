@@ -50,9 +50,9 @@ export default function MembersPage() {
       </Head>
 
       {/* Navbar */}
-      <div className="w-screen bg-zinc-950 text-xs">
-        <div className="navbar bg-zinc-950">
-          <div className="navbar-start">
+      <div className="w-screen bg-[#000000] text-xs">
+        <div className="navbar bg-[#000000]">
+          <div className="navbar navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
                 <svg
@@ -152,7 +152,7 @@ export default function MembersPage() {
                 Join Our Community
               </h2>
               <p className="text-zinc-300 text-lg mb-6">
-                Applications for this recruitment cycle are <b>closed</b>. Follow us on <b><a href="https://www.instagram.com/aggiesportsanalytics" target="_blank">Instagram</a></b> to stay updated with latest club news and events.
+                Applications for our recruitment cycle are closed. Follow us on <b><u><a href="https://www.instagram.com/aggiesportsanalytics" target="_blank">Instagram</a></u></b> to stay updated with latest club news and events.
               </p>
             </div>
             <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-center">

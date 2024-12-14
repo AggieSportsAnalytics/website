@@ -49,9 +49,9 @@ export default async function ProjectsPage() {
       </Head>
 
       {/* Navigation Bar */}
-      <div className="w-screen bg-zinc-950 text-xs">
-        <div className="navbar bg-zinc-950">
-          <div className="navbar-start">
+      <div className="w-screen bg-[#000000] text-xs">
+        <div className="navbar bg-[#000000]">
+          <div className="navbar navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
                 <svg
