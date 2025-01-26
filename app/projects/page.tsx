@@ -145,6 +145,7 @@ export default async function ProjectsPage() {
                 a wide range of sports, including but not limited to basketball,
                 fencing, soccer, and football.
               </p>
+              <p className="mt-8 text-zinc-300">We currently partner with UC Davis Athletics to develop technical solutions for their teams. Our collaborations span across Football, Tennis, Volleyball, Baseball, Golf, Water Polo, Basketball, Badminton, and Soccer programs, working directly with coaches and student-athletes to enhance their competitive edge.</p>
             </div>
 			
 
