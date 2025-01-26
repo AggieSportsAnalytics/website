@@ -132,7 +132,7 @@ export default function MembersPage() {
 
 
       {/* Main Content */}
-      <div className="flex-grow bg-[#070707] px-12">
+      <div className="flex-grow bg-[#000000] px-12">
         <motion.div
           className="px-6 mx-auto max-w-7xl lg:px-8 pt-12"
           initial={{ opacity: 0 }}

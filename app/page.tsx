@@ -22,7 +22,7 @@ const navigation = [
 
 export default function Home() {
   return (
-    <div className="w-screen min-h-screen overflow-hidden bg-[#070707] text-xs">
+    <div className="w-screen min-h-screen overflow-hidden bg-[#000000] text-xs">
       
       {/* Navbar Section (Exempt from Animation) */}
       <div className="navbar bg-[#000000]">
@@ -62,7 +62,7 @@ export default function Home() {
       </div>
 
       {/* Divider */}
-      <div className="bg-[#070707]">
+      <div className="bg-[#000000]">
       {/* Main Content with Fade-In Animation */}
       <motion.div
         className="flex flex-col justify-center items-center"

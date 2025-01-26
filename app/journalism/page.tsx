@@ -65,12 +65,12 @@ export default function JournalismPage() {
 
       {/* Animated Container */}
       <motion.div
-        className="bg-[#070707] pl-10 pr-10 pt-8" // Reduced padding-top for consistency
+        className="bg-[#000000] pl-10 pr-10 pt-8" // Reduced padding-top for consistency
         initial="hidden"
         animate="visible"
         variants={containerVariants}
       >
-        <div className="bg-[#070707]">
+        <div className="bg-[#000000]">
           <div className="px-6 mx-auto space-y-4 max-w-7xl lg:px-8 md:space-y-8 md:pt-4 lg:pt-6">
             <div className="mx-auto lg:mx-0">
               <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-5">

@@ -65,7 +65,7 @@ export default function AboutPage() {
 
             {/* Main Content with Fade-In (excluding Navbar) */}
             <motion.div
-                className="bg-[#070707] pl-10 pr-10 pt-12"
+                className="bg-[#000000] pl-10 pr-10 pt-12"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }} // Light fade-in over 1 second
