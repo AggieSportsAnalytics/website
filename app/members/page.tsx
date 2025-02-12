@@ -207,12 +207,6 @@ const additionalMembers = [
     linkedin: "https://www.linkedin.com/in/jordan-valladolid-699b671b0/",
   },
   {
-    name: "Jyo Makala",
-    role: "Production",
-    image: "/jyo.png",
-    linkedin: "https://www.linkedin.com/in/jyothiswaroop-makala-076b3726a/",
-  },
-  {
     name: "Kyla Nguyen",
     role: "Production",
     image: "/kyla.png",
