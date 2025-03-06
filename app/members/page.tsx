@@ -245,7 +245,7 @@ const additionalMembers = [
   {
     name: "Archita Mandal",
     role: "Social Media",
-    image: "/default.png",
+    image: "/am.png",
     linkedin: "https://www.linkedin.com/in/architamandal/",
   },
   {
@@ -373,18 +373,6 @@ const additionalMembers = [
     role: "Projects",
     image: "/kaushalr.png",
     linkedin: "https://www.linkedin.com/in/kaushal-ramalingam/",
-  },
-  {
-    name: "Kavya Sasikumar",
-    role: "Projects",
-    image: "/kavya.png",
-    linkedin: "https://www.linkedin.com/in/kavyasasikumar1/",
-  },
-  {
-    name: "Kyoungdeok Han",
-    role: "Projects",
-    image: "/kd.png",
-    linkedin: "https://www.linkedin.com/in/kyoungdeok-han-1937a9280/",
   },
   {
     name: "Logan Tadano",
