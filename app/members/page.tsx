@@ -159,12 +159,6 @@ const additionalMembers = [
     linkedin: "https://www.linkedin.com/in/abhinav-barathi/",
   },
   {
-    name: "Adeeba Mohamed-Ali",
-    role: "External Affairs",
-    image: "adeeba.png",
-    linkedin: "https://www.linkedin.com/in/adeeba-m/",
-  },
-  {
     name: "Krishna Hajari",
     role: "External Affairs",
     image: "/krishnah.png",
@@ -183,16 +177,16 @@ const additionalMembers = [
     linkedin: "https://www.linkedin.com/in/yash2403/",
   },
   {
+    name: "Ivan Yu",
+    role: "External Affairs",
+    image: "/ivan.png",
+    linkedin: "https://www.linkedin.com/in/ikyu/",
+  },
+  {
     name: "Bridget Huang",
     role: "Internal Affairs",
     image: "/bridget.png",
     linkedin: "https://www.linkedin.com/in/bridget-huangg/",
-  },
-  {
-    name: "Ivan Yu",
-    role: "Internal Affairs",
-    image: "/ivan.png",
-    linkedin: "https://www.linkedin.com/in/ikyu/",
   },
   {
     name: "Uzair Dabhoiwala",
@@ -265,12 +259,6 @@ const additionalMembers = [
     role: "Journalism",
     image: "/siraj.png",
     linkedin: "https://www.linkedin.com/in/siraj-rayamajhi-0042b5211/",
-  },
-  {
-    name: "Aadi Gupta",
-    role: "Projects",
-    image: "/default.png",
-    linkedin: "https://www.linkedin.com/in/gupta-aadi/",
   },
   {
     name: "Aarav Urgaonkar",
