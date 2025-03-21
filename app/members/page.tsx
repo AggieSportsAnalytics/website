@@ -243,12 +243,6 @@ const additionalMembers = [
     linkedin: "https://www.linkedin.com/in/architamandal/",
   },
   {
-    name: "Jocelyn Chern",
-    role: "Social Media",
-    image: "/jocelyn.png",
-    linkedin: "https://www.linkedin.com/in/jocelynchern/",
-  },
-  {
     name: "David Sun",
     role: "Journalism",
     image: "/david.png",
@@ -315,16 +309,16 @@ const additionalMembers = [
     linkedin: "https://www.linkedin.com/in/ayushlenka/",
   },
   {
-    name: "Brian Choi",
-    role: "Projects",
-    image: "/brianc.png",
-    linkedin: "https://www.linkedin.com/in/bumsoo-choi-766717232/",
-  },
-  {
     name: "Brian Le",
     role: "Projects",
     image: "/brianl.png",
     linkedin: "https://www.linkedin.com/in/le-brian/",
+  },
+  {
+    name: "Bum Soo Choi",
+    role: "Projects",
+    image: "/brianc.png",
+    linkedin: "https://www.linkedin.com/in/bumsoo-choi-766717232/",
   },
   {
     name: "Emma Lam",
