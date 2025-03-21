@@ -18,7 +18,7 @@ export default function AboutPage() {
     const { ref: logosRef, inView: logosInView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
     // Array of logo image sources
-    const logos = Array.from({ length: 12 }, (_, i) => `/logos/logo${i + 1}.png`); // Ensure these images are optimized
+    const logos = Array.from({ length: 12 }, (_, i) => `/logos/logo0${i + 1}.png`); // Ensure these images are optimized
 
     return (
         <div className="relative bg-black">
