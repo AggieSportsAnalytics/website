@@ -123,9 +123,9 @@ export default async function ProjectsPage() {
             </div>
           </div>
           <div className="navbar-end">
-		  <button className="btn mr-4 bg-gradient-to-r from-[#393B7F] to-[#8646B2] hover:from-[#6A1AA2] hover:to-[#3136D3] text-zinc-100 transition duration-300">
-              <a href="/apply">Join</a>
-            </button>
+		  		<button className="btn mr-4 bg-[#346DD0] text-zinc-100">
+            <a href="/apply">Join</a>
+          </button>
           </div>
         </div>
       </div>
@@ -139,13 +139,11 @@ export default async function ProjectsPage() {
                 Projects
               </h2>
               <p className="mt-8 text-zinc-300">
-                Our project teams build innovative projects in the
+                Our project teams build <b>innovative projects</b> in the
                 domains of web development, data science, machine learning, and
-                hardware. To date, we have completed over 25 projects targeting
-                a wide range of sports, including but not limited to basketball,
-                fencing, soccer, and football.
-              </p>
-              <p className="mt-8 text-zinc-300">We currently partner with UC Davis Athletics to develop technical solutions for their teams. Our collaborations span across Football, Tennis, Volleyball, Baseball, Golf, Water Polo, Basketball, Badminton, and Soccer programs, working directly with coaches and student-athletes to enhance their competitive edge.</p>
+                hardware. We are partnered with UC Davis Athletics to develop 
+                technical solutions for their teams.
+                </p>
             </div>
 			
 

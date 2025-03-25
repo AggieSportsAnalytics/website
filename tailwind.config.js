@@ -10,7 +10,6 @@ module.exports = {
 
 	theme: {
 		extend: {
-
 			dropShadow: {
 				glow: [
 				"0 0px 20px rgba(255,255, 255, 0.15)",
@@ -18,8 +17,6 @@ module.exports = {
 				]
 			},
 
-
-			  
 			typography: {
 				DEFAULT: {
 					css: {
@@ -29,6 +26,7 @@ module.exports = {
 						"code::after": {
 							content: '""',
 						},
+						fontFamily: "var(--font-inter)",
 					},
 				},
 				quoteless: {

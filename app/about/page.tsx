@@ -56,7 +56,7 @@ export default function AboutPage() {
                         </div>
                     </div>
                     <div className="navbar-end">
-                    <button className="btn mr-4 bg-gradient-to-r from-[#393B7F] to-[#8646B2] hover:from-[#6A1AA2] hover:to-[#3136D3] text-zinc-100 transition duration-300">
+                    <button className="btn mr-4 bg-[#346DD0] text-zinc-100">
                             <a href="/apply">Join</a>
                         </button>
                     </div>
@@ -86,7 +86,7 @@ export default function AboutPage() {
                             As a tight-knit community, we are committed to fostering both professional development and personal growth, shaping the future of our field while cultivating meaningful connections.</p>
                         </div>
                         <div className="lg:w-1/2 lg:pl-6 flex justify-center lg:justify-end pt-3">
-                            <figure><Image src="/casecomp.jpg" width={500} height={300} alt="ASA Case Competition" /></figure>
+                            <figure><Image src="/groupwqs.png" width={500} height={300} alt="ASA Case Competition" className="rounded-md"/></figure>
                         </div>
                     </div>
 
@@ -108,12 +108,12 @@ export default function AboutPage() {
                                 <motion.h2 
                                     whileHover={{ scale: 1.1 }}
                                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                                    className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-gradient-to-r from-[#393B7F] to-[#8646B2] hover:from-[#6A1AA2] hover:to-[#3136D3] rounded-2xl mb-4 md:mb-0 cursor-pointer"
+                                    className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-[#346DD0] rounded-2xl mb-4 md:mb-0 cursor-pointer"
                                 >
                                     Projects &nbsp; <Laptop />
                                 </motion.h2>
-                                <p className="text-zinc-300 md:w-2/3">
-                                    The project teams work on endeavors in the domains of web development, data science, machine learning, and hardware. Project managers work with intimate teams of three to four developers to revolutionize the way we examine sports through technology.
+                                <p className="text-zinc-300 md:w-2/3 text-lg">
+                                    Our project teams work with UC Davis sports teams to develop solutions in the domains of web development, data science, machine learning, and hardware. Project teams contain roughly five people.
                                 </p>
                             </motion.div>
 
@@ -128,12 +128,12 @@ export default function AboutPage() {
                                 <motion.h2 
                                     whileHover={{ scale: 1.1 }}
                                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                                    className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-gradient-to-r from-[#393B7F] to-[#8646B2] hover:from-[#6A1AA2] hover:to-[#3136D3] rounded-2xl mb-4 md:mb-0 cursor-pointer"
+                                    className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-[#346DD0] rounded-2xl mb-4 md:mb-0 cursor-pointer"
                                 >
                                     Business &nbsp; <Briefcase />
                                 </motion.h2>
-                                <p className="text-zinc-300 md:w-2/3">
-                                    The business branch comprises of the external affairs, internal affairs, and finance teams. Business heads and associates work together to organize professional development workshops, plan social networking events, handle finances, and coordinate outreach efforts.
+                                <p className="text-zinc-300 md:w-2/3 text-lg">
+                                    Our business branch contains the external affairs, internal affairs, and finance teams. Business teams organize professional development workshops, plan social networking events, handle finances, and coordinate outreach efforts.
                                 </p>
                             </motion.div>
 
@@ -148,12 +148,12 @@ export default function AboutPage() {
                                 <motion.h2 
                                     whileHover={{ scale: 1.1 }}
                                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                                    className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-gradient-to-r from-[#393B7F] to-[#8646B2] hover:from-[#6A1AA2] hover:to-[#3136D3] rounded-2xl mb-4 md:mb-0 cursor-pointer"
+                                    className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-[#346DD0] rounded-2xl mb-4 md:mb-0 cursor-pointer"
                                 >
                                     Media &nbsp; <Camera />
                                 </motion.h2>
-                                <p className="text-zinc-300 md:w-2/3">
-                                    The media branch is responsible for creating content for our newsletter, articles, and social media platforms. Media heads and associates collaborate to develop and execute strategies that define our public image and strengthen our reach.
+                                <p className="text-zinc-300 md:w-2/3 text-lg">
+                                    Our media branch is responsible for creating content for our newsletter, articles, and social media platforms. Media teams develop and execute strategies that define our public image and strengthen our reach.
                                 </p>
                             </motion.div>
                         </div>

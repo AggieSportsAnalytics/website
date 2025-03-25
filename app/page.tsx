@@ -55,14 +55,14 @@ export default function Home() {
           </div>
         </div>
         <div className="navbar-end">
-		<button className="btn mr-4 bg-gradient-to-r from-[#393B7F] to-[#8646B2] hover:from-[#6A1AA2] hover:to-[#3136D3] text-zinc-100 transition duration-300">
+		<button className="btn mr-4 bg-[#346DD0] text-zinc-100">
             <a href="/apply">Join</a>
           </button>
         </div>
       </div>
 
       {/* Divider */}
-      <div className="bg-[#000000]">
+      <div className="bg-[#000000] min-h-screen">
       {/* Main Content with Fade-In Animation */}
       <motion.div
         className="flex flex-col justify-center items-center"
@@ -70,7 +70,7 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}      // Animate to opacity 1 and original position
         transition={{ duration: 1, ease: "easeOut" }} // Duration and easing of the animation
       >
-        <div className="mt-16 mb-4 px-4 bottom-2 z-20 text-4xl leading-[3rem] duration-1000 bg-gradient-to-r from-20% bg-clip-text text-transparent from-[#4347CA] to-[#8646B2] cursor-default font-display sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl xl:leading-[7.5rem] whitespace-nowrap">
+        <div className="mt-16 mb-4 px-4 bottom-2 z-20 text-4xl leading-[3rem] duration-1000 bg-gradient-to-r from-20% bg-clip-text text-transparent from-[#346DD0] to-[#E2BD6B] cursor-default font-display sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl xl:leading-[7.5rem] whitespace-nowrap">
           Aggie Sports Analytics
         </div>
 
@@ -88,16 +88,67 @@ export default function Home() {
             Redefining the future of sports technology at UC Davis
           </h2>
         </div>
-        <br /><br /><br />
 
-        {/* Hero Image */}
-        <Image
-          className="px-4 mb-20"
-          src="/hero.png"
-          width={550}
-          height={550}
-          alt="Aggie Sports Analytics Hero Image"
-        />
+        <br></br>
+        <br></br>
+
+        {/* Image Collage */}
+        <div className="w-full max-w-6xl px-4 py-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <motion.div 
+              className="relative h-64 rounded-lg overflow-hidden shadow-lg"
+              initial={{ opacity: 0, rotate: -4 }}
+              animate={{ opacity: 1, rotate: -3 }}
+              whileHover={{ scale: 1.03, rotate: -6 }}
+              transition={{ 
+                opacity: { duration: 0.8, delay: 0.3 },
+                scale: { duration: 0.3 }
+              }}
+            >
+              <Image 
+                src="/hp2.png" 
+                alt="Sports Analytics" 
+                fill 
+                className="object-cover"
+              />
+            </motion.div>
+            <motion.div 
+              className="relative h-64 rounded-lg overflow-hidden shadow-lg"
+              initial={{ opacity: 0, rotate: 2 }}
+              animate={{ opacity: 1, rotate: 2 }}
+              whileHover={{ scale: 1.03, rotate: 6 }}
+              transition={{ 
+                opacity: { duration: 0.8, delay: 0.6 },
+                scale: { duration: 0.3 }
+              }}
+            >
+              <Image 
+                src="/hp1.png" 
+                alt="Data Analysis" 
+                fill 
+                className="object-cover"
+              />
+            </motion.div>
+            <motion.div 
+              className="relative h-64 rounded-lg overflow-hidden col-span-2 md:col-span-1 shadow-lg"
+              initial={{ opacity: 0, rotate: -3 }}
+              animate={{ opacity: 1, rotate: -2 }}
+              whileHover={{ scale: 1.03, rotate: -6 }}
+              transition={{ 
+                opacity: { duration: 0.8, delay: 0.9 },
+                scale: { duration: 0.3 }
+              }}
+            >
+              <Image 
+                src="/hp3.png" 
+                alt="Team Collaboration" 
+                fill 
+                className="object-cover"
+              />
+            </motion.div>
+          </div>
+        </div>
+        
       </motion.div>
 
       {/* Footer Section (Exempt from Animation) */}

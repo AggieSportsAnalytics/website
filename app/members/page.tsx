@@ -485,7 +485,7 @@ const cardVariants = {
 
 export default function MembersPage() {
 	return (
-	  <div className="relative">
+	  <div className="relative font-sans">
 		<Head>
 		  <title>Team | Aggie Sports Analytics at UC Davis</title>
 		</Head>
@@ -504,7 +504,7 @@ export default function MembersPage() {
 				  <li><a className="text-lg" href="/about">About</a></li>
 				  <li><a className="text-lg" href="/projects">Projects</a></li>
 				  <li><a className="text-lg" href="/journalism">Journalism</a></li>
-				  <li><a className ="text-lg" href="/members">Team</a></li>
+				  <li><a className="text-lg" href="/members">Team</a></li>
 				</ul>
 			  </div>
 			  <a href="/" className="btn btn-ghost">
@@ -522,9 +522,9 @@ export default function MembersPage() {
 			  </div>
 			</div>
 			<div className="navbar-end">
-			<button className="btn mr-4 bg-gradient-to-r from-[#393B7F] to-[#8646B2] hover:from-[#6A1AA2] hover:to-[#3136D3] text-zinc-100 transition duration-300">
-				<a href="/apply">Join</a>
-			  </button>
+      <button className="btn mr-4 bg-[#346DD0] text-zinc-100">
+            <a href="/apply">Join</a>
+          </button>
 			</div>
 		  </div>
 		</div>
@@ -557,7 +557,7 @@ export default function MembersPage() {
 					variants={cardVariants}
 				  >
 					<figure>
-					  <img src={member.image} alt={member.name} className="w-full h-48 object-cover" />
+					  <img src={member.image} alt={member.name} className="w-full h-48 object-cover rounded-md" />
 					</figure>
 					<div className="flex mt-3 justify-between items-center">
 					  <div>
@@ -594,7 +594,7 @@ export default function MembersPage() {
 					variants={cardVariants}
 				  >
 					<figure>
-					  <img src={member.image} alt={member.name} className="w-full h-48 object-cover" />
+					  <img src={member.image} alt={member.name} className="w-full h-48 object-cover rounded-md" />
 					</figure>
 					<div className="flex mt-3 justify-between items-center">
 					  <div>

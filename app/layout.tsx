@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 		default: "Aggie Sports Analytics at UC Davis",
 		template: "%s",
 	},
-	description: "Redefining sports success through data science and machine learning at UC Davis.",
+	description: "Redefining the future of sports technology at UC Davis.",
 	openGraph: {
 		title: "Aggie Sports Analytics",
 		description:
-			"Redefining sports success through data science and machine learning at UC Davis.",
+			"Redefining the future of sports technology at UC Davis.",
 		url: "aggiesportsanalytics.com",
 		siteName: "aggiesportsanalytics.com",
 		images: [
@@ -69,7 +69,7 @@ export default function RootLayout({
 				<Analytics />
 			</head>
 			<body
-				className={`bg-black ${
+				className={`bg-black font-sans ${
 					process.env.NODE_ENV === "development" ? "debug-screens" : undefined
 				}`}
 			>

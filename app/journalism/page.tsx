@@ -56,9 +56,9 @@ export default function JournalismPage() {
             </div>
           </div>
           <div className="navbar-end">
-          <button className="btn mr-4 bg-gradient-to-r from-[#393B7F] to-[#8646B2] hover:from-[#6A1AA2] hover:to-[#3136D3] text-zinc-100 transition duration-300">
-              <a href="/apply">Join</a>
-            </button>
+          <button className="btn mr-4 bg-[#346DD0] text-zinc-100">
+            <a href="/apply">Join</a>
+          </button>
           </div>
         </div>
       </div>
@@ -79,8 +79,7 @@ export default function JournalismPage() {
               <p className="mt-4 text-zinc-300">
                 Our journalism team crafts insightful analysis and engaging stories that highlight 
                 modern sports topics. We also cover walkthroughs of our own technical projects and 
-                provide in-depth breakdowns of the strategies behind our work. Our goal is to bridge 
-                the gap between sports analytics and storytelling.
+                provide in-depth breakdowns of the strategies behind our work.
               </p>
             </div>
             <center>
