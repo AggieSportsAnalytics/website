@@ -91,12 +91,13 @@ export default function Home() {
 
         <br></br>
         <br></br>
+        <br></br>
 
         {/* Image Collage */}
-        <div className="w-full max-w-6xl px-4 py-8">
+        <div className="w-full max-w-5xl px-4 py-8">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <motion.div 
-              className="relative h-64 rounded-lg overflow-hidden shadow-lg"
+              className="relative h-48 md:h-56 rounded-lg overflow-hidden shadow-lg" 
               initial={{ opacity: 0, rotate: -4 }}
               animate={{ opacity: 1, rotate: -3 }}
               whileHover={{ scale: 1.03, rotate: -6 }}
@@ -106,14 +107,14 @@ export default function Home() {
               }}
             >
               <Image 
-                src="/hp2.png" 
+                src="/hp2bw.png" 
                 alt="Sports Analytics" 
                 fill 
                 className="object-cover"
               />
             </motion.div>
             <motion.div 
-              className="relative h-64 rounded-lg overflow-hidden shadow-lg"
+              className="relative h-48 md:h-56 rounded-lg overflow-hidden shadow-lg"
               initial={{ opacity: 0, rotate: 2 }}
               animate={{ opacity: 1, rotate: 2 }}
               whileHover={{ scale: 1.03, rotate: 6 }}
@@ -123,14 +124,14 @@ export default function Home() {
               }}
             >
               <Image 
-                src="/hp1.png" 
+                src="/hp1bw.png" 
                 alt="Data Analysis" 
                 fill 
                 className="object-cover"
               />
             </motion.div>
             <motion.div 
-              className="relative h-64 rounded-lg overflow-hidden col-span-2 md:col-span-1 shadow-lg"
+              className="relative h-48 md:h-56 rounded-lg overflow-hidden col-span-2 md:col-span-1 shadow-lg"
               initial={{ opacity: 0, rotate: -3 }}
               animate={{ opacity: 1, rotate: -2 }}
               whileHover={{ scale: 1.03, rotate: -6 }}
@@ -140,7 +141,7 @@ export default function Home() {
               }}
             >
               <Image 
-                src="/hp3.png" 
+                src="/hp3bw.png" 
                 alt="Team Collaboration" 
                 fill 
                 className="object-cover"
