@@ -56,7 +56,7 @@ export default function AboutPage() {
                         </div>
                     </div>
                     <div className="navbar-end">
-                    <button className="btn mr-4 bg-[#346DD0] text-zinc-100">
+                    <button className="btn mr-4 bg-[#5075B5] text-zinc-100">
                             <a href="/apply">Join</a>
                         </button>
                     </div>
@@ -108,7 +108,7 @@ export default function AboutPage() {
                                 <motion.h2 
                                     whileHover={{ scale: 1.1 }}
                                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                                    className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-[#346DD0] rounded-2xl mb-4 md:mb-0 cursor-pointer"
+                                    className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-[#5075B5] rounded-2xl mb-4 md:mb-0 cursor-pointer"
                                 >
                                     Projects &nbsp; <Laptop />
                                 </motion.h2>
@@ -128,7 +128,7 @@ export default function AboutPage() {
                                 <motion.h2 
                                     whileHover={{ scale: 1.1 }}
                                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                                    className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-[#346DD0] rounded-2xl mb-4 md:mb-0 cursor-pointer"
+                                    className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-[#5075B5] rounded-2xl mb-4 md:mb-0 cursor-pointer"
                                 >
                                     Business &nbsp; <Briefcase />
                                 </motion.h2>
@@ -148,7 +148,7 @@ export default function AboutPage() {
                                 <motion.h2 
                                     whileHover={{ scale: 1.1 }}
                                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                                    className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-[#346DD0] rounded-2xl mb-4 md:mb-0 cursor-pointer"
+                                    className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-[#5075B5] rounded-2xl mb-4 md:mb-0 cursor-pointer"
                                 >
                                     Media &nbsp; <Camera />
                                 </motion.h2>

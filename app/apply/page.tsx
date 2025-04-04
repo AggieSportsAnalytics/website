@@ -123,7 +123,7 @@ export default function MembersPage() {
             </div>
           </div>
           <div className="navbar-end">
-          <button className="btn mr-4 bg-[#346DD0] text-zinc-100">
+          <button className="btn mr-4 bg-[#5075B5] text-zinc-100">
             <a href="/apply">Join</a>
           </button>
           </div>

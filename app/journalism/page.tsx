@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Navigation } from "../components/nav";
+import { Card } from "../components/card"; 
 import { Footer } from "../components/footer";
 import Head from 'next/head';
 import { motion } from 'framer-motion';
@@ -56,7 +57,7 @@ export default function JournalismPage() {
             </div>
           </div>
           <div className="navbar-end">
-          <button className="btn mr-4 bg-[#346DD0] text-zinc-100">
+          <button className="btn mr-4 bg-[#5075B5] text-zinc-100">
             <a href="/apply">Join</a>
           </button>
           </div>
@@ -76,64 +77,62 @@ export default function JournalismPage() {
               <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-5">
                 Journalism
               </h2>
-              <p className="mt-4 text-zinc-300">
-                Our journalism team crafts insightful analysis and engaging stories that highlight 
-                modern sports topics. We also cover walkthroughs of our own technical projects and 
-                provide in-depth breakdowns of the strategies behind our work.
-              </p>
+              
+              {/* Text and image side by side */}
+              <div className="flex flex-col md:flex-row gap-8 items-center">
+                <div className="pt-5">
+                  <p className="text-zinc-300">
+                    Our journalism team crafts insightful analysis and engaging stories that highlight 
+                    modern sports topics. We also cover walkthroughs of our own technical projects and 
+                    provide in-depth breakdowns of the strategies behind our work.
+                  </p>
+                </div>
+              </div>
+            
             </div>
-            <center>
-  <h2 className="text-xl py-5">
-    <a href="https://medium.com/@aggiesportsanalytics" target="_blank">
-      <button className="inline-flex items-center bg-[#F7F7F7] text-black font-bold py-2 px-4 rounded-md hover:scale-105 transform transition duration-300 ease-in-out">
-        <img 
-          src="/medium.png" 
-          alt="Medium Logo" 
-          className="w-5 h-5 mr-2"
-        />
-        Medium
-      </button>
-    </a>
-  </h2>
-</center>
+            
+            {/* Medium Button */}
+            <div className="flex justify-center py-5">
+              <a href="https://medium.com/@aggiesportsanalytics" target="_blank" rel="noopener noreferrer">
+                <button className="inline-flex items-center bg-[#F7F7F7] text-black font-bold py-2 px-6 rounded-md hover:scale-105 transform transition duration-300 ease-in-out">
+                  <img 
+                    src="/medium.png" 
+                    alt="Medium Logo" 
+                    className="w-5 h-5 mr-2"
+                  />
+                  Follow Us on Medium
+                </button>
+              </a>
+            </div>
 
-
-
-
-            {/* Embed Medium Page */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-10"> {/* Increased gap from 4 to 6 */}
-                        <motion.figure
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5 }}
-                            viewport={{ once: true }} // Ensures animation occurs only once
-                            className="overflow-hidden rounded-lg"
-                        >
-                            <img src="/j1.png" alt="ASA Spring 2024 Banquet" className="w-full h-auto object-cover" />
-                        </motion.figure>
-                        <motion.figure
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5, delay: 0.1 }}
-                            viewport={{ once: true }} // Ensures animation occurs only once
-                            className="overflow-hidden rounded-lg"
-                        >
-                            <img src="j2.png" alt="ASA Github Workshop" className="w-full h-auto object-cover" />
-                        </motion.figure>
-                        <motion.figure
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5, delay: 0.2 }}
-                            viewport={{ once: true }} // Ensures animation occurs only once
-                            className="overflow-hidden rounded-lg"
-                        >
-                            <img src="j3.png" alt="ASA Ski Trip" className="w-full h-auto object-cover" />
-                        </motion.figure>
-                    </div>
-
-
-            {/* Optional: Add more content or components here */}
+                          {/* Images Section - Two images side by side */}
+                <div className="flex flex-col md:flex-row justify-center gap-12 py-8">
+                <div className="flex justify-center">
+                  <img 
+                    src="/j1.png" 
+                    alt="Journalism Team at Work" 
+                    className="rounded-lg object-cover w-full max-w-md h-64 shadow-lg"
+                  />
+                </div>
+                <div className="flex justify-center">
+                  <img 
+                    src="/j2.png" 
+                    alt="Sports Analysis Article" 
+                    className="rounded-lg object-cover w-full max-w-md h-64 shadow-lg"
+                  />
+                </div>
+                <div className="flex justify-center">
+                  <img 
+                    src="/j3.png" 
+                    alt="Sports Analysis Article" 
+                    className="rounded-lg object-cover w-full max-w-md h-64 shadow-lg"
+                  />
+                </div>
+              </div>
+            
+       
           </div>
+          <br></br>
           <br></br>
         </div>
       </motion.div>

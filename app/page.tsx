@@ -55,14 +55,14 @@ export default function Home() {
           </div>
         </div>
         <div className="navbar-end">
-		<button className="btn mr-4 bg-[#346DD0] text-zinc-100">
+		<button className="btn mr-4 bg-[#5075B5] text-zinc-100">
             <a href="/apply">Join</a>
           </button>
         </div>
       </div>
 
       {/* Divider */}
-      <div className="bg-[#000000] min-h-screen">
+      <div className="bg-[#000000]">
       {/* Main Content with Fade-In Animation */}
       <motion.div
         className="flex flex-col justify-center items-center"
@@ -149,6 +149,13 @@ export default function Home() {
             </motion.div>
           </div>
         </div>
+
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         
       </motion.div>
 
