@@ -339,12 +339,6 @@ const additionalMembers = [
     linkedin: "https://www.linkedin.com/in/harshkaria108/",
   },
   {
-    name: "Iain Hennington",
-    role: "Projects",
-    image: "/iain.png",
-    linkedin: "https://www.linkedin.com/in/iain-hennington-94143b303/",
-  },
-  {
     name: "Kaushal Marimuthu",
     role: "Projects",
     image: "/kaushalm.png",
