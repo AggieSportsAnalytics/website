@@ -74,14 +74,14 @@ export default function JournalismPage() {
         <div className="bg-[#000000]">
           <div className="px-6 mx-auto space-y-4 max-w-7xl lg:px-8 md:space-y-8 md:pt-4 lg:pt-6">
             <div className="mx-auto lg:mx-0">
-              <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-5">
+              <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-5 font-inter">
                 Journalism
               </h2>
               
               {/* Text and image side by side */}
               <div className="flex flex-col md:flex-row gap-8 items-center">
                 <div className="pt-5">
-                  <p className="text-zinc-300">
+                  <p className="text-zinc-300 font-inter">
                     Our journalism team crafts insightful analysis and engaging stories that highlight 
                     modern sports topics. We also cover walkthroughs of our own technical projects and 
                     provide in-depth breakdowns of the strategies behind our work.
@@ -92,21 +92,21 @@ export default function JournalismPage() {
             </div>
             
             {/* Medium Button */}
-            <div className="flex justify-center py-5">
+            <div className="flex justify-center pt-2">
               <a href="https://medium.com/@aggiesportsanalytics" target="_blank" rel="noopener noreferrer">
-                <button className="inline-flex items-center bg-[#F7F7F7] text-black font-bold py-2 px-6 rounded-md hover:scale-105 transform transition duration-300 ease-in-out">
+                <button className="inline-flex items-center bg-[#F7F7F7] text-black font-bold py-2 px-6 rounded-md hover:scale-105 transform transition duration-300 ease-in-out font-inter">
                   <img 
                     src="/medium.png" 
                     alt="Medium Logo" 
                     className="w-5 h-5 mr-2"
                   />
-                  Follow Us on Medium
+                  Medium
                 </button>
               </a>
             </div>
 
                           {/* Images Section - Two images side by side */}
-                <div className="flex flex-col md:flex-row justify-center gap-12 py-8">
+                <div className="flex flex-col md:flex-row justify-center gap-12 pb-8 pt-4">
                 <div className="flex justify-center">
                   <img 
                     src="/j1.png" 

@@ -3,9 +3,10 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: [
-		"./app/**/*.{js,ts,jsx,tsx}",
+		"./app/**/*.{js,ts,jsx,tsx,mdx}",
 		"./mdx-components.tsx",
 		"content/**/*.mdx",
+		"./components/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 
 	theme: {
@@ -40,6 +41,7 @@ module.exports = {
 			fontFamily: {
 				sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
 				display: ["var(--font-calsans)"],
+				inter: ['var(--font-inter)'],
 			},
 			backgroundImage: {
 				"gradient-radial":

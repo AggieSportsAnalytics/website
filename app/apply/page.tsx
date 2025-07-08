@@ -5,6 +5,7 @@ import { Footer } from "../components/footer";
 import Head from "next/head";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { Camera, Briefcase, Laptop } from "lucide-react";
 
 export default function MembersPage() {
   // Define FAQ items
@@ -149,15 +150,18 @@ export default function MembersPage() {
           >
             <div className="lg:w-1/2 text-center lg:text-left pr-5">
               <h2 className="text-xl font-extrabold tracking-tight text-white sm:text-4xl mb-6">
-                Join Our Community
+                Join ASA Board
               </h2>
               <p className="text-zinc-300 text-lg mb-6">
-                Applications for our recruitment cycle are closed. Follow us on <b><u><a href="https://www.instagram.com/aggiesportsanalytics" target="_blank">Instagram</a></u></b> to stay updated with latest club news and events.
+                Step into leadership, make lifelong memories, and help shape the future of Aggie 
+                Sports Analytics. As a board member, you'll collaborate with passionate peers, 
+                drive club initiatives, and leave a lasting impact on our community. 
+                
               </p>
             </div>
             <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-center">
               <Image
-                src="/collage.png" // Replace with your actual image path
+                src="/collage.png"
                 alt="Join ASA"
                 width={500}
                 height={300}
@@ -166,6 +170,48 @@ export default function MembersPage() {
             </div>
           </motion.section>
 
+          <br />
+          <div className="w-full h-px bg-zinc-800 my-8" />
+          <br />
+          <br />
+          {/* Board Applications Section */}
+          <motion.section
+            className="flex flex-col items-center mb-12"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl mb-4 text-center">
+              Applications
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-20 w-full max-w-4xl">
+              {/* Media Board */}
+              <div className="bg-transparent rounded-lg shadow-lg p-8 flex flex-col items-center my-6">
+                <a href="https://forms.gle/KNvtuN1MiDbb33WG6" target="_blank" rel="noopener noreferrer" className="w-full flex flex-col items-center">
+                  <button className="w-full min-w-[240px] px-6 py-2 bg-zinc-800 text-zinc-100 rounded-md font-semibold hover:bg-zinc-700 transition flex items-center justify-center gap-2">
+                    <Camera size={20} className="text-zinc-100" /> {" "}Media Board
+                  </button>
+                </a>
+              </div>
+              {/* Business Board */}
+              <div className="bg-transparent rounded-lg shadow-lg p-8 flex flex-col items-center my-6">
+                <a href="https://forms.gle/jQUqjxbPVdZWfTeZ7" target="_blank" rel="noopener noreferrer" className="w-full flex flex-col items-center">
+                  <button className="w-full min-w-[240px] px-6 py-2 bg-zinc-800 text-zinc-100 rounded-md font-semibold hover:bg-zinc-700 transition flex items-center justify-center gap-2">
+                    <Briefcase size={20} className="text-zinc-100" /> {" "}Business Board
+                  </button>
+                </a>
+              </div>
+              {/* Projects Board */}
+              <div className="bg-transparent rounded-lg shadow-lg p-8 flex flex-col items-center my-6">
+                <a href="https://forms.gle/zq5ofxidGcPM4ZNS6" target="_blank" rel="noopener noreferrer" className="w-full flex flex-col items-center">
+                  <button className="w-full min-w-[240px] px-6 py-2 bg-zinc-800 text-zinc-100 rounded-md font-semibold hover:bg-zinc-700 transition flex items-center justify-center gap-2">
+                    <Laptop size={20} className="text-zinc-100" /> {" "}Project Manager
+                  </button>
+                </a>
+              </div>
+            </div>
+          </motion.section>
         </motion.div>
         <br />
       </div>
