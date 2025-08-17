@@ -9,9 +9,9 @@ import Footer from "./components/footer";
 
 // ---------------- Config ----------------
 const SLIDES = [
-  { src: "/hp1bw.png", alt: "ASA team 1" },
-  { src: "/hp2bw.png", alt: "ASA team 2" },
-  { src: "/hp3bw.png", alt: "ASA team 3" },
+  { src: "/hp1.png", alt: "ASA team 1" },
+  { src: "/hp2.png", alt: "ASA team 2" },
+  { src: "/hp3.png", alt: "ASA team 3" },
 ];
 
 const PILLARS = [
@@ -69,7 +69,7 @@ export default function Home() {
       <Header />
 
       {/* ===== HERO ===== */}
-      <section className="bg-[#181818] flex flex-col items-center text-center px-6 pt-20 pb-16 sm:pt-24 sm:pb-20">
+      <section className="bg-[#181818] flex flex-col items-center text-center px-6 pt-20 pb-20 sm:pt-24 sm:pb-20">
         {/* Constrained text column */}
         <div className="max-w-3xl mx-auto mb-5">
           {/* Smaller Title: bold club name, lighter remainder */}
@@ -81,7 +81,7 @@ export default function Home() {
           >
             <span className="font-bold text-white">Aggie Sports Analytics</span>{" "}
             <span className="font-light text-zinc-400">
-              is redefining the future of sports technology
+              is redefining the future of sports technology.
             </span>
           </motion.h1>
 
@@ -116,59 +116,6 @@ export default function Home() {
               />
             </motion.div>
           </AnimatePresence>
-        </div>
-      </section>
-
-      {/* ===== THREE PILLARS ===== */}
-      <section className="bg-[#202020]">
-        <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
-          <div className="grid grid-cols-2 gap-6 sm:gap-8">
-            {/* Title in top left */}
-            <div className="col-span-2 sm:col-span-1">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">
-                Our Three Pillars
-              </h2>
-            </div>
-
-            {/* Projects - Top right */}
-            <motion.div
-              className="rounded-2xl bg-[#2a2a2a] p-6 sm:p-7 shadow-lg"
-              initial={{ opacity: 0, y: 12 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ delay: 0.06, duration: 0.45 }}
-              whileHover={{ scale: 1.02 }}
-            >
-              <h3 className="text-lg sm:text-xl font-semibold mb-3">{PILLARS[0].title}</h3>
-              <p className="text-sm sm:text-base text-zinc-300">{PILLARS[0].copy}</p>
-            </motion.div>
-
-            {/* Business - Bottom left */}
-            <motion.div
-              className="rounded-2xl bg-[#2a2a2a] p-6 sm:p-7 shadow-lg"
-              initial={{ opacity: 0, y: 12 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ delay: 0.12, duration: 0.45 }}
-              whileHover={{ scale: 1.02 }}
-            >
-              <h3 className="text-lg sm:text-xl font-semibold mb-3">{PILLARS[1].title}</h3>
-              <p className="text-sm sm:text-base text-zinc-300">{PILLARS[1].copy}</p>
-            </motion.div>
-
-            {/* Media - Bottom right */}
-            <motion.div
-              className="rounded-2xl bg-[#2a2a2a] p-6 sm:p-7 shadow-lg"
-              initial={{ opacity: 0, y: 12 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ delay: 0.18, duration: 0.45 }}
-              whileHover={{ scale: 1.02 }}
-            >
-              <h3 className="text-lg sm:text-xl font-semibold mb-3">{PILLARS[2].title}</h3>
-              <p className="text-sm sm:text-base text-zinc-300">{PILLARS[2].copy}</p>
-            </motion.div>
-          </div>
         </div>
       </section>
 

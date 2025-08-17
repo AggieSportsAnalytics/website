@@ -102,34 +102,20 @@ export default function AboutPage() {
       >
         <div className="px-2 md:px-6 mx-auto space-y-16 max-w-7xl md:space-y-24 md:pt-6 lg:pt-10">
           {/* Who We Are Section */}
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 max-w-5xl mx-auto">
-            <div className="lg:w-1/2 text-center lg:text-left">
-              <p className="mt-2 text-base sm:text-lg text-zinc-300">
-                Aggie Sports Analytics is a student-led organization redefining the future of sports
-                technology. We unite driven students from diverse academic backgrounds to develop
-                innovative solutions across business, technology, and media.
-              </p>
-              <br />
-              <p className="mb-2 text-base sm:text-lg text-zinc-300">
-                As a tight-knit community, we are committed to fostering both professional development
-                and personal growth, shaping the future of our field while cultivating meaningful
-                connections.
-              </p>
-            </div>
-
-            {/* ===== Single photo ===== */}
-            <div className="flex justify-center">
-              <Image
-                src="/hp3bw.png"
-                width={500}
-                height={500}
-                alt="ASA Team Photo"
-                className="rounded-lg shadow-2xl w-64 h-auto object-cover"
-                priority
-              />
-            </div>
-          </div>
-
+          <div className="flex flex-col lg:flex-row items-start lg:items-start">
+                        <div className="lg:w-1/2 lg:pr-6 justify-center h-full">
+                            <br />
+                            <p className="mt-8 text-lg text-zinc-300">
+                                Aggie Sports Analytics is a student-led organization redefining the future of sports technology. We unite driven students from diverse academic backgrounds to develop innovative solutions across business, technology, and media.
+                            </p>
+                            <br />
+                            <p className="mb-8 text-lg text-zinc-300">
+                            As a tight-knit community, we are committed to fostering both professional development and personal growth, shaping the future of our field while cultivating meaningful connections.</p>
+                        </div>
+                        <div className="lg:w-1/2 lg:pl-6 flex justify-center lg:justify-end pt-3">
+                            <figure><Image src="/groupwqs.png" width={500} height={300} alt="ASA Case Competition" className="rounded-md"/></figure>
+                        </div>
+                    </div>
           {/* ===== What We Do Section: 3 vertical selections with holographic logo behind ===== */}
           <section className="relative max-w-7xl mx-auto">
 
