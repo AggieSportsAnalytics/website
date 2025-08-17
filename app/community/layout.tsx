@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
 	title: {
-		default: "Journalism | Aggie Sports Analytics",
+		default: "Community | Aggie Sports Analytics",
 		template: "%s",
 	},
 	description: "Revolutioning sports success through data science and machine learning at UC Davis.",

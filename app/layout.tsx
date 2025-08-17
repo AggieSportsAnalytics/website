@@ -70,7 +70,7 @@ export default function RootLayout({
 				<Analytics />
 			</head>
 			<body
-				className={`bg-black font-sans ${
+				className={`bg-[#181818] font-sans ${
 					process.env.NODE_ENV === "development" ? "debug-screens" : undefined
 				}`}
 			>

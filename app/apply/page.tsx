@@ -1,10 +1,11 @@
 "use client"; // Ensures the component is rendered on the client side
 
 import React, { useState } from "react";
-import { Footer } from "../components/footer";
+import Footer from "../components/footer";
 import Head from "next/head";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Header from "../components/Header";
 
 export default function MembersPage() {
   // Define FAQ items
@@ -44,95 +45,16 @@ export default function MembersPage() {
   };
 
   return (
-    <div className="relative bg-[#111111] min-h-screen flex flex-col">
+    <div className="relative bg-[#181818] min-h-screen flex flex-col">
       <Head>
         <title>Join ASA | Aggie Sports Analytics at UC Davis</title>
       </Head>
 
-      {/* Navbar */}
-      <div className="w-screen bg-[#000000] text-xs">
-        <div className="navbar bg-[#000000]">
-          <div className="navbar navbar-start">
-            <div className="dropdown">
-              <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-7 w-7 stroke-zinc-300"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </label>
-              <ul
-                tabIndex={0}
-                className="z-30 menu menu-md dropdown-content mt-3 p-2 shadow bg-zinc-950 rounded-box w-52 text-zinc-300"
-              >
-                <li>
-                  <a className="text-lg" href="/about">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a className="text-lg" href="/projects">
-                    Projects
-                  </a>
-                </li>
-                <li>
-                  <a className="text-lg" href="/journalism">
-                    Journalism
-                  </a>
-                </li>
-                <li>
-                  <a className="text-lg" href="/members">
-                    Team
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <a href="/" className="btn btn-ghost">
-              <Image
-                src="/bLogo.png"
-                alt="Aggie Sports Analytics Logo"
-                width={100}
-                height={50}
-              />
-            </a>
-          </div>
-          <div className="navbar-center">
-            <div className="hidden lg:flex">
-              <ul className="menu menu-horizontal px-1 text-zinc-200 text-xl">
-                <li>
-                  <a href="/about">About</a>
-                </li>
-                <li>
-                  <a href="/projects">Projects</a>
-                </li>
-                <li>
-                  <a href="/journalism">Journalism</a>
-                </li>
-                <li>
-                  <a href="/members">Team</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="navbar-end">
-          <button className="btn mr-4 bg-[#5075B5] text-zinc-100">
-            <a href="/apply">Join</a>
-          </button>
-          </div>
-        </div>
-      </div>
+      <Header />
 
 
       {/* Main Content */}
-      <div className="flex-grow bg-[#000000] px-12">
+      <div className="flex-grow bg-[#181818] px-12">
         <motion.div
           className="px-6 mx-auto max-w-7xl lg:px-8 pt-12"
           initial={{ opacity: 0 }}
