@@ -52,7 +52,7 @@ export default function Header() {
               alt="Aggie Sports Analytics Logo"
               width={100}
               height={50}
-              className="grayscale hover:grayscale-0"
+              className="hover:grayscale-0"
             />
           </a>
         </div>
@@ -63,22 +63,25 @@ export default function Header() {
                   <a href="/about" className="hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent">About</a>
                 </li>
                 <li>
+                  <a href="/community" className="hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent">Community</a>
+                </li>
+                <li>
                   <a href="/projects" className="hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent">Projects</a>
                 </li>
                 <li>
                   <a href="https://medium.com/@aggiesportsanalytics" target="_blank" className="hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent">Journalism</a>
-                </li>
-                <li>
-                  <a href="/community" className="hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent">Community</a>
                 </li>
 
               </ul>
           </div>
         </div>
         <div className="navbar-end">
-          <button className="btn mr-2 bg-zinc-600 hover:bg-zinc-700 text-zinc-100 duration-200">
-            <a href="/apply">Join</a>
-          </button>
+          <a 
+            href="/apply" 
+            className="inline-flex items-center px-5 py-3 mr-2 bg-transparent border border-zinc-600 text-zinc-400 text-sm font-medium rounded-full hover:border-zinc-500 hover:text-zinc-300 transition-colors duration-300"
+          >
+            Join
+          </a>
         </div>
       </div>
     </div>

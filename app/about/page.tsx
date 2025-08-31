@@ -75,8 +75,8 @@ export default function AboutPage() {
       {/* ===== FULL SCREEN HERO IMAGE ===== */}
       <section className="relative w-screen h-screen">
         {/* Gradient fade from header into image */}
-        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#181818] to-transparent z-10"></div>
-        <Image src="/groupwqs.png" alt="ASA Team" fill priority className="object-cover" />
+        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#181818] to-transparent z-20"></div>
+        <Image src="/champage.png" alt="ASA Team" fill priority className="object-cover" />
 
         {/* Overlay text on the image */}
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
@@ -113,90 +113,61 @@ export default function AboutPage() {
                             As a tight-knit community, we are committed to fostering both professional development and personal growth, shaping the future of our field while cultivating meaningful connections.</p>
                         </div>
                         <div className="lg:w-1/2 lg:pl-6 flex justify-center lg:justify-end pt-3">
-                            <figure><Image src="/groupwqs.png" width={500} height={300} alt="ASA Case Competition" className="rounded-md"/></figure>
+                            <figure><Image src="/groupwqs.png" width={500} height={300} alt="ASA Case Competition"/></figure>
                         </div>
                     </div>
           {/* ===== What We Do Section: 3 vertical selections with holographic logo behind ===== */}
           <section className="relative max-w-7xl mx-auto">
 
-            <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-5">
-              What We Do
+            <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-12">
+              Our Branches
             </h1>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-6">
-              {/* card component */}
-              <motion.article
-                ref={projectRef}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: projectInView ? 1 : 0, y: projectInView ? 0 : 20 }}
-                transition={{ duration: 0.5 }}
-                className="group relative rounded-2xl p-[1px] bg-gradient-to-br from-white/20 via-white/5 to-white/10"
-              >
-                <div className="rounded-2xl h-full bg-[#171717] p-6 flex flex-col gap-4">
-                  <div className="flex items-center gap-3">
-                    <div className="rounded-xl p-2 bg-white/5 backdrop-blur group-hover:scale-105 transition">
-                      <Laptop className="w-5 h-5 text-zinc-100" />
-                    </div>
-                    <h2 className="text-xl font-semibold text-zinc-100">Projects</h2>
-                  </div>
-                  <p className="text-zinc-300 text-sm leading-relaxed">
-                    Teams partner with UC Davis athletics to ship solutions in web, data science, ML, and
-                    hardware. Typical team size ≈ 5.
-                  </p>
+            <motion.div
+              className="grid grid-cols-1 md:grid-cols-3 border border-white/10 overflow-hidden"
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <div className="px-8 py-16 h-80 border-r border-white/10 hover:bg-white/[0.03] transition-colors">
+                <div className="mb-6">
+                  <Laptop className="w-6 h-6 text-white mb-4" />
+                  <h3 className="text-xl font-semibold">Projects</h3>
                 </div>
-                {/* hover shimmer */}
-                <div className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition bg-gradient-to-tr from-transparent via-white/10 to-transparent" />
-              </motion.article>
+                <p className="text-zinc-300 leading-relaxed">
+                  Teams partner with UC Davis athletics to ship solutions in web, data science, ML, and
+                  hardware. Typical team size ≈ 5.
+                </p>
+              </div>
 
-              <motion.article
-                ref={businessRef}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: businessInView ? 1 : 0, y: businessInView ? 0 : 20 }}
-                transition={{ duration: 0.5 }}
-                className="group relative rounded-2xl p-[1px] bg-gradient-to-br from-white/20 via-white/5 to-white/10"
-              >
-                <div className="rounded-2xl h-full bg-[#171717] p-6 flex flex-col gap-4">
-                  <div className="flex items-center gap-3">
-                    <div className="rounded-xl p-2 bg-white/5 backdrop-blur group-hover:scale-105 transition">
-                      <Briefcase className="w-5 h-5 text-zinc-100" />
-                    </div>
-                    <h2 className="text-xl font-semibold text-zinc-100">Business</h2>
-                  </div>
-                  <p className="text-zinc-300 text-sm leading-relaxed">
-                    External & internal affairs + finance. We run workshops, socials, partnerships, and
-                    operations that power ASA.
-                  </p>
+              <div className="px-8 py-16 h-80 border-r border-white/10 hover:bg-white/[0.03] transition-colors">
+                <div className="mb-6">
+                  <Briefcase className="w-6 h-6 text-white mb-4" />
+                  <h3 className="text-xl font-semibold">Business</h3>
                 </div>
-                <div className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition bg-gradient-to-tr from-transparent via-white/10 to-transparent" />
-              </motion.article>
+                <p className="text-zinc-300 leading-relaxed">
+                  External & internal affairs + finance. We run workshops, socials, partnerships, and
+                  operations that power ASA.
+                </p>
+              </div>
 
-              <motion.article
-                ref={mediaRef}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: mediaInView ? 1 : 0, y: mediaInView ? 0 : 20 }}
-                transition={{ duration: 0.5 }}
-                className="group relative rounded-2xl p-[1px] bg-gradient-to-br from-white/20 via-white/5 to-white/10"
-              >
-                <div className="rounded-2xl h-full bg-[#171717] p-6 flex flex-col gap-4">
-                  <div className="flex items-center gap-3">
-                    <div className="rounded-xl p-2 bg-white/5 backdrop-blur group-hover:scale-105 transition">
-                      <Camera className="w-5 h-5 text-zinc-100" />
-                    </div>
-                    <h2 className="text-xl font-semibold text-zinc-100">Media</h2>
-                  </div>
-                  <p className="text-zinc-300 text-sm leading-relaxed">
-                    We produce content for newsletters, articles, and social. Storytelling that grows the
-                    brand and community.
-                  </p>
+              <div className="px-8 py-16 h-80 hover:bg-white/[0.03] transition-colors">
+                <div className="mb-6">
+                  <Camera className="w-6 h-6 text-white mb-4" />
+                  <h3 className="text-xl font-semibold">Media</h3>
                 </div>
-                <div className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition bg-gradient-to-tr from-transparent via-white/10 to-transparent" />
-              </motion.article>
-            </div>
+                <p className="text-zinc-300 leading-relaxed">
+                  We produce content for newsletters, articles, and social. Storytelling that grows the
+                  brand and community.
+                </p>
+              </div>
+            </motion.div>
           </section>
 
           {/* Leadership */}
           <div className="max-w-7xl mx-auto">
-            <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-6">
+            <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-12">
               Leadership
             </h1>
 
@@ -226,7 +197,7 @@ export default function AboutPage() {
                     <img
                       src={leader.img}
                       alt={leader.name}
-                      className="w-full h-48 object-cover rounded-md"
+                      className="w-full h-48 object-cover"
                     />
                   </figure>
                   <div className="flex mt-3 justify-between items-center">
@@ -239,7 +210,7 @@ export default function AboutPage() {
                         href={leader.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-1 rounded-md hover:bg-zinc-800 transition-colors"
+                        className="p-1 transition-colors"
                         aria-label={`${leader.name} LinkedIn`}
                         title="LinkedIn"
                       >

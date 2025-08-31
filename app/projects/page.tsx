@@ -55,10 +55,9 @@ export default async function WorkPage() {
       <FadeInWrapper>
         <div className="bg-[#181818] px-12">
           <div className="px-6 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-8 lg:pt-12">
-            <div className="mx-auto lg:mx-0">
-              <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl mt-2">
-                Projects
-              </h2>
+            <div className="text-left mb-12">
+              <h1 className="text-4xl font-bold text-white mb-2">Projects</h1>
+              <p className="text-zinc-400 text-lg">What we have built and delivered to our clients.</p>
             </div>
             {/* Projects Content */}
             <div>
@@ -98,11 +97,6 @@ export default async function WorkPage() {
                       <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                         {featured.description}
                       </p>
-                      <div className="absolute bottom-4 md:bottom-8">
-                        <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
-                          Read more <span aria-hidden="true">&rarr;</span>
-                        </p>
-                      </div>
                     </article>
                   </Link>
                 </Card>

@@ -53,7 +53,7 @@ const inter = Inter({
 });
 
 const calSans = LocalFont({
-	src: "../public/fonts/CalSans-SemiBold.ttf",
+	src: "../public/fonts/Poppins-Medium.ttf",
 	variable: "--font-calsans",
 });
 
@@ -70,7 +70,7 @@ export default function RootLayout({
 				<Analytics />
 			</head>
 			<body
-				className={`bg-[#181818] font-sans ${
+				className={`bg-[#181818] font-calsans ${
 					process.env.NODE_ENV === "development" ? "debug-screens" : undefined
 				}`}
 			>

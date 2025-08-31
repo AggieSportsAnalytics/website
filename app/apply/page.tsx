@@ -1,99 +1,80 @@
-"use client"; // Ensures the component is rendered on the client side
-
-import React, { useState } from "react";
-import Footer from "../components/footer";
+"use client";
+import React from "react";
 import Head from "next/head";
-import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
 import Header from "../components/Header";
+import Footer from "../components/footer";
 
-export default function MembersPage() {
-  // Define FAQ items
-  const faqs = [
-    {
-      question: "How is ASA structured?",
-      answer:
-        "ASA operates in three branches - Projects, Business, and Media. These branches are highly interconnected and work in close collaboration throughout the school year.",
-    },
-    {
-      question: "Are there prerequisites to join ASA?",
-      answer:
-        "There are no strict prerequisites - we welcome all students, regardless of their background. However, familiarity with the basic skills for a specific position will boost your application.",
-    },
-    {
-      question: "What is the time commitment for ASA members?",
-      answer:
-        "Members are expected to commit approximately 5 to 10 hours per week. This includes club general meetings, branch-specific project meetings, professional events, social gatherings, and asynchronous work.",
-    },
-    {
-      question: "Can ASA support me academically and professionally?",
-      answer:
-        "An overwhelming majority of our members use skills learned in ASA to accel in courses, along with landing internship and full-time opportunities.",
-    },
-    {
-      question: "Does ASA have membership dues?",
-      answer:
-        "Membership dues are $15 per quarter. This money is used to fund projects and cover the cost of events.",
-    },
-  ];
-
-  // State for FAQ accordion
-  const [openIndex, setOpenIndex] = useState<number | null>(null); // Update type here
-
-  const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+export default function JoinUsPage() {
 
   return (
-    <div className="relative bg-[#181818] min-h-screen flex flex-col">
+    <div className="relative min-h-screen flex flex-col bg-[#181818] text-white overflow-hidden">
       <Head>
-        <title>Join ASA | Aggie Sports Analytics at UC Davis</title>
+        <title>Join ASA | Aggie Sports Analytics</title>
       </Head>
-
       <Header />
+      
+      {/* Main content with two-column layout */}
+      <main className="relative flex-grow flex">
+        {/* Left half - Image */}
+        <div className="relative w-1/2 min-h-screen">
+          {/* Gradient overlays for blending */}
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#181818] z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#181818]/30 via-transparent to-[#181818]/30 z-10"></div>
+          {/* Top gradient for header blending */}
+          <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#181818] to-transparent z-20"></div>
+          
+          <Image
+            src="/bbbw.png"
+            alt="ASA Team"
+            fill
+            priority
+            className="object-cover"
+          />
+        </div>
 
-
-      {/* Main Content */}
-      <div className="flex-grow bg-[#181818] px-12">
-        <motion.div
-          className="px-6 mx-auto max-w-7xl lg:px-8 pt-12"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          {/* Hero Section */}
-          <motion.section
-            className="flex flex-col lg:flex-row items-center mb-12 mt-5"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="lg:w-1/2 text-center lg:text-left pr-5">
-              <h2 className="text-xl font-extrabold tracking-tight text-white sm:text-4xl mb-6">
-                Join Our Community
-              </h2>
-              <p className="text-zinc-300 text-lg mb-6">
-                Applications are closed. Follow us on <b><u><a href="https://www.instagram.com/aggiesportsanalytics" target="_blank">Instagram</a></u></b> to stay updated with latest club news and events.
-              </p>
-            </div>
-            <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-center">
-              <Image
-                src="/collage.png" // Replace with your actual image path
-                alt="Join ASA"
-                width={500}
-                height={300}
-                className="rounded-lg"
-              />
-            </div>
-          </motion.section>
-
-        </motion.div>
-        <br />
-      </div>
-
-      {/* Footer */}
-      <div className="w-full h-px bg-zinc-800" />
+        {/* Right half - Content */}
+        <div className="w-1/2 flex items-center justify-center px-12">
+          <div className="max-w-lg">
+            <motion.h1 
+              className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              Join Us
+            </motion.h1>
+            
+            <motion.p 
+              className="mt-6 text-zinc-300 text-lg leading-relaxed"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            >
+              Be a part of our vibrant community, attend social and professional
+              events, and collaborate on impactful projects at ASA.
+            </motion.p>
+            
+            <motion.div
+              className="mt-8"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            >
+              <Link
+                href="/apply"
+                className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-600 text-zinc-400 text-sm font-medium rounded-full hover:border-zinc-500 hover:text-zinc-300 transition-colors duration-300"
+              >
+                Apply Now
+              </Link>
+            </motion.div>
+          </div>
+        </div>
+      </main>
+      
+      <div className="w-full h-px bg-zinc-800/70" />
       <Footer />
     </div>
   );

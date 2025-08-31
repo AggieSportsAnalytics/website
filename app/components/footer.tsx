@@ -11,7 +11,7 @@ export default function Footer() {
         {/* Left side with branding */}
         <div className="mb-6 md:mb-0 text-center md:text-left md:w-1/3">
           <a className="inline-block mb-4">
-            <img src="/bLogo.png" className="grayscale hover:grayscale-0" alt="Aggie Sports Analytics Logo" width={80} />
+            <img src="/bLogo.png" className="hover:grayscale-0" alt="Aggie Sports Analytics Logo" width={80} />
           </a>
           <h2 className="text-xl font-bold mb-2">Aggie Sports Analytics</h2>
           <p className="mb-4">Redefining the future of sports technology at UC Davis</p>
@@ -69,10 +69,13 @@ export default function Footer() {
               <Link href="/about" className="transition-colors duration-200 hover:text-gray-100">
                 About
               </Link>
+              <Link href="/community" className="transition-colors duration-200 hover:text-gray-100">
+                Community
+              </Link>
               <Link href="/projects" className="transition-colors duration-200 hover:text-gray-100">
                 Projects
               </Link>
-              <Link href="/journalism" className="transition-colors duration-200 hover:text-gray-100">
+              <Link href="https://medium.com/@aggiesportsanalytics" target="_blank" className="transition-colors duration-200 hover:text-gray-100">
                 Journalism
               </Link>
 
@@ -83,6 +86,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
     </footer>
   );
 }
