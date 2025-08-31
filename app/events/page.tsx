@@ -1,12 +1,7 @@
-
 import React from "react";
-import { Navigation } from "../components/nav";
 import Header from "../components/Header";
 
-
 export default async function EventsPage() {
-	
-
 	return (
 		<div className="">
 			<Header />

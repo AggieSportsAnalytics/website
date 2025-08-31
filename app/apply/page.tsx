@@ -16,14 +16,10 @@ export default function JoinUsPage() {
       </Head>
       <Header />
       
-      {/* Main content with two-column layout */}
       <main className="relative flex-grow flex">
-        {/* Left half - Image */}
         <div className="relative w-1/2 min-h-screen">
-          {/* Gradient overlays for blending */}
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#181818] z-10"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-[#181818]/30 via-transparent to-[#181818]/30 z-10"></div>
-          {/* Top gradient for header blending */}
           <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#181818] to-transparent z-20"></div>
           
           <Image
@@ -35,7 +31,6 @@ export default function JoinUsPage() {
           />
         </div>
 
-        {/* Right half - Content */}
         <div className="w-1/2 flex items-center justify-center px-12">
           <div className="max-w-lg">
             <motion.h1 

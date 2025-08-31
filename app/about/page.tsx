@@ -50,20 +50,6 @@ const LEADERS: Leader[] = [
 ];
 
 export default function AboutPage() {
-  // Refs and inView states for scroll-triggered animations
-  const { ref: projectRef, inView: projectInView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-  const { ref: businessRef, inView: businessInView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-  const { ref: mediaRef, inView: mediaInView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
   return (
     <div className="relative bg-[#181818]">
       <Head>
@@ -72,13 +58,9 @@ export default function AboutPage() {
 
       <Header />
 
-      {/* ===== FULL SCREEN HERO IMAGE ===== */}
       <section className="relative w-screen h-screen">
-        {/* Gradient fade from header into image */}
         <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#181818] to-transparent z-20"></div>
         <Image src="/champagebw.png" alt="ASA Team" fill priority className="object-cover" />
-
-        {/* Overlay text on the image */}
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <div className="text-center text-white px-6">
             <motion.h1
@@ -92,8 +74,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      {/* Main Content with Fade-In (excluding Navbar) */}
       <motion.div
         className="bg-[#181818] pl-4 pr-4 md:pl-10 md:pr-10 pt-12"
         initial={{ opacity: 0 }}
@@ -101,22 +81,20 @@ export default function AboutPage() {
         transition={{ duration: 1 }}
       >
         <div className="px-2 md:px-6 mx-auto space-y-16 max-w-7xl md:space-y-24 md:pt-6 lg:pt-10">
-          {/* Who We Are Section */}
           <div className="flex flex-col lg:flex-row items-start lg:items-start">
-                        <div className="lg:w-1/2 lg:pr-6 justify-center h-full">
-                            <br />
-                            <p className="mt-8 text-lg text-zinc-300">
-                                Aggie Sports Analytics is a student-led organization pioneering the future of sports technology. We unite driven students from diverse academic backgrounds to develop innovative solutions across business, technology, and media.
-                            </p>
-                            <br />
-                            <p className="mb-8 text-lg text-zinc-300">
-                            As a tight-knit community, we provide an environment for professional development and personal growth, shaping the future of our field while cultivating meaningful connections.</p>
-                        </div>
-                        <div className="lg:w-1/2 lg:pl-6 flex justify-center lg:justify-end pt-3">
-                            <figure><Image src="/team.png" width={500} height={300} alt="ASA Case Competition"/></figure>
-                        </div>
-                    </div>
-          {/* ===== What We Do Section: 3 vertical selections with holographic logo behind ===== */}
+            <div className="lg:w-1/2 lg:pr-6 justify-center h-full">
+              <br />
+              <p className="mt-8 text-lg text-zinc-300">
+                Aggie Sports Analytics is a student-led organization pioneering the future of sports technology. We unite driven students from diverse academic backgrounds to develop innovative solutions across business, technology, and media.
+              </p>
+              <br />
+              <p className="mb-8 text-lg text-zinc-300">
+                As a tight-knit community, we provide an environment for professional development and personal growth, shaping the future of our field while cultivating meaningful connections.</p>
+            </div>
+            <div className="lg:w-1/2 lg:pl-6 flex justify-center lg:justify-end pt-3">
+              <figure><Image src="/team.png" width={500} height={300} alt="ASA Case Competition"/></figure>
+            </div>
+          </div>
           <section className="relative max-w-7xl mx-auto">
 
             <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-12">
@@ -164,7 +142,6 @@ export default function AboutPage() {
             </motion.div>
           </section>
 
-          {/* Leadership */}
           <div className="max-w-7xl mx-auto">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-12">
               Leadership

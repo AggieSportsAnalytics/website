@@ -1,13 +1,11 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import { Card } from "../components/card"; 
+import React from "react";
 import Footer from "../components/footer";
 import Head from 'next/head';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Header from "../components/Header";
 
-// Sample events data - replace with your actual events
 const events = [
   {
     id: 1,
@@ -112,13 +110,12 @@ const events = [
 ];
 
 export default function CommunityPage() {
-  // Define animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        duration: 1, // Fade-in over 1 second
+        duration: 1,
       },
     },
   };
@@ -131,7 +128,6 @@ export default function CommunityPage() {
       
       <Header />
 
-      {/* Animated Container */}
       <motion.div
         className="bg-[#181818] pl-10 pr-10 pt-8"
         initial="hidden"
@@ -141,13 +137,11 @@ export default function CommunityPage() {
         <div className="bg-[#181818]">
           <div className="px-6 mx-auto max-w-7xl lg:px-8 md:pt-4 lg:pt-6">
             
-            {/* Page Title */}
             <div className="text-left mb-12">
               <h1 className="text-4xl font-bold text-white mb-2">Community</h1>
               <p className="text-zinc-400 text-lg">Events from our 2024-2025 cycle.</p>
             </div>
 
-            {/* Events Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 border border-white/10 overflow-hidden">
               {events.map((event, index) => (
                 <motion.div
@@ -163,7 +157,6 @@ export default function CommunityPage() {
                     ease: "easeOut"
                   }}
                 >
-                  {/* Event Image */}
                   <div className="w-full h-80 overflow-hidden mb-4 mx-auto">
                     <img 
                       src={event.image} 
@@ -172,14 +165,12 @@ export default function CommunityPage() {
                     />
                   </div>
                   
-                  {/* Event Title */}
                   <h3 className="text-white text-lg font-medium text-left">
                     {event.title}
                   </h3>
                 </motion.div>
               ))}
             </div>
-       
           </div>
         </div>
       </motion.div>

@@ -1,16 +1,14 @@
-// pages/projects.tsx
 import Link from "next/link";
 import React from "react";
 import { allProjects } from "contentlayer/generated";
-import { Card } from "../components/card"; // Updated Card with fade-in animation
+import { Card } from "../components/card";
 import { Article } from "./article";
 import { Redis } from "@upstash/redis";
 import { Eye } from "lucide-react";
 import Head from "next/head";
 import Footer from "../components/footer";
-import FadeInWrapper from "../components/FadeInWrapper"; // Optional if still needed
+import FadeInWrapper from "../components/FadeInWrapper";
 import Header from "../components/Header";
-import { useState } from "react";
 
 const redis = Redis.fromEnv();
 
@@ -48,10 +46,8 @@ export default async function WorkPage() {
       <Head>
         <title>Work | Aggie Sports Analytics at UC Davis</title>
       </Head>
-
       <Header />
 
-      {/* Animated Content */}
       <FadeInWrapper>
         <div className="bg-[#181818] px-12">
           <div className="px-6 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-8 lg:pt-12">
@@ -59,12 +55,8 @@ export default async function WorkPage() {
               <h1 className="text-4xl font-bold text-white mb-2">Projects</h1>
               <p className="text-zinc-400 text-lg">Products built to empower the best sports organizations.</p>
             </div>
-            {/* Projects Content */}
             <div>
-
-              {/* Featured and Top Projects */}
               <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
-                {/* Featured Project */}
                 <Card>
                   <Link href={`/projects/${featured.slug}`}>
                     <article className="relative w-full h-full p-4 md:p-8">
@@ -81,13 +73,8 @@ export default async function WorkPage() {
                           )}
                         </div>
                         <span className="flex items-center gap-1 text-xs text-zinc-500">
-                          {/*<Eye className="w-4 h-4" />{" "}
-                          {Intl.NumberFormat("en-US", { notation: "compact" }).format(
-                            views[featured.slug] ?? 0,
-                          )}*/}
                         </span>
                       </div>
-
                       <h2
                         id="featured-post"
                         className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
@@ -101,7 +88,6 @@ export default async function WorkPage() {
                   </Link>
                 </Card>
 
-                {/* Top 2 Projects */}
                 <div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0">
                   <Card>
                     <Article project={top2} views={views[top2.slug] ?? 0} />
@@ -112,9 +98,7 @@ export default async function WorkPage() {
                 </div>
               </div>
               <div className="mt-10 " />
-
               <br></br>
-              {/* Sorted Projects */}
               <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
                 <div className="grid grid-cols-1 gap-4">
                   {sorted
