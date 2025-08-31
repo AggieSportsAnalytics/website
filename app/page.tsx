@@ -3,118 +3,27 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Users, Code, BarChart3, Users2 } from "lucide-react";
+import { Users, Code, Newspaper, HeartHandshake } from "lucide-react";
 
 import Header from "./components/Header";
 import Footer from "./components/footer";
 
-// ---------------- Config ----------------
-const SLIDES = [
-  { src: "/hp1.png", alt: "ASA team 1" },
-  { src: "/hp2.png", alt: "ASA team 2" },
-  { src: "/hp3.png", alt: "ASA team 3" },
-];
-
-const TAGS = [
-  {
-    title: "Projects",
-    blurb:
-      "Ship real analytics and engineering work with reproducible code, presentations, and results.",
-  },
-  {
-    title: "Mentorship",
-    blurb:
-      "Level up fast with peer reviews, office hours, and alumni guidance tailored to your goals.",
-  },
-  {
-    title: "Analytics",
-    blurb:
-      "Work with live datasets, modeling, and visualization to answer real sports questions.",
-  },
-  {
-    title: "Community",
-    blurb:
-      "A tight crew that builds together, studies together, and shows up for each other.",
-  },
-  {
-    title: "Careers",
-    blurb:
-      "Resume workshops, referrals, and recruiter intros—plus a portfolio you can actually show.",
-  },
-  {
-    title: "Leadership",
-    blurb:
-      "Take on leadership roles in project management, event coordination, and team building.",
-  },
-  {
-    title: "Networking",
-    blurb:
-      "Connect with industry professionals, alumni, and peers across the sports analytics world.",
-  },
-  {
-    title: "Innovation",
-    blurb:
-      "Push the boundaries of what's possible in sports technology and data science.",
-  },
-  {
-    title: "Growth",
-    blurb:
-      "Continuous learning through workshops, hackathons, and real-world project experience.",
-  },
-  {
-    title: "Impact",
-    blurb:
-      "Make a real difference in sports through data-driven insights and solutions.",
-  },
-  {
-    title: "Growth",
-    blurb:
-      "Continuous learning through workshops, hackathons, and real-world project experience.",
-  },
-  {
-    title: "Impact",
-    blurb:
-      "Make a real difference in sports through data-driven insights and solutions.",
-  },
-  {
-    title: "Growth",
-    blurb:
-      "Continuous learning through workshops, hackathons, and real-world project experience.",
-  },
-  {
-    title: "Impact",
-    blurb:
-      "Make a real difference in sports through data-driven insights and solutions.",
-  },
-  {
-    title: "Test2",
-    blurb:
-      "Continuous learning through workshops, hackathons, and real-world project experience.",
-  },
-  {
-    title: "Test",
-    blurb:
-      "Make a real difference in sports through data-driven insights and solutions.",
-  },
-];
-
-// Logo grid - 5x3 layout (15 logos)
 const ALL_LOGOS = [
-  "/logos/logo01.png",
-  "/logos/logo02.png",
-  "/logos/logo03.png",
-  "/logos/logo04.png",
-  "/logos/logo05.png",
-  "/logos/logo06.png",
-  "/logos/logo07.png",
-  "/logos/logo08.png",
-  "/logos/logo09.png",
-  "/logos/logo010.png",
-  "/logos/logo011.png",
-  "/logos/logo012.png",
-  "/logos/logo01.png", // Repeat to fill 15 slots
-  "/logos/logo02.png",
-  "/logos/logo03.png",
+  "/logos/logoamazon.png",
+  "/logos/logonvidia.png",
+  "/logos/logometa.png",
+  "/logos/logogoogle.png",
+  "/logos/logocap1.png",
+  "/logos/logoatlassian.png",
+  "/logos/logoqualcomm.png",
+  "/logos/logotesla.png",
+  "/logos/logodeloitte.png",
+  "/logos/logoey.png",
+  "/logos/logokpmg.png",
+  "/logos/logopwc.png",
+  "/logos/logowf.png",
+  "/logos/logoNBA.png",
+  "/logos/logoSF.png",
 ];
 
 export default function Home() {
@@ -122,43 +31,33 @@ export default function Home() {
   return (
     <div className="w-screen min-h-screen overflow-hidden bg-[#181818] text-white">
       <Header />
-
-      {/* ===== HERO ===== */}
       <section className="bg-[#181818] flex flex-col items-center text-center pt-6 pb-20 sm:pt-24 sm:pb-20">
         <br></br>
         <div className="max-w-4xl mx-auto mb-5">
-          <motion.h1
-            className="font-display tracking-tight text-3xl sm:text-4xl md:text-5xl leading-tight font-extrabold text-white"
-            initial={{ opacity: 0, y: 18 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
+          <h1 className="font-display tracking-tight text-4xl sm:text-5xl md:text-6xl leading-tight font-extrabold text-white pb-2">
             Aggie Sports Analytics
-          </motion.h1>
-
+          </h1>
           <motion.h2
-            className="mt-4 font-display tracking-tight text-2xl sm:text-3xl md:text-4xl leading-tight font-light text-zinc-400"
+            className="mt-3 font-display tracking-tight text-2xl sm:text-3xl md:text-4xl leading-tight font-light text-zinc-400"
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0 }}
           >
             is redefining the future of sports technology.
           </motion.h2>
-
           <motion.p
-            className="mt-8 text-sm sm:text-base md:text-lg text-zinc-400"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.25, duration: 0.6 }}
+            className="mt-10 text-sm sm:text-base md:text-lg text-zinc-400"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.6, ease: "easeOut" }}
           >
-            We're a consulting group building technology to empower the best sports teams.
+            We're a consulting group building technology to empower the best teams.
           </motion.p>
-
           <motion.div
             className="mt-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.6 }}
+            transition={{ delay: 0.6, duration: 0.6, ease: "easeOut" }}
           >
             <a
               href="/about"
@@ -169,11 +68,8 @@ export default function Home() {
           </motion.div>
         </div>
 
-        {/* Hero image */}
         <div className="relative -mx-10 mt-10 w-full aspect-video [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_100%)]">
-          {/* Top gradient fade */}
           <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-[#181818] to-transparent z-10"></div>
-          {/* Bottom gradient fade */}
           <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#181818] to-transparent z-10"></div>
           <Image
             src="/skibw.png"
@@ -185,9 +81,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== BY THE NUMBERS ===== */}
       <section className="bg-[#181818] px-6 pt-10 pb-6">
-      <div className="mx-auto max-w-6xl text-left">
+        <div className="mx-auto max-w-6xl text-left">
           <motion.h2
             className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-8"
             initial={{ opacity: 0, y: 16 }}
@@ -199,9 +94,8 @@ export default function Home() {
           </motion.h2>
           <br></br>
           <br></br>
-          </div>
+        </div>
         <div className="mx-auto max-w-6xl text-center">
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <motion.div
               className="text-center"
@@ -210,10 +104,9 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-2">60+</div>
+              <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-2">70</div>
               <div className="text-lg text-zinc-400">Active Members</div>
             </motion.div>
-
             <motion.div
               className="text-center"
               initial={{ opacity: 0, y: 20 }}
@@ -221,10 +114,9 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-2">28</div>
+              <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-2">25</div>
               <div className="text-lg text-zinc-400">Projects Completed</div>
             </motion.div>
-
             <motion.div
               className="text-center"
               initial={{ opacity: 0, y: 20 }}
@@ -238,8 +130,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* ===== OUR WORK ===== */}
       <section className="bg-[#181818] py-8 sm:py-20">
         <div className="mx-auto max-w-6xl text-left">
           <motion.h2
@@ -254,9 +144,7 @@ export default function Home() {
         </div>
         <br></br>
         <div className="mx-auto max-w-6xl">
-
           <div className="relative">
-
             <motion.div
               className="grid grid-cols-1 md:grid-cols-2 border border-white/10 overflow-hidden relative z-20"
               initial={{ opacity: 0, y: 18 }}
@@ -267,52 +155,47 @@ export default function Home() {
             <div className="px-8 py-16 h-80 border-b border-r border-white/10 hover:bg-white/[0.03] transition-colors">
               <div className="mb-6">
                 <Users className="w-6 h-6 text-white mb-4" />
-                <h3 className="text-xl font-semibold">Real Partnerships</h3>
+                <h3 className="text-xl font-semibold">Partnerships</h3>
               </div>
               <p className="text-zinc-300 leading-relaxed">
-                We collaborate with collegiate and professional organizations on scoped analytics
-                problems that matter.
+              We collaborate with collegiate teams and industry partners to
+              solve real sports analytics challenges.
               </p>
             </div>
-
             <div className="px-8 py-16 h-80 border-b border-white/10 hover:bg-white/[0.03] transition-colors">
               <div className="mb-6">
                 <Code className="w-6 h-6 text-white mb-4" />
-                <h3 className="text-xl font-semibold">Engineering + Analytics</h3>
+                <h3 className="text-xl font-semibold">Engineering + Data</h3>
               </div>
               <p className="text-zinc-300 leading-relaxed">
-                We ship models, data pipelines, and interactive tools with reproducible code and
-                mentorship.
+              We design full-stack tools, machine learning models, and scalable data pipelines to power
+              decision-making in sports.
               </p>
             </div>
-
             <div className="px-8 py-16 h-80 border-r border-white/10 hover:bg-white/[0.03] transition-colors">
               <div className="mb-6">
-                <BarChart3 className="w-6 h-6 text-white mb-4" />
-                <h3 className="text-xl font-semibold">Stories & Impact</h3>
+                <Newspaper className="w-6 h-6 text-white mb-4" />
+                <h3 className="text-xl font-semibold">Impact</h3>
               </div>
               <p className="text-zinc-300 leading-relaxed">
-                We publish writeups, dashboards, and talks that communicate insights and drive
-                decisions.
+              We publish research, media, and case studies that highlight how data transforms athletic
+              performance and strategy.
               </p>
             </div>
-
             <div className="px-8 py-16 h-80 hover:bg-white/[0.03] transition-colors">
               <div className="mb-6">
-                <Users2 className="w-6 h-6 text-white mb-4" />
-                <h3 className="text-xl font-semibold">Community Building</h3>
+                <HeartHandshake className="w-6 h-6 text-white mb-4" />
+                <h3 className="text-xl font-semibold">Community</h3>
               </div>
               <p className="text-zinc-300 leading-relaxed">
-                We foster connections through workshops, networking events, and collaborative
-                learning experiences.
+                We foster connections through events and collaborative projects that
+                bring students and professionals together.
               </p>
             </div>
             </motion.div>
           </div>
         </div>
       </section>
-
-      {/* ===== LOGO GRID ===== */}
       <section className="bg-[#181818] pt-4 pb-16">
         <div className="mx-auto max-w-6xl text-left">
           <motion.h2
@@ -325,11 +208,9 @@ export default function Home() {
             Where We Go
           </motion.h2>
         </div>
-
           <div className="mx-auto max-w-6xl">
             <div className="grid grid-cols-5 gap-4 w-full">
               {ALL_LOGOS.map((src, i) => {
-                // Calculate row and column for diagonal stagger
                 const row = Math.floor(i / 5);
                 const col = i % 5;
                 const delay = (row + col) * 0.1;
@@ -337,7 +218,7 @@ export default function Home() {
                 return (
                   <motion.div
                     key={`logo-${i}`}
-                    className="relative h-30 border border-white/10 hover:bg-white/[0.03] transition-colors p-4 flex items-center justify-center"
+                    className="relative h-24 border border-white/10 hover:bg-white/[0.03] transition-colors p-4 flex items-center justify-center group"
                     initial={{ opacity: 0, y: 20, scale: 0.8 }}
                     whileInView={{ opacity: 1, y: 0, scale: 1 }}
                     transition={{ 
@@ -352,7 +233,7 @@ export default function Home() {
                       alt="Company logo" 
                       width={60} 
                       height={40} 
-                      className="object-contain grayscale hover:grayscale-0 opacity-80 hover:opacity-100 transition"
+                      className="object-contain grayscale group-hover:grayscale-0 opacity-80 group-hover:opacity-100 transition"
                     />
                   </motion.div>
                 );

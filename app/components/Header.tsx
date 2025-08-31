@@ -78,7 +78,7 @@ export default function Header() {
         <div className="navbar-end">
           <a 
             href="/apply" 
-            className="inline-flex items-center px-5 py-3 mr-2 bg-transparent border border-zinc-600 text-zinc-400 text-sm font-medium rounded-full hover:border-zinc-500 hover:text-zinc-300 transition-colors duration-300"
+            className="inline-flex items-center px-5 py-3 mr-2 bg-transparent border border-white text-white text-sm font-medium rounded-full hover:border-zinc-500 hover:text-zinc-300 transition-colors duration-300"
           >
             Join
           </a>

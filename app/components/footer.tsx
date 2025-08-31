@@ -25,7 +25,6 @@ export default function Footer() {
               href="mailto:team@aggiesportsanalytics.com" 
               className="flex items-center hover:text-gray-100 transition-colors duration-200"
             >
-              <Mail className="w-5 h-5 mr-2" />
               <span>Email</span>
             </a>
           </div>
@@ -39,8 +38,7 @@ export default function Footer() {
                 rel="noopener noreferrer" 
                 className="flex items-center justify-center md:justify-start hover:text-gray-100 transition-colors duration-200"
               >
-                <Instagram className="w-5 h-5" />
-                <span className="pl-2">Instagram</span>
+                <span className="">Instagram</span>
               </a>
               <a 
                 href="https://www.linkedin.com/company/aggiesportsanalytics/" 
@@ -48,8 +46,7 @@ export default function Footer() {
                 rel="noopener noreferrer" 
                 className="flex items-center justify-center md:justify-start hover:text-gray-100 transition-colors duration-200"
               >
-                <Linkedin className="w-5 h-5" />
-                <span className="pl-2">LinkedIn</span>
+                <span className="">LinkedIn</span>
               </a>
               <a 
                 href="https://github.com/AggieSportsAnalytics" 
@@ -57,8 +54,7 @@ export default function Footer() {
                 rel="noopener noreferrer" 
                 className="flex items-center justify-center md:justify-start hover:text-gray-100 transition-colors duration-200"
               >
-                <Github className="w-5 h-5" />
-                <span className="pl-2">GitHub</span>
+                <span className="">GitHub</span>
               </a>
             </nav>
           </div>

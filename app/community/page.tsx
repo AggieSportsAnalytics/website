@@ -41,6 +41,11 @@ const events = [
   },
   {
     id: 4,
+    image: "/thanksgiving.png",
+    title: "Thanksgiving Potluck"
+  },
+  {
+    id: 4,
     image: "/whiteelephant.png",
     title: "White Elephant"
   },
@@ -86,6 +91,11 @@ const events = [
   },
   {
     id: 14,
+    image: "/interviewworkshop.png",
+    title: "Interview Workshop"
+  },
+  {
+    id: 14,
     image: "/casecomp.png",
     title: "Case Competition"
   },
@@ -113,17 +123,6 @@ export default function CommunityPage() {
     },
   };
 
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-      },
-    },
-  };
-
   return (
     <div className="relative">
       <Head>
@@ -145,7 +144,7 @@ export default function CommunityPage() {
             {/* Page Title */}
             <div className="text-left mb-12">
               <h1 className="text-4xl font-bold text-white mb-2">Community</h1>
-              <p className="text-zinc-400 text-lg">What we have been up to over the past year.</p>
+              <p className="text-zinc-400 text-lg">Events from our 2024-2025 cycle.</p>
             </div>
 
             {/* Events Grid */}

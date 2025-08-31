@@ -53,8 +53,7 @@ export default function JoinUsPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             >
-              Be a part of our vibrant community, attend social and professional
-              events, and collaborate on impactful projects at ASA.
+              Become a part of our community and drive impact in sports technology at ASA. Applications are opening soon.
             </motion.p>
             
             <motion.div
@@ -63,12 +62,12 @@ export default function JoinUsPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             >
-              <Link
-                href="/apply"
-                className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-600 text-zinc-400 text-sm font-medium rounded-full hover:border-zinc-500 hover:text-zinc-300 transition-colors duration-300"
+              <button
+                disabled
+                className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-700 text-zinc-500 text-sm font-medium rounded-full cursor-not-allowed opacity-50"
               >
-                Apply Now
-              </Link>
+                Coming Fall 2025
+              </button>
             </motion.div>
           </div>
         </div>

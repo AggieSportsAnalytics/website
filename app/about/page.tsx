@@ -76,7 +76,7 @@ export default function AboutPage() {
       <section className="relative w-screen h-screen">
         {/* Gradient fade from header into image */}
         <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#181818] to-transparent z-20"></div>
-        <Image src="/champage.png" alt="ASA Team" fill priority className="object-cover" />
+        <Image src="/champagebw.png" alt="ASA Team" fill priority className="object-cover" />
 
         {/* Overlay text on the image */}
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
@@ -85,7 +85,7 @@ export default function AboutPage() {
               className="font-display tracking-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
+              transition={{ delay:0.0, duration: 0.8, ease: "easeOut" }}
             >
               <span className="font-bold">Who We Are</span>
             </motion.h1>
@@ -106,14 +106,14 @@ export default function AboutPage() {
                         <div className="lg:w-1/2 lg:pr-6 justify-center h-full">
                             <br />
                             <p className="mt-8 text-lg text-zinc-300">
-                                Aggie Sports Analytics is a student-led organization redefining the future of sports technology. We unite driven students from diverse academic backgrounds to develop innovative solutions across business, technology, and media.
+                                Aggie Sports Analytics is a student-led organization pioneering the future of sports technology. We unite driven students from diverse academic backgrounds to develop innovative solutions across business, technology, and media.
                             </p>
                             <br />
                             <p className="mb-8 text-lg text-zinc-300">
-                            As a tight-knit community, we are committed to fostering both professional development and personal growth, shaping the future of our field while cultivating meaningful connections.</p>
+                            As a tight-knit community, we provide an environment for professional development and personal growth, shaping the future of our field while cultivating meaningful connections.</p>
                         </div>
                         <div className="lg:w-1/2 lg:pl-6 flex justify-center lg:justify-end pt-3">
-                            <figure><Image src="/groupwqs.png" width={500} height={300} alt="ASA Case Competition"/></figure>
+                            <figure><Image src="/team.png" width={500} height={300} alt="ASA Case Competition"/></figure>
                         </div>
                     </div>
           {/* ===== What We Do Section: 3 vertical selections with holographic logo behind ===== */}
@@ -133,33 +133,32 @@ export default function AboutPage() {
               <div className="px-8 py-16 h-80 border-r border-white/10 hover:bg-white/[0.03] transition-colors">
                 <div className="mb-6">
                   <Laptop className="w-6 h-6 text-white mb-4" />
-                  <h3 className="text-xl font-semibold">Projects</h3>
+                  <h3 className="text-xl text-white font-semibold">Projects</h3>
                 </div>
                 <p className="text-zinc-300 leading-relaxed">
-                  Teams partner with UC Davis athletics to ship solutions in web, data science, ML, and
-                  hardware. Typical team size ≈ 5.
+                   Teams partner with professional athletic teams to ship solutions in web, data science, ML, and
+                  hardware.
                 </p>
               </div>
 
               <div className="px-8 py-16 h-80 border-r border-white/10 hover:bg-white/[0.03] transition-colors">
                 <div className="mb-6">
                   <Briefcase className="w-6 h-6 text-white mb-4" />
-                  <h3 className="text-xl font-semibold">Business</h3>
+                  <h3 className="text-xl font-semibold text-white">Business</h3>
                 </div>
                 <p className="text-zinc-300 leading-relaxed">
-                  External & internal affairs + finance. We run workshops, socials, partnerships, and
-                  operations that power ASA.
+                  Teams operate the events that power ASA, and
+                  partner with pro organizations like <a href="https://www.perplexity.ai" target="_blank" rel="noopener noreferrer"><i>Perplexity</i></a> and <a href="https://www.ucdavisaggies.com" target="_blank" rel="noopener noreferrer"><i>UCD Athletics</i></a>.
                 </p>
               </div>
 
               <div className="px-8 py-16 h-80 hover:bg-white/[0.03] transition-colors">
                 <div className="mb-6">
                   <Camera className="w-6 h-6 text-white mb-4" />
-                  <h3 className="text-xl font-semibold">Media</h3>
+                  <h3 className="text-xl font-semibold text-white">Media</h3>
                 </div>
                 <p className="text-zinc-300 leading-relaxed">
-                  We produce content for newsletters, articles, and social. Storytelling that grows the
-                  brand and community.
+                  Teams produce content for newsletters, articles, and social media. These tell our story to grow brand and community.
                 </p>
               </div>
             </motion.div>
