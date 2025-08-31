@@ -38,7 +38,7 @@ export default function Home() {
             Aggie Sports Analytics
           </h1>
           <motion.h2
-            className="mt-3 font-display tracking-tight text-2xl sm:text-3xl md:text-4xl leading-tight font-light text-zinc-400"
+            className="mt-2 font-display tracking-tight text-2xl sm:text-3xl md:text-4xl leading-tight font-light text-zinc-400"
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0 }}
@@ -54,7 +54,7 @@ export default function Home() {
             We're a consulting group building technology to empower the best teams.
           </motion.p>
           <motion.div
-            className="mt-3"
+            className="mt-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.6, ease: "easeOut" }}
