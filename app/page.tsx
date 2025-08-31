@@ -54,7 +54,7 @@ export default function Home() {
             We're a consulting group building technology to empower the best teams.
           </motion.p>
           <motion.div
-            className="mt-6"
+            className="mt-3"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.6, ease: "easeOut" }}
