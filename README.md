@@ -1,14 +1,3 @@
 ## Aggie Sports Analytics Website 🏀
 
 The official Aggie Sports Analytics website, built in Next.js.
-
-The website includes:
-
-- General information about our club
-- Technical walkthroughs of our projects (with MDX rendering)
-- Articles written by our Journalism division (with MDX rendering)
-- Details about our members and their individual contact information
-- Information on how to get involved with our club
-- Contact information for our club
-
-This website is built by Yash Deshmukh, Vishal Shenoy, Andrew Hale, and Soumil Gad.

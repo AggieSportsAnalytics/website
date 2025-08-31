@@ -47,7 +47,156 @@ const LEADERS: Leader[] = [
     img: "/miw.png",
     linkedin: "https://www.linkedin.com/in/miwa-hirai",
   },
+  {
+    name: "Krishna Hajari",
+    role: "Business",
+    img: "/krishna.png",
+    linkedin: "https://www.linkedin.com/in/krishnahajari/",
+  },
+  {
+    name: "Luke Harrell",
+    role: "Business",
+    img: "/luke.png",
+    linkedin: "https://www.linkedin.com/in/luke-harrell/",
+  },
+  {
+    name: "Uzair Dabhoiwala",
+    role: "Business",
+    img: "/uzair.png",
+    linkedin: "https://www.linkedin.com/in/mohammed-uzair-dabhoiwala-5973a4260/",
+  },
+  {
+    name: "Anya Kumar",
+    role: "Media",
+    img: "/anya.png",
+    linkedin: "https://www.linkedin.com/in/sharanya-kumar-44273320b/",
+  },
+  {
+    name: "Crystal Garcia Pablo",
+    role: "Media",
+    img: "/crystal.png",
+    linkedin: "https://www.linkedin.com/in/crystalll-garcia/",
+  },
+  {
+    name: "Siraj Rayamajhi",
+    role: "Media",
+    img: "/siraj.png",
+    linkedin: "https://www.linkedin.com/in/siraj-rayamajhi-0042b5211/",
+  },
+  {
+    name: "Ayush Lenka",
+    role: "Projects",
+    img: "/ayush.png",
+    linkedin: "https://www.linkedin.com/in/ayushlenka/",
+  },
+  {
+    name: "Brian Le",
+    role: "Projects",
+    img: "/brianle.png",
+    linkedin: "https://www.linkedin.com/in/le-brian/",
+  },
+  {
+    name: "Jishnu Sanyal",
+    role: "Projects",
+    img: "/jishnu.png",
+    linkedin: "https://www.linkedin.com/in/jishnu-sanyal/",
+  },
+  {
+    name: "Sachin Venkat",
+    role: "Projects",
+    img: "/sachin.png",
+    linkedin: "https://www.linkedin.com/in/sachinvenkat/",
+  },
+  {
+    name: "Samaya Sankuratri",
+    role: "Projects",
+    img: "/samaya.png",
+    linkedin: "https://www.linkedin.com/in/samaya-sankuratri-1a1083331/",
+  },
+  {
+    name: "Tarini Maram",
+    role: "Projects",
+    img: "/tarini.png",
+    linkedin: "https://www.linkedin.com/in/tarini-maram-834412291/",
+  },
+  {
+    name: "Viet-Thy Tran",
+    role: "Projects",
+    img: "/viet-thy.png",
+    linkedin: "https://www.linkedin.com/in/viet-thy-tran-318581299/",
+  },
+  {
+    name: "Zina Zhang",
+    role: "Projects",
+    img: "/zina.png",
+    linkedin: "https://www.linkedin.com/in/zina-zhang-42775822a/",
+  },
 ];
+
+function LeadershipGrid() {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  return (
+    <motion.div
+      ref={ref}
+      className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 items-center justify-center gap-6 pb-6 content-center"
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+      variants={{
+        hidden: {},
+        visible: { transition: { staggerChildren: 0.15 } },
+      }}
+    >
+      {LEADERS.map((leader, index) => (
+        <motion.div
+          key={leader.name}
+          className="w-48 mb-6 bg-transparent border-gray-700 text-slate-200"
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: { 
+                duration: 0.5, 
+                ease: "easeOut",
+                delay: index * 0.1 
+              },
+            },
+          }}
+        >
+          <figure>
+            <img
+              src={leader.img}
+              alt={leader.name}
+              className="w-full h-48 object-cover"
+            />
+          </figure>
+          <div className="flex mt-3 justify-between items-center">
+            <div>
+              <h2 className="text-sm font-semibold">{leader.name}</h2>
+              <p className="text-xs">{leader.role}</p>
+            </div>
+            {leader.linkedin && (
+              <a
+                href={leader.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-1 transition-colors"
+                aria-label={`${leader.name} LinkedIn`}
+                title="LinkedIn"
+              >
+                <Linkedin className="w-4 h-4 text-zinc-400 hover:text-zinc-200 transition-colors" />
+              </a>
+            )}
+          </div>
+        </motion.div>
+      ))}
+    </motion.div>
+  );
+}
 
 export default function AboutPage() {
   return (
@@ -147,56 +296,7 @@ export default function AboutPage() {
               Leadership
             </h1>
 
-            <motion.div
-              className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 items-center justify-center gap-6 pb-6 content-center"
-              initial="hidden"
-              animate="visible"
-              variants={{
-                hidden: {},
-                visible: { transition: { staggerChildren: 0.1 } },
-              }}
-            >
-              {LEADERS.map((leader) => (
-                <motion.div
-                  key={leader.name}
-                  className="w-48 mb-6 bg-transparent border-gray-700 text-slate-200"
-                  variants={{
-                    hidden: { opacity: 0, y: 20 },
-                    visible: {
-                      opacity: 1,
-                      y: 0,
-                      transition: { duration: 0.5, ease: "easeOut" },
-                    },
-                  }}
-                >
-                  <figure>
-                    <img
-                      src={leader.img}
-                      alt={leader.name}
-                      className="w-full h-48 object-cover"
-                    />
-                  </figure>
-                  <div className="flex mt-3 justify-between items-center">
-                    <div>
-                      <h2 className="text-sm font-semibold">{leader.name}</h2>
-                      <p className="text-xs">{leader.role}</p>
-                    </div>
-                    {leader.linkedin && (
-                      <a
-                        href={leader.linkedin}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-1 transition-colors"
-                        aria-label={`${leader.name} LinkedIn`}
-                        title="LinkedIn"
-                      >
-                        <Linkedin className="w-4 h-4 text-zinc-400 hover:text-zinc-200 transition-colors" />
-                      </a>
-                    )}
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
+            <LeadershipGrid />
           </div>
         </div>
 
