@@ -1,167 +1,250 @@
 "use client";
 
-import Link from "next/link";
 import React from "react";
-import Particles from "./components/particles";
-import Image from 'next/image';
-import ProjectsLayout from "./projects/layout";
-import { LogoNav } from "./components/logonav";
-import Head from 'next/head';
-import { Footer } from "./components/footer";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { Users, Code, Newspaper, HeartHandshake } from "lucide-react";
 
-// Import Framer Motion components
-import { motion } from 'framer-motion';
+import Header from "./components/Header";
+import Footer from "./components/footer";
 
-// Define your navigation links
-const navigation = [
-  { name: "Projects", href: "/projects" },
-  { name: "Articles", href: "/articles" },
-  { name: "Members", href: "/members" },
-  { name: "About", href: "/about" },
+const ALL_LOGOS = [
+  "/logos/logoamazon.png",
+  "/logos/logonvidia.png",
+  "/logos/logometa.png",
+  "/logos/logogoogle.png",
+  "/logos/logocap1.png",
+  "/logos/logoatlassian.png",
+  "/logos/logoqualcomm.png",
+  "/logos/logotesla.png",
+  "/logos/logodeloitte.png",
+  "/logos/logoey.png",
+  "/logos/logokpmg.png",
+  "/logos/logopwc.png",
+  "/logos/logowf.png",
+  "/logos/logoNBA.png",
+  "/logos/logoSF.png",
 ];
 
 export default function Home() {
+
   return (
-    <div className="w-screen min-h-screen overflow-hidden bg-[#000000] text-xs">
-      
-      {/* Navbar Section (Exempt from Animation) */}
-      <div className="navbar bg-[#000000]">
-        <div className="navbar navbar-start">
-          <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 stroke-zinc-300" fill="none" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </label>
-            <ul tabIndex={0} className="z-30 menu menu-md dropdown-content mt-3 p-2 shadow bg-zinc-950 rounded-box w-52 text-zinc-300">
-              <li><a className="text-lg" href="/about">About</a></li>
-              <li><a className="text-lg" href="/projects">Projects</a></li>
-              <li><a className="text-lg" href="/journalism">Journalism</a></li>
-              <li><a className="text-lg" href="/members">Team</a></li>
-            </ul>
-          </div>
-          <a href="/" className="btn btn-ghost">
-            <img src="/bLogo.png" alt="Aggie Sports Analytics Logo" width={100} />
-          </a>
-        </div>
-        <div className="navbar-center">
-          <div className="hidden lg:flex">
-            <ul className="menu menu-horizontal px-1 text-zinc-200 text-xl">
-              <li><a href="/about">About</a></li>
-              <li><a href="/projects">Projects</a></li>
-              <li><a href="/journalism">Journalism</a></li>
-              <li><a href="/members">Team</a></li>			
-            </ul>
-          </div>
-        </div>
-        <div className="navbar-end">
-		<button className="btn mr-4 bg-[#5075B5] text-zinc-100">
-            <a href="/apply">Join</a>
-          </button>
-        </div>
-      </div>
-
-      {/* Divider */}
-      <div className="bg-[#000000]">
-      {/* Main Content with Fade-In Animation */}
-      <motion.div
-        className="flex flex-col justify-center items-center"
-        initial={{ opacity: 0, y: 20 }}      // Start with opacity 0 and slightly shifted down
-        animate={{ opacity: 1, y: 0 }}      // Animate to opacity 1 and original position
-        transition={{ duration: 1, ease: "easeOut" }} // Duration and easing of the animation
-      >
-        <div className="mt-16 mb-4 px-4 bottom-2 z-20 text-4xl leading-[3rem] duration-1000 bg-gradient-to-r from-20% bg-clip-text text-transparent from-[#346DD0] to-[#E2BD6B] cursor-default font-display sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl xl:leading-[7.5rem] whitespace-nowrap">
-          Aggie Sports Analytics
-        </div>
-
-        {/* Optional Buttons (Commented Out) */}
-        {/* 
-        <div className="flex pt-2">
-          <button className="mt-8 mx-1 btn bg-[#ffffff] hover:bg-[#7477b2] text-black">Join Now</button>
-          <button className="mt-8 mx-1 btn btn-outline hover:bg-neutral-950 text-slate-300">Contact Us</button>
-        </div>
-        */}
-
-        {/* Subtitle */}
-        <div className="my-4 px-8 text-center">
-          <h2 className="text-lg text-zinc-300 font-semibold sm:text-xl md:text-2xl">
-            Redefining the future of sports technology at UC Davis
-          </h2>
-        </div>
-
+    <div className="w-screen min-h-screen overflow-hidden bg-[#181818] text-white">
+      <Header />
+      <section className="bg-[#181818] flex flex-col items-center text-center pt-6 pb-20 sm:pt-24 sm:pb-20">
         <br></br>
-        <br></br>
-        <br></br>
-
-        {/* Image Collage */}
-        <div className="w-full max-w-5xl px-4 py-8">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <motion.div 
-              className="relative h-48 md:h-56 rounded-lg overflow-hidden shadow-lg" 
-              initial={{ opacity: 0, rotate: -4 }}
-              animate={{ opacity: 1, rotate: -3 }}
-              whileHover={{ scale: 1.03, rotate: -6 }}
-              transition={{ 
-                opacity: { duration: 0.8, delay: 0.3 },
-                scale: { duration: 0.3 }
-              }}
+        <div className="max-w-4xl mx-auto mb-5">
+          <h1 className="font-display tracking-tight text-4xl sm:text-5xl md:text-6xl leading-tight font-extrabold text-white pb-2">
+            Aggie Sports Analytics
+          </h1>
+          <motion.h2
+            className="mt-3 font-display tracking-tight text-2xl sm:text-3xl md:text-4xl leading-tight font-light text-zinc-400"
+            initial={{ opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0 }}
+          >
+            is redefining the future of sports technology.
+          </motion.h2>
+          <motion.p
+            className="mt-10 text-sm sm:text-base md:text-lg text-zinc-400"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.6, ease: "easeOut" }}
+          >
+            We're a consulting group building technology to empower the best teams.
+          </motion.p>
+          <motion.div
+            className="mt-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.6, ease: "easeOut" }}
+          >
+            <a
+              href="/about"
+              className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-600 text-zinc-400 text-sm font-medium rounded-full hover:border-zinc-500 hover:text-zinc-300 transition-colors duration-300"
             >
-              <Image 
-                src="/hp2bw.png" 
-                alt="Sports Analytics" 
-                fill 
-                className="object-cover"
-              />
+              Learn More
+            </a>
+          </motion.div>
+        </div>
+
+        <div className="relative -mx-10 mt-10 w-full aspect-video [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_100%)]">
+          <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-[#181818] to-transparent z-10"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#181818] to-transparent z-10"></div>
+          <Image
+            src="/skibw.png"
+            alt="ASA team"
+            fill
+            priority
+            className="object-contain"
+          />
+        </div>
+      </section>
+
+      <section className="bg-[#181818] px-6 pt-10 pb-6">
+        <div className="mx-auto max-w-6xl text-left">
+          <motion.h2
+            className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-8"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            By The Numbers
+          </motion.h2>
+          <br></br>
+          <br></br>
+        </div>
+        <div className="mx-auto max-w-6xl text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <motion.div
+              className="text-center"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
+              <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-2">70</div>
+              <div className="text-lg text-zinc-400">Active Members</div>
             </motion.div>
-            <motion.div 
-              className="relative h-48 md:h-56 rounded-lg overflow-hidden shadow-lg"
-              initial={{ opacity: 0, rotate: 2 }}
-              animate={{ opacity: 1, rotate: 2 }}
-              whileHover={{ scale: 1.03, rotate: 6 }}
-              transition={{ 
-                opacity: { duration: 0.8, delay: 0.6 },
-                scale: { duration: 0.3 }
-              }}
+            <motion.div
+              className="text-center"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
             >
-              <Image 
-                src="/hp1bw.png" 
-                alt="Data Analysis" 
-                fill 
-                className="object-cover"
-              />
+              <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-2">25</div>
+              <div className="text-lg text-zinc-400">Projects Completed</div>
             </motion.div>
-            <motion.div 
-              className="relative h-48 md:h-56 rounded-lg overflow-hidden col-span-2 md:col-span-1 shadow-lg"
-              initial={{ opacity: 0, rotate: -3 }}
-              animate={{ opacity: 1, rotate: -2 }}
-              whileHover={{ scale: 1.03, rotate: -6 }}
-              transition={{ 
-                opacity: { duration: 0.8, delay: 0.9 },
-                scale: { duration: 0.3 }
-              }}
+            <motion.div
+              className="text-center"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
             >
-              <Image 
-                src="/hp3bw.png" 
-                alt="Team Collaboration" 
-                fill 
-                className="object-cover"
-              />
+              <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-2">5+</div>
+              <div className="text-lg text-zinc-400">Industry Partners</div>
             </motion.div>
           </div>
         </div>
+      </section>
+      <section className="bg-[#181818] py-8 sm:py-20">
+        <div className="mx-auto max-w-6xl text-left">
+          <motion.h2
+            className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-8"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            What We Do
+          </motion.h2>
+        </div>
+        <br></br>
+        <div className="mx-auto max-w-6xl">
+          <div className="relative">
+            <motion.div
+              className="grid grid-cols-1 md:grid-cols-2 border border-white/10 overflow-hidden relative z-20"
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+            <div className="px-8 py-16 h-80 border-b border-r border-white/10 hover:bg-white/[0.03] transition-colors">
+              <div className="mb-6">
+                <Users className="w-6 h-6 text-white mb-4" />
+                <h3 className="text-xl font-semibold">Partnerships</h3>
+              </div>
+              <p className="text-zinc-300 leading-relaxed">
+              We collaborate with collegiate teams and industry partners to
+              solve real sports analytics challenges.
+              </p>
+            </div>
+            <div className="px-8 py-16 h-80 border-b border-white/10 hover:bg-white/[0.03] transition-colors">
+              <div className="mb-6">
+                <Code className="w-6 h-6 text-white mb-4" />
+                <h3 className="text-xl font-semibold">Engineering + Data</h3>
+              </div>
+              <p className="text-zinc-300 leading-relaxed">
+              We design full-stack tools, machine learning models, and scalable data pipelines to power
+              decision-making in sports.
+              </p>
+            </div>
+            <div className="px-8 py-16 h-80 border-r border-white/10 hover:bg-white/[0.03] transition-colors">
+              <div className="mb-6">
+                <Newspaper className="w-6 h-6 text-white mb-4" />
+                <h3 className="text-xl font-semibold">Impact</h3>
+              </div>
+              <p className="text-zinc-300 leading-relaxed">
+              We publish research, media, and case studies that highlight how data transforms athletic
+              performance and strategy.
+              </p>
+            </div>
+            <div className="px-8 py-16 h-80 hover:bg-white/[0.03] transition-colors">
+              <div className="mb-6">
+                <HeartHandshake className="w-6 h-6 text-white mb-4" />
+                <h3 className="text-xl font-semibold">Community</h3>
+              </div>
+              <p className="text-zinc-300 leading-relaxed">
+                We foster connections through events and collaborative projects that
+                bring students and professionals together.
+              </p>
+            </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#181818] pt-4 pb-16">
+        <div className="mx-auto max-w-6xl text-left">
+          <motion.h2
+            className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-16"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Where We Go
+          </motion.h2>
+        </div>
+          <div className="mx-auto max-w-6xl">
+            <div className="grid grid-cols-5 gap-4 w-full">
+              {ALL_LOGOS.map((src, i) => {
+                const row = Math.floor(i / 5);
+                const col = i % 5;
+                const delay = (row + col) * 0.1;
+                
+                return (
+                  <motion.div
+                    key={`logo-${i}`}
+                    className="relative h-24 border border-white/10 hover:bg-white/[0.03] transition-colors p-4 flex items-center justify-center group"
+                    initial={{ opacity: 0, y: 20, scale: 0.8 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                    transition={{ 
+                      duration: 0.4, 
+                      delay: delay,
+                      ease: "easeOut"
+                    }}
+                    viewport={{ once: true, amount: 0.3 }}
+                  >
+                    <Image 
+                      src={src} 
+                      alt="Company logo" 
+                      width={60} 
+                      height={40} 
+                      className="object-contain grayscale group-hover:grayscale-0 opacity-80 group-hover:opacity-100 transition"
+                    />
+                  </motion.div>
+                );
+              })}
+            </div>
+        </div>
+      </section>
+      <br></br>
+      <br></br>
 
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        
-      </motion.div>
-
-      {/* Footer Section (Exempt from Animation) */}
-	  </div>
-	  <div className="w-full h-px bg-zinc-800" />
+      <div className="w-full h-px bg-zinc-800" />
       <Footer />
     </div>
   );

@@ -1,281 +1,212 @@
 "use client";
 
 import React from "react";
-import { Footer } from "../components/footer";
-import Head from 'next/head';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import Image from 'next/image'; // Import Next.js Image component
-import { Laptop, Briefcase, Camera } from "lucide-react";
+import Footer from "../components/footer";
+import Head from "next/head";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import Image from "next/image";
+import { Laptop, Briefcase, Camera, Linkedin } from "lucide-react";
+import Header from "../components/Header";
+
+type Leader = {
+  name: string;
+  role: string;
+  img: string;
+  linkedin: string;
+};
+
+const LEADERS: Leader[] = [
+  {
+    name: "Ben Busche",
+    role: "President",
+    img: "/ben.png",
+    linkedin: "https://www.linkedin.com/in/ben-busche",
+  },
+  {
+    name: "Tisha Kathrani",
+    role: "Vice President",
+    img: "/tisha.png",
+    linkedin: "https://www.linkedin.com/in/tisha-kathrani",
+  },
+  {
+    name: "Stefan Shakeri",
+    role: "Director of Projects",
+    img: "/stef.png",
+    linkedin: "https://www.linkedin.com/in/stefan-shakeri",
+  },
+  {
+    name: "Israel Shokrian",
+    role: "Director of Business",
+    img: "/israel.png",
+    linkedin: "https://www.linkedin.com/in/israel-shokrian",
+  },
+  {
+    name: "Miwa Hirai",
+    role: "Director of Media",
+    img: "/miw.png",
+    linkedin: "https://www.linkedin.com/in/miwa-hirai",
+  },
+];
 
 export default function AboutPage() {
-    // Refs and inView states for scroll-triggered animations
-    const { ref: projectRef, inView: projectInView } = useInView({ triggerOnce: true, threshold: 0.1 });
-    const { ref: businessRef, inView: businessInView } = useInView({ triggerOnce: true, threshold: 0.1 });
-    const { ref: mediaRef, inView: mediaInView } = useInView({ triggerOnce: true, threshold: 0.1 });
-    
-    // Ref and inView for the logos collage
-    const { ref: logosRef, inView: logosInView } = useInView({ triggerOnce: true, threshold: 0.1 });
+  return (
+    <div className="relative bg-[#181818]">
+      <Head>
+        <title>About | Aggie Sports Analytics at UC Davis</title>
+      </Head>
 
-    // Array of logo image sources
-    const logos = Array.from({ length: 12 }, (_, i) => `/logos/logo0${i + 1}.png`); // Ensure these images are optimized
+      <Header />
 
-    return (
-        <div className="relative bg-black">
-            <Head>
-                <title>About | Aggie Sports Analytics at UC Davis</title>
-            </Head>
-            
-            {/* Navbar */}
-            <div className="w-screen bg-red text-xs">
-                <div className="navbar bg-[#000000] p-2">
-                    <div className="navbar navbar-start">
-                        <div className="dropdown">
-                            <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 stroke-zinc-300" fill="none" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
-                                </svg>
-                            </label>
-                            <ul tabIndex={0} className="z-30 menu menu-md dropdown-content mt-3 p-2 shadow bg-zinc-950 rounded-box w-52 text-zinc-300">
-                                <li><a className="text-lg" href="/about"><b>About</b></a></li>
-                                <li><a className="text-lg" href="/projects">Projects</a></li>
-                                <li><a className="text-lg" href="/journalism">Journalism</a></li>
-                                <li><a className="text-lg" href="/members">Team</a></li>
-                            </ul>
-                        </div>
-                        <a href="/" className="btn btn-ghost"><Image src="/bLogo.png" alt="Aggie Sports Analytics Logo" width={100} height={100} /></a>
-                    </div>
-                    <div className="navbar-center">
-                        <div className="hidden lg:flex">
-                            <ul className="menu menu-horizontal px-1 text-zinc-200 text-xl">
-                                <li><a href="/about"><b>About</b></a></li>
-                                <li><a href="/projects">Projects</a></li>
-                                <li><a href="/journalism">Journalism</a></li>
-                                <li><a href="/members">Team</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="navbar-end">
-                    <button className="btn mr-4 bg-[#5075B5] text-zinc-100">
-                            <a href="/apply">Join</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            {/* Main Content with Fade-In (excluding Navbar) */}
-            <motion.div
-                className="bg-[#000000] pl-10 pr-10 pt-12"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 }} // Light fade-in over 1 second
+      <section className="relative w-screen h-screen">
+        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#181818] to-transparent z-20"></div>
+        <Image src="/champagebw.png" alt="ASA Team" fill priority className="object-cover" />
+        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+          <div className="text-center text-white px-6">
+            <motion.h1
+              className="font-display tracking-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-6"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay:0.0, duration: 0.8, ease: "easeOut" }}
             >
-                <div className="px-6 mx-auto space-y-16 max-w-7xl lg:px-8 md:space-y-24 md:pt-6 lg:pt-10">
-                    {/* Who We Are Section */}
-                    <div className="flex flex-col lg:flex-row items-start lg:items-start">
-                        <div className="lg:w-1/2 lg:pr-6 justify-center h-full">
-                            <br />
-                            <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-                                Who We Are
-                            </h1>
-                            <p className="mt-8 text-lg text-zinc-300">
-                                Aggie Sports Analytics is a student-led organization redefining the future of sports technology. We unite driven students from diverse academic backgrounds to develop innovative solutions across business, technology, and media.
-                            </p>
-                            <br />
-                            <p className="mb-8 text-lg text-zinc-300">
-                            As a tight-knit community, we are committed to fostering both professional development and personal growth, shaping the future of our field while cultivating meaningful connections.</p>
-                        </div>
-                        <div className="lg:w-1/2 lg:pl-6 flex justify-center lg:justify-end pt-3">
-                            <figure><Image src="/groupwqs.png" width={500} height={300} alt="ASA Case Competition" className="rounded-md"/></figure>
-                        </div>
-                    </div>
-
-                    {/* What We Do Section with Scroll-Triggered Animations */}
-                    <div className="max-w-7xl mx-auto pt-3">
-                        <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-5">
-                            What We Do
-                        </h1>
-                        <br></br>
-                        <div className=" p-10 mb-10 space-y-16"> {/* Increased spacing */}
-                            {/* Projects */}
-                            <motion.div
-                                ref={projectRef}
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: projectInView ? 1 : 0, y: projectInView ? 0 : 20 }}
-                                transition={{ duration: 0.5 }}
-                                className="flex flex-col md:flex-row justify-between items-start flex items-center h-full"
-                            >
-                                <motion.h2 
-                                    whileHover={{ scale: 1.1 }}
-                                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                                    className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-[#5075B5] rounded-2xl mb-4 md:mb-0 cursor-pointer"
-                                >
-                                    Projects &nbsp; <Laptop />
-                                </motion.h2>
-                                <p className="text-zinc-300 md:w-2/3 text-lg">
-                                    Our project teams work with UC Davis sports teams to develop solutions in the domains of web development, data science, machine learning, and hardware. Project teams contain roughly five people.
-                                </p>
-                            </motion.div>
-
-                            {/* Business */}
-                            <motion.div
-                                ref={businessRef}
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: businessInView ? 1 : 0, y: businessInView ? 0 : 20 }}
-                                transition={{ duration: 0.5 }}
-                                className="flex flex-col md:flex-row justify-between items-start flex items-center h-full"
-                            >
-                                <motion.h2 
-                                    whileHover={{ scale: 1.1 }}
-                                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                                    className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-[#5075B5] rounded-2xl mb-4 md:mb-0 cursor-pointer"
-                                >
-                                    Business &nbsp; <Briefcase />
-                                </motion.h2>
-                                <p className="text-zinc-300 md:w-2/3 text-lg">
-                                    Our business branch contains the external affairs, internal affairs, and finance teams. Business teams organize professional development workshops, plan social networking events, handle finances, and coordinate outreach efforts.
-                                </p>
-                            </motion.div>
-
-                            {/* Media */}
-                            <motion.div
-                                ref={mediaRef}
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: mediaInView ? 1 : 0, y: mediaInView ? 0 : 20 }}
-                                transition={{ duration: 0.5 }}
-                                className="flex flex-col md:flex-row justify-between items-start flex items-center h-full"
-                            >
-                                <motion.h2 
-                                    whileHover={{ scale: 1.1 }}
-                                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                                    className="inline-flex items-center px-5 py-3 text-xl font-bold text-zinc-100 bg-[#5075B5] rounded-2xl mb-4 md:mb-0 cursor-pointer"
-                                >
-                                    Media &nbsp; <Camera />
-                                </motion.h2>
-                                <p className="text-zinc-300 md:w-2/3 text-lg">
-                                    Our media branch is responsible for creating content for our newsletter, articles, and social media platforms. Media teams develop and execute strategies that define our public image and strengthen our reach.
-                                </p>
-                            </motion.div>
-                        </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"> {/* Increased gap from 4 to 6 */}
-                        <motion.figure
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5, delay: 0.3 }}
-                            viewport={{ once: true }} // Ensures animation occurs only once
-                            className="overflow-hidden rounded-lg"
-                        >
-                            <Image src="/cooking.jpg" alt="ASA Cooking Competition" width={800} height={600} className="w-full h-auto object-cover" />
-                        </motion.figure>
-                        <motion.figure
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5, delay: 0.4 }}
-                            viewport={{ once: true }} // Ensures animation occurs only once
-                            className="overflow-hidden rounded-lg"
-                        >
-                            <Image src="/recruitment.png" alt="ASA Spring Recruitment" width={800} height={600} className="w-full h-auto object-cover" />
-                        </motion.figure>
-                        <motion.figure
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5, delay: 0.5 }}
-                            viewport={{ once: true }} // Ensures animation occurs only once
-                            className="overflow-hidden rounded-lg"
-                        >
-                            <Image src="/field.jpg" alt="ASA Field Day" width={800} height={600} className="w-full h-auto object-cover" />
-                        </motion.figure>
-                    </div>
-
-                    {/* Where We Go Section */}
-                    <div className="max-w-7xl mx-auto pt-5">
-                        <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-6">
-                            Where We Go
-                        </h1>
-                        <p className="text-lg text-zinc-300 mb-8">
-                        Our members pursue successful careers in a wide range of industries, including tech, consulting, finance, business strategy, and more. </p>
-                        <br></br>
-                        <motion.div
-                            ref={logosRef}
-                            initial="hidden"
-                            animate={logosInView ? "visible" : "hidden"}
-                            variants={{
-                                hidden: {},
-                                visible: {
-                                    transition: {
-                                        staggerChildren: 0.1,
-                                    },
-                                },
-                            }}
-                            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
-                        >
-                            {logos.map((logoSrc, index) => (
-                                <motion.div
-                                    key={index}
-                                    className="flex items-center justify-center p-4 rounded-lg shadow-lg"
-                                    variants={{
-                                        hidden: { opacity: 0, scale: 0.8 },
-                                        visible: { opacity: 1, scale: 1 },
-                                    }}
-                                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                                >
-                                    <Image
-                                        src={logoSrc}
-                                        alt={`Partner Logo ${index + 1}`}
-                                        width={100} // Adjust based on your design
-                                        height={100} // Adjust based on your design
-                                        className="max-h-16 object-contain"
-                                        priority={false} // Ensures lazy loading
-                                    />
-                                </motion.div>
-                            ))}
-                        </motion.div>
-                    </div>
-
-                    <br />
-
-                    {/* Photo Gallery Section */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"> {/* Increased gap from 4 to 6 */}
-                    <motion.figure
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5 }}
-                            viewport={{ once: true }} // Ensures animation occurs only once
-                            className="overflow-hidden rounded-lg"
-                        >
-                            <Image src="/banq.jpg" alt="ASA Spring 2024 Banquet" width={800} height={600} className="w-full h-auto object-cover" />
-                        </motion.figure>
-                        <motion.figure
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5, delay: 0.1 }}
-                            viewport={{ once: true }} // Ensures animation occurs only once
-                            className="overflow-hidden rounded-lg"
-                        >
-                            <Image src="/github.jpg" alt="ASA Github Workshop" width={800} height={600} className="w-full h-auto object-cover" />
-                        </motion.figure>
-                        <motion.figure
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5, delay: 0.2 }}
-                            viewport={{ once: true }} // Ensures animation occurs only once
-                            className="overflow-hidden rounded-lg"
-                        >
-                            <Image src="/ski.jpg" alt="ASA Ski Trip" width={800} height={600} className="w-full h-auto object-cover" />
-                        </motion.figure>
-
-                    </div>
-
-                    {/* Logos Collage Section */}
-                </div>
-                <br></br>
-                <br></br>
-                <br></br>
-            </motion.div>
-            <div className="w-full h-px bg-zinc-800" />
-            <Footer />
+              <span className="font-bold">Who We Are</span>
+            </motion.h1>
+          </div>
         </div>
-    );
+      </section>
+      <motion.div
+        className="bg-[#181818] pl-4 pr-4 md:pl-10 md:pr-10 pt-12"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <div className="px-2 md:px-6 mx-auto space-y-16 max-w-7xl md:space-y-24 md:pt-6 lg:pt-10">
+          <div className="flex flex-col lg:flex-row items-start lg:items-start">
+            <div className="lg:w-1/2 lg:pr-6 justify-center h-full">
+              <br />
+              <p className="mt-8 text-lg text-zinc-300">
+                Aggie Sports Analytics is a student-led organization pioneering the future of sports technology. We unite driven students from diverse academic backgrounds to develop innovative solutions across business, technology, and media.
+              </p>
+              <br />
+              <p className="mb-8 text-lg text-zinc-300">
+                As a tight-knit community, we provide an environment for professional development and personal growth, shaping the future of our field while cultivating meaningful connections.</p>
+            </div>
+            <div className="lg:w-1/2 lg:pl-6 flex justify-center lg:justify-end pt-3">
+              <figure><Image src="/team.png" width={500} height={300} alt="ASA Case Competition"/></figure>
+            </div>
+          </div>
+          <section className="relative max-w-7xl mx-auto">
+
+            <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-12">
+              Our Branches
+            </h1>
+
+            <motion.div
+              className="grid grid-cols-1 md:grid-cols-3 border border-white/10 overflow-hidden"
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <div className="px-8 py-16 h-80 border-r border-white/10 hover:bg-white/[0.03] transition-colors">
+                <div className="mb-6">
+                  <Laptop className="w-6 h-6 text-white mb-4" />
+                  <h3 className="text-xl text-white font-semibold">Projects</h3>
+                </div>
+                <p className="text-zinc-300 leading-relaxed">
+                   Teams partner with professional athletic teams to ship solutions in web, data science, ML, and
+                  hardware.
+                </p>
+              </div>
+
+              <div className="px-8 py-16 h-80 border-r border-white/10 hover:bg-white/[0.03] transition-colors">
+                <div className="mb-6">
+                  <Briefcase className="w-6 h-6 text-white mb-4" />
+                  <h3 className="text-xl font-semibold text-white">Business</h3>
+                </div>
+                <p className="text-zinc-300 leading-relaxed">
+                  Teams operate the events that power ASA, and
+                  partner with pro organizations like <a href="https://www.perplexity.ai" target="_blank" rel="noopener noreferrer"><i>Perplexity</i></a> and <a href="https://www.ucdavisaggies.com" target="_blank" rel="noopener noreferrer"><i>UCD Athletics</i></a>.
+                </p>
+              </div>
+
+              <div className="px-8 py-16 h-80 hover:bg-white/[0.03] transition-colors">
+                <div className="mb-6">
+                  <Camera className="w-6 h-6 text-white mb-4" />
+                  <h3 className="text-xl font-semibold text-white">Media</h3>
+                </div>
+                <p className="text-zinc-300 leading-relaxed">
+                  Teams produce content for newsletters, articles, and social media. These tell our story to grow brand and community.
+                </p>
+              </div>
+            </motion.div>
+          </section>
+
+          <div className="max-w-7xl mx-auto">
+            <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-12">
+              Leadership
+            </h1>
+
+            <motion.div
+              className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 items-center justify-center gap-6 pb-6 content-center"
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: {},
+                visible: { transition: { staggerChildren: 0.1 } },
+              }}
+            >
+              {LEADERS.map((leader) => (
+                <motion.div
+                  key={leader.name}
+                  className="w-48 mb-6 bg-transparent border-gray-700 text-slate-200"
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                      transition: { duration: 0.5, ease: "easeOut" },
+                    },
+                  }}
+                >
+                  <figure>
+                    <img
+                      src={leader.img}
+                      alt={leader.name}
+                      className="w-full h-48 object-cover"
+                    />
+                  </figure>
+                  <div className="flex mt-3 justify-between items-center">
+                    <div>
+                      <h2 className="text-sm font-semibold">{leader.name}</h2>
+                      <p className="text-xs">{leader.role}</p>
+                    </div>
+                    {leader.linkedin && (
+                      <a
+                        href={leader.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-1 transition-colors"
+                        aria-label={`${leader.name} LinkedIn`}
+                        title="LinkedIn"
+                      >
+                        <Linkedin className="w-4 h-4 text-zinc-400 hover:text-zinc-200 transition-colors" />
+                      </a>
+                    )}
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+      </motion.div>
+
+      <div className="w-full h-px bg-zinc-800" />
+      <Footer />
+    </div>
+  );
 }

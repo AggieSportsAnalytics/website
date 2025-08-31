@@ -39,9 +39,10 @@ module.exports = {
 			},
 			
 			fontFamily: {
-				sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
+				sans: ["var(--font-calsans)", "var(--font-inter)", ...defaultTheme.fontFamily.sans],
 				display: ["var(--font-calsans)"],
 				inter: ['var(--font-inter)'],
+				calsans: ['var(--font-calsans)'],
 			},
 			backgroundImage: {
 				"gradient-radial":

@@ -1,177 +1,74 @@
-"use client"; // Ensures the component is rendered on the client side
-
-import React, { useState } from "react";
-import { Footer } from "../components/footer";
+"use client";
+import React from "react";
 import Head from "next/head";
-import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import Header from "../components/Header";
+import Footer from "../components/footer";
 
-export default function MembersPage() {
-  // Define FAQ items
-  const faqs = [
-    {
-      question: "How is ASA structured?",
-      answer:
-        "ASA operates in three branches - Projects, Business, and Media. These branches are highly interconnected and work in close collaboration throughout the school year.",
-    },
-    {
-      question: "Are there prerequisites to join ASA?",
-      answer:
-        "There are no strict prerequisites - we welcome all students, regardless of their background. However, familiarity with the basic skills for a specific position will boost your application.",
-    },
-    {
-      question: "What is the time commitment for ASA members?",
-      answer:
-        "Members are expected to commit approximately 5 to 10 hours per week. This includes club general meetings, branch-specific project meetings, professional events, social gatherings, and asynchronous work.",
-    },
-    {
-      question: "Can ASA support me academically and professionally?",
-      answer:
-        "An overwhelming majority of our members use skills learned in ASA to accel in courses, along with landing internship and full-time opportunities.",
-    },
-    {
-      question: "Does ASA have membership dues?",
-      answer:
-        "Membership dues are $15 per quarter. This money is used to fund projects and cover the cost of events.",
-    },
-  ];
-
-  // State for FAQ accordion
-  const [openIndex, setOpenIndex] = useState<number | null>(null); // Update type here
-
-  const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+export default function JoinUsPage() {
 
   return (
-    <div className="relative bg-[#111111] min-h-screen flex flex-col">
+    <div className="relative min-h-screen flex flex-col bg-[#181818] text-white overflow-hidden">
       <Head>
-        <title>Join ASA | Aggie Sports Analytics at UC Davis</title>
+        <title>Join ASA | Aggie Sports Analytics</title>
       </Head>
+      <Header />
+      
+      <main className="relative flex-grow flex">
+        <div className="relative w-1/2 min-h-screen">
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#181818] z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#181818]/30 via-transparent to-[#181818]/30 z-10"></div>
+          <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#181818] to-transparent z-20"></div>
+          
+          <Image
+            src="/bbbw.png"
+            alt="ASA Team"
+            fill
+            priority
+            className="object-cover"
+          />
+        </div>
 
-      {/* Navbar */}
-      <div className="w-screen bg-[#000000] text-xs">
-        <div className="navbar bg-[#000000]">
-          <div className="navbar navbar-start">
-            <div className="dropdown">
-              <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-7 w-7 stroke-zinc-300"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </label>
-              <ul
-                tabIndex={0}
-                className="z-30 menu menu-md dropdown-content mt-3 p-2 shadow bg-zinc-950 rounded-box w-52 text-zinc-300"
+        <div className="w-1/2 flex items-center justify-center px-12">
+          <div className="max-w-lg">
+            <motion.h1 
+              className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              Join Us
+            </motion.h1>
+            
+            <motion.p 
+              className="mt-6 text-zinc-300 text-lg leading-relaxed"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            >
+              Become a part of our community and drive impact in sports technology at ASA. Applications are opening soon.
+            </motion.p>
+            
+            <motion.div
+              className="mt-8"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            >
+              <button
+                disabled
+                className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-700 text-zinc-500 text-sm font-medium rounded-full cursor-not-allowed opacity-50"
               >
-                <li>
-                  <a className="text-lg" href="/about">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a className="text-lg" href="/projects">
-                    Projects
-                  </a>
-                </li>
-                <li>
-                  <a className="text-lg" href="/journalism">
-                    Journalism
-                  </a>
-                </li>
-                <li>
-                  <a className="text-lg" href="/members">
-                    Team
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <a href="/" className="btn btn-ghost">
-              <Image
-                src="/bLogo.png"
-                alt="Aggie Sports Analytics Logo"
-                width={100}
-                height={50}
-              />
-            </a>
-          </div>
-          <div className="navbar-center">
-            <div className="hidden lg:flex">
-              <ul className="menu menu-horizontal px-1 text-zinc-200 text-xl">
-                <li>
-                  <a href="/about">About</a>
-                </li>
-                <li>
-                  <a href="/projects">Projects</a>
-                </li>
-                <li>
-                  <a href="/journalism">Journalism</a>
-                </li>
-                <li>
-                  <a href="/members">Team</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="navbar-end">
-          <button className="btn mr-4 bg-[#5075B5] text-zinc-100">
-            <a href="/apply">Join</a>
-          </button>
+                Coming Fall 2025
+              </button>
+            </motion.div>
           </div>
         </div>
-      </div>
-
-
-      {/* Main Content */}
-      <div className="flex-grow bg-[#000000] px-12">
-        <motion.div
-          className="px-6 mx-auto max-w-7xl lg:px-8 pt-12"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          {/* Hero Section */}
-          <motion.section
-            className="flex flex-col lg:flex-row items-center mb-12 mt-5"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="lg:w-1/2 text-center lg:text-left pr-5">
-              <h2 className="text-xl font-extrabold tracking-tight text-white sm:text-4xl mb-6">
-                Join Our Community
-              </h2>
-              <p className="text-zinc-300 text-lg mb-6">
-                Applications are closed. Follow us on <b><u><a href="https://www.instagram.com/aggiesportsanalytics" target="_blank">Instagram</a></u></b> to stay updated with latest club news and events.
-              </p>
-            </div>
-            <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-center">
-              <Image
-                src="/collage.png" // Replace with your actual image path
-                alt="Join ASA"
-                width={500}
-                height={300}
-                className="rounded-lg"
-              />
-            </div>
-          </motion.section>
-
-        </motion.div>
-        <br />
-      </div>
-
-      {/* Footer */}
-      <div className="w-full h-px bg-zinc-800" />
+      </main>
+      
+      <div className="w-full h-px bg-zinc-800/70" />
       <Footer />
     </div>
   );
