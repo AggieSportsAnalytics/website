@@ -34,16 +34,30 @@ export default function Header() {
                   </a>
                 </li>
                 <li>
+                  <a className="text-lg hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent" href="/community">
+                    Community
+                  </a>
+                </li>
+                <li>
                   <a className="text-lg hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent" href="/projects">
                     Projects
                   </a>
                 </li>
                 <li>
-                  <a className="text-lg hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent" href="/journalism">
+                  <a className="text-lg hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent" href="https://medium.com/@aggiesportsanalytics" target="_blank">
                     Journalism
                   </a>
                 </li>
-
+                <li>
+                  <a className="text-lg hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent" href="/events">
+                    Events
+                  </a>
+                </li>
+                <li>
+                  <a className="text-lg hover:text-zinc-100 transition-colors duration-200 hover:bg-transparent active:bg-transparent" href="/apply">
+                    Join
+                  </a>
+                </li>
               </ul>
           </div>
           <a href="/" className="hover:bg-transparent active:bg-transparent ml-2">
