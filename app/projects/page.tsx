@@ -53,7 +53,7 @@ export default async function WorkPage() {
           <div className="px-6 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-8 lg:pt-12">
             <div className="text-left mb-12">
               <h1 className="text-4xl font-bold text-white mb-2">Projects</h1>
-              <p className="text-zinc-400 text-lg">Products built to empower the best sports organizations.</p>
+              <p className="text-zinc-400 text-lg">Products built to empower the best sports teams.</p>
             </div>
             <div>
               <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
