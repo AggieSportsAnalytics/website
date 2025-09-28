@@ -233,7 +233,7 @@ export default function Home() {
                       alt="Company logo" 
                       width={60} 
                       height={40} 
-                      className="object-contain grayscale group-hover:grayscale-0 opacity-80 group-hover:opacity-100 transition"
+                      className="object-contain group-hover:grayscale-0 opacity-80 group-hover:opacity-100 transition"
                     />
                   </motion.div>
                 );
