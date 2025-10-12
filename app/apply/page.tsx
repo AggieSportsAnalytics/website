@@ -112,7 +112,7 @@ export default function JoinUsPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              Apply Now
+              Join Us
             </motion.h1>
             
             <motion.p 
@@ -121,10 +121,10 @@ export default function JoinUsPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             >
-              Become a part of our community and build sports technology at ASA. Applications are now open for our Projects, Business, and Media teams!
+              Applications are now closed. Please be on the lookout for our future recruitment cycles.
             </motion.p>
 
-            <motion.div
+            {/* <motion.div
               className="mt-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -179,12 +179,12 @@ export default function JoinUsPage() {
                   </Link>
                 </>
               )}
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </main>
 
-      <section className="py-12 px-12">
+      {/* <section className="py-12 px-12">
         <motion.div
           className="max-w-7xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
@@ -225,7 +225,7 @@ export default function JoinUsPage() {
             </div>
           </motion.div>
         </motion.div>
-      </section>
+      </section> */}
       
       <section className="py-16 px-12">
         <motion.div
