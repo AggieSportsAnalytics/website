@@ -71,65 +71,64 @@ export default function Home() {
         <div className="relative -mx-10 mt-10 w-full aspect-video [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_100%)]">
           <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-[#181818] to-transparent z-10"></div>
           <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#181818] to-transparent z-10"></div>
-          <Image
-            src="/skibw.png"
-            alt="ASA team"
-            fill
-            priority
-            className="object-contain"
-          />
+          <div 
+          className="relative w-full aspect-video"
+          style={{
+            backgroundImage: 'url(/skibw.png)',
+            backgroundSize: 'contain',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            opacity: 0.7
+          }}
+        >        </div>
         </div>
       </section>
 
-      <section className="bg-[#181818] px-6 pt-10 pb-6">
-        <div className="mx-auto max-w-6xl text-left">
-          <motion.h2
-            className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-8"
-            initial={{ opacity: 0, y: 16 }}
+      <section className="bg-[#181818] px-6 py-4">
+        <div className="mx-auto max-w-6xl">
+          <motion.div 
+            className="w-full"
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            By The Numbers
-          </motion.h2>
-          <br></br>
-          <br></br>
-        </div>
-        <div className="mx-auto max-w-6xl text-center">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <motion.div
-              className="text-center"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-            >
-              <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-2">70</div>
-              <div className="text-lg text-zinc-400">Active Members</div>
-            </motion.div>
-            <motion.div
-              className="text-center"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-2">25</div>
-              <div className="text-lg text-zinc-400">Projects Completed</div>
-            </motion.div>
-            <motion.div
-              className="text-center"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-            >
-              <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-2">5+</div>
-              <div className="text-lg text-zinc-400">Industry Partners</div>
-            </motion.div>
-          </div>
+            <div className="text-center mb-6">
+              <h3 className="text-sm font-medium text-zinc-500 uppercase tracking-wider">Our 2025-2026 Clients</h3>
+            </div>
+            <div className="grid grid-cols-3 border border-white/10 overflow-hidden">
+              <div className="px-4 py-6 border-r border-white/10 hover:bg-white/[0.03] transition-colors flex items-center justify-center">
+                <Image 
+                  src="/clients/dodgers.png" 
+                  alt="NBA" 
+                  width={80} 
+                  height={50} 
+                  className="object-contain opacity-80 hover:opacity-100 transition"
+                />
+              </div>
+              <div className="px-4 py-6 border-r border-white/10 hover:bg-white/[0.03] transition-colors flex items-center justify-center">
+                <Image 
+                  src="/clients/eq.png" 
+                  alt="San Francisco 49ers" 
+                  width={80} 
+                  height={50} 
+                  className="object-contain opacity-80 hover:opacity-100 transition"
+                />
+              </div>
+              <div className="px-4 py-6 hover:bg-white/[0.03] transition-colors flex items-center justify-center">
+                <Image 
+                  src="/clients/ucd.png" 
+                  alt="UC Davis Athletics" 
+                  width={80} 
+                  height={50} 
+                  className="object-contain opacity-80 hover:opacity-100 transition"
+                />
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
+
       <section className="bg-[#181818] py-8 sm:py-20">
         <div className="mx-auto max-w-6xl text-left">
           <motion.h2
@@ -158,8 +157,8 @@ export default function Home() {
                 <h3 className="text-xl font-semibold">Partnerships</h3>
               </div>
               <p className="text-zinc-300 leading-relaxed">
-              We collaborate with collegiate teams and industry partners to
-              solve real sports analytics challenges.
+              We work with collegiate and professional teams as dedicated clients, 
+              delivering real-world sports analytics solutions.
               </p>
             </div>
             <div className="px-8 py-16 h-80 border-b border-white/10 hover:bg-white/[0.03] transition-colors">
@@ -169,7 +168,7 @@ export default function Home() {
               </div>
               <p className="text-zinc-300 leading-relaxed">
               We design full-stack tools, machine learning models, and scalable data pipelines to power
-              decision-making in sports.
+              client needs.
               </p>
             </div>
             <div className="px-8 py-16 h-80 border-r border-white/10 hover:bg-white/[0.03] transition-colors">
@@ -178,7 +177,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold">Impact</h3>
               </div>
               <p className="text-zinc-300 leading-relaxed">
-              We publish research, media, and case studies that highlight how data transforms athletic
+              We publish research and case studies to highlight how our projects transforms athletic
               performance and strategy.
               </p>
             </div>
@@ -188,8 +187,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold">Community</h3>
               </div>
               <p className="text-zinc-300 leading-relaxed">
-                We foster connections through events and collaborative projects that
-                bring students and professionals together.
+                We build connections between students and professionals through events and collaborations.
               </p>
             </div>
             </motion.div>
