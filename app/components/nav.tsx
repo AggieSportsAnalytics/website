@@ -23,8 +23,8 @@ export const Navigation: React.FC = () => {
 	const navLinks = [
 		{ href: "/about", label: "About" },
 		{ href: "/projects", label: "Projects" },
+		{ href: "/community", label: "Community" },
 		{ href: "https://medium.com/@aggiesportsanalytics", label: "Journalism", external: true },
-		{ href: "/members", label: "Team" },
 		{ href: "/apply", label: "Join" },
 	];
 

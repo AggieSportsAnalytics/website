@@ -36,15 +36,16 @@ export default function Footer() {
                 href="https://instagram.com/aggiesportsanalytics" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="flex items-center justify-center md:justify-start hover:text-gray-100 transition-colors duration-200"
+                className="flex items-center md:justify-start hover:text-gray-100 transition-colors duration-200"
               >
                 <span className="">Instagram</span>
               </a>
+              
               <a 
                 href="https://www.linkedin.com/company/aggiesportsanalytics/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="flex items-center justify-center md:justify-start hover:text-gray-100 transition-colors duration-200"
+                className="flex items-center md:justify-start hover:text-gray-100 transition-colors duration-200"
               >
                 <span className="">LinkedIn</span>
               </a>
@@ -52,7 +53,7 @@ export default function Footer() {
                 href="https://github.com/AggieSportsAnalytics" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="flex items-center justify-center md:justify-start hover:text-gray-100 transition-colors duration-200"
+                className="flex items-center md:justify-start hover:text-gray-100 transition-colors duration-200"
               >
                 <span className="">GitHub</span>
               </a>
