@@ -16,6 +16,14 @@ type Leader = {
   linkedin: string;
 };
 
+type Member = {
+  name: string;
+  role: string;
+  division?: string;
+  img: string;
+  email?: string;
+};
+
 const LEADERS: Leader[] = [
   {
     name: "Ben Busche",
@@ -139,6 +147,351 @@ const LEADERS: Leader[] = [
   },
 ];
 
+const MEMBERS: Member[] = [
+  {
+    name: "Grace Lim",
+    role: "Member",
+    division: "Social Media",
+    img: "/team.png",
+  },
+  {
+    name: "Emily Cromwell",
+    role: "Member",
+    division: "Social Media",
+    img: "/team.png",
+  },
+  {
+    name: "Yashas Vissapragada",
+    role: "Member",
+    division: "External",
+    img: "/team.png",
+  },
+  {
+    name: "Ruth Jaquette",
+    role: "Member",
+    division: "External",
+    img: "/team.png",
+  },
+  {
+    name: "Arushi Bhattacharya",
+    role: "Member",
+    division: "External",
+    img: "/team.png",
+  },
+  {
+    name: "Alex Pritchard",
+    role: "Member",
+    division: "External",
+    img: "/team.png",
+  },
+  {
+    name: "Abhinav Barathi",
+    role: "Member",
+    division: "External",
+    img: "/team.png",
+    email: "barathi.abhinav@gmail.com",
+  },
+  {
+    name: "Naomi Peterson",
+    role: "Member",
+    division: "Design",
+    img: "/team.png",
+  },
+  {
+    name: "Emerson Lo",
+    role: "Member",
+    division: "Design",
+    img: "/team.png",
+  },
+  {
+    name: "Oneeka Prabhakar",
+    role: "Member",
+    division: "Design",
+    img: "/team.png",
+    email: "oprabhakar@ucdavis.edu",
+  },
+  {
+    name: "Vasanth Gopal",
+    role: "Member",
+    division: "Finance",
+    img: "/team.png",
+  },
+  {
+    name: "Sumaira Sawal",
+    role: "Member",
+    division: "Finance",
+    img: "/team.png",
+  },
+  {
+    name: "Jack Lingle",
+    role: "Member",
+    division: "Finance",
+    img: "/team.png",
+  },
+  {
+    name: "Vedant Gopal",
+    role: "Member",
+    division: "Journalism",
+    img: "/team.png",
+  },
+  {
+    name: "Nathaniel Maffly",
+    role: "Member",
+    division: "Journalism",
+    img: "/team.png",
+    email: "ncmaffly@ucdavis.edu",
+  },
+  {
+    name: "Jessica Mendieta",
+    role: "Member",
+    division: "Internal",
+    img: "/team.png",
+  },
+  {
+    name: "Jen Dong",
+    role: "Member",
+    division: "Internal",
+    img: "/team.png",
+  },
+  {
+    name: "Armeen Emami",
+    role: "Member",
+    division: "Internal",
+    img: "/team.png",
+  },
+  {
+    name: "Ankita Khatri",
+    role: "Member",
+    division: "Internal",
+    img: "/team.png",
+  },
+  {
+    name: "Rakshita Narayanaswamy",
+    role: "Member",
+    division: "Basketball",
+    img: "/team.png",
+  },
+  {
+    name: "Hanson Lau",
+    role: "Member",
+    division: "Basketball",
+    img: "/team.png",
+  },
+  {
+    name: "Beckett Hayes",
+    role: "Member",
+    division: "Basketball",
+    img: "/team.png",
+  },
+  {
+    name: "Arshawn Zamanian",
+    role: "Member",
+    division: "Basketball",
+    img: "/team.png",
+  },
+  {
+    name: "Logan Tadano",
+    role: "Member",
+    division: "Basketball",
+    img: "/team.png",
+    email: "lctadano@ucdavis.edu",
+  },
+  {
+    name: "Vincent Ng",
+    role: "Member",
+    division: "Dodgers",
+    img: "/team.png",
+    email: "wshng@ucdavis.edu",
+  },
+  {
+    name: "Ruhani Rekhi",
+    role: "Member",
+    division: "Dodgers",
+    img: "/team.png",
+    email: "rrekhi@ucdavis.edu",
+  },
+  {
+    name: "Kristine Yang",
+    role: "Member",
+    division: "Dodgers",
+    img: "/team.png",
+    email: "krcyang@ucdavis.edu",
+  },
+  {
+    name: "Hishaan Rajwani",
+    role: "Member",
+    division: "Dodgers",
+    img: "/team.png",
+    email: "hrajwani@ucdavis.edu",
+  },
+  {
+    name: "Adam Ye",
+    role: "Member",
+    division: "Dodgers",
+    img: "/team.png",
+    email: "admye@ucdavis.edu",
+  },
+  {
+    name: "Ayaan Puri",
+    role: "Member",
+    division: "Soccer",
+    img: "/team.png",
+    email: "aypuri@ucdavis.edu",
+  },
+  {
+    name: "Sunetra Maddipatla",
+    role: "Member",
+    division: "Soccer",
+    img: "/team.png",
+  },
+  {
+    name: "Oscar Pineda",
+    role: "Member",
+    division: "Soccer",
+    img: "/team.png",
+  },
+  {
+    name: "Edan Cho",
+    role: "Member",
+    division: "Soccer",
+    img: "/team.png",
+  },
+  {
+    name: "Shanyu Dabbiru",
+    role: "Member",
+    division: "Soccer",
+    img: "/team.png",
+    email: "sdabbiru@ucdavis.edu",
+  },
+  {
+    name: "Yuvi Riyar",
+    role: "Member",
+    division: "Football",
+    img: "/team.png",
+    email: "yuvi200430@gmail.com",
+  },
+  {
+    name: "Munneth Gill",
+    role: "Member",
+    division: "Football",
+    img: "/team.png",
+  },
+  {
+    name: "Jessica Ting",
+    role: "Member",
+    division: "Football",
+    img: "/team.png",
+  },
+  {
+    name: "Devin Sidhu",
+    role: "Member",
+    division: "Football",
+    img: "/team.png",
+  },
+  {
+    name: "Advik Gupta",
+    role: "Member",
+    division: "Football",
+    img: "/team.png",
+  },
+  {
+    name: "Sienna Tumber",
+    role: "Member",
+    division: "Tennis",
+    img: "/team.png",
+  },
+  {
+    name: "Michelle Lin",
+    role: "Member",
+    division: "Tennis",
+    img: "/team.png",
+  },
+  {
+    name: "Kenny Le",
+    role: "Member",
+    division: "Tennis",
+    img: "/team.png",
+  },
+  {
+    name: "Joseph Cha",
+    role: "Member",
+    division: "Tennis",
+    img: "/team.png",
+  },
+  {
+    name: "Anik Majumdar",
+    role: "Member",
+    division: "Tennis",
+    img: "/team.png",
+  },
+  {
+    name: "Sebastian Martin Del Campo",
+    role: "Member",
+    division: "Water Polo",
+    img: "/team.png",
+  },
+  {
+    name: "Riley St George",
+    role: "Member",
+    division: "Water Polo",
+    img: "/team.png",
+  },
+  {
+    name: "Keira Patel",
+    role: "Member",
+    division: "Water Polo",
+    img: "/team.png",
+  },
+  {
+    name: "Clara Wei",
+    role: "Member",
+    division: "Water Polo",
+    img: "/team.png",
+  },
+  {
+    name: "Anatoly Tsigelnik",
+    role: "Member",
+    division: "Water Polo",
+    img: "/team.png",
+  },
+  {
+    name: "Vicky Chan",
+    role: "Member",
+    division: "Earthquakes",
+    img: "/team.png",
+  },
+  {
+    name: "Rebekah Lee",
+    role: "Member",
+    division: "Earthquakes",
+    img: "/team.png",
+  },
+  {
+    name: "Joshua Wei",
+    role: "Member",
+    division: "Earthquakes",
+    img: "/team.png",
+  },
+  {
+    name: "Henry Nguyen",
+    role: "Member",
+    division: "Earthquakes",
+    img: "/team.png",
+  },
+  {
+    name: "Dylan Tran",
+    role: "Member",
+    division: "Earthquakes",
+    img: "/team.png",
+  },
+  {
+    name: "Emma Lam",
+    role: "Member",
+    img: "/team.png",
+    email: "emklam@ucdavis.edu",
+  },
+];
+
 function LeadershipGrid() {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -197,6 +550,73 @@ function LeadershipGrid() {
                 <Linkedin className="w-4 h-4 text-zinc-400 hover:text-zinc-200 transition-colors" />
               </a>
             )}
+          </div>
+        </motion.div>
+      ))}
+    </motion.div>
+  );
+}
+
+function MembersGrid() {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  return (
+    <motion.div
+      ref={ref}
+      className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 items-center justify-center gap-6 pb-6 content-center"
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+      variants={{
+        hidden: {},
+        visible: { transition: { staggerChildren: 0.15 } },
+      }}
+    >
+      {MEMBERS.map((member, index) => (
+        <motion.div
+          key={member.name}
+          className="w-48 mb-6 bg-transparent border-gray-700 text-slate-200"
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 0.5,
+                ease: "easeOut",
+                delay: index * 0.1,
+              },
+            },
+          }}
+        >
+          <figure>
+            <img
+              src={member.img}
+              alt={member.name}
+              className="w-full h-48 object-cover"
+            />
+          </figure>
+          <div className="flex mt-3 justify-between items-center">
+            <div>
+              <h2 className="text-sm font-semibold">{member.name}</h2>
+              <p className="text-xs">
+                {member.division
+                  ? `${member.role} - ${member.division}`
+                  : member.role}
+              </p>
+              {member.email ? (
+                <a
+                  href={`mailto:${member.email}`}
+                  className="text-xs text-zinc-400 hover:text-zinc-200 transition-colors"
+                >
+                  {member.email}
+                </a>
+              ) : (
+                <span className="text-xs text-transparent">placeholder</span>
+              )}
+            </div>
           </div>
         </motion.div>
       ))}
@@ -303,6 +723,14 @@ export default function AboutPage() {
             </h1>
 
             <LeadershipGrid />
+          </div>
+
+          <div className="max-w-7xl mx-auto pt-10">
+            <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-12">
+              Members
+            </h1>
+
+            <MembersGrid />
           </div>
         </div>
 
