@@ -56,16 +56,10 @@ const LEADERS: Leader[] = [
     linkedin: "https://www.linkedin.com/in/miwa-hirai",
   },
   {
-    name: "Vishal Shenoy",
-    role: "Advisor",
-    img: "/vishal.png",
-    linkedin: "https://www.linkedin.com/in/shenoyvishal",
-  },
-  {
-    name: "Krishna Hajari",
+    name: "Abhinav Barathi",
     role: "Head of External Affairs",
-    img: "/krishna.png",
-    linkedin: "https://www.linkedin.com/in/krishnahajari/",
+    img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/abhinav-barathi/",
   },
   {
     name: "Luke Harrell",
@@ -187,13 +181,6 @@ const MEMBERS: Member[] = [
     division: "External",
     img: "/team.png",
     linkedin: "https://www.linkedin.com/in/alex-pritchard-wwfc/",
-  },
-  {
-    name: "Abhinav Barathi",
-    role: "Member",
-    division: "External",
-    img: "/team.png",
-    linkedin: "https://www.linkedin.com/in/abhinav-barathi/",
   },
   {
     name: "Naomi Petersen",
