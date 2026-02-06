@@ -21,7 +21,7 @@ type Member = {
   role: string;
   division?: string;
   img: string;
-  email?: string;
+  linkedin?: string;
 };
 
 const LEADERS: Leader[] = [
@@ -165,37 +165,42 @@ const MEMBERS: Member[] = [
     role: "Member",
     division: "External",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/yashas-vissapragada-2a1599365/",
   },
   {
     name: "Ruth Jaquette",
     role: "Member",
     division: "External",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/ruth-jaquette/",
   },
   {
     name: "Arushi Bhattacharya",
     role: "Member",
     division: "External",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/arushi-bhattacharya/",
   },
   {
     name: "Alex Pritchard",
     role: "Member",
     division: "External",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/alex-pritchard-wwfc/",
   },
   {
     name: "Abhinav Barathi",
     role: "Member",
     division: "External",
     img: "/team.png",
-    email: "barathi.abhinav@gmail.com",
+    linkedin: "https://www.linkedin.com/in/abhinav-barathi/",
   },
   {
-    name: "Naomi Peterson",
+    name: "Naomi Petersen",
     role: "Member",
     division: "Design",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/naomipetersen-/",
   },
   {
     name: "Emerson Lo",
@@ -208,7 +213,7 @@ const MEMBERS: Member[] = [
     role: "Member",
     division: "Design",
     img: "/team.png",
-    email: "oprabhakar@ucdavis.edu",
+    linkedin: "https://www.linkedin.com/in/oneeka-prabhakar-90b638257/",
   },
   {
     name: "Vasanth Gopal",
@@ -221,172 +226,189 @@ const MEMBERS: Member[] = [
     role: "Member",
     division: "Finance",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/sumaira-sawal-b0a648358/",
   },
   {
     name: "Jack Lingle",
     role: "Member",
     division: "Finance",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/jack-lingle/",
   },
   {
     name: "Vedant Gopal",
     role: "Member",
     division: "Journalism",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/vedant-gopal-8b8965294/",
   },
   {
     name: "Nathaniel Maffly",
     role: "Member",
     division: "Journalism",
     img: "/team.png",
-    email: "ncmaffly@ucdavis.edu",
+    linkedin: "https://www.linkedin.com/in/nathaniel-maffly-390235268/",
   },
   {
     name: "Jessica Mendieta",
     role: "Member",
     division: "Internal",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/jessica-mendieta/",
   },
   {
     name: "Jen Dong",
     role: "Member",
     division: "Internal",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/nxdong/",
   },
   {
     name: "Armeen Emami",
     role: "Member",
     division: "Internal",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/armeen-emami-517355207/",
   },
   {
     name: "Ankita Khatri",
     role: "Member",
     division: "Internal",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/ankitadkhatri/",
   },
   {
     name: "Rakshita Narayanaswamy",
     role: "Member",
     division: "Basketball",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/rakshita-narayanaswamy-b56b70217/",
   },
   {
     name: "Hanson Lau",
     role: "Member",
     division: "Basketball",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/hanson-lau-347236199/",
   },
   {
     name: "Beckett Hayes",
     role: "Member",
     division: "Basketball",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/beckett-hayes/",
   },
   {
     name: "Arshawn Zamanian",
     role: "Member",
     division: "Basketball",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/arshawn-zamanian-5b7009389/",
   },
   {
     name: "Logan Tadano",
     role: "Member",
     division: "Basketball",
     img: "/team.png",
-    email: "lctadano@ucdavis.edu",
+    linkedin: "https://www.linkedin.com/in/logantadano/",
   },
   {
     name: "Vincent Ng",
     role: "Member",
     division: "Dodgers",
     img: "/team.png",
-    email: "wshng@ucdavis.edu",
+    linkedin: "https://www.linkedin.com/in/wang-ng/",
   },
   {
     name: "Ruhani Rekhi",
     role: "Member",
     division: "Dodgers",
     img: "/team.png",
-    email: "rrekhi@ucdavis.edu",
+    linkedin: "https://www.linkedin.com/in/ruhani-rekhi/",
   },
   {
     name: "Kristine Yang",
     role: "Member",
     division: "Dodgers",
     img: "/team.png",
-    email: "krcyang@ucdavis.edu",
+    linkedin: "https://www.linkedin.com/in/kristine-yang-668b9a287/",
   },
   {
     name: "Hishaan Rajwani",
     role: "Member",
     division: "Dodgers",
     img: "/team.png",
-    email: "hrajwani@ucdavis.edu",
+    linkedin: "https://www.linkedin.com/in/hishaanrajwani/",
   },
   {
     name: "Adam Ye",
     role: "Member",
     division: "Dodgers",
     img: "/team.png",
-    email: "admye@ucdavis.edu",
+    linkedin: "https://www.linkedin.com/in/adamy8/",
   },
   {
     name: "Ayaan Puri",
     role: "Member",
     division: "Soccer",
     img: "/team.png",
-    email: "aypuri@ucdavis.edu",
+    linkedin: "https://www.linkedin.com/in/ayaanpuri/",
   },
   {
     name: "Sunetra Maddipatla",
     role: "Member",
     division: "Soccer",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/sunetramaddipatla/",
   },
   {
     name: "Oscar Pineda",
     role: "Member",
     division: "Soccer",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/oscarpineda524/",
   },
   {
     name: "Edan Cho",
     role: "Member",
     division: "Soccer",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/edan-cho-bb444a21b/",
   },
   {
     name: "Shanyu Dabbiru",
     role: "Member",
     division: "Soccer",
     img: "/team.png",
-    email: "sdabbiru@ucdavis.edu",
+    linkedin: "https://www.linkedin.com/in/shanyu-dabbiru/",
   },
   {
     name: "Yuvi Riyar",
     role: "Member",
     division: "Football",
     img: "/team.png",
-    email: "yuvi200430@gmail.com",
+    linkedin: "https://www.linkedin.com/in/yuvrajriyar/",
   },
   {
     name: "Munneth Gill",
     role: "Member",
     division: "Football",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/munnethgill/",
   },
   {
     name: "Jessica Ting",
     role: "Member",
     division: "Football",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/jessica-ting-404034352/",
   },
   {
     name: "Devin Sidhu",
     role: "Member",
     division: "Football",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/devin-gill-sidhu-a03745328/",
   },
   {
     name: "Advik Gupta",
@@ -399,30 +421,35 @@ const MEMBERS: Member[] = [
     role: "Member",
     division: "Tennis",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/sienna-tumber-37a8a8346/",
   },
   {
     name: "Michelle Lin",
     role: "Member",
     division: "Tennis",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/michelle-lin-3a441b281/",
   },
   {
     name: "Kenny Le",
     role: "Member",
     division: "Tennis",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/kennyle1/",
   },
   {
     name: "Joseph Cha",
     role: "Member",
     division: "Tennis",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/joseph-cha1821/",
   },
   {
     name: "Anik Majumdar",
     role: "Member",
     division: "Tennis",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/anik-maj/",
   },
   {
     name: "Sebastian Martin Del Campo",
@@ -435,60 +462,69 @@ const MEMBERS: Member[] = [
     role: "Member",
     division: "Water Polo",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/riley-st-george-48632a2a5/",
   },
   {
     name: "Keira Patel",
     role: "Member",
     division: "Water Polo",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/keira-patel/",
   },
   {
     name: "Clara Wei",
     role: "Member",
     division: "Water Polo",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/clara-wei-27474b240/",
   },
   {
     name: "Anatoly Tsigelnik",
     role: "Member",
     division: "Water Polo",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/anatolyts/",
   },
   {
     name: "Vicky Chan",
     role: "Member",
     division: "Earthquakes",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/vickychan520/",
   },
   {
     name: "Rebekah Lee",
     role: "Member",
     division: "Earthquakes",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/rebekahlee136/",
   },
   {
     name: "Joshua Wei",
     role: "Member",
     division: "Earthquakes",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/joshuaweiiii/",
   },
   {
     name: "Henry Nguyen",
     role: "Member",
     division: "Earthquakes",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/henry-nguyen-8756302b7/",
   },
   {
     name: "Dylan Tran",
     role: "Member",
     division: "Earthquakes",
     img: "/team.png",
+    linkedin: "https://www.linkedin.com/in/dylanmtran/",
   },
   {
     name: "Emma Lam",
     role: "Member",
     img: "/team.png",
-    email: "emklam@ucdavis.edu",
+    linkedin: "https://www.linkedin.com/in/emmaklam/",
   },
 ];
 
@@ -606,17 +642,27 @@ function MembersGrid() {
                   ? `${member.role} - ${member.division}`
                   : member.role}
               </p>
-              {member.email ? (
-                <a
-                  href={`mailto:${member.email}`}
-                  className="text-xs text-zinc-400 hover:text-zinc-200 transition-colors"
-                >
-                  {member.email}
-                </a>
-              ) : (
-                <span className="text-xs text-transparent">placeholder</span>
-              )}
             </div>
+            {member.linkedin ? (
+              <a
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-1 transition-colors"
+                aria-label={`${member.name} LinkedIn`}
+                title="LinkedIn"
+              >
+                <Linkedin className="w-4 h-4 text-zinc-400 hover:text-zinc-200 transition-colors" />
+              </a>
+            ) : (
+              <span
+                className="p-1 opacity-50"
+                aria-label={`${member.name} LinkedIn`}
+                title="LinkedIn"
+              >
+                <Linkedin className="w-4 h-4 text-zinc-500" />
+              </span>
+            )}
           </div>
         </motion.div>
       ))}
