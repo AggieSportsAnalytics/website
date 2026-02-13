@@ -58,7 +58,7 @@ const LEADERS: Leader[] = [
   {
     name: "Abhinav Barathi",
     role: "Head of External Affairs",
-    img: "/team.png",
+    img: "/abhinav_barathi_U07TTR95B29.jpg",
     linkedin: "https://www.linkedin.com/in/abhinav-barathi/",
   },
   {
