@@ -16,6 +16,14 @@ type Leader = {
   linkedin: string;
 };
 
+type Member = {
+  name: string;
+  role: string;
+  division?: string;
+  img: string;
+  linkedin?: string;
+};
+
 const LEADERS: Leader[] = [
   {
     name: "Ben Busche",
@@ -48,16 +56,10 @@ const LEADERS: Leader[] = [
     linkedin: "https://www.linkedin.com/in/miwa-hirai",
   },
   {
-    name: "Vishal Shenoy",
-    role: "Advisor",
-    img: "/vishal.png",
-    linkedin: "https://www.linkedin.com/in/shenoyvishal",
-  },
-  {
-    name: "Krishna Hajari",
+    name: "Abhinav Barathi",
     role: "Head of External Affairs",
-    img: "/krishna.png",
-    linkedin: "https://www.linkedin.com/in/krishnahajari/",
+    img: "/abhinav_barathi_U07TTR95B29.jpg",
+    linkedin: "https://www.linkedin.com/in/abhinav-barathi/",
   },
   {
     name: "Luke Harrell",
@@ -139,6 +141,361 @@ const LEADERS: Leader[] = [
   },
 ];
 
+const MEMBERS: Member[] = [
+  {
+    name: "Grace Lim",
+    role: "Member",
+    division: "Social Media",
+    img: "/grace_lim_U09M34GE7SB.jpg",
+  },
+  {
+    name: "Emily Cromwell",
+    role: "Member",
+    division: "Social Media",
+    img: "/emily_cromwell_U09MB6ZR1MK.jpg",
+  },
+  {
+    name: "Yashas Vissapragada",
+    role: "Member",
+    division: "External",
+    img: "/yashas_vissapragada_U09M36H24MD.jpg",
+    linkedin: "https://www.linkedin.com/in/yashas-vissapragada-2a1599365/",
+  },
+  {
+    name: "Ruth Jaquette",
+    role: "Member",
+    division: "External",
+    img: "/ruth_jaquette_U09NE4CMUQ0.jpg",
+    linkedin: "https://www.linkedin.com/in/ruth-jaquette/",
+  },
+  {
+    name: "Arushi Bhattacharya",
+    role: "Member",
+    division: "External",
+    img: "/arushi_bhattacharya_U09MM7516MA.jpg",
+    linkedin: "https://www.linkedin.com/in/arushi-bhattacharya/",
+  },
+  {
+    name: "Alex Pritchard",
+    role: "Member",
+    division: "External",
+    img: "/alex_pritchard_U09MB499ZSP.jpg",
+    linkedin: "https://www.linkedin.com/in/alex-pritchard-wwfc/",
+  },
+  {
+    name: "Naomi Petersen",
+    role: "Member",
+    division: "Design",
+    img: "/naomi_petersen_U09M7N1MAEP.jpg",
+    linkedin: "https://www.linkedin.com/in/naomipetersen-/",
+  },
+  {
+    name: "Oneeka Prabhakar",
+    role: "Member",
+    division: "Design",
+    img: "/oneeka_prabhakar_U07TTNW863F.jpg",
+    linkedin: "https://www.linkedin.com/in/oneeka-prabhakar-90b638257/",
+  },
+  {
+    name: "Vasanth Gopal",
+    role: "Member",
+    division: "Finance",
+    img: "/vasanth_gopal_U09MYRKRC5R.jpg",
+  },
+  {
+    name: "Sumaira Sawal",
+    role: "Member",
+    division: "Finance",
+    img: "/sumaira_sawal_U09MG1SLUPQ.jpg",
+    linkedin: "https://www.linkedin.com/in/sumaira-sawal-b0a648358/",
+  },
+  {
+    name: "Jack Lingle",
+    role: "Member",
+    division: "Finance",
+    img: "/jack_lingle_U09MG6FNHDL.jpg",
+    linkedin: "https://www.linkedin.com/in/jack-lingle/",
+  },
+  {
+    name: "Vedant Gopal",
+    role: "Member",
+    division: "Journalism",
+    img: "/vedant_gopal_U06R56ZN4S0.jpg",
+    linkedin: "https://www.linkedin.com/in/vedant-gopal-8b8965294/",
+  },
+  {
+    name: "Nathaniel Maffly",
+    role: "Member",
+    division: "Journalism",
+    img: "/nathaniel_maffly_U063R35TMT5.jpg",
+    linkedin: "https://www.linkedin.com/in/nathaniel-maffly-390235268/",
+  },
+  {
+    name: "Jessica Mendieta",
+    role: "Member",
+    division: "Internal",
+    img: "/jessica_mendieta_U09MLT4TH7E.jpg",
+    linkedin: "https://www.linkedin.com/in/jessica-mendieta/",
+  },
+  {
+    name: "Jen Dong",
+    role: "Member",
+    division: "Internal",
+    img: "/jen_dong_U09NCG8DSGY.jpg",
+    linkedin: "https://www.linkedin.com/in/nxdong/",
+  },
+  {
+    name: "Armeen Emami",
+    role: "Member",
+    division: "Internal",
+    img: "/armeen_emami_U09N5GCQY3T.jpg",
+    linkedin: "https://www.linkedin.com/in/armeen-emami-517355207/",
+  },
+  {
+    name: "Ankita Khatri",
+    role: "Member",
+    division: "Internal",
+    img: "/ankita_khatri_U06QC6ZR17B.jpg",
+    linkedin: "https://www.linkedin.com/in/ankitadkhatri/",
+  },
+  {
+    name: "Rakshita Narayanaswamy",
+    role: "Member",
+    division: "Basketball",
+    img: "/rakshita_narayanaswamy_U09ND363CLQ.jpg",
+    linkedin: "https://www.linkedin.com/in/rakshita-narayanaswamy-b56b70217/",
+  },
+  {
+    name: "Hanson Lau",
+    role: "Member",
+    division: "Basketball",
+    img: "/hanson_lau_U09ME6ZKJM8.jpg",
+    linkedin: "https://www.linkedin.com/in/hanson-lau-347236199/",
+  },
+  {
+    name: "Beckett Hayes",
+    role: "Member",
+    division: "Basketball",
+    img: "/beckett_hayes_U09MWVBE8GH.jpg",
+    linkedin: "https://www.linkedin.com/in/beckett-hayes/",
+  },
+  {
+    name: "Arshawn Zamanian",
+    role: "Member",
+    division: "Basketball",
+    img: "/arshawn_zamanian_U09LYLG5DQF.jpg",
+    linkedin: "https://www.linkedin.com/in/arshawn-zamanian-5b7009389/",
+  },
+  {
+    name: "Logan Tadano",
+    role: "Member",
+    division: "Basketball",
+    img: "/logan_tadano_U07TLKNFGKZ.jpg",
+    linkedin: "https://www.linkedin.com/in/logantadano/",
+  },
+  {
+    name: "Vincent Ng",
+    role: "Member",
+    division: "Dodgers",
+    img: "/wang_ng_U09LYJF44TH.jpg",
+    linkedin: "https://www.linkedin.com/in/wang-ng/",
+  },
+  {
+    name: "Ruhani Rekhi",
+    role: "Member",
+    division: "Dodgers",
+    img: "/ruhani_rekhi_U09M7LRG1R9.jpg",
+    linkedin: "https://www.linkedin.com/in/ruhani-rekhi/",
+  },
+  {
+    name: "Kristine Yang",
+    role: "Member",
+    division: "Dodgers",
+    img: "/kristine_yang_U09MAK2ANCV.jpg",
+    linkedin: "https://www.linkedin.com/in/kristine-yang-668b9a287/",
+  },
+  {
+    name: "Hishaan Rajwani",
+    role: "Member",
+    division: "Dodgers",
+    img: "/hishaan_rajwani_U09LYM0M2BZ.jpg",
+    linkedin: "https://www.linkedin.com/in/hishaanrajwani/",
+  },
+  {
+    name: "Adam Ye",
+    role: "Member",
+    division: "Dodgers",
+    img: "/adam_ye_U07TQGR2M62.jpg",
+    linkedin: "https://www.linkedin.com/in/adamy8/",
+  },
+  {
+    name: "Ayaan Puri",
+    role: "Member",
+    division: "Soccer",
+    img: "/ayaan_puri_U09P4NSJ1DZ.jpg",
+    linkedin: "https://www.linkedin.com/in/ayaanpuri/",
+  },
+  {
+    name: "Sunetra Maddipatla",
+    role: "Member",
+    division: "Soccer",
+    img: "/sunetra_maddipatla_U09MT4TRE3T.jpg",
+    linkedin: "https://www.linkedin.com/in/sunetramaddipatla/",
+  },
+  {
+    name: "Oscar Pineda",
+    role: "Member",
+    division: "Soccer",
+    img: "/oscar_pineda_U09N8DB9B7A.jpg",
+    linkedin: "https://www.linkedin.com/in/oscarpineda524/",
+  },
+  {
+    name: "Edan Cho",
+    role: "Member",
+    division: "Soccer",
+    img: "/edan_cho_U09MED61MMY.jpg",
+    linkedin: "https://www.linkedin.com/in/edan-cho-bb444a21b/",
+  },
+  {
+    name: "Yuvi Riyar",
+    role: "Member",
+    division: "Football",
+    img: "/yuvraj_riyar_U09MCFDAU8N.jpg",
+    linkedin: "https://www.linkedin.com/in/yuvrajriyar/",
+  },
+  {
+    name: "Munneth Gill",
+    role: "Member",
+    division: "Football",
+    img: "/munneth_gill_U09N96MM9EV.jpg",
+    linkedin: "https://www.linkedin.com/in/munnethgill/",
+  },
+  {
+    name: "Jessica Ting",
+    role: "Member",
+    division: "Football",
+    img: "/jessica_ting_U09M8DX0CE7.jpg",
+    linkedin: "https://www.linkedin.com/in/jessica-ting-404034352/",
+  },
+  {
+    name: "Devin Sidhu",
+    role: "Member",
+    division: "Football",
+    img: "/devin_sidhu_U09MAJE5B45.jpg",
+    linkedin: "https://www.linkedin.com/in/devin-gill-sidhu-a03745328/",
+  },
+  {
+    name: "Advik Gupta",
+    role: "Member",
+    division: "Football",
+    img: "/advik_gupta_U09NCTZSK7S.jpg",
+  },
+  {
+    name: "Sienna Tumber",
+    role: "Member",
+    division: "Tennis",
+    img: "/sienna_tumber_U09MN8EU8N8.jpg",
+    linkedin: "https://www.linkedin.com/in/sienna-tumber-37a8a8346/",
+  },
+  {
+    name: "Michelle Lin",
+    role: "Member",
+    division: "Tennis",
+    img: "/michelle_lin_U09MJMQ9FFE.jpg",
+    linkedin: "https://www.linkedin.com/in/michelle-lin-3a441b281/",
+  },
+  {
+    name: "Kenny Le",
+    role: "Member",
+    division: "Tennis",
+    img: "/kenny_le_U09MYQSNX5X.jpg",
+    linkedin: "https://www.linkedin.com/in/kennyle1/",
+  },
+  {
+    name: "Joseph Cha",
+    role: "Member",
+    division: "Tennis",
+    img: "/joseph_cha_U09MHT2LAEN.jpg",
+    linkedin: "https://www.linkedin.com/in/joseph-cha1821/",
+  },
+  {
+    name: "Anik Majumdar",
+    role: "Member",
+    division: "Tennis",
+    img: "/anik_majumdar_U09M82PG9LK.jpg",
+    linkedin: "https://www.linkedin.com/in/anik-maj/",
+  },
+  {
+    name: "Sebastian Martin Del Campo",
+    role: "Member",
+    division: "Water Polo",
+    img: "/sebastian_martin_del_campo_U09MC3W2CJ2.jpg",
+  },
+  {
+    name: "Riley St George",
+    role: "Member",
+    division: "Water Polo",
+    img: "/riley_st_george_U09MMQMRKS8.jpg",
+    linkedin: "https://www.linkedin.com/in/riley-st-george-48632a2a5/",
+  },
+  {
+    name: "Keira Patel",
+    role: "Member",
+    division: "Water Polo",
+    img: "/keira_patel_U09N8NFRCJC.jpg",
+    linkedin: "https://www.linkedin.com/in/keira-patel/",
+  },
+  {
+    name: "Clara Wei",
+    role: "Member",
+    division: "Water Polo",
+    img: "/clara_wei_U09N8BKK04Q.jpg",
+    linkedin: "https://www.linkedin.com/in/clara-wei-27474b240/",
+  },
+  {
+    name: "Anatoly Tsigelnik",
+    role: "Member",
+    division: "Water Polo",
+    img: "/anatoly_tsigelnik_U09M50LH3DM.jpg",
+    linkedin: "https://www.linkedin.com/in/anatolyts/",
+  },
+  {
+    name: "Vicky Chan",
+    role: "Member",
+    division: "Earthquakes",
+    img: "/vicky_chan_U09M3PMT99D.jpg",
+    linkedin: "https://www.linkedin.com/in/vickychan520/",
+  },
+  {
+    name: "Rebekah Lee",
+    role: "Member",
+    division: "Earthquakes",
+    img: "/rebekah_lee_U09MSV1GW6M.jpg",
+    linkedin: "https://www.linkedin.com/in/rebekahlee136/",
+  },
+  {
+    name: "Joshua Wei",
+    role: "Member",
+    division: "Earthquakes",
+    img: "/joshua_wei_U09MJ8ZBBCL.jpg",
+    linkedin: "https://www.linkedin.com/in/joshuaweiiii/",
+  },
+  {
+    name: "Henry Nguyen",
+    role: "Member",
+    division: "Earthquakes",
+    img: "/henry_nguyen_U09ME349Q2E.jpg",
+    linkedin: "https://www.linkedin.com/in/henry-nguyen-8756302b7/",
+  },
+  {
+    name: "Dylan Tran",
+    role: "Member",
+    division: "Earthquakes",
+    img: "/dylan_tran_U09M7T5E5FD.jpg",
+    linkedin: "https://www.linkedin.com/in/dylanmtran/",
+  },
+];
+
 function LeadershipGrid() {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -196,6 +553,83 @@ function LeadershipGrid() {
               >
                 <Linkedin className="w-4 h-4 text-zinc-400 hover:text-zinc-200 transition-colors" />
               </a>
+            )}
+          </div>
+        </motion.div>
+      ))}
+    </motion.div>
+  );
+}
+
+function MembersGrid() {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  return (
+    <motion.div
+      ref={ref}
+      className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 items-center justify-center gap-6 pb-6 content-center"
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+      variants={{
+        hidden: {},
+        visible: { transition: { staggerChildren: 0.15 } },
+      }}
+    >
+      {MEMBERS.map((member, index) => (
+        <motion.div
+          key={member.name}
+          className="w-48 mb-6 bg-transparent border-gray-700 text-slate-200"
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 0.5,
+                ease: "easeOut",
+                delay: index * 0.1,
+              },
+            },
+          }}
+        >
+          <figure>
+            <img
+              src={member.img}
+              alt={member.name}
+              className="w-full h-48 object-cover"
+            />
+          </figure>
+          <div className="flex mt-3 justify-between items-center">
+            <div>
+              <h2 className="text-sm font-semibold">{member.name}</h2>
+              <p className="text-xs">
+                {member.division
+                  ? `${member.role} - ${member.division}`
+                  : member.role}
+              </p>
+            </div>
+            {member.linkedin ? (
+              <a
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-1 transition-colors"
+                aria-label={`${member.name} LinkedIn`}
+                title="LinkedIn"
+              >
+                <Linkedin className="w-4 h-4 text-zinc-400 hover:text-zinc-200 transition-colors" />
+              </a>
+            ) : (
+              <span
+                className="p-1 opacity-50"
+                aria-label={`${member.name} LinkedIn`}
+                title="LinkedIn"
+              >
+                <Linkedin className="w-4 h-4 text-zinc-500" />
+              </span>
             )}
           </div>
         </motion.div>
@@ -303,6 +737,14 @@ export default function AboutPage() {
             </h1>
 
             <LeadershipGrid />
+          </div>
+
+          <div className="max-w-7xl mx-auto pt-10">
+            <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-4xl pb-12">
+              Members
+            </h1>
+
+            <MembersGrid />
           </div>
         </div>
 
