@@ -46,7 +46,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 }
 
 export default function JoinUsPage() {
-  const deadline = new Date('2025-10-12T01:00:00-07:00');
+  const deadline = new Date('2026-07-12T01:00:00-07:00');
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -56,13 +56,11 @@ export default function JoinUsPage() {
   const [isDeadlinePassed, setIsDeadlinePassed] = useState(false);
 
   useEffect(() => {
-    const now = new Date();
-    setIsDeadlinePassed(now >= deadline);
-
     const calculateTimeLeft = () => {
       const now = new Date();
       const difference = deadline.getTime() - now.getTime();
-      
+      setIsDeadlinePassed(difference <= 0);
+
       if (difference > 0) {
         setTimeLeft({
           days: Math.floor(difference / (1000 * 60 * 60 * 24)),
@@ -115,16 +113,18 @@ export default function JoinUsPage() {
               Join Us
             </motion.h1>
             
-            <motion.p 
+            <motion.p
               className="mt-6 text-zinc-300 text-lg leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             >
-              Applications are now closed. Please be on the lookout for our future recruitment cycles.
+              {isDeadlinePassed
+                ? "Applications are now closed. Please be on the lookout for our future recruitment cycles."
+                : "Applications are now open. Apply below before Saturday, July 11, at 11:59 PM."}
             </motion.p>
 
-            {/* <motion.div
+            <motion.div
               className="mt-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -136,96 +136,98 @@ export default function JoinUsPage() {
                     disabled
                     className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-700 text-zinc-500 text-sm font-medium rounded-full cursor-not-allowed opacity-50 mr-3"
                   >
-                    Projects
+                    Projects Board
                   </button>
                   <button
                     disabled
                     className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-700 text-zinc-500 text-sm font-medium rounded-full cursor-not-allowed opacity-50 mr-3"
                   >
-                    Business
+                    Business Board
                   </button>
                   <button
                     disabled
                     className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-700 text-zinc-500 text-sm font-medium rounded-full cursor-not-allowed opacity-50"
                   >
-                    Media
+                    Media Board
                   </button>
                 </>
               ) : (
                 <>
                   <Link
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSePUgTtRjg6Wz-8k5EG3nefAfJJvrnsLpF_5PaIzjB5CmSYqw/viewform"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScbQ865bm2__NXaxr9cnUBlwoSNp0i2Dq-WSb9niaVxKKcNXQ/viewform?usp=dialog"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-300 text-white text-sm font-medium rounded-full hover:bg-white/10 transition-colors mr-3"
                   >
-                    Projects
+                    Projects Board
                   </Link>
                   <Link
-                    href="https://docs.google.com/forms/d/e/1FAIpQLScOt_N1JUlu_-PBkLP2bwR11N4zzsq6iXDNlLeBxYXXgY_dtw/viewform"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfnojgRkFq8dxLvd4_Ans5gHXuQm2NBwFk06EFtqUVIW19Eag/viewform?usp=dialog"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-300 text-white text-sm font-medium rounded-full hover:bg-white/10 transition-colors mr-3"
                   >
-                    Business
+                    Business Board
                   </Link>
                   <Link
-                    href="https://forms.gle/WkgeY3gC9qRLVR1S7"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSd58fogQtoq7jLIxZafn1jDg_wKZDNt2Ib7PhQgx8I0-1X7ZQ/viewform?usp=dialog"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-300 text-white text-sm font-medium rounded-full hover:bg-white/10 transition-colors"
                   >
-                    Media
+                    Media Board
                   </Link>
                 </>
               )}
-            </motion.div> */}
+            </motion.div>
           </div>
         </div>
       </main>
 
-      {/* <section className="py-12 px-12">
-        <motion.div
-          className="max-w-7xl mx-auto"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
-          <h2 className="text-xl font-semibold text-zinc-200 mb-6 text-center">Apply before it's too late.</h2>
+      {!isDeadlinePassed && (
+        <section className="py-12 px-12">
           <motion.div
-            className="grid grid-cols-1 md:grid-cols-4 border border-white/10 overflow-hidden"
-            initial={{ opacity: 0, y: 18 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true, amount: 0.3 }}
+            className="max-w-7xl mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <div className="px-8 py-12 border-r border-white/10 hover:bg-white/[0.03] transition-colors text-center">
-              <div className="mb-2">
-                <div className="text-4xl font-bold text-white">{timeLeft.days}</div>
-                <div className="text-sm text-zinc-400 mt-1">Days</div>
+            <h2 className="text-xl font-semibold text-zinc-200 mb-6 text-center">Apply before it&apos;s too late.</h2>
+            <motion.div
+              className="grid grid-cols-1 md:grid-cols-4 border border-white/10 overflow-hidden"
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <div className="px-8 py-12 border-r border-white/10 hover:bg-white/[0.03] transition-colors text-center">
+                <div className="mb-2">
+                  <div className="text-4xl font-bold text-white">{timeLeft.days}</div>
+                  <div className="text-sm text-zinc-400 mt-1">Days</div>
+                </div>
               </div>
-            </div>
-            <div className="px-8 py-12 border-r border-white/10 hover:bg-white/[0.03] transition-colors text-center">
-              <div className="mb-2">
-                <div className="text-4xl font-bold text-white">{timeLeft.hours}</div>
-                <div className="text-sm text-zinc-400 mt-1">Hours</div>
+              <div className="px-8 py-12 border-r border-white/10 hover:bg-white/[0.03] transition-colors text-center">
+                <div className="mb-2">
+                  <div className="text-4xl font-bold text-white">{timeLeft.hours}</div>
+                  <div className="text-sm text-zinc-400 mt-1">Hours</div>
+                </div>
               </div>
-            </div>
-            <div className="px-8 py-12 border-r border-white/10 hover:bg-white/[0.03] transition-colors text-center">
-              <div className="mb-2">
-                <div className="text-4xl font-bold text-white">{timeLeft.minutes}</div>
-                <div className="text-sm text-zinc-400 mt-1">Minutes</div>
+              <div className="px-8 py-12 border-r border-white/10 hover:bg-white/[0.03] transition-colors text-center">
+                <div className="mb-2">
+                  <div className="text-4xl font-bold text-white">{timeLeft.minutes}</div>
+                  <div className="text-sm text-zinc-400 mt-1">Minutes</div>
+                </div>
               </div>
-            </div>
-            <div className="px-8 py-12 hover:bg-white/[0.03] transition-colors text-center">
-              <div className="mb-2">
-                <div className="text-4xl font-bold text-white">{timeLeft.seconds}</div>
-                <div className="text-sm text-zinc-400 mt-1">Seconds</div>
+              <div className="px-8 py-12 hover:bg-white/[0.03] transition-colors text-center">
+                <div className="mb-2">
+                  <div className="text-4xl font-bold text-white">{timeLeft.seconds}</div>
+                  <div className="text-sm text-zinc-400 mt-1">Seconds</div>
+                </div>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
-        </motion.div>
-      </section> */}
+        </section>
+      )}
       
       <section className="py-16 px-12">
         <motion.div
