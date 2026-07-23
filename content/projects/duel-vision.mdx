@@ -1,0 +1,119 @@
+---
+title: Duel Vision
+description: A computer vision pipeline that tracks players, the ball, and team formations in soccer match footage.
+repository: AggieSportsAnalytics/duel-vision
+date: 2026-07-22
+published: true
+---
+
+### 🏁 Turning raw match footage into a live tactical radar using computer vision ⚽
+
+Duel Vision is a computer vision pipeline built to analyze UC Davis women's soccer match footage. Given a single video file, it detects players, goalkeepers, referees, and the ball, tracks each player across the full match, automatically sorts players into teams by jersey color, and projects everyone's position onto a 2D bird's-eye radar view of the pitch — all without any manual labeling of teams or players.
+
+<video src="/duelvision-radar.mp4" controls="controls" width="100%"></video>
+
+## 🔑 How It Works
+
+### 1. 🔎 Detection
+
+Three custom-trained YOLO models handle the core perception work:
+
+| Model | What It Does |
+| --- | --- |
+| `football-player-detection.pt` | Detects players, goalkeepers, and referees in each frame |
+| `football-ball-detection.pt` | A specialized ball-only detector that runs on sliced 640×640 tiles (via SAHI) to catch the ball even at small scale |
+| `football-pitch-detection.pt` | A keypoint detector that finds pitch landmarks — corners, penalty boxes, the center circle — used later for the radar projection |
+
+### 2. 🏃 Tracking
+
+Once players are detected, [ByteTrack](https://supervision.roboflow.com/latest/trackers/) assigns each one a persistent tracker ID, requiring three consecutive frames before confirming a new track. That ID stays stable across the whole match, even through brief occlusions or players bunching up near the ball.
+
+### 3. 🎨 Team Classification
+
+Rather than relying on pose estimation or jersey numbers, Duel Vision classifies teams purely from jersey color:
+
+1. **Crop collection** — high-confidence player detections are cropped from sampled frames, then cropped again down to the torso (roughly the middle 15–55% vertically, 15–85% horizontally) to isolate the jersey and avoid noise from faces, hair, and shorts.
+2. **Feature extraction** — a 24-bin HSV color histogram (16 hue bins + 8 saturation bins) is computed for each jersey crop, ignoring low-saturation pixels so skin tones and background grass don't get mixed in.
+3. **Dimensionality reduction** — PCA compresses each 24-dimensional histogram down to 3 components.
+4. **Clustering** — KMeans splits the projected crops into two clusters, one per team.
+5. **Referee detection** — any player whose jersey color sits far from both cluster centroids (more than 2.5 standard deviations away) gets flagged as a referee instead of being forced into a team.
+
+### 4. 🧹 Smoothing
+
+Raw per-frame predictions flicker — a player might get misclassified for a frame or two. Three majority-vote smoothers clean this up:
+
+- **TeamVoter** keeps a rolling 50-frame window of team predictions per tracker ID. Once a tracker racks up 40+ votes with at least 82% agreement, its team is locked in permanently.
+- **ClassVoter** does the same for the player-vs-referee decision over a 30-frame window.
+- **OutlierVoter** only flags someone as a referee if 70%+ of their recent frames were flagged as outliers, so one bad crop can't mislabel a real player.
+
+### 5. 🗺️ Radar View
+
+The radar mode overlays a 2D bird's-eye pitch diagram at the bottom of the video. Each player's position is projected onto that diagram with a homography matrix computed from the pitch keypoints detected in that frame — if fewer than 4 confident keypoints are found, the frame shows an empty pitch rather than a distorted transform.
+
+### 6. 🥊 Duel Detection & Analytics
+
+Duel Vision gets its name from its duel-detection layer, the piece that gives the project its analytics beyond raw tracking. Using heuristic-based logic, it flags a "duel" whenever two opposing players and the ball all end up within a certain distance of each other. Once a duel is flagged, the outcome is decided by which team's player ends up closer to (or in possession of) the ball once the duel resolves — if it's too close to call, the duel is marked as **contested** instead of awarding a win.
+
+![Duel Analytics dashboard](/duel_vision_results.png)
+
+Every duel is logged with its outcome and pitch location, which rolls up into match-level stats: total duels, wins by team, contested duels, and a possession win rate — plus a pitch map showing exactly where on the field each duel took place.
+
+## 🛠️ Modes
+
+`main.py` can be run in any of the following modes:
+
+| Mode | Description |
+| --- | --- |
+| `PITCH_DETECTION` | Annotates pitch keypoints and field edges |
+| `PLAYER_DETECTION` | Draws bounding boxes around players, goalkeepers, referees, and the ball |
+| `BALL_DETECTION` | Tracks the ball with a trailing, color-coded dot trail |
+| `PLAYER_TRACKING` | Labels each player with a persistent tracker ID |
+| `TEAM_CLASSIFICATION` | Colors players by team and marks referees separately |
+| `RADAR` | The full pipeline — team colors on the video plus the radar pitch overlay |
+| `REFEREE_DIAGNOSTIC` | Prints confidence score statistics for referee detections |
+| `PLAYER_DIAGNOSTIC` | Prints confidence score statistics for player detections |
+
+## 💻 Technology
+
+- **Ultralytics YOLO**: Object detection and pitch keypoint detection.
+- **Supervision**: Detection utilities, ByteTrack, video I/O, annotators, and the SAHI slicer.
+- **OpenCV**: Frame-level drawing, homography, and video I/O.
+- **scikit-learn**: PCA and KMeans for team clustering.
+- **NumPy**: Array operations throughout the pipeline.
+
+## 🛠️ Installation
+
+```bash
+git clone https://github.com/AggieSportsAnalytics/duel-vision.git
+cd duel-vision
+pip install git+https://github.com/roboflow/sports.git
+cd examples/soccer
+pip install -r requirements.txt
+
+# Download model weights and sample videos
+./setup.sh
+```
+
+Then run the full pipeline on a sample video:
+
+```bash
+python examples/soccer/main.py \
+  --source_video_path examples/soccer/data/MonUCD.mp4 \
+  --target_video_path examples/soccer/data/output.mp4 \
+  --device cpu \
+  --mode RADAR
+```
+
+Use `--device cuda` or `--device mps` for GPU acceleration.
+
+## 🤝 Contributing
+
+- **Project Managers**: Samaya Sankuratri, Viet-Thy Tran
+- **Project Members**: Edan Cho, Oscar Pineda, Sunetra Maddipatla, Ayaan Puri
+
+## 🎯 Areas of Improvement
+
+- **Real-time processing**: Move from post-processing a recorded video to analyzing a live feed.
+- **Automatic camera calibration**: Handle new camera angles and pitch types without re-annotating keypoints.
+- **Player identification**: Extend tracking to recognize specific players (e.g. by jersey number) rather than anonymous tracker IDs.
+- **Match analytics**: Layer in derived stats — possession, formation shape, distance covered — on top of the tracked positions.
