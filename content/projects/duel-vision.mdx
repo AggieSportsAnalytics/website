@@ -8,7 +8,7 @@ published: true
 
 ### 🏁 Turning raw match footage into a live tactical radar using computer vision ⚽
 
-Duel Vision is a computer vision pipeline built to analyze UC Davis women's soccer match footage. Given a single video file, it detects players, goalkeepers, referees, and the ball, tracks each player across the full match, automatically sorts players into teams by jersey color, and projects everyone's position onto a 2D bird's-eye radar view of the pitch — all without any manual labeling of teams or players.
+Duel Vision is a computer vision pipeline built to analyze UC Davis women's soccer match footage. Given a single video file, it detects players, goalkeepers, referees, and the ball, tracks each player across the full match, automatically sorts players into teams by jersey color, and projects everyone's position onto a 2D bird's-eye radar view of the pitch, all without any manual labeling of teams or players.
 
 <video src="/duelvision-radar.mp4" controls="controls" width="100%"></video>
 
@@ -22,7 +22,7 @@ Three custom-trained YOLO models handle the core perception work:
 | --- | --- |
 | `football-player-detection.pt` | Detects players, goalkeepers, and referees in each frame |
 | `football-ball-detection.pt` | A specialized ball-only detector that runs on sliced 640×640 tiles (via SAHI) to catch the ball even at small scale |
-| `football-pitch-detection.pt` | A keypoint detector that finds pitch landmarks — corners, penalty boxes, the center circle — used later for the radar projection |
+| `football-pitch-detection.pt` | A keypoint detector that finds pitch landmarks — corners, penalty boxes, the center circle, which is used later for the radar projection |
 
 ### 2. 🏃 Tracking
 
@@ -48,15 +48,15 @@ Raw per-frame predictions flicker — a player might get misclassified for a fra
 
 ### 5. 🗺️ Radar View
 
-The radar mode overlays a 2D bird's-eye pitch diagram at the bottom of the video. Each player's position is projected onto that diagram with a homography matrix computed from the pitch keypoints detected in that frame — if fewer than 4 confident keypoints are found, the frame shows an empty pitch rather than a distorted transform.
+The radar mode overlays a 2D bird's-eye pitch diagram at the bottom of the video. Each player's position is projected onto that diagram with a homography matrix computed from the pitch keypoints detected in that frame. If fewer than 4 confident keypoints are found, the frame shows an empty pitch rather than a distorted transform.
 
 ### 6. 🥊 Duel Detection & Analytics
 
-Duel Vision gets its name from its duel-detection layer, the piece that gives the project its analytics beyond raw tracking. Using heuristic-based logic, it flags a "duel" whenever two opposing players and the ball all end up within a certain distance of each other. Once a duel is flagged, the outcome is decided by which team's player ends up closer to (or in possession of) the ball once the duel resolves — if it's too close to call, the duel is marked as **contested** instead of awarding a win.
+Duel Vision gets its name from its duel-detection layer, the piece that gives the project its analytics beyond raw tracking. Using heuristic-based logic, it flags a "duel" whenever two opposing players and the ball all end up within a certain distance of each other. Once a duel is flagged, the outcome is decided by which team's player ends up closer to (or in possession of) the ball once the duel resolves. If it's too close to call, the duel is marked as **contested** instead of awarding a win.
 
 ![Duel Analytics dashboard](/duel_vision_results.png)
 
-Every duel is logged with its outcome and pitch location, which rolls up into match-level stats: total duels, wins by team, contested duels, and a possession win rate — plus a pitch map showing exactly where on the field each duel took place.
+Every duel is logged with its outcome and pitch location, which rolls up into match-level stats: total duels, wins by team, contested duels, and a possession win rate (plus a pitch map showing exactly where on the field each duel took place).
 
 ## 🛠️ Modes
 

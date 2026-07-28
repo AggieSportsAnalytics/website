@@ -38,7 +38,7 @@ export default async function WorkPage() {
     .sort(
       (a, b) =>
         new Date(b.date ?? Number.POSITIVE_INFINITY).getTime() -
-        new Date(b.date ?? Number.POSITIVE_INFINITY).getTime()
+        new Date(a.date ?? Number.POSITIVE_INFINITY).getTime()
     );
 
   return (

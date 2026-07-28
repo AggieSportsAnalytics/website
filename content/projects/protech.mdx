@@ -23,7 +23,7 @@ ProTech is a full-stack athlete performance dashboard built for UC Davis Footbal
 
 ### 1. 📊 Data Pipeline
 
-Raw exports from force plate and NordBoard testing sessions start as CSV/XLSX files. Python scripts in `Data/` clean and normalize these exports, and one-off Node scripts (`upload_nordboard_data.js`, `upload_cmj_data.js`) bulk-load the processed data into Supabase. From there, the dashboard's `/upload` endpoint also accepts CSV/XLS/XLSX directly for ad hoc entry — the backend parses the sheet with `xlsx` and hands the rows back to the frontend as JSON.
+Raw exports from force plate and NordBoard testing sessions start as CSV/XLSX files. Python scripts in `Data/` clean and normalize these exports, and one-off Node scripts (`upload_nordboard_data.js`, `upload_cmj_data.js`) bulk-load the processed data into Supabase. From there, the dashboard's `/upload` endpoint also accepts CSV/XLS/XLSX directly for ad hoc entry. The backend parses the sheet with `xlsx` and hands the rows back to the frontend as JSON.
 
 ### 2. 📈 Metrics & Comparison
 
@@ -31,11 +31,11 @@ The frontend fetches an athlete's stored testing data straight from Supabase and
 
 ### 3. 🤖 AI-Generated Player Overviews
 
-Rather than sending raw numbers to an LLM, the frontend first runs its own trend analysis on an athlete's metrics and only sends the *computed analytics* to the backend. The backend (`generateOverview.js`) builds a prompt from that analytics summary and calls an LLM (Groq by default, OpenRouter also supported) to produce a short, coach-facing written overview. Each overview is hashed against its input analytics (`contextHash`) and cached in Supabase, so the same overview isn't regenerated — and re-billed — every time the page loads. A `skipCache` flag lets a coach force a fresh regeneration.
+Rather than sending raw numbers to an LLM, the frontend first runs its own trend analysis on an athlete's metrics and only sends the *computed analytics* to the backend. The backend (`generateOverview.js`) builds a prompt from that analytics summary and calls an LLM (Groq by default, OpenRouter also supported) to produce a short, coach-facing written overview. Each overview is hashed against its input analytics (`contextHash`) and cached in Supabase, so the same overview isn't regenerated, and re-billed, every time the page loads. A `skipCache` flag lets a coach force a fresh regeneration.
 
 ### 4. 🖼️ Pose-Aware Photo Cropping
 
-Instead of asking whoever uploads a photo to manually crop it, the backend runs the image through a MoveNet pose-detection model to find body keypoints (shoulders, hips, knees, ankles, and a head anchor from the nose or eyes). From those keypoints it computes an axis-aligned bounding box — using ankle position for the bottom edge, a head-anchor-based estimate for the top, and shoulder/elbow/hip/knee spread for the sides — pads it slightly, and crops the image with Sharp. If the model can't find a confident full-body pose (partial body, bad angle, low confidence), the upload is rejected with a clear "try a clearer full-body photo" message rather than saving a bad crop. Successful uploads are stored in Supabase at `/<athleteId>/<year>.jpg`, and any existing photo for that year is archived rather than overwritten.
+Instead of asking whoever uploads a photo to manually crop it, the backend runs the image through a MoveNet pose-detection model to find body keypoints (shoulders, hips, knees, ankles, and a head anchor from the nose or eyes). From those keypoints it computes an axis-aligned bounding box, using ankle position for the bottom edge, a head-anchor-based estimate for the top, and shoulder/elbow/hip/knee spread for the sides, pads it slightly, and crops the image with Sharp. If the model can't find a confident full-body pose (partial body, bad angle, low confidence), the upload is rejected with a clear "try a clearer full-body photo" message rather than saving a bad crop. Successful uploads are stored in Supabase at `/<athleteId>/<year>.jpg`, and any existing photo for that year is archived rather than overwritten.
 
 ### 5. 🔐 Auth & Protected Routes
 
