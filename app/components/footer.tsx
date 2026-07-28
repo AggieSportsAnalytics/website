@@ -21,12 +21,22 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:w-1/3 md:justify-end">
           <div>
             <h2 className="text-lg font-bold mb-4">Contact</h2>
-            <a 
-              href="mailto:team@aggiesportsanalytics.com" 
-              className="flex items-center hover:text-gray-100 transition-colors duration-200"
-            >
-              <span>Email</span>
-            </a>
+            <nav className="flex flex-col gap-2">
+              <a
+                href="mailto:team@aggiesportsanalytics.com"
+                className="flex items-center hover:text-gray-100 transition-colors duration-200"
+              >
+                <span>Email</span>
+              </a>
+              <a
+                href="https://give.ucdavis.edu/VCSA/77246"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center hover:text-gray-100 transition-colors duration-200"
+              >
+                <span>Donate</span>
+              </a>
+            </nav>
           </div>
           
           <div>
