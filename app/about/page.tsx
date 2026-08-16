@@ -13,7 +13,7 @@ type Leader = {
   name: string;
   role: string;
   img: string;
-  linkedin: string;
+  linkedin?: string;
 };
 
 type Member = {
@@ -26,94 +26,99 @@ type Member = {
 
 const LEADERS: Leader[] = [
   {
-    name: "Ben Busche",
-    role: "President",
-    img: "/ben.png",
-    linkedin: "https://www.linkedin.com/in/ben-busche",
-  },
-  {
-    name: "Tisha Kathrani",
-    role: "Vice President",
-    img: "/tisha.png",
-    linkedin: "https://www.linkedin.com/in/tisha-kathrani",
-  },
-  {
     name: "Stefan Shakeri",
-    role: "Director of Projects",
+    role: "President",
     img: "/stef.png",
     linkedin: "https://www.linkedin.com/in/stefan-shakeri",
   },
   {
-    name: "Israel Shokrian",
-    role: "Director of Business",
-    img: "/israel.png",
-    linkedin: "https://www.linkedin.com/in/israel-shokrian",
+    name: "Viet-Thy Tran",
+    role: "Vice President",
+    img: "/viet-thy.png",
+    linkedin: "https://www.linkedin.com/in/viet-thy-tran-318581299/",
   },
   {
-    name: "Miwa Hirai",
-    role: "Director of Media",
-    img: "/miw.png",
-    linkedin: "https://www.linkedin.com/in/miwa-hirai",
-  },
-  {
-    name: "Abhinav Barathi",
-    role: "Head of External Affairs",
-    img: "/abhinav_barathi_U07TTR95B29.jpg",
-    linkedin: "https://www.linkedin.com/in/abhinav-barathi/",
+    name: "Sachin Venkat",
+    role: "Director of Projects",
+    img: "/sachin.png",
+    linkedin: "https://www.linkedin.com/in/sachinvenkat/",
   },
   {
     name: "Luke Harrell",
-    role: "Head of Finance",
+    role: "Director of Business",
     img: "/luke.png",
     linkedin: "https://www.linkedin.com/in/luke-harrell/",
   },
   {
-    name: "Uzair Dabhoiwala",
-    role: "Head of Internal Affairs",
-    img: "/uzair.png",
-    linkedin: "https://www.linkedin.com/in/mohammed-uzair-dabhoiwala-5973a4260/",
-  },
-  {
-    name: "Anya Kumar",
-    role: "Head of Design",
-    img: "/anya.png",
-    linkedin: "https://www.linkedin.com/in/sharanya-kumar-44273320b/",
-  },
-  {
     name: "Crystal Garcia Pablo",
-    role: "Head of Social Media",
+    role: "Director of Media",
     img: "/crystal.png",
     linkedin: "https://www.linkedin.com/in/crystalll-garcia/",
   },
   {
-    name: "Siraj Rayamajhi",
-    role: "Head of Journalism",
-    img: "/siraj.png",
-    linkedin: "https://www.linkedin.com/in/siraj-rayamajhi-0042b5211/",
+    name: "Ruth Jaquette",
+    role: "Head of External Affairs",
+    img: "/ruth_jaquette_U09NE4CMUQ0.jpg",
+    linkedin: "https://www.linkedin.com/in/ruth-jaquette/",
   },
   {
-    name: "Ayush Lenka",
-    role: "Project Manager",
-    img: "/ayush.png",
-    linkedin: "https://www.linkedin.com/in/ayushlenka/",
+    name: "Abhinav Barathi",
+    role: "Head of Finance",
+    img: "/abhinav_barathi_U07TTR95B29.jpg",
+    linkedin: "https://www.linkedin.com/in/abhinav-barathi/",
   },
   {
-    name: "Brian Le",
-    role: "Project Manager",
-    img: "/brianle.png",
-    linkedin: "https://www.linkedin.com/in/le-brian/",
+    name: "Jessica Mendieta",
+    role: "Head of Internal Affairs",
+    img: "/jessica_mendieta_U09MLT4TH7E.jpg",
+    linkedin: "https://www.linkedin.com/in/jessica-mendieta/",
+  },
+  {
+    name: "Naomi Petersen",
+    role: "Head of Design",
+    img: "/naomi_petersen_U09M7N1MAEP.jpg",
+    linkedin: "https://www.linkedin.com/in/naomipetersen-/",
+  },
+  {
+    name: "Grace Lim",
+    role: "Head of Social Media",
+    img: "/grace_lim_U09M34GE7SB.jpg",
   },
   {
     name: "Jishnu Sanyal",
-    role: "Project Manager",
+    role: "Head of Journalism",
     img: "/jishnu.png",
     linkedin: "https://www.linkedin.com/in/jishnu-sanyal/",
   },
   {
-    name: "Sachin Venkat",
+    name: "Anik Majumdar",
     role: "Project Manager",
-    img: "/sachin.png",
-    linkedin: "https://www.linkedin.com/in/sachinvenkat/",
+    img: "/anik_majumdar_U09M82PG9LK.jpg",
+    linkedin: "https://www.linkedin.com/in/anik-maj/",
+  },
+  {
+    name: "Beckett Hayes",
+    role: "Project Manager",
+    img: "/beckett_hayes_U09MWVBE8GH.jpg",
+    linkedin: "https://www.linkedin.com/in/beckett-hayes/",
+  },
+  {
+    name: "Devin Sidhu",
+    role: "Project Manager",
+    img: "/devin_sidhu_U09MAJE5B45.jpg",
+    linkedin: "https://www.linkedin.com/in/devin-gill-sidhu-a03745328/",
+  },
+  {
+    name: "Logan Tadano",
+    role: "Project Manager",
+    img: "/logan_tadano_U07TLKNFGKZ.jpg",
+    linkedin: "https://www.linkedin.com/in/logantadano/",
+  },
+  {
+    name: "Munneth Gill",
+    role: "Project Manager",
+    img: "/munneth_gill_U09N96MM9EV.jpg",
+    linkedin: "https://www.linkedin.com/in/munnethgill/",
   },
   {
     name: "Samaya Sankuratri",
@@ -122,32 +127,19 @@ const LEADERS: Leader[] = [
     linkedin: "https://www.linkedin.com/in/samaya-sankuratri-1a1083331/",
   },
   {
+    name: "Sebastian Martin Del Campo",
+    role: "Project Manager",
+    img: "/sebastian_martin_del_campo_U09MC3W2CJ2.jpg",
+  },
+  {
     name: "Tarini Maram",
     role: "Project Manager",
     img: "/tarini.png",
     linkedin: "https://www.linkedin.com/in/tarini-maram-834412291/",
   },
-  {
-    name: "Viet-Thy Tran",
-    role: "Project Manager",
-    img: "/viet-thy.png",
-    linkedin: "https://www.linkedin.com/in/viet-thy-tran-318581299/",
-  },
-  {
-    name: "Zina Zhang",
-    role: "Project Manager",
-    img: "/zina.png",
-    linkedin: "https://www.linkedin.com/in/zina-zhang-42775822a/",
-  },
 ];
 
 const MEMBERS: Member[] = [
-  {
-    name: "Grace Lim",
-    role: "Member",
-    division: "Social Media",
-    img: "/grace_lim_U09M34GE7SB.jpg",
-  },
   {
     name: "Emily Cromwell",
     role: "Member",
@@ -162,13 +154,6 @@ const MEMBERS: Member[] = [
     linkedin: "https://www.linkedin.com/in/yashas-vissapragada-2a1599365/",
   },
   {
-    name: "Ruth Jaquette",
-    role: "Member",
-    division: "External",
-    img: "/ruth_jaquette_U09NE4CMUQ0.jpg",
-    linkedin: "https://www.linkedin.com/in/ruth-jaquette/",
-  },
-  {
     name: "Arushi Bhattacharya",
     role: "Member",
     division: "External",
@@ -181,13 +166,6 @@ const MEMBERS: Member[] = [
     division: "External",
     img: "/alex_pritchard_U09MB499ZSP.jpg",
     linkedin: "https://www.linkedin.com/in/alex-pritchard-wwfc/",
-  },
-  {
-    name: "Naomi Petersen",
-    role: "Member",
-    division: "Design",
-    img: "/naomi_petersen_U09M7N1MAEP.jpg",
-    linkedin: "https://www.linkedin.com/in/naomipetersen-/",
   },
   {
     name: "Oneeka Prabhakar",
@@ -231,13 +209,6 @@ const MEMBERS: Member[] = [
     linkedin: "https://www.linkedin.com/in/nathaniel-maffly-390235268/",
   },
   {
-    name: "Jessica Mendieta",
-    role: "Member",
-    division: "Internal",
-    img: "/jessica_mendieta_U09MLT4TH7E.jpg",
-    linkedin: "https://www.linkedin.com/in/jessica-mendieta/",
-  },
-  {
     name: "Jen Dong",
     role: "Member",
     division: "Internal",
@@ -273,25 +244,11 @@ const MEMBERS: Member[] = [
     linkedin: "https://www.linkedin.com/in/hanson-lau-347236199/",
   },
   {
-    name: "Beckett Hayes",
-    role: "Member",
-    division: "Basketball",
-    img: "/beckett_hayes_U09MWVBE8GH.jpg",
-    linkedin: "https://www.linkedin.com/in/beckett-hayes/",
-  },
-  {
     name: "Arshawn Zamanian",
     role: "Member",
     division: "Basketball",
     img: "/arshawn_zamanian_U09LYLG5DQF.jpg",
     linkedin: "https://www.linkedin.com/in/arshawn-zamanian-5b7009389/",
-  },
-  {
-    name: "Logan Tadano",
-    role: "Member",
-    division: "Basketball",
-    img: "/logan_tadano_U07TLKNFGKZ.jpg",
-    linkedin: "https://www.linkedin.com/in/logantadano/",
   },
   {
     name: "Vincent Ng",
@@ -364,25 +321,11 @@ const MEMBERS: Member[] = [
     linkedin: "https://www.linkedin.com/in/yuvrajriyar/",
   },
   {
-    name: "Munneth Gill",
-    role: "Member",
-    division: "Football",
-    img: "/munneth_gill_U09N96MM9EV.jpg",
-    linkedin: "https://www.linkedin.com/in/munnethgill/",
-  },
-  {
     name: "Jessica Ting",
     role: "Member",
     division: "Football",
     img: "/jessica_ting_U09M8DX0CE7.jpg",
     linkedin: "https://www.linkedin.com/in/jessica-ting-404034352/",
-  },
-  {
-    name: "Devin Sidhu",
-    role: "Member",
-    division: "Football",
-    img: "/devin_sidhu_U09MAJE5B45.jpg",
-    linkedin: "https://www.linkedin.com/in/devin-gill-sidhu-a03745328/",
   },
   {
     name: "Advik Gupta",
@@ -417,19 +360,6 @@ const MEMBERS: Member[] = [
     division: "Tennis",
     img: "/joseph_cha_U09MHT2LAEN.jpg",
     linkedin: "https://www.linkedin.com/in/joseph-cha1821/",
-  },
-  {
-    name: "Anik Majumdar",
-    role: "Member",
-    division: "Tennis",
-    img: "/anik_majumdar_U09M82PG9LK.jpg",
-    linkedin: "https://www.linkedin.com/in/anik-maj/",
-  },
-  {
-    name: "Sebastian Martin Del Campo",
-    role: "Member",
-    division: "Water Polo",
-    img: "/sebastian_martin_del_campo_U09MC3W2CJ2.jpg",
   },
   {
     name: "Riley St George",
