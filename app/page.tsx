@@ -24,7 +24,46 @@ const ALL_LOGOS = [
   "/logos/logowf.png",
   "/logos/logoNBA.png",
   "/logos/logoSF.png",
+  "/logos/logocloudfare.png",
+  "/logos/logoibm.png",
+  "/logos/logomercor.png",
+  "/logos/logooliverwyman.png",
+  "/logos/logospacex.png",
+  "/logos/logofidelity.png",
+  "/logos/logovisa.png",
+  "/logos/logojpmorgan.png",
+  "/logos/logodatabricks.png",
+  "/logos/logonyu.png",
+  "/logos/logoillinois.png",
+  "/logos/logoharvard2.png",
+  "/logos/logocolumbia.png",
 ];
+
+const DEFAULT_LOGO_SIZE = { width: 60, height: 40 };
+
+const LOGO_SIZES: Record<string, { width: number; height: number }> = {
+  "logonyu.png": { width: 110, height: 70 },
+  "logoamazon.png": { width: 100, height: 65 },
+  "logonvidia.png": { width: 100, height: 65 },
+  "logoibm.png": { width: 100, height: 65 },
+  "logocolumbia.png": { width: 120, height: 80 },
+  "logovisa.png": { width: 120, height: 80 },
+  "logodatabricks.png": { width: 95, height: 65 },
+  "logofidelity.png": { width: 120, height: 80 },
+  "logogoogle.png": { width: 100, height: 65 },
+  "logoatlassian.png": { width: 110, height: 70 },
+  "logoqualcomm.png": { width: 110, height: 70 },
+  "logokpmg.png": { width: 90, height: 60 },
+  "logoillinois.png": { width: 90, height: 60 },
+  "logospacex.png": { width: 230, height: 145 },
+  "logodeloitte.png": { width: 100, height: 65 },
+  "logomercor.png": { width: 340, height: 220 },
+  "logooliverwyman.png": { width: 100, height: 65 },
+  "logojpmorgan.png": { width: 160, height: 100 },
+  "logoharvard2.png": { width: 80, height: 50 },
+  "logocap1.png": { width: 110, height: 70 },
+  "logocloudfare.png": { width: 170, height: 110 },
+};
 
 export default function Home() {
 
@@ -212,7 +251,9 @@ export default function Home() {
                 const row = Math.floor(i / 5);
                 const col = i % 5;
                 const delay = (row + col) * 0.1;
-                
+                const fileName = src.split("/").pop() ?? "";
+                const { width, height } = LOGO_SIZES[fileName] ?? DEFAULT_LOGO_SIZE;
+
                 return (
                   <motion.div
                     key={`logo-${i}`}
@@ -226,11 +267,12 @@ export default function Home() {
                     }}
                     viewport={{ once: true, amount: 0.3 }}
                   >
-                    <Image 
-                      src={src} 
-                      alt="Company logo" 
-                      width={60} 
-                      height={40} 
+                    <Image
+                      src={src}
+                      alt="Company logo"
+                      width={width}
+                      height={height}
+                      style={{ width, height, maxWidth: "none" }}
                       className="object-contain group-hover:grayscale-0 opacity-80 group-hover:opacity-100 transition"
                     />
                   </motion.div>
