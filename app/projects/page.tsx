@@ -1,10 +1,8 @@
-import Link from "next/link";
 import React from "react";
 import { allProjects } from "contentlayer/generated";
 import { Card } from "../components/card";
 import { Article } from "./article";
 import { Redis } from "@upstash/redis";
-import { Eye } from "lucide-react";
 import Head from "next/head";
 import Footer from "../components/footer";
 import FadeInWrapper from "../components/FadeInWrapper";
@@ -13,6 +11,8 @@ import Header from "../components/Header";
 const redis = Redis.fromEnv();
 
 export const revalidate = 60;
+
+const CYCLES = ["2025-2026", "2024-2025", "2023-2024", "2022-2023"];
 
 export default async function WorkPage() {
   const views = (
@@ -24,22 +24,18 @@ export default async function WorkPage() {
     return acc;
   }, {} as Record<string, number>);
 
-  const featured = allProjects.find((project) => project.slug === "scoreboard")!;
-  const top2 = allProjects.find((project) => project.slug === "court-check")!;
-  const top3 = allProjects.find((project) => project.slug === "nbadraft")!;
-  const sorted = allProjects
-    .filter((p) => p.published)
-    .filter(
-      (project) =>
-        project.slug !== featured.slug &&
-        project.slug !== top2.slug &&
-        project.slug !== top3.slug
-    )
-    .sort(
-      (a, b) =>
-        new Date(b.date ?? Number.POSITIVE_INFINITY).getTime() -
-        new Date(a.date ?? Number.POSITIVE_INFINITY).getTime()
-    );
+  const published = allProjects.filter((p) => p.published);
+
+  const byCycle = CYCLES.map((cycle) => ({
+    cycle,
+    projects: published
+      .filter((project) => project.cycles?.includes(cycle))
+      .sort(
+        (a, b) =>
+          new Date(b.date ?? Number.POSITIVE_INFINITY).getTime() -
+          new Date(a.date ?? Number.POSITIVE_INFINITY).getTime()
+      ),
+  })).filter((group) => group.projects.length > 0);
 
   return (
     <div className="relative">
@@ -55,79 +51,37 @@ export default async function WorkPage() {
               <h1 className="text-4xl font-bold text-white mb-2">Projects</h1>
               <p className="text-zinc-400 text-lg">Products built to empower the best sports teams.</p>
             </div>
-            <div>
-              <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
-                <Card>
-                  <Link href={`/projects/${featured.slug}`}>
-                    <article className="relative w-full h-full p-4 md:p-8">
-                      <div className="flex items-center justify-between gap-2">
-                        <div className="text-xs text-zinc-100">
-                          {featured.date ? (
-                            <time dateTime={new Date(featured.date).toISOString()}>
-                              {Intl.DateTimeFormat(undefined, {
-                                dateStyle: "medium",
-                              }).format(new Date(featured.date))}
-                            </time>
-                          ) : (
-                            <span>SOON</span>
-                          )}
-                        </div>
-                        <span className="flex items-center gap-1 text-xs text-zinc-500">
-                        </span>
+            <div className="space-y-16">
+              {byCycle.map(({ cycle, projects }) => (
+                <div key={cycle}>
+                  <h2 className="text-2xl font-bold text-white mb-6 font-display">
+                    {cycle} Project Cycle
+                  </h2>
+                  <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
+                    {[0, 1, 2].map((col) => (
+                      <div key={col} className="grid grid-cols-1 gap-4">
+                        {projects
+                          .filter((_, i) => i % 3 === col)
+                          .map((project) => {
+                            const latestCycle = project.cycles
+                              ?.slice()
+                              .sort()
+                              .at(-1);
+                            return (
+                              <Card key={project.slug}>
+                                <Article
+                                  project={project}
+                                  views={views[project.slug] ?? 0}
+                                  continued={latestCycle !== cycle}
+                                />
+                              </Card>
+                            );
+                          })}
                       </div>
-                      <h2
-                        id="featured-post"
-                        className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
-                      >
-                        {featured.title}
-                      </h2>
-                      <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
-                        {featured.description}
-                      </p>
-                    </article>
-                  </Link>
-                </Card>
-
-                <div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0">
-                  <Card>
-                    <Article project={top2} views={views[top2.slug] ?? 0} />
-                  </Card>
-                  <Card>
-                    <Article project={top3} views={views[top3.slug] ?? 0} />
-                  </Card>
-                </div>
-              </div>
-              <div className="mt-10 " />
-              <br></br>
-              <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
-                <div className="grid grid-cols-1 gap-4">
-                  {sorted
-                    .filter((_, i) => i % 3 === 0)
-                    .map((project) => (
-                      <Card key={project.slug}>
-                        <Article project={project} views={views[project.slug] ?? 0} />
-                      </Card>
                     ))}
+                  </div>
                 </div>
-                <div className="grid grid-cols-1 gap-4">
-                  {sorted
-                    .filter((_, i) => i % 3 === 1)
-                    .map((project) => (
-                      <Card key={project.slug}>
-                        <Article project={project} views={views[project.slug] ?? 0} />
-                      </Card>
-                    ))}
-                </div>
-                <div className="grid grid-cols-1 gap-4">
-                  {sorted
-                    .filter((_, i) => i % 3 === 2)
-                    .map((project) => (
-                      <Card key={project.slug}>
-                        <Article project={project} views={views[project.slug] ?? 0} />
-                      </Card>
-                    ))}
-                </div>
-              </div>
+              ))}
             </div>
           </div>
           <div className="pt-10"></div>

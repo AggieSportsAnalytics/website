@@ -44,6 +44,10 @@ export const Project = defineDocumentType(() => ({
 		},
 		intro: {
 			type: "string",
+		},
+		cycles: {
+			type: "list",
+			of: { type: "string" },
 		}
 	},
 	computedFields,

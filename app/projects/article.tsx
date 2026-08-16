@@ -5,9 +5,10 @@ import Head from "next/head";
 type Props = {
 	project: Project;
 	views: number;
+	continued?: boolean;
 };
 
-export const Article: React.FC<Props> = ({ project, views }) => {
+export const Article: React.FC<Props> = ({ project, views, continued }) => {
 	return (
 
 		<Link href={`/projects/${project.slug}`}>
@@ -35,6 +36,11 @@ export const Article: React.FC<Props> = ({ project, views }) => {
 				<p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
 					{project.description}
 				</p>
+				{continued ? (
+					<p className="z-20 mt-3 text-xs italic text-zinc-500">
+						Continued in a later project cycle
+					</p>
+				) : null}
 			</article>
 		</Link>
 	);
