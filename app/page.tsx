@@ -24,6 +24,20 @@ const ALL_LOGOS = [
   "/logos/logowf.png",
   "/logos/logoNBA.png",
   "/logos/logoSF.png",
+  "/logos/logocloudfare.png",
+  "/logos/logoibm.png",
+  "/logos/logomercor.png",
+  "/logos/logooliverwyman.png",
+  "/logos/logospacex.png",
+  "/logos/logofidelity.png",
+  "/logos/logovisa.png",
+  "/logos/logojpmorgan.png",
+  "/logos/logodatabricks.png",
+  "/logos/logonyu.png",
+  "/logos/logoillinois.png",
+  "/logos/logoharvard.png",
+  "/logos/logocolumbia.png",
+  "/logos/logoberkeley.png",
 ];
 
 export default function Home() {
