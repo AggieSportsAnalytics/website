@@ -1,0 +1,74 @@
+---
+title: Aqualytics
+description: A live stat-tracking and analytics platform for UC Davis men's water polo, with player performance indexing and coach-ready PDF reports.
+repository: AggieSportsAnalytics/waterpolo-frontend
+date: 2026-08-15
+published: true
+---
+
+### 🏁 Replacing pen-and-paper box scores with live stat tracking and quantified player impact 🤽
+
+Aqualytics is the UC Davis men's water polo analytics platform. Coaches and players log games in real time, review match and season trends, and export reports, all backed by structured data in Supabase instead of a paper box score. The long-term goal is to move lineup evaluation from a subjective "eye test" toward quantified player impact, RAPM-style ratings, performance vs. play time, and substitution guidance, while keeping the workflow fast enough to run poolside.
+
+## 🌟 Features
+
+- **Dual-Team Live Stats**: Log both rosters' shots, exclusions, steals, sprints, and more in real time as the game clock runs.
+- **Player Performance Index (PPI)**: A weighted, 0–100 score computed per player per match from shot conversion, assists, steals, rebounds, sprints, hustle, and draws.
+- **RAPM-Style Team Analytics**: A proxy adjusted plus-minus that ranks players against team average, shrunk by games played, with substitution recommendations.
+- **Shot Heatmaps**: A canvas-rendered density map of shot locations, smoothed with a box blur so both sparse and busy games read clearly.
+- **Active Ejection Timers**: A live countdown for each ejected player, cleared automatically on goal, possession change, or timeout.
+- **Film Review & Sync**: Coaches can upload quarter footage and sync it to the logged game clock, then jump straight to the video moment behind any event.
+- **Coach-Ready PDF Reports**: Quarter/halftime summaries, player development reports, and team analytics reports all export to PDF.
+- **Role-Based Auth**: Supabase Auth gates the app behind player/coach roles.
+
+## 🔑 How It Works
+
+### 1. 📋 Live Stats
+
+`LiveStatsPageDual.tsx` is the source of truth for in-game tracking: it runs the quarter clock and inter-quarter breaks, tracks which team currently has possession, and logs per-player stats (shots, goals, assists, steals, rebounds, sprints, hustle, draws) plus team-level counters like power play/penalty conversions and possession time for both rosters at once.
+
+### 2. 📈 Player Performance Index (PPI)
+
+Every time stats are saved, `compute_and_save_score()` in `backend/main.py` normalizes each stat against a league-max cap, scales it to 0–100, and combines the results with fixed weights: shot conversion 32%, assists 16%, steals 16%, rebounds 8%, sprints 8%, hustle 7%, and draws 5%. The resulting score is tiered as elite (≥80), strong (≥60), average (≥40), or developing (&lt;40), and served through the `/api/players/{id}/scores` family of endpoints.
+
+### 3. 🧮 RAPM-Style Team Analytics
+
+True stint-based RAPM needs to know who was in the pool together, which isn't tracked yet, so `computeSimulatedRAPM` in `src/reports/playerAnalytics.ts` approximates it: each player's PPI is compared against the team average and shrunk by games played. The Reports → Team Analytics page turns this into a green/red bar chart, a performance-vs-playtime correlation with a coaching blurb, and substitution hints for players with low PPI but high recent minutes.
+
+### 4. 🔥 Shot Heatmaps
+
+`HeatmapCanvas.tsx` buckets shot coordinates into a 72-column density grid, runs a 5×5 box blur over it, and normalizes by the densest cell so a slow game and a high-volume game both render on a readable color scale (cool for sparse areas, red for hot zones).
+
+### 5. ⏱️ Active Ejections
+
+The `ActiveEjections` panel shows a live per-player countdown for every player currently in the penalty box, color-coded by team, and automatically clears an entry after 20 seconds or when a goal is scored or possession changes.
+
+### 6. 🎬 Film Review & Sync
+
+`FilmReviewPanel.tsx` lets a coach upload a quarter's video and set sync checkpoints that map a moment in the footage to the corresponding second on the game clock. Once synced, clicking any logged event (a goal, exclusion, ejection, referee call) seeks the video straight to that moment instead of making the coach scrub for it.
+
+### 7. 📄 Reports & PDFs
+
+Report components in `src/reports/` (`MatchReportPdf`, `TeamAnalyticsReportPdf`, `PlayerSeasonReportPdf`) pull from the live API and PPI data to render quarter/halftime summaries, player development reports, and team analytics reports, each exportable as a PDF via `@react-pdf/renderer`.
+
+## 💻 Technology
+
+| Layer | Stack |
+| --- | --- |
+| **Frontend** | React 18, TypeScript, Vite, React Router, Tailwind CSS, Radix UI, Recharts |
+| **PDF Export** | `@react-pdf/renderer` |
+| **Backend** | FastAPI (Python), Peewee ORM |
+| **Database & Auth** | Supabase (PostgreSQL, Auth) |
+| **Deployment** | Frontend on Vercel, backend on Render |
+
+## 🤝 Contributing
+
+- **Project Manager**: Tarini Maram
+- **Project Members**: Keira Patel, Clara Wei, Sebastian Martin Del Campo
+
+## 🎯 Areas of Improvement
+
+- **Full Stint-Based RAPM**: Track 6-man lineup stints so RAPM can be computed directly instead of approximated from PPI.
+- **Live Film Sync**: Move film review from post-game upload toward syncing a live or near-live feed during the match.
+- **Automatic Camera Calibration**: Reduce manual setup needed to sync footage to the game clock across different camera angles.
+- **Expanded Historical Trends**: Surface multi-season player and team trends on top of the existing match-by-match analytics.
