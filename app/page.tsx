@@ -24,6 +24,7 @@ const ALL_LOGOS = [
   "/logos/logowf.png",
   "/logos/logoNBA.png",
   "/logos/logoSF.png",
+  "/logos/logomavericks.png",
   "/logos/logocloudfare.png",
   "/logos/logoibm.png",
   "/logos/logomercor.png",
@@ -33,6 +34,7 @@ const ALL_LOGOS = [
   "/logos/logovisa.png",
   "/logos/logojpmorgan.png",
   "/logos/logodatabricks.png",
+  "/logos/logooptiver.png",
   "/logos/logonyu.png",
   "/logos/logoillinois.png",
   "/logos/logoharvard2.png",
@@ -63,6 +65,8 @@ const LOGO_SIZES: Record<string, { width: number; height: number }> = {
   "logoharvard2.png": { width: 80, height: 50 },
   "logocap1.png": { width: 110, height: 70 },
   "logocloudfare.png": { width: 170, height: 110 },
+  "logomavericks.png": { width: 75, height: 70 },
+  "logooptiver.png": { width: 130, height: 60 },
 };
 
 export default function Home() {
