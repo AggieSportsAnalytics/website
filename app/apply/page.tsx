@@ -46,7 +46,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 }
 
 export default function JoinUsPage() {
-  const deadline = new Date('2026-07-12T01:00:00-07:00');
+  const deadline = new Date('2026-10-10T23:59:00-07:00');
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -121,7 +121,7 @@ export default function JoinUsPage() {
             >
               {isDeadlinePassed
                 ? "Applications are now closed. Please be on the lookout for our future recruitment cycles."
-                : "Applications are now open. Apply below before Saturday, July 11, at 11:59 PM."}
+                : "Applications are now open. Apply below before Saturday, October 10, at 11:59 PM."}
             </motion.p>
 
             <motion.div
@@ -154,7 +154,7 @@ export default function JoinUsPage() {
               ) : (
                 <>
                   <Link
-                    href="https://docs.google.com/forms/d/e/1FAIpQLScbQ865bm2__NXaxr9cnUBlwoSNp0i2Dq-WSb9niaVxKKcNXQ/viewform?usp=dialog"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSf-zbPw32CzjHGzpwqOUpR-ZT6hm2LUcAbYzgBGfFRiEx0ZjA/viewform"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-300 text-white text-sm font-medium rounded-full hover:bg-white/10 transition-colors mr-3"
@@ -162,21 +162,19 @@ export default function JoinUsPage() {
                     Projects Board
                   </Link>
                   <Link
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSfnojgRkFq8dxLvd4_Ans5gHXuQm2NBwFk06EFtqUVIW19Eag/viewform?usp=dialog"
+                    href="https://docs.google.com/forms/d/1T0o3vTKCnA-VxjRQH_-gJSYiW_dc5L-qaLeLxGdQu6Q/edit"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-300 text-white text-sm font-medium rounded-full hover:bg-white/10 transition-colors mr-3"
                   >
                     Business Board
                   </Link>
-                  <Link
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSd58fogQtoq7jLIxZafn1jDg_wKZDNt2Ib7PhQgx8I0-1X7ZQ/viewform?usp=dialog"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-300 text-white text-sm font-medium rounded-full hover:bg-white/10 transition-colors"
+                  <button
+                    disabled
+                    className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-700 text-zinc-500 text-sm font-medium rounded-full cursor-not-allowed opacity-50"
                   >
                     Media Board
-                  </Link>
+                  </button>
                 </>
               )}
             </motion.div>
@@ -259,7 +257,7 @@ export default function JoinUsPage() {
               />
               <FAQItem
                 question="What is the duration of a position?"
-                answer="Full academic year (2025-2026). Recruitment only occurs in Fall quarter."
+                answer="Full academic year (2026-2027). Recruitment only occurs in Fall quarter."
               />
               <FAQItem
                 question="Do I need prior experience?"
@@ -271,7 +269,7 @@ export default function JoinUsPage() {
               />
               <FAQItem
                 question="What is the interview process?"
-                answer="Resume screening followed by 20-minute in-person interviews during the week of October 13th. Decisions will be announced shortly after."
+                answer="Resume screening followed by 20-minute in-person interviews during the week of October 12th. Decisions will be announced shortly after."
               />
               <FAQItem
                 question="What will I gain from ASA?"
