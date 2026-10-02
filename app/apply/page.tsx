@@ -136,19 +136,19 @@ export default function JoinUsPage() {
                     disabled
                     className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-700 text-zinc-500 text-sm font-medium rounded-full cursor-not-allowed opacity-50 mr-3"
                   >
-                    Projects Board
+                    Projects
                   </button>
                   <button
                     disabled
                     className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-700 text-zinc-500 text-sm font-medium rounded-full cursor-not-allowed opacity-50 mr-3"
                   >
-                    Business Board
+                    Business
                   </button>
                   <button
                     disabled
                     className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-700 text-zinc-500 text-sm font-medium rounded-full cursor-not-allowed opacity-50"
                   >
-                    Media Board
+                    Media
                   </button>
                 </>
               ) : (
@@ -159,7 +159,7 @@ export default function JoinUsPage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-300 text-white text-sm font-medium rounded-full hover:bg-white/10 transition-colors mr-3"
                   >
-                    Projects Board
+                    Projects
                   </Link>
                   <Link
                     href="https://docs.google.com/forms/d/1T0o3vTKCnA-VxjRQH_-gJSYiW_dc5L-qaLeLxGdQu6Q/edit"
@@ -167,7 +167,7 @@ export default function JoinUsPage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-300 text-white text-sm font-medium rounded-full hover:bg-white/10 transition-colors mr-3"
                   >
-                    Business Board
+                    Business
                   </Link>
                   <Link
                     href="https://forms.gle/V8pMKFwFTcCK6eF8A"
@@ -175,7 +175,7 @@ export default function JoinUsPage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-300 text-white text-sm font-medium rounded-full hover:bg-white/10 transition-colors mr-3"
                   >
-                    Media Board
+                    Media
                   </Link>
                 </>
               )}
