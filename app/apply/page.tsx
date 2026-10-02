@@ -169,12 +169,14 @@ export default function JoinUsPage() {
                   >
                     Business Board
                   </Link>
-                  <button
-                    disabled
-                    className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-700 text-zinc-500 text-sm font-medium rounded-full cursor-not-allowed opacity-50"
+                  <Link
+                    href="https://forms.gle/V8pMKFwFTcCK6eF8A"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-4 py-2 bg-transparent border border-zinc-300 text-white text-sm font-medium rounded-full hover:bg-white/10 transition-colors mr-3"
                   >
                     Media Board
-                  </button>
+                  </Link>
                 </>
               )}
             </motion.div>
