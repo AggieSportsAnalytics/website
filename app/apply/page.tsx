@@ -46,7 +46,7 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 }
 
 export default function JoinUsPage() {
-  const deadline = new Date('2026-10-10T23:59:00-07:00');
+  const deadline = new Date('2026-10-11T01:00:00-07:00');
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
